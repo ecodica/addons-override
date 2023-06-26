@@ -218,7 +218,7 @@
                         string="Parties Content"
                         attrs="{'invisible':[('use_parties_content', '=', False)]}"
                     >
-                        <field name="parties" nolabel="1" />
+                        <field name="parties" nolabel="1" colspan="2"/>
                     </group>
                     <group name="term_information">
                         <group name="termdates_left" string="Term Dates">
