@@ -26,10 +26,11 @@ class AccountPayment(models.Model):
 class AccountPaymentRegister(models.TransientModel):
     _inherit = "account.payment.register"
 
-    def _prepare_payment_vals(self, invoices):
-        res = super()._prepare_payment_vals(invoices)
-        payer_id = (
-            invoices[0].alternate_payer_id.id or invoices[0].commercial_partner_id.id
-        )
-        res["partner_id"] = payer_id
-        return res
+    # Not needed, I guess!?
+    # def _prepare_payment_vals(self, invoices):
+    #     res = super()._prepare_payment_vals(invoices)
+    #     payer_id = (
+    #         invoices[0].alternate_payer_id.id or invoices[0].commercial_partner_id.id
+    #     )
+    #     res["partner_id"] = payer_id
+    #     return res
