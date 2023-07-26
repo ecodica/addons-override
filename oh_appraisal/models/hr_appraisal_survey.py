@@ -28,9 +28,17 @@ class SurveyUserInput(models.Model):
 
     appraisal_id = fields.Many2one('hr.appraisal', string="Appriasal id")
 
-    @api.model
-    def create(self, vals):
+    # @api.model
+    # def create(self, vals):
+    #     ctx = self.env.context
+    #     if ctx.get('active_id') and ctx.get('active_model') == 'hr.appraisal':
+    #         vals['appraisal_id'] = ctx.get('active_id')
+    #     return super(SurveyUserInput, self).create(vals)
+
+    @api.model_create_multi
+    def create(self, vals_list):
         ctx = self.env.context
         if ctx.get('active_id') and ctx.get('active_model') == 'hr.appraisal':
-            vals['appraisal_id'] = ctx.get('active_id')
-        return super(SurveyUserInput, self).create(vals)
+            for vals in vals_list:
+                vals['appraisal_id'] = ctx.get('active_id')
+        return super(SurveyUserInput, self).create(vals_list)

@@ -45,10 +45,10 @@ class HrAppraisalForm(models.Model):
     final_interview = fields.Date(string="Final Interview", help="After sending survey link,you can"
                                                                  " schedule final interview date")
     company_id = fields.Many2one('res.company', string='Company', default=lambda self: self.env.user.company_id)
-    hr_manager = fields.Boolean(string="Manager", default=False)
-    hr_emp = fields.Boolean(string="Employee", default=False)
-    hr_colloborator = fields.Boolean(string="Collaborators", default=False)
-    hr_colleague = fields.Boolean(string="Colleague", default=False)
+    hr_manager = fields.Boolean(string="Is Manager", default=False)
+    hr_emp = fields.Boolean(string="Is Employee", default=False)
+    hr_colloborator = fields.Boolean(string="Is Collaborator", default=False)
+    hr_colleague = fields.Boolean(string="Is Colleague", default=False)
     hr_manager_id = fields.Many2many('hr.employee', 'manager_appraisal_rel', string="Select Appraisal Reviewer")
     hr_colleague_id = fields.Many2many('hr.employee', 'colleagues_appraisal_rel',
                                        string="Select Appraisal Reviewer")
@@ -64,7 +64,7 @@ class HrAppraisalForm(models.Model):
     tot_comp_survey = fields.Integer(string="Count Answers", compute="_compute_completed_survey")
     tot_sent_survey = fields.Integer(string="Count Sent Questions")
     created_by = fields.Many2one('res.users', string="Created By", default=lambda self: self.env.uid)
-    state = fields.Many2one('hr.appraisal.stages', string='Stage', track_visibility='onchange', index=True,
+    state = fields.Many2one('hr.appraisal.stages', string='Stage', tracking=True, index=True,
                             default=lambda self: self._default_stage_id(),
                             group_expand='_read_group_stage_ids')
     # for coloring the kanban box
