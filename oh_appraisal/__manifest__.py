@@ -32,6 +32,7 @@
     'maintainer': 'Cybrosys Techno Solutions',
     'website': "https://www.openhrms.com",
     'depends': ['base', 'hr', 'survey'],
+    'excludes': ['hr_appraisal', ],
     'data': [
         'security/ir.model.access.csv',
         'security/hr_appraisal_security.xml',
