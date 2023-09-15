@@ -118,6 +118,13 @@ class Agreement(models.Model):
     company_partner_id = fields.Many2one(
         related="company_id.partner_id", string="Company's Partner"
     )
+    sequence_id = fields.Many2one(
+        comodel_name="ir.sequence",
+        name="Sequence",
+        check_company=True,
+        domain=[("code", "=", "agreement")],
+        help="If set, agreement name will be based on this field",
+    )
 
     def _get_default_parties(self):
         deftext = """
@@ -401,8 +408,9 @@ class Agreement(models.Model):
 
     def _get_new_agreement_default_vals(self):
         self.ensure_one()
+        name = self.sequence_id and self.sequence_id.next_by_id() or "New"
         default_vals = {
-            "name": "New",
+            "name": name,
             "active": True,
             "version": 1,
             "revision": 0,
