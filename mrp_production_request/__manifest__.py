@@ -1,15 +1,13 @@
-# Copyright 2017-19 ForgeFlow S.L.
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 {
     "name": "MRP Production Request",
     "summary": "Allows you to use Manufacturing Request as a previous "
     "step to Manufacturing Orders for better manufacture planification.",
-    "version": "14.0.1.0.0",
+    "version": "16.0.1.0.0",
     "development_status": "Production/Stable",
-    "maintainers": ["LoisRForgeFlow"],
     "category": "Manufacturing",
     "website": "https://github.com/OCA/manufacture",
-    "author": "ForgeFlow," "Odoo Community Association (OCA)",
+    "author": "Ecodica, ""ForgeFlow," "Odoo Community Association (OCA)",
     "license": "AGPL-3",
     "application": False,
     "installable": True,
