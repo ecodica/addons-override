@@ -1,7 +1,9 @@
 <?xml version="1.0"?>
 <odoo>
     <data>
-        <record id="view_l10n_hr_company_form" model="ir.ui.view">
+        
+        <!--Not needed anymore, already existing and used Croatia settings page in l10n_hr_base module-->
+        <!--<record id="view_l10n_hr_company_form" model="ir.ui.view">
             <field name="name">view.l10n.hr.company.form</field>
             <field name="model">res.company</field>
             <field name="inherit_id" ref="account.view_company_form"/>
@@ -9,13 +11,14 @@
                 <xpath expr="//notebook" position="inside">
                     <page string="Croatia Company data" name="croatia_data"
                           attrs="{'invisible':[('country_code','!=', 'HR')]}">
-                        <!-- empty base placeholder for all possible
+                        &lt;!&ndash; empty base placeholder for all possible
                              localisation specific fields from other modules
-                         -->
+                         &ndash;&gt;
                     </page>
                 </xpath>
             </field>
-        </record>
+        </record>-->
+
     </data>
 </odoo>
 
