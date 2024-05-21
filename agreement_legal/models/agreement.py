@@ -423,6 +423,16 @@ class Agreement(models.Model):
         self.ensure_one()
         return self.copy(default=self._get_new_agreement_default_vals())
 
+    def persist_dynamic_content(self, dynamic_fields=None):
+        self.ensure_one()
+        if not dynamic_fields:
+            # self-explanatory
+            dynamic_fields = list(filter(lambda x: x.startswith('dynamic_'), self.fields_get().keys()))
+        # switcheroo
+        for field in dynamic_fields:
+            origin_field = field.replace('dynamic_', '')
+            self[origin_field] = self[field]
+
     @api.model
     def action_view_agreement(self, agreement):
         return {
