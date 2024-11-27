@@ -272,7 +272,13 @@ class AccountStatementImportCamtParser(models.AbstractModel):
             "narration": {},
             "transaction_type": {},
         }  # fallback defaults
-        self.add_value_from_node(ns, node, "./ns:BookgDt/ns:Dt", transaction, "date")
+        # we are checking the node because of croatian CAMT .xml file, where date comes in <DtTm> tag instead of <Dt>
+        if node.xpath("./ns:BookgDt/ns:Dt", namespaces={"ns": ns}):
+            self.add_value_from_node(ns, node, "./ns:BookgDt/ns:Dt", transaction, "date")
+        elif node.xpath("./ns:BookgDt/ns:DtTm", namespaces={"ns": ns}):
+            self.add_value_from_node(ns, node, "./ns:BookgDt/ns:DtTm", transaction, "date")
+        else:
+            raise ValueError(_("No Booking Date in xml file found!"))
         amount = self.parse_amount(ns, node)
         if amount != 0.0:
             transaction["amount"] = amount
