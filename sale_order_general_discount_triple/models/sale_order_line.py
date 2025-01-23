@@ -5,9 +5,9 @@ class SaleOrderLine(models.Model):
     _inherit = "sale.order.line"
 
     discount2 = fields.Float(
-        compute="_compute_discount2", precompute=True, store=True)  # CHANGED: precompute=True,
+        compute="_compute_discount2", precompute=True, store=True, readonly=False)  # CHANGED: precompute=True,
     discount3 = fields.Float(
-        compute="_compute_discount3", precompute=True, store=True)  # CHANGED: precompute=True,
+        compute="_compute_discount3", precompute=True, store=True, readonly=False)  # CHANGED: precompute=True,
 
 
     @api.depends("product_id", "product_uom", "product_uom_qty")
