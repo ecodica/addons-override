@@ -33,6 +33,7 @@
                             <field name="company_id" />
                             <field name="account_id" />
                             <field name="analytic_account_id" />
+                            <field name="partner_id"/>
                         </group>
                         <group>
                             <field name="credit" />
