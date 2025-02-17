@@ -30,24 +30,27 @@ class MisAccountAnalyticLine(models.Model):
         self._cr.execute(
             """
             CREATE OR REPLACE VIEW mis_account_analytic_line AS (
-                SELECT
-                    aal.id AS id,
-                    aal.id AS analytic_line_id,
-                    aal.date as date,
-                    aal.general_account_id as account_id,
-                    aal.account_id as analytic_account_id,
-                    aal.company_id as company_id,
-                    'posted'::VARCHAR as state,
-                    CASE
-                      WHEN aal.amount >= 0.0 THEN aal.amount
-                      ELSE 0.0
-                    END AS credit,
-                    CASE
-                      WHEN aal.amount < 0 THEN (aal.amount * -1)
-                      ELSE 0.0
-                    END AS debit,
-                    aal.amount as balance
-                FROM
-                    account_analytic_line aal
-            )"""
+                 SELECT aal.id AS id,
+                        aal.id AS analytic_line_id,
+                        aal.date as date,
+                        aal.general_account_id as account_id,
+                        aal.account_id as analytic_account_id,
+                        coalesce(aml.partner_id, aal.partner_id) as partner_id,
+                        aal.company_id as company_id,
+                        'posted'::VARCHAR as state,
+                        CASE WHEN aml.debit > 0 THEN (aal.amount * -1)
+                             WHEN aml.debit < 0 THEN (aal.amount * -1)
+                             ELSE 0.0 END 
+                         AS debit,
+            
+                        CASE WHEN aml.credit > 0.0 THEN aal.amount
+                             WHEN aml.credit < 0.0 THEN aal.amount 
+                             ELSE 0.0 END
+                         AS credit,
+            
+                        (aal.amount * -1) as balance
+                   FROM account_analytic_line aal
+                   LEFT JOIN account_move_line aml ON aml.id = aal.move_line_id
+            )
+       """
         )
