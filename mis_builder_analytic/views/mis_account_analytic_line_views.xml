@@ -12,6 +12,7 @@
                 <field name="company_id" />
                 <field name="account_id" />
                 <field name="analytic_account_id" />
+                <field name="partner_id" optional="show"/>
                 <field name="credit" />
                 <field name="debit" />
                 <field name="balance" />
