@@ -18,6 +18,7 @@ class MisAccountAnalyticLine(models.Model):
         string="Analytic Account", comodel_name="account.analytic.account"
     )
     company_id = fields.Many2one(string="Company", comodel_name="res.company")
+    partner_id = fields.Many2one(string="Partner", comodel_name="res.partner")
     balance = fields.Float()
     debit = fields.Float()
     credit = fields.Float()
