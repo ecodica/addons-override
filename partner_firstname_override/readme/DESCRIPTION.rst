@@ -1,0 +1,1 @@
+Overrides OCA module to include "name" in fields_list in default get only if "name" is not yet present.
