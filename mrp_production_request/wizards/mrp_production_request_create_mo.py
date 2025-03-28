@@ -54,7 +54,7 @@ class MrpProductionRequestCreateMo(models.TransientModel):
     mrp_production_request_id = fields.Many2one(
         comodel_name="mrp.production.request", readonly=True
     )
-    bom_id = fields.Many2one(related="mrp_production_request_id.bom_id", readonly=True)
+    bom_id = fields.Many2one(related="mrp_production_request_id.bom_id", string="BoM", readonly=True)
     mo_qty = fields.Float(string="Quantity", digits="Product Unit of Measure")
     pending_qty = fields.Float(
         related="mrp_production_request_id.pending_qty",
