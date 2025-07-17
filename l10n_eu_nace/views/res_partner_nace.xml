@@ -34,22 +34,22 @@
     </record>
 
 
-    <record model="ir.ui.view" id="res_partner_nace_tree_view">
-        <field name="name">res.partner.nace.tree (in l10n_eu_nace)</field>
+    <record model="ir.ui.view" id="res_partner_nace_list_view">
+        <field name="name">res.partner.nace.list (in l10n_eu_nace)</field>
         <field name="model">res.partner.nace</field>
         <field name="arch" type="xml">
-            <tree>
+            <list>
                 <field name="code" />
                 <field name="name" />
                 <field name="parent_id" context="{'nace_display': 'long'}" />
-            </tree>
+            </list>
         </field>
     </record>
 
     <record model="ir.actions.act_window" id="res_partner_nace_act_window">
         <field name="name">NACE</field>
         <field name="res_model">res.partner.nace</field>
-        <field name="view_mode">tree,form</field>
+        <field name="view_mode">list,form</field>
     </record>
 
     <record model="ir.ui.menu" id="res_partner_nace_menu">

@@ -22,7 +22,7 @@ class ResPartnerNace(models.Model):
         "res.partner.nace", "parent_id", string="NACE subcategories"
     )
     active = fields.Boolean(index=True, default=True)
-    parent_path = fields.Char(index=True, unaccent=False)
+    parent_path = fields.Char(index=True)
     partner_ids = fields.One2many(
         comodel_name="res.partner", inverse_name="nace_id", string="Partners"
     )
