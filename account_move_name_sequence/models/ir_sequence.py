@@ -42,7 +42,8 @@ class IrSequence(models.Model):
             limit=1,
         )
         if date_range:
-            date_to = fields.Date.add(date_range.date_to, days=1)
+            date_from = fields.Date.add(date_range.date_from, years=1)
+            date_to = fields.Date.add(date_range.date_to, years=1)
         sequence_range_vals = {
             "date_from": date_from,
             "date_to": date_to,
