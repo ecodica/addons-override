@@ -30,7 +30,7 @@ class ResPartnerNace(models.Model):
     @api.depends("code", "name")
     def _compute_complete_name(self):
         for category in self:
-            if self._context.get("nace_display") != "long":
+            if self.env.context.get("nace_display") != "long":
                 category.complete_name = "[%s] %s" % (category.code, category.name)
             else:
                 names = []
@@ -58,4 +58,7 @@ class ResPartnerNace(models.Model):
             ]
         return domain
 
-    _sql_constraints = [("ref_code", "unique (code)", "NACE Code must be unique!")]
+    _ref_code = models.Constraint(
+        'unique (code)',
+        "NACE Code must be unique!",
+    )
