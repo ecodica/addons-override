@@ -2,7 +2,7 @@
 # License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl).
 
 from odoo import api, fields, models
-from odoo.osv.expression import NEGATIVE_TERM_OPERATORS
+from odoo.orm.domains import NEGATIVE_CONDITION_OPERATORS
 
 
 class ResPartnerNace(models.Model):
@@ -15,7 +15,7 @@ class ResPartnerNace(models.Model):
     complete_name = fields.Char(
         compute="_compute_complete_name", search="_search_complete_name"
     )
-    name = fields.Char(index=True, translate=True)
+    name = fields.Char(index='trigram', translate=True)
     parent_id = fields.Many2one(comodel_name="res.partner.nace", index=True)
     code = fields.Char(index=True)
     child_ids = fields.One2many(
@@ -44,7 +44,7 @@ class ResPartnerNace(models.Model):
                 category.complete_name = " / ".join(reversed(names))
 
     def _search_complete_name(self, operator, value):
-        if operator in NEGATIVE_TERM_OPERATORS:
+        if operator in NEGATIVE_CONDITION_OPERATORS:
             domain = [
                 "&",
                 ("name", operator, value),
