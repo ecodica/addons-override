@@ -1,0 +1,27 @@
+# Copyright (C) 2021 - Today: GRAP (http://www.grap.coop)
+# @author: Sylvain LE GAL (https://twitter.com/legalsylvain)
+# License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl.html).
+# Ecodica override (addons-override): removed uom_po_id from demo/product_product.xml
+# (Odoo 19 dropped uom_po_id from product.product / product.template).
+{
+    "name": "Products - Net Weight",
+    "summary": "Add 'Net Weight' on product models",
+    "version": "19.0.1.0.2",
+    "category": "Product",
+    "author": "GRAP,Odoo Community Association (OCA)",
+    "maintainers": ["legalsylvain"],
+    "website": "https://github.com/OCA/product-attribute",
+    "license": "AGPL-3",
+    "depends": ["stock"],
+    "data": [
+        "views/view_product_product.xml",
+        "views/view_product_template.xml",
+    ],
+    "demo": [
+        "demo/product_product.xml",
+    ],
+    "images": [
+        "static/description/product_product_form.png",
+    ],
+    "installable": True,
+}
