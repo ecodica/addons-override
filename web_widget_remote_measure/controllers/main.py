@@ -28,7 +28,7 @@ class RemoteDeviceTcpConnection(Controller):
         return response
 
     @route(
-        "/remote_measure_device/<int:device>", type="json", auth="user", sitemap=False
+        "/remote_measure_device/<int:device>", type="jsonrpc", auth="user", sitemap=False
     )
     def request_weight(self, device=None, command=None, **kw):
         """Meant be called from the remote scale widget js code"""

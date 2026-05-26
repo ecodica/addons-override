@@ -12,28 +12,23 @@ class WeightMixin(models.AbstractModel):
     )
 
     @api.model
+    def _weight_uom_ids(self):
+        """All UoMs whose root reference is gram (i.e. mass-like UoMs)."""
+        gram = self.env.ref("uom.product_uom_gram")
+        return self.env["uom.uom"].search(
+            [("parent_path", "=like", f"{gram.id}/%")]
+        )
+
+    @api.model
     def _has_weigh_domain(self):
         """Plug in to change behavior"""
-        return [
-            (
-                "product_uom_category_id",
-                "=",
-                self.env.ref("uom.product_uom_categ_kgm").id,
-            ),
-        ]
+        return [("weighing_uom_id", "in", self._weight_uom_ids().ids)]
 
-    @api.depends("product_uom_category_id")
+    @api.depends("weighing_uom_id")
     def _compute_has_weight(self):
         """Product UOM is a weighed one"""
-        self.env.ref("uom.product_uom_categ_kgm")
         self.has_weight = False
         self.filtered_domain(self._has_weigh_domain()).has_weight = True
 
     def _search_has_weight(self, operator, value):
-        return [
-            (
-                "product_uom_category_id",
-                operator,
-                self.env.ref("uom.product_uom_categ_kgm").id,
-            )
-        ]
+        return [("weighing_uom_id", "in", self._weight_uom_ids().ids)]

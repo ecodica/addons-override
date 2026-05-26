@@ -3,7 +3,7 @@
 {
     "name": "Remote Measure Devices Input",
     "summary": "Allows to connect to remote devices to record measures",
-    "version": "18.0.1.0.1",
+    "version": "19.0.1.0.0",
     "author": "Tecnativa, Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/stock-weighing",
     "maintainers": ["chienandalu"],

@@ -27,7 +27,6 @@
                 <field name="recorded_weight" />
                 <field name="is_inventory" />
                 <field name="state" />
-                <field name="name" />
                 <field name="product_uom" />
                 <field name="location_id" />
                 <field name="location_dest_id" />
