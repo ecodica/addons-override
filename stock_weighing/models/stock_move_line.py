@@ -7,6 +7,7 @@ class StockMoveLine(models.Model):
     _name = "stock.move.line"
     _inherit = ["stock.move.line", "weighing.mixin"]
 
+    weighing_uom_id = fields.Many2one(related="product_uom_id", string="Weighing Unit")
     has_recorded_weight = fields.Boolean(help="The weight was set from the wizard")
     recorded_weight = fields.Float(digits="Product Unit of Measure")
     weighing_user_id = fields.Many2one(comodel_name="res.users")
