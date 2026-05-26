@@ -17,7 +17,7 @@
                 />
             </div>
             <xpath
-                expr="//field[@name='move_ids_without_package']//list//field[@name='quantity']"
+                expr="//field[@name='move_ids']//list//field[@name='quantity']"
                 position="before"
             >
                 <field

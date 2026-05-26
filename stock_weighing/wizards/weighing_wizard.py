@@ -30,11 +30,11 @@ class StockMoveWeightWizard(models.TransientModel):
         comodel_name="stock.lot", domain="[('id', 'in', available_lot_ids)]"
     )
     available_result_package_ids = fields.Many2many(
-        comodel_name="stock.quant.package",
+        comodel_name="stock.package",
         compute="_compute_available_result_package_ids",
     )
     result_package_id = fields.Many2one(
-        "stock.quant.package",
+        "stock.package",
         "Destination Package",
         domain="[('id', 'in', available_result_package_ids)]",
         help="If set, the operations are packed into this package",
@@ -66,7 +66,7 @@ class StockMoveWeightWizard(models.TransientModel):
     def _compute_available_result_package_ids(self):
         self.available_result_package_ids = False
         for wiz in self:
-            wiz.available_result_package_ids = self.env["stock.quant.package"].search(
+            wiz.available_result_package_ids = self.env["stock.package"].search(
                 [],
                 order="create_date desc",
                 limit=10,

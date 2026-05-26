@@ -4,7 +4,7 @@ import ast
 
 from odoo import api, fields, models
 from odoo.exceptions import UserError
-from odoo.osv import expression
+from odoo.fields import Domain
 from odoo.tools import float_compare
 
 
@@ -12,6 +12,7 @@ class StockMove(models.Model):
     _name = "stock.move"
     _inherit = ["stock.move", "weighing.mixin"]
 
+    weighing_uom_id = fields.Many2one(related="product_uom", string="Weighing Unit")
     recorded_weight = fields.Float(
         compute="_compute_recorded_weight", digits="Product Unit of Measure"
     )
@@ -63,7 +64,7 @@ class StockMove(models.Model):
         if not self.env.context.get("weight_operation_details"):
             return super()._compute_display_name()
         for move in self:
-            move.display_name = self.env._("%(name)s details", name=move.name)
+            move.display_name = self.env._("%(name)s details", name=move.reference)
 
     def _compute_self_move_ids(self):
         for move in self:
@@ -146,12 +147,12 @@ class StockMove(models.Model):
     def _has_weigh_domain(self):
         """Show variable weight types only"""
         domain = super()._has_weigh_domain()
-        domain = expression.AND([domain, [("product_uom_qty", ">", 0)]])
+        domain = Domain.AND([domain, [("product_uom_qty", ">", 0)]])
         return domain
 
     def _search_has_weight(self, operator, value):
         domain = super()._search_has_weight(operator, value)
-        domain = expression.AND([domain, [("product_uom_qty", ">", 0)]])
+        domain = Domain.AND([domain, [("product_uom_qty", ">", 0)]])
         return domain
 
     def search_fetch(self, domain, field_names, offset=0, limit=None, order=None):
@@ -204,10 +205,10 @@ class StockMove(models.Model):
         action = self.env["ir.actions.actions"]._for_xml_id(
             "stock_weighing.weighing_wizard_action"
         )
-        action["name"] = fields.first(self.move_line_ids)._get_action_weighing_name()
+        action["name"] = next(iter(self.move_line_ids))._get_action_weighing_name()
         action["context"] = dict(
             self.env.context,
-            default_selected_move_line_id=(fields.first(self.move_line_ids).id),
+            default_selected_move_line_id=(next(iter(self.move_line_ids)).id),
             default_weight=self.recorded_weight or self.quantity,
             default_move_line_ids=self.move_line_ids.ids,
             default_print_label=self._get_default_print_label(),

@@ -1,7 +1,7 @@
 # Copyright 2025 Tecnativa - Carlos Roca
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl.html).
 from odoo import models
-from odoo.osv import expression
+from odoo.fields import Domain
 
 
 class QuickStartScreenAction(models.Model):
@@ -21,7 +21,7 @@ class QuickStartScreenAction(models.Model):
                 .get_param("stock_weighing.any_operation_actions")
             )
             if not any_operation_actions:
-                res["domain"] = expression.AND(
+                res["domain"] = Domain.AND(
                     [res["domain"], [("has_weight", "=", True)]]
                 )
                 res["context"].pop("show_weight_detail_buttons", None)
