@@ -5,6 +5,8 @@ from odoo import SUPERUSER_ID, api, fields, models
 from odoo.exceptions import ValidationError
 from odoo.tools.misc import get_lang
 
+from odoo.addons.mail.tools.discuss import Store
+
 
 class MailActivity(models.Model):
     _inherit = "mail.activity"
@@ -29,7 +31,8 @@ class MailActivity(models.Model):
             # Prefer teams with a matching model
             teams = (
                 teams.filtered(
-                    lambda mat, model_id=model_id: model_id in mat.res_model_ids.ids
+                    lambda mat, model_id=model_id: model_id
+                    in mat.sudo().res_model_ids.ids
                 )
                 or teams
             )
@@ -186,6 +189,11 @@ class MailActivity(models.Model):
                 self.user_id = members[:1]
         return res
 
+    def _to_store_defaults(self, target):
+        values = super()._to_store_defaults(target)
+        values.append(Store.One("team_id", "name"))
+        return values
+
     def action_notify_team(self):
         # Like action_notify(), but for team members.
         classified = self._classify_by_model()
@@ -232,7 +240,6 @@ class MailActivity(models.Model):
                 record.message_notify(
                     partner_ids=member.sudo().partner_id.ids,
                     body=body,
-                    record_name=activity_ctx.res_name,
                     model_description=model_description,
                     email_layout_xmlid="mail.mail_notification_layout",
                     subject=self.env._(
