@@ -143,7 +143,22 @@ patch(FormController.prototype, "web_chatter_position_form_controller_setup", {
         if (!currentChatter) {
             return;
         }
-        append(target, currentChatter);
+        // Only re-parent when the chatter is not already the last child of the
+        // target. This method runs on every onWillPatch/onPatched/resize, and
+        // append() -> appendChild() detaches and re-attaches the chatter DOM
+        // subtree even when it is already correctly placed. That re-attach
+        // re-mounts the ChatterContainer, which re-runs chatter.refresh() and
+        // fires a second /mail/thread/data fetch (and a second attachment
+        // relink). Under REPEATABLE READ the duplicate write races on
+        // account_move.message_main_attachment_id and raises "could not
+        // serialize access due to concurrent update". Skipping the redundant
+        // move removes the double fetch and the race.
+        if (
+            currentChatter.parentElement !== target ||
+            target.lastElementChild !== currentChatter
+        ) {
+            append(target, currentChatter);
+        }
 
         const forceBottom = this.hasAttachmentViewer();
         const chatterContainer = currentChatter.querySelector("div.o_ChatterContainer");
