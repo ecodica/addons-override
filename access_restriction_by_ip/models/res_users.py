@@ -29,3 +29,4 @@ class ResUsersInherit(models.Model):
     allowed_ip_ids = fields.One2many('allowed.ips', 'user_ip_id',
                                      string='IP Address',
                                      help="Allowed ip addresses for the user.")
+    autofill_username = fields.Boolean('Autofill Username based on IP Address',)
