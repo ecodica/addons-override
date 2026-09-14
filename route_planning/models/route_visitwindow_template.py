@@ -27,11 +27,7 @@ class RouteVisitwindowTemplateLine(models.Model):
         comodel_name="route.visitwindow.template", required=True, ondelete="cascade"
     )
 
-    _sql_constraints = [
-        (
-            "template_day_unique",
-            "unique(template_id, day_of_week)",
-            "A visit window for the same day of the week "
-            "already exists in this template.",
-        ),
-    ]
+    _template_day_unique = models.Constraint(
+        'unique(template_id, day_of_week)',
+        "A visit window for the same day of the week already exists in this template.",
+    )
