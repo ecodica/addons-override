@@ -14,8 +14,8 @@ class RouteCreateIncident(models.TransientModel):
 
     def default_get(self, fields_list):
         res = super().default_get(fields_list)
-        active_ids = self._context.get("active_ids") or []
-        active_model = self._context.get("active_model")
+        active_ids = self.env.context.get("active_ids") or []
+        active_model = self.env.context.get("active_model")
         if active_model == "route.checkpoint" and len(active_ids) == 1:
             res["checkpoint_id"] = active_ids[0]
         return res

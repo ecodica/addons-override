@@ -72,11 +72,7 @@ class RoutePartnerVisitwindow(models.Model):
         help="Partner for this visit window",
     )
 
-    _sql_constraints = [
-        (
-            "partner_day_unique",
-            "unique(partner_id, day_of_week)",
-            "A visit window for the same day of the week "
-            "already exists for this partner.",
-        ),
-    ]
+    _partner_day_unique = models.Constraint(
+        'unique(partner_id, day_of_week)',
+        "A visit window for the same day of the week already exists for this partner.",
+    )

@@ -34,13 +34,10 @@ class RouteArea(models.Model):
     )
     zip_ids = fields.One2many("route.area.zip", "route_area_id", string="Zip ranges")
 
-    _sql_constraints = [
-        (
-            "code_uniq",
-            "unique(code, company_id)",
-            "The code must be unique per company.",
-        ),
-    ]
+    _code_uniq = models.Constraint(
+        'unique(code, company_id)',
+        "The code must be unique per company.",
+    )
 
     @api.onchange("country_ids")
     def _onchange_country_ids(self):
