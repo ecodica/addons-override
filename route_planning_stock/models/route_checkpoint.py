@@ -10,9 +10,7 @@ class RouteCheckpoint(models.Model):
 
     picking_id = fields.Many2one("stock.picking", copy=False, tracking=True)
     picking_domain = fields.Binary(compute="_compute_picking_domain")
-    move_ids_without_package = fields.Many2many(
-        "stock.move", compute="_compute_move_ids_without_package"
-    )
+    move_ids = fields.Many2many("stock.move", compute="_compute_move_ids")
 
     @api.depends("partner_id", "route_id", "route_id.route_area_id")
     def _compute_picking_domain(self):
@@ -24,11 +22,9 @@ class RouteCheckpoint(models.Model):
             ]
 
     @api.depends("picking_id")
-    def _compute_move_ids_without_package(self):
+    def _compute_move_ids(self):
         for checkpoint in self:
-            checkpoint.move_ids_without_package = (
-                checkpoint.picking_id.move_ids_without_package
-            )
+            checkpoint.move_ids = checkpoint.picking_id.move_ids
 
     def _prepare_vals_to_copy_incident(self, new_route):
         vals = super()._prepare_vals_to_copy_incident(new_route)

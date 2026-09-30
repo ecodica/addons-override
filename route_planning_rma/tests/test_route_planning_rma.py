@@ -17,7 +17,7 @@ class TestRoutePlanningRma(TestRoutePlanningRmaCommon):
             )
         )
         picking_form.partner_id = cls.partner_1
-        with picking_form.move_ids_without_package.new() as line_form:
+        with picking_form.move_ids.new() as line_form:
             line_form.product_id = cls.product_a
             line_form.product_uom_qty = 1
         cls.picking = picking_form.save()
@@ -36,7 +36,7 @@ class TestRoutePlanningRma(TestRoutePlanningRmaCommon):
         stock_return_picking_form.create_rma = True
         stock_return_picking_form.rma_operation_id = cls.operation
         return_wizard = stock_return_picking_form.save()
-        for move in cls.picking.move_ids_without_package:
+        for move in cls.picking.move_ids:
             return_wizard.product_return_moves.filtered(
                 lambda x, move=move: x.move_id == move
             ).quantity = move.quantity

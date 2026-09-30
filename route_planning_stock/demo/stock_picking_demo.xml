@@ -15,7 +15,6 @@
             model="stock.move"
             eval="[
             Command.create({
-                'name': obj().env.ref('product.product_product_6').name,
                 'product_id': ref('product.product_product_6'),
                 'product_uom': ref('uom.product_uom_unit'),
                 'product_uom_qty': 2.0,
@@ -42,7 +41,6 @@
             model="stock.move"
             eval="[
             Command.create({
-                'name': obj().env.ref('product.product_product_6').name,
                 'product_id': ref('product.product_product_6'),
                 'product_uom': ref('uom.product_uom_unit'),
                 'product_uom_qty': 2.0,
@@ -69,7 +67,6 @@
             model="stock.move"
             eval="[
             Command.create({
-                'name': obj().env.ref('product.product_product_6').name,
                 'product_id': ref('product.product_product_6'),
                 'product_uom': ref('uom.product_uom_unit'),
                 'product_uom_qty': 2.0,
