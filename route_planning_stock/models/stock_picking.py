@@ -52,7 +52,7 @@ class StockPicking(models.Model):
         checkpoints = self.route_checkpoint_ids.filtered(
             lambda x: x.state not in ("done", "incident")
         )
-        current_checkpoint = fields.first(checkpoints)
+        current_checkpoint = checkpoints[:1]
         if current_checkpoint:
             if current_checkpoint.state != "draft":
                 raise UserError(
@@ -77,7 +77,7 @@ class StockPicking(models.Model):
             checkpoints = picking.route_checkpoint_ids.filtered(
                 lambda x: x.state not in ("done", "incident")
             )
-            current_checkpoint = fields.first(checkpoints)
+            current_checkpoint = checkpoints[:1]
             checkpoint_map[picking.id] = current_checkpoint
             if current_checkpoint and current_checkpoint.route_id.state == "draft":
                 raise UserError(

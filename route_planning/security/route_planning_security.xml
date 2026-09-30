@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <odoo noupdate="1">
-    <record id="module_category_route_planning" model="ir.module.category">
+    <record id="module_category_route_planning" model="res.groups.privilege">
         <field name="name">Route Planning</field>
     </record>
     <record id="group_route_planning_user" model="res.groups">
         <field name="name">User</field>
-        <field name="category_id" ref="module_category_route_planning" />
+        <field name="privilege_id" ref="module_category_route_planning" />
         <field name="implied_ids" eval="[(4, ref('base.group_user'))]" />
     </record>
     <record id="group_route_planning_manager" model="res.groups">
         <field name="name">Manager</field>
-        <field name="category_id" ref="module_category_route_planning" />
+        <field name="privilege_id" ref="module_category_route_planning" />
         <field
             name="implied_ids"
             eval="[Command.link(ref('group_route_planning_user'))]"
         />
         <field
-            name="users"
+            name="user_ids"
             eval="[Command.link(ref('base.user_root')), Command.link(ref('base.user_admin'))]"
         />
     </record>

@@ -7,7 +7,7 @@
     "license": "AGPL-3",
     "author": "Tecnativa,Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/route-planning",
-    "depends": ["mail", "web_view_leaflet_map"],
+    "depends": ["mail", "base_geolocalize", "web_view_leaflet_map"],
     "external_dependencies": {"python": ["ortools"]},
     "data": [
         "security/route_planning_security.xml",

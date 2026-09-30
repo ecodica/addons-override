@@ -26,7 +26,7 @@ class TestRoutePlanningRmaDelivery(TestRoutePlanningRmaCommon):
             )
         )
         picking_form.partner_id = cls.partner_1
-        with picking_form.move_ids_without_package.new() as line_form:
+        with picking_form.move_ids.new() as line_form:
             line_form.product_id = cls.product_a
             line_form.product_uom_qty = 1
         cls.picking = picking_form.save()
@@ -45,7 +45,7 @@ class TestRoutePlanningRmaDelivery(TestRoutePlanningRmaCommon):
         stock_return_picking_form.create_rma = True
         stock_return_picking_form.rma_operation_id = cls.operation
         return_wizard = stock_return_picking_form.save()
-        for move in cls.picking.move_ids_without_package:
+        for move in cls.picking.move_ids:
             return_wizard.product_return_moves.filtered(
                 lambda x, move=move: x.move_id == move
             ).quantity = move.quantity
@@ -125,7 +125,9 @@ class TestRoutePlanningRmaDelivery(TestRoutePlanningRmaCommon):
         wizard.action_deliver()
         self.assertTrue(rma.delivery_move_ids.picking_id)
         rma_picking = rma.delivery_move_ids.picking_id
-        self.assertFalse(rma_picking.carrier_id)
+        # In v19 stock_delivery propagates the carrier of the previous picking
+        # (the reception one) to the new delivery picking.
+        self.assertEqual(rma_picking.carrier_id, self.carrier)
         self.assertFalse(rma_picking.route_area_id)
         # Change delivery route (area_north)
         res = rma.action_open_choose_carrier_wizard()

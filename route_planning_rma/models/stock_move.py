@@ -1,7 +1,7 @@
 # Copyright 2025-2026 Tecnativa - Víctor Martínez
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
-from odoo import fields, models
+from odoo import models
 
 
 class StockMove(models.Model):
@@ -32,7 +32,16 @@ class StockMove(models.Model):
             if item.rma_id:
                 custom_location = item.rma_id._get_location_final()
             else:
-                custom_location = fields.first(item.rma_receiver_ids).location_id
+                receiver = item.rma_receiver_ids[:1]
+                custom_location = (
+                    receiver.reception_route_area_id.location_id or receiver.location_id
+                )
             item.location_dest_id = custom_location
+            # location_dest_id is a computed field in v19 (computed from the
+            # picking), so we also set the final location to keep the expected
+            # destination after any recomputation.
+            item.location_final_id = custom_location
             item.move_line_ids.location_dest_id = custom_location
+            item.env.flush_all()
+            item.invalidate_recordset()
         return res
