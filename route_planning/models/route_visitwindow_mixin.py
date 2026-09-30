@@ -2,6 +2,7 @@
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
 from odoo import api, fields, models
+from odoo.exceptions import ValidationError
 
 
 class RouteVisitwindowMixin(models.AbstractModel):
@@ -28,6 +29,6 @@ class RouteVisitwindowMixin(models.AbstractModel):
     def _check_time_from_to(self):
         for record in self:
             if record.time_from >= record.time_to:
-                raise models.ValidationError(
+                raise ValidationError(
                     self.env._("The time from must be earlier than the time to.")
                 )

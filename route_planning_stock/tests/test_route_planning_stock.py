@@ -48,7 +48,6 @@ class TestRoutePlanningStock(RouteCommon):
                         {
                             "product_id": cls.product_a.id,
                             "product_uom_qty": 1,
-                            "name": cls.product_a.display_name,
                         }
                     )
                 ],

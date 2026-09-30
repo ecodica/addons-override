@@ -15,6 +15,10 @@ class StockMove(models.Model):
     def _set_locations_from_record_route_area(self):
         # We define the appropriate destination location associated with the sol
         res = super()._set_locations_from_record_route_area()
-        for item in self.filtered(lambda x: x.sale_line_id):
+        # RMA-linked moves define their own destination in route_planning_rma,
+        # so the sale order line location must not override it.
+        for item in self.filtered(
+            lambda x: x.sale_line_id and not x.rma_id and not x.rma_receiver_ids
+        ):
             item.location_dest_id = item.sale_line_id._get_location_final()
         return res
