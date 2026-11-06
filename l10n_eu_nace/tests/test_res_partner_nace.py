@@ -33,33 +33,35 @@ class TestResPartnerNace(TransactionCase):
         )
 
     def test_name_search(self):
+        self.assertEqual(self.nace.display_name, "[code_nace] nace_test")
+        expected = [(self.nace.id, self.nace.display_name)]
         self.assertEqual(
-            self.nace.name_get(),
+            expected,
             self.env["res.partner.nace"].name_search("code_nace"),
         )
         self.assertEqual(
-            self.nace.name_get(),
+            expected,
             self.env["res.partner.nace"].name_search("nace_test"),
         )
         self.assertEqual(
-            self.nace.name_get(),
+            expected,
             self.env["res.partner.nace"].name_search(
-                "code_nace", args=[("id", "=", self.nace.id)]
+                "code_nace", domain=[("id", "=", self.nace.id)]
             ),
         )
         self.assertEqual(
-            self.nace.name_get(),
+            expected,
             self.env["res.partner.nace"].name_search("ode_nac"),
         )
         self.assertEqual(
-            self.nace.name_get(),
+            expected,
             self.env["res.partner.nace"].name_search("ace_te"),
         )
         self.assertEqual(
-            self.nace.name_get(),
+            expected,
             self.env["res.partner.nace"].name_search("nace_test", operator="="),
         )
         self.assertEqual(
-            self.nace.name_get(),
+            expected,
             self.env["res.partner.nace"].name_search("code_nace", operator="="),
         )
