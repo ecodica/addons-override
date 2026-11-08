@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="menu_ai_providers_root" name="AI Providers" parent="base.menu_custom" sequence="60" groups="base.group_system"/>
+    <menuitem id="menu_ai_provider_endpoint" name="Endpoints" parent="menu_ai_providers_root" action="action_ai_provider_endpoint" sequence="10"/>
+    <menuitem id="menu_ai_usage_line" name="Usage" parent="menu_ai_providers_root" action="action_ai_usage_line" sequence="20"/>
+</odoo>

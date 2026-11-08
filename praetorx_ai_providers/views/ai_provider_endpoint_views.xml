@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_ai_provider_endpoint_list" model="ir.ui.view">
+        <field name="name">ai.provider.endpoint.list</field>
+        <field name="model">ai.provider.endpoint</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="sequence" widget="handle"/>
+                <field name="name"/>
+                <field name="code"/>
+                <field name="dialect"/>
+                <field name="base_url"/>
+                <field name="region"/>
+                <field name="is_odoo_default"/>
+                <field name="active" column_invisible="1"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_ai_provider_endpoint_form" model="ir.ui.view">
+        <field name="name">ai.provider.endpoint.form</field>
+        <field name="model">ai.provider.endpoint</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button name="action_test_connection" type="object" string="Test connection" class="btn-primary"/>
+                </header>
+                <sheet>
+                    <widget name="web_ribbon" title="Archived" bg_color="text-bg-danger" invisible="active"/>
+                    <div class="oe_title">
+                        <label for="name"/>
+                        <h1><field name="name" placeholder="e.g. Anthropic EU"/></h1>
+                    </div>
+                    <group>
+                        <group string="Connection">
+                            <field name="code"/>
+                            <field name="dialect"/>
+                            <field name="base_url" placeholder="https://api.anthropic.com/v1"/>
+                            <field name="api_key" password="True"/>
+                            <field name="auth_header" invisible="dialect == 'anthropic'"/>
+                            <field name="anthropic_version" invisible="dialect != 'anthropic'"/>
+                            <field name="active"/>
+                        </group>
+                        <group string="Behaviour">
+                            <field name="is_odoo_default"/>
+                            <field name="default_model_id"/>
+                            <field name="embedding_model" invisible="dialect == 'anthropic'"/>
+                            <field name="supports_web_search" invisible="dialect != 'openai_responses'"/>
+                            <field name="max_text_chars" invisible="dialect != 'openai_chat'"/>
+                        </group>
+                        <group string="Data protection">
+                            <field name="region"/>
+                            <field name="zero_retention"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Models" name="models">
+                            <field name="model_ids">
+                                <list editable="bottom">
+                                    <field name="sequence" widget="handle"/>
+                                    <field name="technical_name"/>
+                                    <field name="name"/>
+                                    <field name="capability"/>
+                                    <field name="max_output_tokens"/>
+                                    <field name="price_in"/>
+                                    <field name="price_cached"/>
+                                    <field name="price_out"/>
+                                    <field name="currency_id" column_invisible="1"/>
+                                    <field name="active" column_invisible="1"/>
+                                </list>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_ai_provider_endpoint" model="ir.actions.act_window">
+        <field name="name">AI Endpoints</field>
+        <field name="res_model">ai.provider.endpoint</field>
+        <field name="view_mode">list,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Add an AI endpoint</p>
+            <p>Anthropic, an OpenAI-compatible server such as Ollama, or any Responses-API URL.
+               Mark one as default and Odoo's own AI features use it.</p>
+        </field>
+    </record>
+</odoo>

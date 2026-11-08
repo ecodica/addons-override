@@ -1,0 +1,213 @@
+<!-- AI Providers for Odoo AI - App Store Listing v2 -->
+<!-- Bootstrap 5 components (loaded by Odoo App Store). No JavaScript, no external assets.
+     No module version in the hero: the store renders the manifest version itself. -->
+
+<section class="container" style="font-size: 16px;">
+
+    <!-- Hero -->
+    <div class="row mt16 mb16">
+        <div class="col-12 text-center">
+            <h1 style="color: #00896B; font-size: 32px; margin-bottom: 4px;">AI Providers for Odoo AI</h1>
+            <p style="color: #666; font-size: 18px; margin-bottom: 12px;">
+                Bring your own LLM to Odoo's AI fields, agents and document auto-sort &mdash; Anthropic Claude, Ollama, vLLM, OpenRouter, Azure
+            </p>
+            <div class="mb8">
+                <span class="badge" style="background-color: #28a745; color: #fff;">Odoo 19.0</span>
+                <span class="badge" style="background-color: #00896B; color: #fff;"><i class="fa fa-check"></i> Enterprise</span>
+                <span class="badge" style="background-color: #00896B; color: #fff;"><i class="fa fa-check"></i> Odoo.sh</span>
+                <span class="badge" style="background-color: #006B54; color: #fff;">Free</span>
+                <span class="badge" style="background-color: #00896B; color: #fff;">LGPL-3</span>
+            </div>
+            <p style="color: #555; font-size: 15px; max-width: 740px; margin: 8px auto 0; line-height: 1.6;">
+                Odoo 19 ships a capable AI layer that talks to exactly two providers. This module teaches that same layer
+                additional providers &mdash; with <strong>your keys, your models, your region</strong> &mdash; and adds what
+                Odoo does not track: usage per module and a monthly budget per company. Odoo's own code is not modified on disk.
+            </p>
+            <p style="margin: 10px 0 0; font-size: 14px;">
+                <a href="https://praetorx.net" target="_blank" style="color: #00896B; text-decoration: none; font-weight: 600;"><i class="fa fa-globe"></i> praetorx.net</a>
+                <span style="color: #ccc; margin: 0 8px;">|</span>
+                <a href="https://syntaxandsabotage.io" target="_blank" style="color: #00896B; text-decoration: none; font-weight: 600;"><i class="fa fa-building"></i> Syntax &amp; Sabotage</a>
+            </p>
+        </div>
+    </div>
+
+    <!-- Trust signals -->
+    <div class="row mb16 text-center">
+        <div class="col-md-3 col-6 mb8"><div style="border: 1px solid #eee; border-radius: 8px; padding: 12px;"><div style="font-size: 24px; color: #00896B; font-weight: 700;">3</div><div style="color: #666; font-size: 13px;">API dialects: Responses, Chat Completions, Anthropic Messages</div></div></div>
+        <div class="col-md-3 col-6 mb8"><div style="border: 1px solid #eee; border-radius: 8px; padding: 12px;"><div style="font-size: 24px; color: #00896B; font-weight: 700;">1 switch</div><div style="color: #666; font-size: 13px;">and every Odoo AI feature runs through your endpoint</div></div></div>
+        <div class="col-md-3 col-6 mb8"><div style="border: 1px solid #eee; border-radius: 8px; padding: 12px;"><div style="font-size: 24px; color: #00896B; font-weight: 700;">&euro; / month</div><div style="color: #666; font-size: 13px;">soft and hard budget per company, cost per module</div></div></div>
+        <div class="col-md-3 col-6 mb8"><div style="border: 1px solid #eee; border-radius: 8px; padding: 12px;"><div style="font-size: 24px; color: #00896B; font-weight: 700;">0 &euro;</div><div style="color: #666; font-size: 13px;">free, no IAP, no other module required</div></div></div>
+    </div>
+
+    <!-- The one thing -->
+    <div class="row mb16">
+        <div class="col-12">
+            <div style="border: 2px solid #00896B; border-radius: 8px; padding: 20px 24px; background-color: #F4FAF8;">
+                <h2 style="color: #00896B; font-size: 22px; margin-top: 0; margin-bottom: 10px;"><i class="fa fa-plug"></i>&nbsp; One switch, every Odoo AI feature</h2>
+                <p style="color: #333; font-size: 15px; line-height: 1.7; margin-bottom: 10px;">
+                    Mark an endpoint as <em>Default for Odoo AI</em> and every request Odoo issues to its built-in OpenAI provider is
+                    served by that endpoint instead: AI fields in Studio, the AI-fields scheduled action, AI agents, the auto-sort of the
+                    Documents app. Nothing else to change, no prompt to rewrite. Remove the flag and Odoo is back on OpenAI.
+                </p>
+                <p style="color: #333; font-size: 15px; line-height: 1.7; margin-bottom: 0;">
+                    Models are matched by name. When Odoo asks for a model your endpoint does not serve (its AI fields hard-code one),
+                    the endpoint's default model answers. You decide which model that is.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Feature cards -->
+    <div class="row mb16">
+        <div class="col-md-4 mb8"><div style="border: 1px solid #ddd; border-radius: 8px; padding: 16px; height: 100%;">
+            <h3 style="color: #333; font-size: 17px; margin-top: 0;"><i class="fa fa-comments-o" style="color: #00896B;"></i>&nbsp; Anthropic Messages API</h3>
+            <p style="color: #555; font-size: 14px; line-height: 1.6; margin: 0;">Claude Haiku, Sonnet and Opus natively: PDFs as document blocks, images, structured JSON, tool calling. Not through a compatibility shim.</p>
+        </div></div>
+        <div class="col-md-4 mb8"><div style="border: 1px solid #ddd; border-radius: 8px; padding: 16px; height: 100%;">
+            <h3 style="color: #333; font-size: 17px; margin-top: 0;"><i class="fa fa-server" style="color: #00896B;"></i>&nbsp; OpenAI Chat Completions</h3>
+            <p style="color: #555; font-size: 14px; line-height: 1.6; margin: 0;">Ollama, LM Studio, vLLM, Mistral, OpenRouter, Groq &mdash; including models in your own data centre with no key at all. PDFs become text through Odoo's own indexer.</p>
+        </div></div>
+        <div class="col-md-4 mb8"><div style="border: 1px solid #ddd; border-radius: 8px; padding: 16px; height: 100%;">
+            <h3 style="color: #333; font-size: 17px; margin-top: 0;"><i class="fa fa-cloud" style="color: #00896B;"></i>&nbsp; OpenAI Responses API</h3>
+            <p style="color: #555; font-size: 14px; line-height: 1.6; margin: 0;">Odoo's own path with your base URL and header style &mdash; Azure OpenAI, proxies, gateways.</p>
+        </div></div>
+        <div class="col-md-4 mb8"><div style="border: 1px solid #ddd; border-radius: 8px; padding: 16px; height: 100%;">
+            <h3 style="color: #333; font-size: 17px; margin-top: 0;"><i class="fa fa-bar-chart" style="color: #00896B;"></i>&nbsp; Usage per module</h3>
+            <p style="color: #555; font-size: 14px; line-height: 1.6; margin: 0;">Every request writes tokens, cost from your price table and the calling module. A pivot shows what Documents, agents or a third-party module spent this month.</p>
+        </div></div>
+        <div class="col-md-4 mb8"><div style="border: 1px solid #ddd; border-radius: 8px; padding: 16px; height: 100%;">
+            <h3 style="color: #333; font-size: 17px; margin-top: 0;"><i class="fa fa-shield" style="color: #00896B;"></i>&nbsp; Monthly budget per company</h3>
+            <p style="color: #555; font-size: 14px; line-height: 1.6; margin: 0;">A soft limit sends the administrator an activity; a hard limit refuses further requests until next month. The refused request is not counted.</p>
+        </div></div>
+        <div class="col-md-4 mb8"><div style="border: 1px solid #ddd; border-radius: 8px; padding: 16px; height: 100%;">
+            <h3 style="color: #333; font-size: 17px; margin-top: 0;"><i class="fa fa-sliders" style="color: #00896B;"></i>&nbsp; Cheap models for cheap tasks</h3>
+            <p style="color: #555; font-size: 14px; line-height: 1.6; margin: 0;">Modules built on this layer ask for a capability &mdash; choose, read, embed &mdash; and Settings maps each to a model. The caller never sees a model name.</p>
+        </div></div>
+    </div>
+
+    <!-- Screenshots -->
+    <div class="row mb16">
+        <div class="col-md-6 mb8"><img src="screenshot_01_einstellungen.png" class="img-fluid" style="border: 1px solid #ddd; border-radius: 6px;" alt="Settings: own AI providers and monthly budget"/></div>
+        <div class="col-md-6 mb8"><img src="screenshot_03_endpunkt.png" class="img-fluid" style="border: 1px solid #ddd; border-radius: 6px;" alt="An Anthropic endpoint with models and prices"/></div>
+        <div class="col-md-6 mb8"><img src="screenshot_02_endpunkte.png" class="img-fluid" style="border: 1px solid #ddd; border-radius: 6px;" alt="Endpoints: Anthropic and a local Ollama"/></div>
+        <div class="col-md-6 mb8"><img src="screenshot_04_verbrauch.png" class="img-fluid" style="border: 1px solid #ddd; border-radius: 6px;" alt="Usage by calling module"/></div>
+    </div>
+
+    <!-- Tabs -->
+    <div class="row"><div class="col-12">
+        <ul role="tablist" class="nav nav-tabs mb16 mt16 justify-content-center" data-tabs="tabs">
+            <li class="nav-item mb4" style="background-color: #00896B; border-top-left-radius: 6px; border-top-right-radius: 6px; margin-right: 3px; padding-bottom: 3px; min-width: 110px; text-align: center;"><a href="#aipHow" data-bs-toggle="tab" class="nav-link active" aria-expanded="true" style="color: #fff !important; background-color: transparent !important; border: none !important;">How it works</a></li>
+            <li class="nav-item mb4" style="background-color: #00896B; border-top-left-radius: 6px; border-top-right-radius: 6px; margin-right: 3px; padding-bottom: 3px; min-width: 110px; text-align: center;"><a href="#aipSetup" data-bs-toggle="tab" class="nav-link" aria-expanded="false" style="color: #fff !important; background-color: transparent !important; border: none !important;">Setup</a></li>
+            <li class="nav-item mb4" style="background-color: #00896B; border-top-left-radius: 6px; border-top-right-radius: 6px; margin-right: 3px; padding-bottom: 3px; min-width: 110px; text-align: center;"><a href="#aipDev" data-bs-toggle="tab" class="nav-link" aria-expanded="false" style="color: #fff !important; background-color: transparent !important; border: none !important;">For developers</a></li>
+            <li class="nav-item mb4" style="background-color: #00896B; border-top-left-radius: 6px; border-top-right-radius: 6px; margin-right: 3px; padding-bottom: 3px; min-width: 110px; text-align: center;"><a href="#aipFaq" data-bs-toggle="tab" class="nav-link" aria-expanded="false" style="color: #fff !important; background-color: transparent !important; border: none !important;">FAQ</a></li>
+            <li class="nav-item mb4" style="background-color: #00896B; border-top-left-radius: 6px; border-top-right-radius: 6px; margin-right: 3px; padding-bottom: 3px; min-width: 110px; text-align: center;"><a href="#aipReleases" data-bs-toggle="tab" class="nav-link" aria-expanded="false" style="color: #fff !important; background-color: transparent !important; border: none !important;">Releases</a></li>
+        </ul>
+    </div></div>
+
+    <div class="row"><div class="tab-content w-100">
+
+        <!-- TAB: How -->
+        <div id="aipHow" class="tab-pane active">
+            <h3 style="color: #00896B; font-size: 22px; margin-bottom: 12px;">Three dialects, measured &mdash; not assumed</h3>
+            <p style="color: #555; font-size: 15px; line-height: 1.7;">
+                Odoo's AI service speaks the OpenAI <em>Responses</em> API. Most "OpenAI-compatible" servers do not, and Anthropic's
+                OpenAI compatibility layer ignores both file input and JSON schemas. So this module speaks three dialects natively and
+                picks the right one per endpoint:
+            </p>
+            <table class="table table-sm" style="font-size: 14px;">
+                <thead><tr><th>Dialect</th><th>For</th><th>Files</th><th>Structured output</th><th>Tools</th></tr></thead>
+                <tbody>
+                    <tr><td>OpenAI Responses</td><td>OpenAI, Azure OpenAI, proxies</td><td>PDF and images</td><td>JSON schema</td><td>native</td></tr>
+                    <tr><td>OpenAI Chat Completions</td><td>Ollama, LM Studio, vLLM, Mistral, OpenRouter, Groq</td><td>images; PDFs as extracted text</td><td>JSON schema</td><td>native</td></tr>
+                    <tr><td>Anthropic Messages</td><td>Claude</td><td>PDF and images</td><td>enforced tool call</td><td>native, results merged per turn</td></tr>
+                </tbody>
+            </table>
+            <p style="color: #555; font-size: 15px; line-height: 1.7;">
+                The extension hooks Odoo's AI service in memory at startup. A database without configured endpoints behaves exactly as
+                before. Google Gemini requests are never rerouted.
+            </p>
+        </div>
+
+        <!-- TAB: Setup -->
+        <div id="aipSetup" class="tab-pane">
+            <h3 style="color: #00896B; font-size: 22px; margin-bottom: 12px;">Requirements</h3>
+            <ul style="color: #555; font-size: 15px; line-height: 1.7;">
+                <li>Odoo 19 Enterprise with the <strong>AI</strong> app (PostgreSQL extension <code>vector</code>, as the AI app itself requires).</li>
+                <li>An API key of the provider of your choice &mdash; or none, for a local server.</li>
+            </ul>
+            <h3 style="color: #00896B; font-size: 22px; margin-bottom: 12px; margin-top: 24px;">Three steps</h3>
+            <ol style="color: #555; font-size: 15px; line-height: 1.8;">
+                <li>Settings &rsaquo; <em>Own AI providers</em> &rsaquo; <strong>Manage endpoints</strong>: activate a template (Anthropic, Ollama, OpenRouter) or add your own, enter the key, click <em>Test connection</em>.</li>
+                <li>Tick <strong>Default for Odoo AI</strong> on the endpoint that should serve Odoo's own features.</li>
+                <li>Optionally set a model per task and a monthly budget per company. Maintain the price table per model so the usage report shows money, not tokens.</li>
+            </ol>
+        </div>
+
+        <!-- TAB: Developers -->
+        <div id="aipDev" class="tab-pane">
+            <h3 style="color: #00896B; font-size: 22px; margin-bottom: 12px;">Build on it</h3>
+            <p style="color: #555; font-size: 15px; line-height: 1.7;">
+                Ask for a capability instead of a model, and tag your calls so they show up in the usage report:
+            </p>
+            <pre style="background: #f5f5f5; border-radius: 6px; padding: 12px; font-size: 13px;">service, model = env["ai.provider.endpoint"]._service_for("read")   # or "choose", "embed"
+answer = service.with_context(ai_caller="my_module").request_llm(model, [system], [user], files=..., schema=...)</pre>
+            <p style="color: #555; font-size: 15px; line-height: 1.7;">
+                Without a configured endpoint the call falls back to Odoo's own OpenAI path, so a module works with or without this one.
+            </p>
+        </div>
+
+        <!-- TAB: FAQ -->
+        <div id="aipFaq" class="tab-pane">
+            <h4 style="color: #00896B; font-size: 18px; margin-top: 16px;">Does this work on Odoo Community?</h4>
+            <p style="color: #555; font-size: 15px; line-height: 1.7;">No. It extends the Enterprise AI app. Community has no AI layer to extend.</p>
+            <h4 style="color: #00896B; font-size: 18px; margin-top: 16px;">Does it replace Odoo's AI or store my prompts?</h4>
+            <p style="color: #555; font-size: 15px; line-height: 1.7;">Neither. It adds providers to Odoo's own service and writes one usage line per request (tokens, cost, caller) &mdash; never the prompt or the answer.</p>
+            <h4 style="color: #00896B; font-size: 18px; margin-top: 16px;">Can I use Anthropic for agents with document sources?</h4>
+            <p style="color: #555; font-size: 15px; line-height: 1.7;">For the conversation, yes. Anthropic offers no embeddings, so sources need an OpenAI-compatible endpoint with a 1536-dimension embedding model, configured on the endpoint.</p>
+            <h4 style="color: #00896B; font-size: 18px; margin-top: 16px;">My scans have no text layer &mdash; which dialect?</h4>
+            <p style="color: #555; font-size: 15px; line-height: 1.7;">Chat-Completions endpoints get PDFs as extracted text, so a pure scan arrives empty there. Use a Responses-API or Anthropic endpoint for scans, or an image file.</p>
+            <h4 style="color: #00896B; font-size: 18px; margin-top: 16px;">What happens when the budget is exhausted?</h4>
+            <p style="color: #555; font-size: 15px; line-height: 1.7;">The request is refused with a clear message and not counted. Raise the limit in Settings or wait for next month. The soft limit only notifies.</p>
+            <h4 style="color: #00896B; font-size: 18px; margin-top: 16px;">Is it safe across Odoo upgrades?</h4>
+            <p style="color: #555; font-size: 15px; line-height: 1.7;">The extension is written against Odoo 19 and touches one internal service. It is re-verified for every Odoo major; endpoints, models and usage are plain data and carry over.</p>
+            <h4 style="color: #00896B; font-size: 18px; margin-top: 16px;">How do I get support?</h4>
+            <p style="color: #555; font-size: 15px; line-height: 1.7;">Write to <a href="mailto:support@syntaxandsabotage.io" style="color: #00896B;">support@syntaxandsabotage.io</a>.</p>
+        </div>
+
+        <!-- TAB: Releases -->
+        <div id="aipReleases" class="tab-pane">
+            <h3 style="color: #00896B; font-size: 22px; margin-bottom: 12px;">Release history</h3>
+            <div style="border-left: 3px solid #00896B; padding-left: 14px; margin-bottom: 16px;">
+                <h4 style="font-size: 17px; margin-bottom: 6px;">19.0.1.0.3</h4>
+                <p style="color: #555; font-size: 14px; line-height: 1.6; margin-bottom: 0;">Model per task: a model made for the task now wins over a general one; embeddings never go to a chat model.</p>
+            </div>
+            <div style="border-left: 3px solid #ccc; padding-left: 14px; margin-bottom: 16px;">
+                <h4 style="font-size: 17px; margin-bottom: 6px;">19.0.1.0.2</h4>
+                <p style="color: #555; font-size: 14px; line-height: 1.6; margin-bottom: 0;">Store tile and icon: the artwork of the previous AI provider layer (Foundation), carried over to its successor.</p>
+            </div>
+            <div style="border-left: 3px solid #ccc; padding-left: 14px; margin-bottom: 16px;">
+                <h4 style="font-size: 17px; margin-bottom: 6px;">19.0.1.0.1</h4>
+                <p style="color: #555; font-size: 14px; line-height: 1.6; margin-bottom: 0;">Store listing: screenshots from a demo company, transparent icon, listing guard tests.</p>
+            </div>
+            <div style="border-left: 3px solid #ccc; padding-left: 14px; margin-bottom: 16px;">
+                <h4 style="font-size: 17px; margin-bottom: 6px;">19.0.1.0.0</h4>
+                <p style="color: #555; font-size: 14px; line-height: 1.6; margin-bottom: 0;">Initial release. Three dialects, default endpoint for Odoo AI, usage lines with cost and caller, soft and hard monthly budget per company, model per task, endpoint templates for Anthropic, Ollama and OpenRouter.</p>
+            </div>
+            <h3 style="color: #00896B; font-size: 22px; margin-bottom: 12px; margin-top: 24px;">Companion modules</h3>
+            <ul style="color: #555; font-size: 15px; line-height: 1.7;">
+                <li><strong>Tabularium</strong> &mdash; records compliance on Odoo Documents; classification and extraction run through your endpoint.</li>
+                <li><strong>Invoice Pro</strong> &mdash; vendor bills from PDF and images through your endpoint, no IAP credits.</li>
+            </ul>
+            <h3 style="color: #00896B; font-size: 22px; margin-bottom: 12px; margin-top: 24px;">License and support</h3>
+            <p style="color: #555; font-size: 15px; line-height: 1.7;">LGPL-3. Free of charge. Support: <a href="mailto:support@syntaxandsabotage.io" style="color: #00896B;">support@syntaxandsabotage.io</a>.</p>
+        </div>
+    </div></div>
+
+    <!-- Footer -->
+    <table width="100%" cellpadding="0" cellspacing="0" style="background: #f5f5f5; padding: 30px 20px; margin-top: 32px;">
+        <tr><td align="center">
+            <p style="color: #999; font-size: 13px; margin: 0;">Made with <span style="color: #875A7B;">&#9829;</span> by <strong style="color: #555;">Syntax &amp; Sabotage</strong></p>
+            <p style="color: #bbb; font-size: 11px; margin: 12px 0 0 0;">Anbieter: Lars Weiler &middot; <a href="https://syntaxandsabotage.io/impressum" style="color: #bbb;">Impressum</a> &middot; support@syntaxandsabotage.io</p>
+        </td></tr>
+    </table>
+</section>
