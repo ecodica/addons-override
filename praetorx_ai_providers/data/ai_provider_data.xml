@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <!-- Templates: inactive, without keys. Activate, add the key, mark as default. -->
+    <record id="endpoint_anthropic" model="ai.provider.endpoint">
+        <field name="name">Anthropic Claude</field>
+        <field name="code">anthropic</field>
+        <field name="dialect">anthropic</field>
+        <field name="base_url">https://api.anthropic.com/v1</field>
+        <field name="region">US</field>
+        <field name="active" eval="False"/>
+        <field name="sequence">10</field>
+    </record>
+    <record id="model_anthropic_haiku" model="ai.provider.model">
+        <field name="endpoint_id" ref="endpoint_anthropic"/>
+        <field name="technical_name">claude-haiku-4-5-20251001</field>
+        <field name="name">Claude Haiku 4.5</field>
+        <field name="capability">choose</field>
+        <field name="sequence">10</field>
+    </record>
+    <record id="model_anthropic_sonnet" model="ai.provider.model">
+        <field name="endpoint_id" ref="endpoint_anthropic"/>
+        <field name="technical_name">claude-sonnet-5</field>
+        <field name="name">Claude Sonnet 5</field>
+        <field name="capability">read</field>
+        <field name="sequence">20</field>
+    </record>
+    <record id="model_anthropic_opus" model="ai.provider.model">
+        <field name="endpoint_id" ref="endpoint_anthropic"/>
+        <field name="technical_name">claude-opus-5</field>
+        <field name="name">Claude Opus 5</field>
+        <field name="capability">any</field>
+        <field name="sequence">30</field>
+    </record>
+    <record id="endpoint_anthropic" model="ai.provider.endpoint">
+        <field name="default_model_id" ref="model_anthropic_sonnet"/>
+    </record>
+
+    <record id="endpoint_ollama" model="ai.provider.endpoint">
+        <field name="name">Ollama (local)</field>
+        <field name="code">ollama</field>
+        <field name="dialect">openai_chat</field>
+        <field name="base_url">http://localhost:11434/v1</field>
+        <field name="region">on-premise</field>
+        <field name="zero_retention" eval="True"/>
+        <field name="active" eval="False"/>
+        <field name="sequence">20</field>
+    </record>
+    <record id="model_ollama_default" model="ai.provider.model">
+        <field name="endpoint_id" ref="endpoint_ollama"/>
+        <field name="technical_name">llama3.1</field>
+        <field name="name">Llama 3.1 (Ollama)</field>
+        <field name="capability">any</field>
+    </record>
+    <record id="endpoint_ollama" model="ai.provider.endpoint">
+        <field name="default_model_id" ref="model_ollama_default"/>
+    </record>
+
+    <record id="endpoint_openrouter" model="ai.provider.endpoint">
+        <field name="name">OpenRouter</field>
+        <field name="code">openrouter</field>
+        <field name="dialect">openai_chat</field>
+        <field name="base_url">https://openrouter.ai/api/v1</field>
+        <field name="active" eval="False"/>
+        <field name="sequence">30</field>
+    </record>
+    <record id="model_openrouter_default" model="ai.provider.model">
+        <field name="endpoint_id" ref="endpoint_openrouter"/>
+        <field name="technical_name">mistralai/mistral-large</field>
+        <field name="name">Mistral Large (OpenRouter)</field>
+        <field name="capability">any</field>
+    </record>
+    <record id="endpoint_openrouter" model="ai.provider.endpoint">
+        <field name="default_model_id" ref="model_openrouter_default"/>
+    </record>
+</odoo>

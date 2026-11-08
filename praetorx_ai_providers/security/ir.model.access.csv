@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_ai_provider_endpoint_system,ai.provider.endpoint system,model_ai_provider_endpoint,base.group_system,1,1,1,1
+access_ai_provider_endpoint_user,ai.provider.endpoint user,model_ai_provider_endpoint,base.group_user,1,0,0,0
+access_ai_provider_model_system,ai.provider.model system,model_ai_provider_model,base.group_system,1,1,1,1
+access_ai_provider_model_user,ai.provider.model user,model_ai_provider_model,base.group_user,1,0,0,0
+access_ai_usage_line_system,ai.usage.line system,model_ai_usage_line,base.group_system,1,1,1,1
