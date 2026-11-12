@@ -3,11 +3,12 @@
 
 import base64
 
-from odoo.tests import common
+from odoo.tests import common, tagged
 
 from ..models.res_company import URL_BASE
 
 
+@tagged("post_install", "-at_install")
 class TestResCompany(common.TransactionCase):
     IMG_GREEN = (
         "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUl"
