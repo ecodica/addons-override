@@ -4,18 +4,16 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 16.0\n"
+"Project-Id-Version: Odoo Server 19.0\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2023-02-16 10:09+0000\n"
-"Last-Translator: Bole <bole@dajmi5.com>\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2026-11-14 00:00+0000\n"
+"Last-Translator: Ecodica d.o.o.\n"
+"Language-Team: Ecodica d.o.o.\n"
 "Language: hr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.14.1\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #. module: account_move_name_sequence
 #: model:ir.model.constraint,message:account_move_name_sequence.constraint_account_move_name_state_diagonal
@@ -29,11 +27,11 @@ msgstr ""
 #. module: account_move_name_sequence
 #: model:ir.model.fields,help:account_move_name_sequence.field_account_journal__refund_sequence
 msgid ""
-"Check this box if you don't want to share the same sequence for invoices and "
-"credit notes made from this journal"
+"Check this box if you don't want to share the same sequence for invoices and"
+" credit notes made from this journal"
 msgstr ""
-"Označite ovu kućicu ako ne želite dijeliti istu sekvencu za račune i "
-"odobrenja/storna napravljena iz ovog dnevnika"
+"Označite ovu opciju ako ne želite koristiti istu sekvencu za račune i "
+"odobrenja kreirane u ovom dnevniku"
 
 #. module: account_move_name_sequence
 #: model:ir.model.fields,field_description:account_move_name_sequence.field_account_journal__refund_sequence_id
@@ -43,37 +41,37 @@ msgstr "Ulazna sekvenca za odobrenja"
 #. module: account_move_name_sequence
 #: model:ir.model.fields,field_description:account_move_name_sequence.field_account_journal__refund_sequence
 msgid "Dedicated Credit Note Sequence"
-msgstr "Dedicirana sekvenca za odobrenja"
+msgstr "Dedicirani brojevni krug odobrenja"
 
 #. module: account_move_name_sequence
 #: model:ir.model.fields,field_description:account_move_name_sequence.field_account_journal__display_name
 #: model:ir.model.fields,field_description:account_move_name_sequence.field_account_move__display_name
 #: model:ir.model.fields,field_description:account_move_name_sequence.field_ir_sequence__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Naziv za prikaz"
 
 #. module: account_move_name_sequence
 #: model:ir.model.fields,field_description:account_move_name_sequence.field_account_journal__sequence_id
 msgid "Entry Sequence"
-msgstr "Ulazna sekvenca"
+msgstr "Početni brojevni krug"
 
 #. module: account_move_name_sequence
 #: model:ir.model.fields,field_description:account_move_name_sequence.field_account_journal__has_sequence_holes
 msgid "Has Sequence Holes"
-msgstr ""
+msgstr "Ima rupe u brojevnom sljedu"
 
 #. module: account_move_name_sequence
 #: model:ir.model.fields,field_description:account_move_name_sequence.field_account_bank_statement_line__highest_name
 #: model:ir.model.fields,field_description:account_move_name_sequence.field_account_move__highest_name
 msgid "Highest Name"
-msgstr "Najviši broj"
+msgstr "Najviši naziv"
 
 #. module: account_move_name_sequence
 #: model:ir.model.fields,field_description:account_move_name_sequence.field_account_journal__id
 #: model:ir.model.fields,field_description:account_move_name_sequence.field_account_move__id
 #: model:ir.model.fields,field_description:account_move_name_sequence.field_ir_sequence__id
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #. module: account_move_name_sequence
 #: model:ir.model,name:account_move_name_sequence.model_account_journal
@@ -83,13 +81,13 @@ msgstr "Dnevnik"
 #. module: account_move_name_sequence
 #: model:ir.model,name:account_move_name_sequence.model_account_move
 msgid "Journal Entry"
-msgstr "Stavka dnevnika"
+msgstr "Stavke temeljnice"
 
 #. module: account_move_name_sequence
 #: model:ir.model.fields,field_description:account_move_name_sequence.field_account_bank_statement_line__made_sequence_gap
 #: model:ir.model.fields,field_description:account_move_name_sequence.field_account_move__made_sequence_gap
 msgid "Made Sequence Gap"
-msgstr ""
+msgstr "Praznina u sekvenci"
 
 #. module: account_move_name_sequence
 #: model:ir.model.fields,field_description:account_move_name_sequence.field_account_bank_statement_line__name
@@ -101,8 +99,8 @@ msgstr "Broj"
 #. odoo-python
 #: code:addons/account_move_name_sequence/models/account_journal.py:0
 msgid ""
-"On journal '%s', the same sequence is used as Entry Sequence and Credit Note "
-"Entry Sequence."
+"On journal '%s', the same sequence is used as Entry Sequence and Credit Note"
+" Entry Sequence."
 msgstr ""
 "Na dnevniku '%s', ista sekvenca se koristi za regularna i storno knjiženja."
 
@@ -110,7 +108,7 @@ msgstr ""
 #. odoo-python
 #: code:addons/account_move_name_sequence/models/account_journal.py:0
 msgid "Refund"
-msgstr "Storno/Odobrenje"
+msgstr "Odobrenje"
 
 #. module: account_move_name_sequence
 #. odoo-python
@@ -126,15 +124,15 @@ msgid ""
 "The company is not set on sequence '%(sequence)s' configured as credit note "
 "sequence of journal '%(journal)s'."
 msgstr ""
-"Tvrtka nije postavljena na sekvenci '%(sequence)s' postavljenoj kao sekvenca "
-"za storno/odobrenja na dnevniku '%(journal)s'."
+"Tvrtka nije postavljena na sekvenci '%(sequence)s' postavljenoj kao sekvenca"
+" za storno/odobrenja na dnevniku '%(journal)s'."
 
 #. module: account_move_name_sequence
 #. odoo-python
 #: code:addons/account_move_name_sequence/models/account_journal.py:0
 msgid ""
-"The company is not set on sequence '%(sequence)s' configured on journal '%"
-"(journal)s'."
+"The company is not set on sequence '%(sequence)s' configured on journal "
+"'%(journal)s'."
 msgstr ""
 "Tvrtka nije postavljena na sekvenci '%(sequence)s' postavljenoj na dnevniku "
 "'%(journal)s'."
@@ -144,17 +142,11 @@ msgstr ""
 msgid ""
 "This sequence will be used to generate the journal entry number for refunds."
 msgstr ""
-"Ova sekvenca će biti korištena za generiranje broja knjiženja za odobrenja/"
-"storno."
+"Ova sekvenca će biti korištena za generiranje broja knjiženja za "
+"odobrenja/storno."
 
 #. module: account_move_name_sequence
 #: model:ir.model.fields,help:account_move_name_sequence.field_account_journal__sequence_id
 msgid "This sequence will be used to generate the journal entry number."
 msgstr ""
 "Ova sekvenca će biti korištena za generiranje broja knjiženja dnevnika."
-
-#~ msgid "Sequence Number"
-#~ msgstr "Broj sekvence"
-
-#~ msgid "Sequence Prefix"
-#~ msgstr "Prefiks sekvence"

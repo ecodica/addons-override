@@ -1,0 +1,115 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* access_restriction_by_ip
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-14 19:55+0000\n"
+"PO-Revision-Date: 2026-11-14 19:55+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: access_restriction_by_ip
+#: model:ir.model.fields,field_description:access_restriction_by_ip.field_allowed_ips__ip_address
+#: model_terms:ir.ui.view,arch_db:access_restriction_by_ip.view_users_form
+msgid "Allowed IP"
+msgstr ""
+
+#. module: access_restriction_by_ip
+#: model:ir.model,name:access_restriction_by_ip.model_allowed_ips
+msgid "Allowed IPs"
+msgstr ""
+
+#. module: access_restriction_by_ip
+#: model:ir.model.fields,help:access_restriction_by_ip.field_res_users__allowed_ip_ids
+msgid "Allowed ip addresses for the user."
+msgstr ""
+
+#. module: access_restriction_by_ip
+#: model:ir.model.fields,field_description:access_restriction_by_ip.field_res_users__autofill_username
+msgid "Autofill Username based on IP Address"
+msgstr ""
+
+#. module: access_restriction_by_ip
+#: model:ir.model.fields,field_description:access_restriction_by_ip.field_allowed_ips__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: access_restriction_by_ip
+#: model:ir.model.fields,field_description:access_restriction_by_ip.field_allowed_ips__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: access_restriction_by_ip
+#: model:ir.model.fields,field_description:access_restriction_by_ip.field_allowed_ips__display_name
+#: model:ir.model.fields,field_description:access_restriction_by_ip.field_res_users__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: access_restriction_by_ip
+#: model:ir.model.fields,field_description:access_restriction_by_ip.field_allowed_ips__id
+#: model:ir.model.fields,field_description:access_restriction_by_ip.field_res_users__id
+msgid "ID"
+msgstr ""
+
+#. module: access_restriction_by_ip
+#: model:ir.model.fields,field_description:access_restriction_by_ip.field_res_users__allowed_ip_ids
+msgid "IP Address"
+msgstr ""
+
+#. module: access_restriction_by_ip
+#: model:ir.model.fields,field_description:access_restriction_by_ip.field_allowed_ips__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: access_restriction_by_ip
+#: model:ir.model.fields,field_description:access_restriction_by_ip.field_allowed_ips__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: access_restriction_by_ip
+#. odoo-python
+#: code:addons/access_restriction_by_ip/controllers/access_restriction_by_ip.py:0
+msgid "Login"
+msgstr ""
+
+#. module: access_restriction_by_ip
+#. odoo-python
+#: code:addons/access_restriction_by_ip/controllers/access_restriction_by_ip.py:0
+msgid "Not allowed to login from this IP."
+msgstr ""
+
+#. module: access_restriction_by_ip
+#. odoo-python
+#: code:addons/access_restriction_by_ip/controllers/access_restriction_by_ip.py:0
+msgid ""
+"Only employees can access this database. Please contact the administrator."
+msgstr ""
+
+#. module: access_restriction_by_ip
+#: model:ir.model.fields,help:access_restriction_by_ip.field_allowed_ips__ip_address
+msgid "The allowed IP address for the User."
+msgstr ""
+
+#. module: access_restriction_by_ip
+#: model:ir.model,name:access_restriction_by_ip.model_res_users
+#: model:ir.model.fields,field_description:access_restriction_by_ip.field_allowed_ips__user_ip_id
+msgid "User"
+msgstr ""
+
+#. module: access_restriction_by_ip
+#: model:ir.model.fields,help:access_restriction_by_ip.field_allowed_ips__user_ip_id
+msgid "User associated with the allowed IP"
+msgstr ""
+
+#. module: access_restriction_by_ip
+#. odoo-python
+#: code:addons/access_restriction_by_ip/controllers/access_restriction_by_ip.py:0
+msgid "Wrong login/password"
+msgstr ""

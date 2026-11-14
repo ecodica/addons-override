@@ -1,0 +1,118 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* access_restriction_by_ip
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-14 19:55+0000\n"
+"PO-Revision-Date: 2026-11-14 00:00+0000\n"
+"Last-Translator: Ecodica d.o.o.\n"
+"Language-Team: Ecodica d.o.o.\n"
+"Language: hr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#. module: access_restriction_by_ip
+#: model:ir.model.fields,field_description:access_restriction_by_ip.field_allowed_ips__ip_address
+#: model_terms:ir.ui.view,arch_db:access_restriction_by_ip.view_users_form
+msgid "Allowed IP"
+msgstr "Dopušteni IP"
+
+#. module: access_restriction_by_ip
+#: model:ir.model,name:access_restriction_by_ip.model_allowed_ips
+msgid "Allowed IPs"
+msgstr "Dopušteni IP-evi"
+
+#. module: access_restriction_by_ip
+#: model:ir.model.fields,help:access_restriction_by_ip.field_res_users__allowed_ip_ids
+msgid "Allowed ip addresses for the user."
+msgstr "Dopuštene IP adrese za korisnika."
+
+#. module: access_restriction_by_ip
+#: model:ir.model.fields,field_description:access_restriction_by_ip.field_res_users__autofill_username
+msgid "Autofill Username based on IP Address"
+msgstr "Automatski ispuni korisničko ime na temelju IP adrese"
+
+#. module: access_restriction_by_ip
+#: model:ir.model.fields,field_description:access_restriction_by_ip.field_allowed_ips__create_uid
+msgid "Created by"
+msgstr "Kreirao"
+
+#. module: access_restriction_by_ip
+#: model:ir.model.fields,field_description:access_restriction_by_ip.field_allowed_ips__create_date
+msgid "Created on"
+msgstr "Kreiran"
+
+#. module: access_restriction_by_ip
+#: model:ir.model.fields,field_description:access_restriction_by_ip.field_allowed_ips__display_name
+#: model:ir.model.fields,field_description:access_restriction_by_ip.field_res_users__display_name
+msgid "Display Name"
+msgstr "Naziv za prikaz"
+
+#. module: access_restriction_by_ip
+#: model:ir.model.fields,field_description:access_restriction_by_ip.field_allowed_ips__id
+#: model:ir.model.fields,field_description:access_restriction_by_ip.field_res_users__id
+msgid "ID"
+msgstr "ID"
+
+#. module: access_restriction_by_ip
+#: model:ir.model.fields,field_description:access_restriction_by_ip.field_res_users__allowed_ip_ids
+msgid "IP Address"
+msgstr "IP adresa"
+
+#. module: access_restriction_by_ip
+#: model:ir.model.fields,field_description:access_restriction_by_ip.field_allowed_ips__write_uid
+msgid "Last Updated by"
+msgstr "Promijenio"
+
+#. module: access_restriction_by_ip
+#: model:ir.model.fields,field_description:access_restriction_by_ip.field_allowed_ips__write_date
+msgid "Last Updated on"
+msgstr "Vrijeme promjene"
+
+#. module: access_restriction_by_ip
+#. odoo-python
+#: code:addons/access_restriction_by_ip/controllers/access_restriction_by_ip.py:0
+msgid "Login"
+msgstr "Korisnik"
+
+#. module: access_restriction_by_ip
+#. odoo-python
+#: code:addons/access_restriction_by_ip/controllers/access_restriction_by_ip.py:0
+msgid "Not allowed to login from this IP."
+msgstr "Nije dopuštena prijava s ovog IP-a."
+
+#. module: access_restriction_by_ip
+#. odoo-python
+#: code:addons/access_restriction_by_ip/controllers/access_restriction_by_ip.py:0
+msgid ""
+"Only employees can access this database. Please contact the administrator."
+msgstr ""
+"Samo zaposlenici mogu pristupiti bazi podataka. Molimo kontaktirajte "
+"administatora."
+
+#. module: access_restriction_by_ip
+#: model:ir.model.fields,help:access_restriction_by_ip.field_allowed_ips__ip_address
+msgid "The allowed IP address for the User."
+msgstr "Dopuštena IP adresa za korisnika."
+
+#. module: access_restriction_by_ip
+#: model:ir.model,name:access_restriction_by_ip.model_res_users
+#: model:ir.model.fields,field_description:access_restriction_by_ip.field_allowed_ips__user_ip_id
+msgid "User"
+msgstr "Korisnik"
+
+#. module: access_restriction_by_ip
+#: model:ir.model.fields,help:access_restriction_by_ip.field_allowed_ips__user_ip_id
+msgid "User associated with the allowed IP"
+msgstr "Korisnik povezan s dopuštenim IP-om"
+
+#. module: access_restriction_by_ip
+#. odoo-python
+#: code:addons/access_restriction_by_ip/controllers/access_restriction_by_ip.py:0
+msgid "Wrong login/password"
+msgstr "Pogrešno korisničko ime/lozinka"

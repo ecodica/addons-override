@@ -1,0 +1,314 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* hr_employee_updation
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-14 19:55+0000\n"
+"PO-Revision-Date: 2026-11-14 00:00+0000\n"
+"Last-Translator: Ecodica d.o.o.\n"
+"Language-Team: Ecodica d.o.o.\n"
+"Language: hr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#. module: hr_employee_updation
+#: model:ir.model.fields,help:hr_employee_updation.field_hr_employee__identification_attachment_ids
+msgid "Attach the copy of Identification document"
+msgstr "Priložite kopiju identifikacijskog dokumenta"
+
+#. module: hr_employee_updation
+#: model:ir.model.fields,help:hr_employee_updation.field_hr_employee__passport_attachment_ids
+msgid "Attach the copy of Passport"
+msgstr "Priložite kopiju putovnice"
+
+#. module: hr_employee_updation
+#: model_terms:ir.ui.view,arch_db:hr_employee_updation.hr_hr_employee_view_form
+msgid ""
+"Badges are rewards of good work. Give them to people you believe deserve it."
+msgstr ""
+"Značke su nagrada za dobar posao. Dodijelite ih ljudima koji ih zaslužuju."
+
+#. module: hr_employee_updation
+#: model:ir.model.fields,help:hr_employee_updation.field_hr_employee_family__birth_date
+msgid "Birth date of the family member"
+msgstr "Datum rođenja člana obitelji"
+
+#. module: hr_employee_updation
+#: model_terms:ir.ui.view,arch_db:hr_employee_updation.hr_hr_employee_view_form
+msgid "Click to grant this employee his first badge"
+msgstr "Kliknite za dodjelu prve značke ovom zaposleniku"
+
+#. module: hr_employee_updation
+#: model:ir.model,name:hr_employee_updation.model_res_config_settings
+msgid "Config Settings"
+msgstr "Postavke"
+
+#. module: hr_employee_updation
+#: model:ir.model.fields,field_description:hr_employee_updation.field_hr_employee_family__member_contact
+msgid "Contact No"
+msgstr "Kontakt broj"
+
+#. module: hr_employee_updation
+#: model:ir.model.fields,help:hr_employee_updation.field_hr_employee_family__member_contact
+msgid "Contact No of the family member"
+msgstr "Kontakt broj člana obitelji"
+
+#. module: hr_employee_updation
+#: model:ir.model.fields,field_description:hr_employee_updation.field_hr_employee_family__create_uid
+#: model:ir.model.fields,field_description:hr_employee_updation.field_hr_employee_relation__create_uid
+msgid "Created by"
+msgstr "Kreirao"
+
+#. module: hr_employee_updation
+#: model:ir.model.fields,field_description:hr_employee_updation.field_hr_employee_family__create_date
+#: model:ir.model.fields,field_description:hr_employee_updation.field_hr_employee_relation__create_date
+msgid "Created on"
+msgstr "Kreiran"
+
+#. module: hr_employee_updation
+#: model:ir.model.fields,field_description:hr_employee_updation.field_hr_employee_family__birth_date
+msgid "DOB"
+msgstr "DOB"
+
+#. module: hr_employee_updation
+#: model_terms:ir.ui.view,arch_db:hr_employee_updation.view_employee_form
+msgid "Dependence Details"
+msgstr "Detalji ovisnosti"
+
+#. module: hr_employee_updation
+#: model:ir.model.fields,field_description:hr_employee_updation.field_hr_employee__display_name
+#: model:ir.model.fields,field_description:hr_employee_updation.field_hr_employee_family__display_name
+#: model:ir.model.fields,field_description:hr_employee_updation.field_hr_employee_relation__display_name
+#: model:ir.model.fields,field_description:hr_employee_updation.field_hr_version__display_name
+#: model:ir.model.fields,field_description:hr_employee_updation.field_res_config_settings__display_name
+msgid "Display Name"
+msgstr "Naziv za prikaz"
+
+#. module: hr_employee_updation
+#: model:ir.model,name:hr_employee_updation.model_hr_employee
+#: model:ir.model.fields,field_description:hr_employee_updation.field_hr_employee_family__employee_id
+msgid "Employee"
+msgstr "Zaposlenik"
+
+#. module: hr_employee_updation
+#: model:ir.model.fields,help:hr_employee_updation.field_hr_employee__joining_date
+msgid "Employee joining date computed from the contract start date"
+msgstr "Datum zaposlenja zaposlenika izračunat iz datuma početka ugovora"
+
+#. module: hr_employee_updation
+#: model_terms:ir.ui.view,arch_db:hr_employee_updation.view_employee_form
+msgid "Expires on"
+msgstr "Ističe"
+
+#. module: hr_employee_updation
+#: model:ir.model.fields,field_description:hr_employee_updation.field_hr_employee__id_expiry_date
+msgid "Expiry Date"
+msgstr "Datum isteka"
+
+#. module: hr_employee_updation
+#: model:ir.model.fields,help:hr_employee_updation.field_hr_employee__id_expiry_date
+msgid "Expiry date of Identification document"
+msgstr "Datum isteka identifikacijskog dokumenta"
+
+#. module: hr_employee_updation
+#: model:ir.model.fields,field_description:hr_employee_updation.field_hr_employee__family_info_ids
+msgid "Family"
+msgstr "Obitelj"
+
+#. module: hr_employee_updation
+#: model:ir.model.fields,help:hr_employee_updation.field_hr_employee__family_info_ids
+msgid "Family Information"
+msgstr "Obiteljske informacije"
+
+#. module: hr_employee_updation
+#: model_terms:ir.ui.view,arch_db:hr_employee_updation.hr_hr_employee_view_form
+msgid "Grant a Badge"
+msgstr "Nagradi značkom"
+
+#. module: hr_employee_updation
+#: model:ir.actions.server,name:hr_employee_updation.ir_con_employee_data_reminder_ir_actions_server
+msgid "HR Employee Data Expiration"
+msgstr "Istek podataka HR zaposlenika"
+
+#. module: hr_employee_updation
+#: model:ir.model,name:hr_employee_updation.model_hr_employee_family
+msgid "HR Employee Family Info"
+msgstr "Obiteljske informacije HR zaposlenika"
+
+#. module: hr_employee_updation
+#: model:ir.model,name:hr_employee_updation.model_hr_employee_relation
+msgid "HR Employee Relation"
+msgstr "Relacija HR zaposlenika"
+
+#. module: hr_employee_updation
+#: model:ir.model.fields,field_description:hr_employee_updation.field_hr_employee__id
+#: model:ir.model.fields,field_description:hr_employee_updation.field_hr_employee_family__id
+#: model:ir.model.fields,field_description:hr_employee_updation.field_hr_employee_relation__id
+#: model:ir.model.fields,field_description:hr_employee_updation.field_hr_version__id
+#: model:ir.model.fields,field_description:hr_employee_updation.field_res_config_settings__id
+msgid "ID"
+msgstr "ID"
+
+#. module: hr_employee_updation
+#: model:ir.model.fields,field_description:hr_employee_updation.field_hr_employee__identification_attachment_ids
+msgid "ID Attachment"
+msgstr "Prilog dokumenta"
+
+#. module: hr_employee_updation
+#: model_terms:ir.ui.view,arch_db:hr_employee_updation.res_config_settings_view_form_hr_employee_updation
+msgid "ID Expiry Notification"
+msgstr "Obavijest o isteku dokumenta"
+
+#. module: hr_employee_updation
+#: model:ir.model.fields,field_description:hr_employee_updation.field_res_config_settings__id_expiry_days
+msgid "ID Expiry Notification Days"
+msgstr "Dani obavijesti o isteku dokumenta"
+
+#. module: hr_employee_updation
+#. odoo-python
+#: code:addons/hr_employee_updation/models/hr_employee.py:0
+msgid "ID-%s Expired On %s"
+msgstr "ID-%s istekao %s"
+
+#. module: hr_employee_updation
+#: model_terms:ir.ui.view,arch_db:hr_employee_updation.view_employee_form
+msgid "Identification ID"
+msgstr "Identifikacijski ID"
+
+#. module: hr_employee_updation
+#: model:ir.model.fields,field_description:hr_employee_updation.field_hr_employee__joining_date
+msgid "Joining Date"
+msgstr "Datum zaposlenja"
+
+#. module: hr_employee_updation
+#: model:ir.model.fields,field_description:hr_employee_updation.field_hr_employee_family__write_uid
+#: model:ir.model.fields,field_description:hr_employee_updation.field_hr_employee_relation__write_uid
+msgid "Last Updated by"
+msgstr "Promijenio"
+
+#. module: hr_employee_updation
+#: model:ir.model.fields,field_description:hr_employee_updation.field_hr_employee_family__write_date
+#: model:ir.model.fields,field_description:hr_employee_updation.field_hr_employee_relation__write_date
+msgid "Last Updated on"
+msgstr "Vrijeme promjene"
+
+#. module: hr_employee_updation
+#: model:ir.model.fields,field_description:hr_employee_updation.field_hr_employee__personal_mobile
+msgid "Mobile"
+msgstr "Mobile"
+
+#. module: hr_employee_updation
+#: model:ir.model.fields,field_description:hr_employee_updation.field_hr_employee_family__member_name
+msgid "Name"
+msgstr "Naziv"
+
+#. module: hr_employee_updation
+#: model:ir.model.fields,help:hr_employee_updation.field_hr_employee_family__member_name
+msgid "Name of the family member"
+msgstr "Ime člana obitelji"
+
+#. module: hr_employee_updation
+#: model:ir.model.fields,field_description:hr_employee_updation.field_hr_employee__notice_days
+#: model:ir.model.fields,field_description:hr_employee_updation.field_hr_version__notice_days
+msgid "Notice Period"
+msgstr "Otkazni rok"
+
+#. module: hr_employee_updation
+#: model_terms:ir.ui.view,arch_db:hr_employee_updation.res_config_settings_view_form_hr_employee_updation
+msgid "Number of days before expiry to send ID notification"
+msgstr "Broj dana prije isteka za slanje obavijesti o dokumentu"
+
+#. module: hr_employee_updation
+#: model_terms:ir.ui.view,arch_db:hr_employee_updation.res_config_settings_view_form_hr_employee_updation
+msgid "Number of days before expiry to send Passport notification"
+msgstr "Broj dana prije isteka za slanje obavijesti o putovnici"
+
+#. module: hr_employee_updation
+#: model:ir.model.fields,help:hr_employee_updation.field_hr_employee__notice_days
+#: model:ir.model.fields,help:hr_employee_updation.field_hr_version__notice_days
+msgid "Number of days required for notice before termination."
+msgstr "Broj dana otkaznog roka potrebnog prije raskida."
+
+#. module: hr_employee_updation
+#: model:ir.model.fields,field_description:hr_employee_updation.field_hr_employee__passport_attachment_ids
+msgid "Passport Attachment"
+msgstr "Prilog putovnice"
+
+#. module: hr_employee_updation
+#: model_terms:ir.ui.view,arch_db:hr_employee_updation.res_config_settings_view_form_hr_employee_updation
+msgid "Passport Expiry Notification"
+msgstr "Obavijest o isteku putovnice"
+
+#. module: hr_employee_updation
+#: model:ir.model.fields,field_description:hr_employee_updation.field_res_config_settings__passport_expiry_days
+msgid "Passport Expiry Notification Days"
+msgstr "Dani obavijesti o isteku putovnice"
+
+#. module: hr_employee_updation
+#: model_terms:ir.ui.view,arch_db:hr_employee_updation.view_employee_form
+msgid "Passport ID"
+msgstr "Broj putovnice"
+
+#. module: hr_employee_updation
+#. odoo-python
+#: code:addons/hr_employee_updation/models/hr_employee.py:0
+msgid "Passport-%s Expired On %s"
+msgstr "Putovnica-%s istekla %s"
+
+#. module: hr_employee_updation
+#: model:ir.model.fields,help:hr_employee_updation.field_hr_employee__personal_mobile
+msgid "Personal mobile number of the employee"
+msgstr "Osobni broj mobitela zaposlenika"
+
+#. module: hr_employee_updation
+#: model_terms:ir.ui.view,arch_db:hr_employee_updation.hr_hr_employee_view_form
+msgid "Received Badges"
+msgstr "Primljene značke"
+
+#. module: hr_employee_updation
+#: model:ir.model.fields,field_description:hr_employee_updation.field_hr_employee_family__relation_id
+msgid "Relation"
+msgstr "Veza"
+
+#. module: hr_employee_updation
+#: model:ir.model.fields,field_description:hr_employee_updation.field_hr_employee_relation__name
+msgid "Relationship"
+msgstr "Relacija"
+
+#. module: hr_employee_updation
+#: model:ir.model.fields,help:hr_employee_updation.field_hr_employee_family__relation_id
+#: model:ir.model.fields,help:hr_employee_updation.field_hr_employee_relation__name
+msgid "Relationship with the employee"
+msgstr "Relacija sa zaposlenikom"
+
+#. module: hr_employee_updation
+#. odoo-python
+#: code:addons/hr_employee_updation/models/hr_employee.py:0
+msgid "Reminder: ID-%s Expiring On %s"
+msgstr "Podsjetnik: ID-%s istječe %s"
+
+#. module: hr_employee_updation
+#. odoo-python
+#: code:addons/hr_employee_updation/models/hr_employee.py:0
+msgid "Reminder: Passport-%s Expiring On %s"
+msgstr "Podsjetnik: putovnica-%s istječe %s"
+
+#. module: hr_employee_updation
+#: model:ir.model.fields,help:hr_employee_updation.field_hr_employee_family__employee_id
+msgid "Select corresponding Employee"
+msgstr "Odaberite odgovarajućeg zaposlenika"
+
+#. module: hr_employee_updation
+#: model:ir.model,name:hr_employee_updation.model_hr_version
+msgid "Version"
+msgstr "Verzija"
+
+#. module: hr_employee_updation
+#: model_terms:ir.ui.view,arch_db:hr_employee_updation.hr_hr_employee_view_form
+msgid "to reward this employee for a good action"
+msgstr "da nagradite ovog djelatnika za dobru akciju"

@@ -1,0 +1,2459 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* ow_ai
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0-20260908\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-29 15:00+0000\n"
+"PO-Revision-Date: 2026-11-14 00:00+0000\n"
+"Last-Translator: Ecodica d.o.o.\n"
+"Language-Team: Ecodica d.o.o.\n"
+"Language: hr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#. module: ow_ai
+#. odoo-python
+#: code:addons/ow_ai/models/ow_ai_agent.py:0
+msgid "%s (copy)"
+msgstr "%s (kopija)"
+
+#. module: ow_ai
+#: model:ir.model.constraint,message:ow_ai.constraint_ow_ai_session_loop_state_round_consistency
+msgid ""
+"A session that is not ready must have a positive round, a round limit at "
+"least as high, and a requesting user."
+msgstr ""
+"Sesija koja nije spremna mora imati pozitivnu rundu, granicu rundi barem "
+"toliko visoku i korisnika koji je traži."
+
+#. module: ow_ai
+#: model:ir.model.constraint,message:ow_ai.constraint_ow_ai_session_loop_state_waiting_consistency
+msgid ""
+"A session waiting on the user must have a resume token and a pending tool "
+"call."
+msgstr ""
+"Sesija koja čeka korisnika mora imati token nastavka i radnju alata na "
+"čekanju."
+
+#. module: ow_ai
+#: model:res.groups.privilege,name:ow_ai.privilege_ai
+msgid "AI"
+msgstr "AI"
+
+#. module: ow_ai
+#: model:ir.model,name:ow_ai.model_ow_ai_agent
+#: model_terms:ir.ui.view,arch_db:ow_ai.ow_ai_agent_view_form
+msgid "AI Agent"
+msgstr "AI agent"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_res_partner__ow_ai_agent_partner
+#: model:ir.model.fields,field_description:ow_ai.field_res_users__ow_ai_agent_partner
+msgid "AI Agent Contact"
+msgstr "Kontakt AI agenta"
+
+#. module: ow_ai
+#: model_terms:ir.ui.view,arch_db:ow_ai.ow_ai_agent_view_kanban
+#: model_terms:ir.ui.view,arch_db:ow_ai.ow_ai_agent_view_list
+msgid "AI Agents"
+msgstr "AI agenti"
+
+#. module: ow_ai
+#: model:ir.model.fields.selection,name:ow_ai.selection__discuss_channel__channel_type__ow_ai_chat
+msgid "AI Chat"
+msgstr "AI chat"
+
+#. module: ow_ai
+#: model:ir.model,name:ow_ai.model_ow_ai_composer
+msgid "AI Composer Configuration"
+msgstr "Konfiguracija AI composera"
+
+#. module: ow_ai
+#: model:ir.model,name:ow_ai.model_ow_ai_prompt_button
+msgid "AI Composer Prompt Button"
+msgstr "Gumb upita AI composera"
+
+#. module: ow_ai
+#: model:ir.model,name:ow_ai.model_ow_ai_job
+#: model_terms:ir.ui.view,arch_db:ow_ai.ow_ai_job_view_form
+msgid "AI Job"
+msgstr "AI posao"
+
+#. module: ow_ai
+#: model_terms:ir.ui.view,arch_db:ow_ai.ow_ai_job_view_list
+#: model_terms:ir.ui.view,arch_db:ow_ai.ow_ai_job_view_search
+msgid "AI Jobs"
+msgstr "AI poslovi"
+
+#. module: ow_ai
+#: model:res.groups,name:ow_ai.group_ai_manager
+msgid "AI Manager"
+msgstr "AI upravitelj"
+
+#. module: ow_ai
+#: model_terms:ir.ui.view,arch_db:ow_ai.res_config_settings_view_form
+msgid "AI Provider"
+msgstr "AI pružatelj"
+
+#. module: ow_ai
+#: model:ir.model,name:ow_ai.model_ow_ai_session
+#: model_terms:ir.ui.view,arch_db:ow_ai.ow_ai_session_view_form
+msgid "AI Session"
+msgstr "AI sesija"
+
+#. module: ow_ai
+#: model:ir.model,name:ow_ai.model_ow_ai_session_event
+msgid "AI Session Event"
+msgstr "Događaj AI sesije"
+
+#. module: ow_ai
+#: model_terms:ir.ui.view,arch_db:ow_ai.ow_ai_session_view_list
+#: model_terms:ir.ui.view,arch_db:ow_ai.ow_ai_session_view_search
+msgid "AI Sessions"
+msgstr "AI sesije"
+
+#. module: ow_ai
+#: model:ir.model,name:ow_ai.model_ow_ai_skill
+#: model_terms:ir.ui.view,arch_db:ow_ai.ow_ai_skill_view_form
+msgid "AI Skill"
+msgstr "AI vještina"
+
+#. module: ow_ai
+#: model_terms:ir.ui.view,arch_db:ow_ai.ow_ai_skill_view_list
+msgid "AI Skills"
+msgstr "AI vještine"
+
+#. module: ow_ai
+#: model:ir.model,name:ow_ai.model_ow_ai_tool
+#: model_terms:ir.ui.view,arch_db:ow_ai.ow_ai_tool_view_form
+msgid "AI Tool"
+msgstr "AI alat"
+
+#. module: ow_ai
+#: model_terms:ir.ui.view,arch_db:ow_ai.ow_ai_tool_view_list
+msgid "AI Tools"
+msgstr "AI Alati"
+
+#. module: ow_ai
+#: model_terms:ir.ui.view,arch_db:ow_ai.ow_ai_usage_view_graph
+#: model_terms:ir.ui.view,arch_db:ow_ai.ow_ai_usage_view_list
+#: model_terms:ir.ui.view,arch_db:ow_ai.ow_ai_usage_view_pivot
+#: model_terms:ir.ui.view,arch_db:ow_ai.ow_ai_usage_view_search
+msgid "AI Usage"
+msgstr "AI upotreba"
+
+#. module: ow_ai
+#: model:ir.model,name:ow_ai.model_ow_ai_usage
+msgid "AI Usage Log"
+msgstr "Zapis upotrebe AI"
+
+#. module: ow_ai
+#: model:res.groups,name:ow_ai.group_ai_user
+msgid "AI User"
+msgstr "AI korisnik"
+
+#. module: ow_ai
+#. odoo-python
+#: code:addons/ow_ai/models/discuss_channel.py:0
+#: code:addons/ow_ai/models/discuss_channel_member.py:0
+msgid "AI chats cannot have additional members."
+msgstr "AI chatovi ne mogu imati dodatne članove."
+
+#. module: ow_ai
+#: model:ir.actions.server,name:ow_ai.ir_cron_job_runner_ir_actions_server
+msgid "AI: run agent jobs"
+msgstr "AI: pokreni poslove agenta"
+
+#. module: ow_ai
+#: model:ir.actions.server,name:ow_ai.ir_cron_job_sweeper_ir_actions_server
+msgid "AI: sweep stale jobs"
+msgstr "AI: očisti zastarjele poslove"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_res_config_settings__ow_ai_api_key
+#: model_terms:ir.ui.view,arch_db:ow_ai.res_config_settings_view_form
+msgid "API Key"
+msgstr "API ključ"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_res_config_settings__ow_ai_api_key_hint
+msgid "API Key Hint"
+msgstr "Natuknica API ključa"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_res_config_settings__ow_ai_api_key_state
+msgid "API Key Status"
+msgstr "Status API ključa"
+
+#. module: ow_ai
+#: model_terms:ir.ui.view,arch_db:ow_ai.ow_ai_session_view_form
+msgid "Abort pending"
+msgstr "Prekid na čekanju"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_agent__active
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_composer__active
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_session__active
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_skill__active
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_tool__active
+msgid "Active"
+msgstr "Aktivno"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_composer__agent_id
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_session__agent_id
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_skill__agent_ids
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_usage__agent_id
+#: model_terms:ir.ui.view,arch_db:ow_ai.ow_ai_session_view_search
+#: model_terms:ir.ui.view,arch_db:ow_ai.ow_ai_usage_view_search
+msgid "Agent"
+msgstr "Agent"
+
+#. module: ow_ai
+#: model_terms:ir.ui.view,arch_db:ow_ai.ow_ai_agent_view_form
+msgid "Agent name"
+msgstr "Naziv agenta"
+
+#. module: ow_ai
+#: model:ir.model.fields.selection,name:ow_ai.selection__ow_ai_job__kind__agent_round
+msgid "Agent round"
+msgstr "Runda agenta"
+
+#. module: ow_ai
+#: model:ir.actions.act_window,name:ow_ai.ow_ai_agent_action
+#: model:ir.ui.menu,name:ow_ai.menu_ai_agents
+msgid "Agents"
+msgstr "Agenti"
+
+#. module: ow_ai
+#: model:ow.ai.tool,thinking_text:ow_ai.tool_read_group
+msgid "Aggregating data"
+msgstr "Agregiranje podataka"
+
+#. module: ow_ai
+#. odoo-python
+#: code:addons/ow_ai/models/discuss_channel.py:0
+msgid "An AI agent can only be set on a channel of type: %(types)s."
+msgstr "AI agent može se postaviti samo na kanal vrste: %(types)s."
+
+#. module: ow_ai
+#. odoo-python
+#: code:addons/ow_ai/models/ow_ai_agent.py:0
+msgid "An AI agent's contact is created by the assistant itself."
+msgstr "Kontakt AI agenta kreira sam pomoćnik."
+
+#. module: ow_ai
+#. odoo-python
+#: code:addons/ow_ai/models/ow_ai_agent.py:0
+msgid ""
+"An AI agent's contact is created by the assistant itself; its name and image"
+" belong to the contact."
+msgstr ""
+"Kontakt AI agenta kreira sam pomoćnik; njegovo ime i slika pripadaju "
+"kontaktu."
+
+#. module: ow_ai
+#. odoo-python
+#: code:addons/ow_ai/models/ow_ai_agent.py:0
+msgid "An AI chat channel must have exactly 2 members."
+msgstr "AI chat kanal mora imati točno 2 člana."
+
+#. module: ow_ai
+#: model_terms:ir.ui.view,arch_db:ow_ai.ow_ai_session_view_search
+msgid "Archived"
+msgstr "Arhivirano"
+
+#. module: ow_ai
+#. odoo-javascript
+#: code:addons/ow_ai/static/src/web/systray_action.xml:0
+msgid "Ask AI"
+msgstr "Pitaj AI"
+
+#. module: ow_ai
+#. odoo-javascript
+#: code:addons/ow_ai/static/src/web/form_controller_patch.js:0
+msgid "Ask AI about this record"
+msgstr "Pitaj AI o ovom zapisu"
+
+#. module: ow_ai
+#. odoo-javascript
+#: code:addons/ow_ai/static/src/web/command_palette.js:0
+msgid "Ask AI: %s"
+msgstr "Pitaj AI: %s"
+
+#. module: ow_ai
+#: model:ow.ai.tool,name:ow_ai.tool_ask_user_question
+msgid "Ask User Question"
+msgstr "Postavi pitanje korisniku"
+
+#. module: ow_ai
+#. odoo-javascript
+#: code:addons/ow_ai/static/src/web/messaging_menu_patch.xml:0
+msgid "Ask the assistant about your data, or have it do the work."
+msgstr ""
+"Pitajte pomoćnika o svojim podacima ili mu prepustite obavljanje posla."
+
+#. module: ow_ai
+#: model:ow.ai.tool,description:ow_ai.tool_ask_user_question
+msgid ""
+"Ask the user a short clarifying question when a request is ambiguous or a "
+"choice must be made before you can continue. Offer 2 to 4 concrete options; "
+"ask only one question at a time and wait for the answer before doing "
+"anything else."
+msgstr ""
+"Postavite korisniku kratko pojašnjavajuće pitanje kada je zahtjev dvosmislen"
+" ili se mora napraviti izbor prije nastavka. Ponudite 2 do 4 konkretne "
+"opcije; postavite samo jedno pitanje odjednom i pričekajte odgovor prije "
+"bilo čega drugog."
+
+#. module: ow_ai
+#. odoo-javascript
+#: code:addons/ow_ai/static/src/discuss/ow_ai_chat_intro.xml:0
+#: model:ir.model.fields.selection,name:ow_ai.selection__ow_ai_session_event__role__assistant
+msgid "Assistant"
+msgstr "Pomoćnik"
+
+#. module: ow_ai
+#. odoo-python
+#: code:addons/ow_ai/models/mail_message.py:0
+msgid "Attached files: %(names)s"
+msgstr "Priložene datoteke: %(names)s"
+
+#. module: ow_ai
+#: model:ir.model,name:ow_ai.model_ir_attachment
+msgid "Attachment"
+msgstr "Prilog"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_job__attempt
+msgid "Attempt"
+msgstr "Pokušaj"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_session__auto_confirm
+msgid "Auto Confirm"
+msgstr "Automatski potvrdi"
+
+#. module: ow_ai
+#. odoo-javascript
+#: code:addons/ow_ai/static/src/discuss/composer_actions_patch.js:0
+msgid "Auto-approve actions"
+msgstr "Automatski odobri radnje"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_agent__avatar_128
+msgid "Avatar 128"
+msgstr "Avatar 128"
+
+#. module: ow_ai
+#: model:ir.model,name:ow_ai.model_base
+msgid "Base"
+msgstr "Osnovica"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_res_config_settings__ow_ai_base_url
+#: model_terms:ir.ui.view,arch_db:ow_ai.res_config_settings_view_form
+msgid "Base URL"
+msgstr "Bazni URL"
+
+#. module: ow_ai
+#: model:ir.model.fields.selection,name:ow_ai.selection__ow_ai_tool__kind__builtin
+msgid "Built-in"
+msgstr "Ugrađeno"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_tool__builtin_key
+msgid "Builtin Key"
+msgstr "Ugrađeni ključ"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_usage__cached_tokens
+msgid "Cached Tokens"
+msgstr "Keširani tokeni"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_job__can_retry
+msgid "Can Retry"
+msgstr "Može ponovno pokušati"
+
+#. module: ow_ai
+#: model_terms:ir.ui.view,arch_db:ow_ai.ow_ai_job_view_form
+#: model_terms:ir.ui.view,arch_db:ow_ai.ow_ai_job_view_list
+msgid "Cancel"
+msgstr "Odustani"
+
+#. module: ow_ai
+#: model:ir.model.fields.selection,name:ow_ai.selection__ow_ai_job__state__cancelled
+msgid "Cancelled"
+msgstr "Otkazano"
+
+#. module: ow_ai
+#: model:ow.ai.skill,description:ow_ai.skill_update_records
+msgid ""
+"Change the values of existing records after showing the user exactly what "
+"will change (old value to new value) and getting their confirmation."
+msgstr ""
+"Promijenite vrijednosti postojećih zapisa nakon što korisniku pokažete točno"
+" što će se promijeniti (stara vrijednost u novu vrijednost) i dobijete "
+"njegovu potvrdu."
+
+#. module: ow_ai
+#: model:ow.ai.tool,description:ow_ai.tool_update_records
+msgid ""
+"Change the values of records that already exist. Always call get_fields "
+"first, and search beforehand for the exact records you mean to change, so "
+"the domain you pass here targets only those; a domain that would match every"
+" record on the model (an empty domain, or an always-true condition such as "
+"an id filter every record satisfies) is refused, on purpose. \"updates\" is "
+"a list of {\"model_name\", \"domain\", \"changes\"} groups (max 50; usually "
+"you only need one), each matching at most 200 records; each \"changes\" item"
+" is {\"field\": technical field name, \"value\": the new value, "
+"\"x2m_commands\": null or a JSON string for many2many/one2many fields only}."
+" Use \"value\" for every field except many2many/one2many ones, where "
+"\"x2m_commands\" must instead be a JSON string such as {\"link\": [ids to "
+"add]}, {\"unlink\": [ids to remove]}, {\"set\": [ids that should be the only"
+" ones linked]} or {\"clear\": true} (only existing records can be linked; "
+"never invent an id). Write a short, plain-language explanation of the "
+"change, and when a field being changed represents a status or stage, also "
+"explain what changing it will do. This tool always shows the user a preview "
+"of the old and new value of every affected record first and only writes to "
+"the database once they confirm; do not tell the user something was updated "
+"until you see the confirmed result."
+msgstr ""
+"Promijenite vrijednosti zapisa koji već postoje. Uvijek najprije pozovite "
+"get_fields i prethodno pretražite točne zapise koje namjeravate promijeniti,"
+" tako da domena koju prosljeđujete cilja samo njih; domena koja bi "
+"odgovarala svakom zapisu na modelu (prazna domena ili uvijek istinit uvjet "
+"poput id filtra koji svaki zapis zadovoljava) namjerno se odbija. "
+"\"updates\" je lista grupa {\"model_name\", \"domain\", \"changes\"} "
+"(najviše 50; obično je potrebna samo jedna), svaka odgovara najviše 200 "
+"zapisa; svaka stavka \"changes\" je {\"field\": tehnički naziv polja, "
+"\"value\": nova vrijednost, \"x2m_commands\": null ili JSON niz samo za "
+"many2many/one2many polja}. Koristite \"value\" za svako polje osim "
+"many2many/one2many, gdje \"x2m_commands\" mora biti JSON niz poput "
+"{\"link\": [id-evi za dodavanje]}, {\"unlink\": [id-evi za uklanjanje]}, "
+"{\"set\": [id-evi koji trebaju biti jedini povezani]} ili {\"clear\": true} "
+"(mogu se povezati samo postojeći zapisi; nikada ne izmišljajte id). Napišite"
+" kratko objašnjenje promjene jednostavnim jezikom, a kada polje koje se "
+"mijenja predstavlja status ili fazu, objasnite i što će promjena učiniti. "
+"Ovaj alat uvijek najprije korisniku prikazuje pregled stare i nove "
+"vrijednosti svakog pogođenog zapisa i tek nakon njegove potvrde piše u bazu;"
+" ne govorite korisniku da je nešto ažurirano dok ne vidite potvrđeni "
+"rezultat."
+
+#. module: ow_ai
+#: model:ir.model.fields,help:ow_ai.field_ow_ai_tool__is_write
+msgid "Changes data"
+msgstr "Podaci promjena"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_session__channel_id
+msgid "Channel"
+msgstr "Kanal"
+
+#. module: ow_ai
+#: model:ir.model,name:ow_ai.model_discuss_channel_member
+msgid "Channel Member"
+msgstr "Član kanala"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_discuss_channel__channel_type
+msgid "Channel Type"
+msgstr "Tip kanala"
+
+#. module: ow_ai
+#: model:ir.model.fields.selection,name:ow_ai.selection__ow_ai_job__kind__channel_title
+msgid "Channel title"
+msgstr "Naslov kanala"
+
+#. module: ow_ai
+#: model:ir.model.fields.selection,name:ow_ai.selection__ow_ai_usage__kind__chat
+msgid "Chat"
+msgstr "Chat"
+
+#. module: ow_ai
+#: model:ir.model.fields.selection,name:ow_ai.selection__ow_ai_composer__interface_key__record_chat
+msgid "Chat about a record"
+msgstr "Razgovaraj o zapisu"
+
+#. module: ow_ai
+#: model:ir.model.fields,help:ow_ai.field_discuss_channel__channel_type
+msgid ""
+"Chat is private and unique between 2 persons. Group is private among invited"
+" persons. Channel can be freely joined (depending on its configuration)."
+msgstr ""
+"Razgovor je privatan i jedinstven između dvije osobe. Grupa je privatna "
+"unutar pozvanih osoba. Kanalu se može slobodno pridružiti (ovisno o "
+"postavkama)."
+
+#. module: ow_ai
+#: model:ir.model.fields.selection,name:ow_ai.selection__ow_ai_usage__kind__title
+msgid "Chat title"
+msgstr "Naslov chata"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_job__claimed_at
+msgid "Claimed At"
+msgstr "Preuzeto u"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_job__claimed_by
+msgid "Claimed By"
+msgstr "Preuzeo"
+
+#. module: ow_ai
+#: model_terms:ir.ui.view,arch_db:ow_ai.res_config_settings_view_form
+msgid "Clear key"
+msgstr "Očisti ključ"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_usage__company_id
+#: model_terms:ir.ui.view,arch_db:ow_ai.ow_ai_usage_view_search
+msgid "Company"
+msgstr "Tvrtka"
+
+#. module: ow_ai
+#: model_terms:ir.ui.view,arch_db:ow_ai.ow_ai_usage_view_list
+msgid "Completion"
+msgstr "Dovršetak"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_usage__completion_tokens
+msgid "Completion Tokens"
+msgstr "Tokeni dovršetka"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_prompt_button__composer_id
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_session__composer_id
+msgid "Composer"
+msgstr "Kompozer"
+
+#. module: ow_ai
+#: model_terms:ir.ui.view,arch_db:ow_ai.ow_ai_composer_view_form
+msgid "Composer name"
+msgstr "Naziv composera"
+
+#. module: ow_ai
+#: model:ow.ai.tool,name:ow_ai.tool_compute_date
+msgid "Compute Date"
+msgstr "Datum izračuna"
+
+#. module: ow_ai
+#: model:ow.ai.tool,thinking_text:ow_ai.tool_compute_date
+msgid "Computing date"
+msgstr "Datum izračuna"
+
+#. module: ow_ai
+#: model:ir.model,name:ow_ai.model_res_config_settings
+msgid "Config Settings"
+msgstr "Postavke"
+
+#. module: ow_ai
+#: model:ir.ui.menu,name:ow_ai.menu_ai_configuration
+msgid "Configuration"
+msgstr "Konfiguracija"
+
+#. module: ow_ai
+#: model:ir.model,name:ow_ai.model_res_partner
+msgid "Contact"
+msgstr "Kontakt"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_job__context
+msgid "Context"
+msgstr "Kontekst"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_usage__cost
+#: model_terms:ir.ui.view,arch_db:ow_ai.ow_ai_session_view_form
+#: model_terms:ir.ui.view,arch_db:ow_ai.ow_ai_usage_view_list
+msgid "Cost"
+msgstr "Trošak"
+
+#. module: ow_ai
+#: model:ow.ai.skill,name:ow_ai.skill_create_records
+#: model:ow.ai.tool,name:ow_ai.tool_create_records
+msgid "Create Records"
+msgstr "Kreiraj zapise"
+
+#. module: ow_ai
+#: model:ow.ai.skill,description:ow_ai.skill_create_records
+msgid ""
+"Create new records (contacts, tasks, leads, and anything else the user has "
+"access to) after showing the user exactly what will be created and getting "
+"their confirmation."
+msgstr ""
+"Kreiraj nove zapise (kontakte, zadatke, potencijalne klijente i bilo što "
+"drugo čemu korisnik ima pristup) nakon što korisniku pokažete točno što će "
+"biti kreirano i dobijete njegovu potvrdu."
+
+#. module: ow_ai
+#: model:ow.ai.tool,description:ow_ai.tool_create_records
+msgid ""
+"Create one or more new records on a model. Always call get_fields on the "
+"model first so you use its real field names, types and required fields; "
+"never guess a field name or invent an id. Write a short, plain-language "
+"explanation of what you are about to create and why, so the user can review "
+"it before anything happens. \"values\" is a list of records to create (max "
+"20); each record's \"field_values\" is a list of {\"field\": technical field"
+" name, \"value\": the value to set, \"x2m_link_ids\": an id or list of ids} "
+"entries. Use \"value\" for every field except many2many/one2many ones: for a"
+" many2one, \"value\" is the target record's id (search for it first, e.g. "
+"with search or read_records, rather than guessing it); for "
+"many2many/one2many fields leave \"value\" empty and put the ids of the "
+"existing records to link in \"x2m_link_ids\" instead (this tool can only "
+"link existing records, it cannot create related records in the same call). "
+"This tool always shows the user a preview of exactly what will be created "
+"first and only writes to the database once they confirm; do not tell the "
+"user something was created until you see the confirmed result."
+msgstr ""
+"Kreiraj jedan ili više novih zapisa na modelu. Uvijek najprije pozovite "
+"get_fields na modelu kako biste koristili njegove stvarne nazive polja, "
+"vrste i obavezna polja; nikada ne pogađajte naziv polja niti izmišljajte id."
+" Napišite kratko objašnjenje jednostavnim jezikom o tome što ćete kreirati i"
+" zašto, kako bi korisnik mogao pregledati prije nego što se bilo što dogodi."
+" \"values\" je lista zapisa za kreiranje (najviše 20); \"field_values\" "
+"svakog zapisa je lista unosa {\"field\": tehnički naziv polja, \"value\": "
+"vrijednost za postavljanje, \"x2m_link_ids\": id ili lista id-eva}. "
+"Koristite \"value\" za svako polje osim many2many/one2many: za many2one, "
+"\"value\" je id ciljanog zapisa (najprije ga potražite, npr. putem search "
+"ili read_records, umjesto da ga pogađate); za many2many/one2many polja "
+"ostavite \"value\" prazno i umjesto toga stavite id-eve postojećih zapisa za"
+" povezivanje u \"x2m_link_ids\" (ovaj alat može povezati samo postojeće "
+"zapise, ne može kreirati povezane zapise u istom pozivu). Ovaj alat uvijek "
+"najprije korisniku prikazuje pregled točno onoga što će biti kreirano i tek "
+"nakon njegove potvrde piše u bazu; ne govorite korisniku da je nešto "
+"kreirano dok ne vidite potvrđeni rezultat."
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_agent__create_uid
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_composer__create_uid
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_job__create_uid
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_prompt_button__create_uid
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_session__create_uid
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_session_event__create_uid
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_skill__create_uid
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_tool__create_uid
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_usage__create_uid
+msgid "Created by"
+msgstr "Kreirao"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_agent__create_date
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_composer__create_date
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_job__create_date
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_prompt_button__create_date
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_session__create_date
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_session_event__create_date
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_skill__create_date
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_tool__create_date
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_usage__create_date
+msgid "Created on"
+msgstr "Kreiran"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_res_config_settings__ow_ai_default_model
+#: model_terms:ir.ui.view,arch_db:ow_ai.res_config_settings_view_form
+msgid "Default Model"
+msgstr "Zadani model"
+
+#. module: ow_ai
+#: model_terms:ir.ui.view,arch_db:ow_ai.ow_ai_agent_view_form
+msgid "Default Model (Settings)"
+msgstr "Zadani model (postavke)"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_composer__default_prompt
+#: model_terms:ir.ui.view,arch_db:ow_ai.ow_ai_composer_view_form
+msgid "Default Prompt"
+msgstr "Zadani upit"
+
+#. module: ow_ai
+#: model:ir.actions.act_window,name:ow_ai.ow_ai_composer_action
+#: model:ir.ui.menu,name:ow_ai.menu_ai_composers
+#: model_terms:ir.ui.view,arch_db:ow_ai.ow_ai_composer_view_list
+msgid "Default Prompts"
+msgstr "Zadani promptovi"
+
+#. module: ow_ai
+#. odoo-javascript
+#: code:addons/ow_ai/static/src/discuss/thread_actions_patch.js:0
+msgid "Delete"
+msgstr "Izbriši"
+
+#. module: ow_ai
+#. odoo-javascript
+#: code:addons/ow_ai/static/src/discuss/thread_actions_patch.js:0
+msgid "Delete Chat"
+msgstr "Obriši chat"
+
+#. module: ow_ai
+#. odoo-javascript
+#: code:addons/ow_ai/static/src/discuss/thread_actions_patch.js:0
+msgid "Delete this chat and all its messages? This cannot be undone."
+msgstr "Obrisati ovaj chat i sve njegove poruke? To se ne može poništiti."
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_skill__description
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_tool__description
+#: model_terms:ir.ui.view,arch_db:ow_ai.ow_ai_skill_view_form
+#: model_terms:ir.ui.view,arch_db:ow_ai.ow_ai_tool_view_form
+msgid "Description"
+msgstr "Opis"
+
+#. module: ow_ai
+#: model:ir.model.fields.selection,name:ow_ai.selection__ow_ai_usage__kind__direct
+msgid "Direct response"
+msgstr "Izravni odgovor"
+
+#. module: ow_ai
+#: model:ir.model,name:ow_ai.model_discuss_channel
+msgid "Discussion Channel"
+msgstr "Kanal rasprava"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_discuss_channel__display_name
+#: model:ir.model.fields,field_description:ow_ai.field_discuss_channel_member__display_name
+#: model:ir.model.fields,field_description:ow_ai.field_ir_attachment__display_name
+#: model:ir.model.fields,field_description:ow_ai.field_mail_message__display_name
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_agent__display_name
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_composer__display_name
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_job__display_name
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_prompt_button__display_name
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_session__display_name
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_session_event__display_name
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_skill__display_name
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_tool__display_name
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_usage__display_name
+#: model:ir.model.fields,field_description:ow_ai.field_res_config_settings__display_name
+#: model:ir.model.fields,field_description:ow_ai.field_res_partner__display_name
+#: model:ir.model.fields,field_description:ow_ai.field_res_users__display_name
+msgid "Display Name"
+msgstr "Naziv za prikaz"
+
+#. module: ow_ai
+#: model:ir.model.fields.selection,name:ow_ai.selection__ow_ai_job__state__done
+msgid "Done"
+msgstr "GOTOVO"
+
+#. module: ow_ai
+#: model:ir.model.fields.selection,name:ow_ai.selection__ow_ai_usage__kind__embedding
+msgid "Embedding"
+msgstr "Ugradnja (embedding)"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_job__error
+#: model:ir.model.fields.selection,name:ow_ai.selection__ow_ai_usage__status__error
+#: model_terms:ir.ui.view,arch_db:ow_ai.ow_ai_job_view_form
+msgid "Error"
+msgstr "Pogreška"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_usage__error_code
+msgid "Error Code"
+msgstr "Kod greške"
+
+#. module: ow_ai
+#: model_terms:ir.ui.view,arch_db:ow_ai.ow_ai_session_view_search
+#: model_terms:ir.ui.view,arch_db:ow_ai.ow_ai_usage_view_search
+msgid "Errors"
+msgstr "Greške"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_session__event_ids
+msgid "Event"
+msgstr "Događaj"
+
+#. module: ow_ai
+#: model_terms:ir.ui.view,arch_db:ow_ai.ow_ai_session_view_form
+msgid "Events"
+msgstr "Događanja"
+
+#. module: ow_ai
+#: model:ir.model.fields.selection,name:ow_ai.selection__ow_ai_skill__skill_type__executable
+msgid "Executable"
+msgstr "Izvršna datoteka"
+
+#. module: ow_ai
+#: model:ir.model.fields,help:ow_ai.field_ow_ai_composer__default_prompt
+msgid "Extra instructions for this interface"
+msgstr "Dodatne upute za ovo sučelje"
+
+#. module: ow_ai
+#: model:ir.model.fields.selection,name:ow_ai.selection__ow_ai_job__state__failed
+#: model_terms:ir.ui.view,arch_db:ow_ai.ow_ai_job_view_search
+msgid "Failed"
+msgstr "Neuspjelo"
+
+#. module: ow_ai
+#: model:ow.ai.tool,name:ow_ai.tool_fetch_web_page
+msgid "Fetch Web Page"
+msgstr "Dohvati web stranicu"
+
+#. module: ow_ai
+#: model_terms:ir.ui.view,arch_db:ow_ai.preview_update
+msgid "Field"
+msgstr "Polje"
+
+#. module: ow_ai
+#: model:ow.ai.skill,description:ow_ai.skill_web_search
+msgid ""
+"Find current or public information on the web (news, prices, documentation, "
+"companies, regulations) and cite the sources."
+msgstr ""
+"Pronađi trenutne ili javne informacije na webu (vijesti, cijene, "
+"dokumentaciju, tvrtke, propise) i navedi izvore."
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_job__finished_at
+msgid "Finished At"
+msgstr "Završeno u"
+
+#. module: ow_ai
+#: model:ir.model.fields,help:ow_ai.field_ow_ai_tool__tool_name
+msgid "Function name sent to the model"
+msgstr "Naziv funkcije poslan modelu"
+
+#. module: ow_ai
+#: model:ow.ai.tool,name:ow_ai.tool_get_fields
+msgid "Get Fields"
+msgstr "Dohvati polja"
+
+#. module: ow_ai
+#: model:ow.ai.tool,name:ow_ai.tool_get_models
+msgid "Get Models"
+msgstr "Dohvati modele"
+
+#. module: ow_ai
+#: model:ow.ai.tool,description:ow_ai.tool_read_group
+msgid ""
+"Group and aggregate records, e.g. \"count of orders per country\" or \"total"
+" amount per month\". groupby items are a field name, or "
+"\"field:granularity\" for date/datetime fields (granularity one of year, "
+"quarter, month, week, day). aggregates items are \"field:function\" "
+"(function one of sum, avg, min, max, count, count_distinct) or the special "
+"\"__count\" for a plain row count. Use compute_date beforehand for any "
+"relative date boundaries in the domain. Prefer this over search when the "
+"user wants totals, counts or breakdowns rather than a list of individual "
+"records."
+msgstr ""
+"Grupiraj i agregiraj zapise, npr. \"broj narudžbi po državi\" ili \"ukupni "
+"iznos po mjesecu\". groupby stavke su naziv polja ili \"polje:granularnost\""
+" za datum/datetime polja (granularnost jedna od year, quarter, month, week, "
+"day). aggregates stavke su \"polje:funkcija\" (funkcija jedna od sum, avg, "
+"min, max, count, count_distinct) ili posebni \"__count\" za običan broj "
+"redaka. Koristite compute_date unaprijed za sve relativne granice datuma u "
+"domeni. Preferirajte ovo umjesto search kada korisnik želi ukupne iznose, "
+"brojeve ili raščlambe umjesto popisa pojedinačnih zapisa."
+
+#. module: ow_ai
+#: model:ir.model.fields.selection,name:ow_ai.selection__ow_ai_skill__skill_type__guidance
+msgid "Guidance"
+msgstr "Smjernice"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_discuss_channel__id
+#: model:ir.model.fields,field_description:ow_ai.field_discuss_channel_member__id
+#: model:ir.model.fields,field_description:ow_ai.field_ir_attachment__id
+#: model:ir.model.fields,field_description:ow_ai.field_mail_message__id
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_agent__id
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_composer__id
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_job__id
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_prompt_button__id
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_session__id
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_session_event__id
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_skill__id
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_tool__id
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_usage__id
+#: model:ir.model.fields,field_description:ow_ai.field_res_config_settings__id
+#: model:ir.model.fields,field_description:ow_ai.field_res_partner__id
+#: model:ir.model.fields,field_description:ow_ai.field_res_users__id
+msgid "ID"
+msgstr "ID"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_agent__image_128
+msgid "Image"
+msgstr "Slika"
+
+#. module: ow_ai
+#: model:ir.model.fields,help:ow_ai.field_ow_ai_skill__instructions
+msgid "Injected into the conversation when the skill is loaded"
+msgstr "Ubrizgano u razgovor kada se vještina učita"
+
+#. module: ow_ai
+#: model:ow.ai.tool,thinking_text:ow_ai.tool_get_fields
+msgid "Inspecting fields"
+msgstr "Provjera polja"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_skill__instructions
+#: model_terms:ir.ui.view,arch_db:ow_ai.ow_ai_agent_view_form
+#: model_terms:ir.ui.view,arch_db:ow_ai.ow_ai_skill_view_form
+msgid "Instructions"
+msgstr "Upute"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_composer__interface_key
+msgid "Interface Key"
+msgstr "Ključ sučelja"
+
+#. module: ow_ai
+#. odoo-python
+#: code:addons/ow_ai/models/ow_ai_tool.py:0
+msgid "Invalid JSON schema: %(error)s"
+msgstr "Nevažeća JSON shema: %(error)s"
+
+#. module: ow_ai
+#. odoo-python
+#: code:addons/ow_ai/engine/user_input.py:0
+msgid "Invalid answer"
+msgstr "Nevažeći odgovor"
+
+#. module: ow_ai
+#. odoo-python
+#: code:addons/ow_ai/engine/user_input.py:0
+msgid "Invalid choice"
+msgstr "Nevažeći izbor"
+
+#. module: ow_ai
+#. odoo-python
+#: code:addons/ow_ai/models/ow_ai_tool.py:0
+msgid "Invalid tool schema: %(error)s"
+msgstr "Nevažeća shema alata: %(error)s"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_skill__is_native
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_tool__is_native
+msgid "Is Native"
+msgstr "Je izvorno"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_agent__is_system_agent
+msgid "Is System Agent"
+msgstr "Je sistemski agent"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_composer__is_system_default
+msgid "Is System Default"
+msgstr "Je sistemski zadano"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_tool__is_write
+msgid "Is Write"
+msgstr "Je upis"
+
+#. module: ow_ai
+#: model:ir.model.fields,help:ow_ai.field_ow_ai_tool__schema
+msgid "JSON schema of the parameters object"
+msgstr "JSON shema objekta parametara"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_session__job_ids
+msgid "Job"
+msgstr "Radno mjesto"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_res_config_settings__ow_ai_job_stale_minutes
+#: model_terms:ir.ui.view,arch_db:ow_ai.res_config_settings_view_form
+msgid "Job Stale After (minutes)"
+msgstr "Posao zastario nakon (minuta)"
+
+#. module: ow_ai
+#: model:ir.actions.act_window,name:ow_ai.ow_ai_job_action
+#: model:ir.ui.menu,name:ow_ai.menu_ai_jobs
+#: model_terms:ir.ui.view,arch_db:ow_ai.ow_ai_session_view_form
+msgid "Jobs"
+msgstr "Radna mjesta"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_job__kind
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_tool__kind
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_usage__kind
+#: model_terms:ir.ui.view,arch_db:ow_ai.ow_ai_job_view_search
+#: model_terms:ir.ui.view,arch_db:ow_ai.ow_ai_usage_view_search
+msgid "Kind"
+msgstr "Vrsta"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_res_config_settings__ow_ai_web_search_language
+#: model_terms:ir.ui.view,arch_db:ow_ai.res_config_settings_view_form
+msgid "Language"
+msgstr "Jezik"
+
+#. module: ow_ai
+#: model:ir.model.fields,help:ow_ai.field_res_config_settings__ow_ai_web_search_language
+#: model_terms:ir.ui.view,arch_db:ow_ai.res_config_settings_view_form
+msgid ""
+"Language code passed to SearXNG, e.g. nl. Empty uses the user's language."
+msgstr ""
+"Kod jezika proslijeđen SearXNG-u, npr. nl. Prazno koristi korisnikov jezik."
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_session__last_error
+msgid "Last Error"
+msgstr "Zadnja greška"
+
+#. module: ow_ai
+#: model_terms:ir.ui.view,arch_db:ow_ai.ow_ai_usage_view_search
+msgid "Last Month"
+msgstr "Prošli mjesec"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_agent__write_uid
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_composer__write_uid
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_job__write_uid
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_prompt_button__write_uid
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_session__write_uid
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_session_event__write_uid
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_skill__write_uid
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_tool__write_uid
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_usage__write_uid
+msgid "Last Updated by"
+msgstr "Promijenio"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_agent__write_date
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_composer__write_date
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_job__write_date
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_prompt_button__write_date
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_session__write_date
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_session_event__write_date
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_skill__write_date
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_tool__write_date
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_usage__write_date
+msgid "Last Updated on"
+msgstr "Vrijeme promjene"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_usage__latency_ms
+msgid "Latency Ms"
+msgstr "Latencija ms"
+
+#. module: ow_ai
+#: model_terms:ir.ui.view,arch_db:ow_ai.res_config_settings_view_form
+msgid "Limits"
+msgstr "Limiti"
+
+#. module: ow_ai
+#: model:ow.ai.tool,description:ow_ai.tool_get_models
+msgid ""
+"List the Odoo models this assistant is allowed to query, with their label "
+"and, when it has one, the main menu path a human would use to find it. Call "
+"this first when you are not sure which model holds the data the user is "
+"asking about; it takes no arguments. Once you have a model name, call "
+"get_fields before searching it so you use real field names instead of "
+"guessing them."
+msgstr ""
+"Popiši Odoo modele koje ovaj pomoćnik smije upitati, s njihovom oznakom i, "
+"kada je ima, glavnom stazom izbornika koju bi čovjek koristio da je pronađe."
+" Pozovite ovo prvo kada niste sigurni koji model sadrži podatke o kojima "
+"korisnik pita; ne prima argumente. Kada dobijete naziv modela, pozovite "
+"get_fields prije pretraživanja kako biste koristili stvarne nazive polja "
+"umjesto pogađanja."
+
+#. module: ow_ai
+#: model:ow.ai.tool,description:ow_ai.tool_get_fields
+msgid ""
+"List the fields of a model: technical name, label, type (with the related "
+"model in parentheses for relational fields), flags (req = required, ro = "
+"read-only, search = searchable, sort = sortable) and, for selection fields, "
+"the allowed key=label pairs. Always call this before "
+"search/read_records/read_group on a model you have not inspected yet in this"
+" conversation, so you use the exact field names the model actually has."
+msgstr ""
+"Popiši polja modela: tehnički naziv, oznaku, vrstu (s povezanim modelom u "
+"zagradama za relacijska polja), zastavice (req = obavezno, ro = samo za "
+"čitanje, search = pretraživo, sort = sortabilno) i, za selekcijska polja, "
+"dopuštene parove ključ=oznaka. Uvijek pozovite ovo prije "
+"search/read_records/read_group na modelu koji još niste pregledali u ovom "
+"razgovoru, kako biste koristili točne nazive polja koje model stvarno ima."
+
+#. module: ow_ai
+#: model:ow.ai.tool,name:ow_ai.tool_load_skills
+msgid "Load Skills"
+msgstr "Učitaj vještine"
+
+#. module: ow_ai
+#: model:ow.ai.tool,description:ow_ai.tool_load_skills
+msgid ""
+"Load the instructions and tools of one or more skills by id, making them "
+"available for the rest of this conversation. Skills are only loaded "
+"progressively, on demand: only the tools of a skill you have actually loaded"
+" are usable, so call this before using any tool that belongs to a skill you "
+"have not loaded yet."
+msgstr ""
+"Učitaj upute i alate jedne ili više vještina po id-u, čineći ih dostupnima "
+"za ostatak ovog razgovora. Vještine se učitavaju samo progresivno, na "
+"zahtjev: samo alati vještine koju ste stvarno učitali su upotrebljivi, pa "
+"pozovite ovo prije korištenja bilo kojeg alata koji pripada vještini koju "
+"još niste učitali."
+
+#. module: ow_ai
+#. odoo-javascript
+#: code:addons/ow_ai/static/src/discuss/ow_ai_tool_summary.xml:0
+msgid "Loading"
+msgstr "Učitavanje"
+
+#. module: ow_ai
+#. odoo-javascript
+#: code:addons/ow_ai/static/src/discuss/message_actions_patch.js:0
+msgid "Log as note"
+msgstr "Zabilježi kao poruku"
+
+#. module: ow_ai
+#. odoo-javascript
+#: code:addons/ow_ai/static/src/discuss/message_actions_patch.js:0
+msgid "Log note"
+msgstr "Zabilješka"
+
+#. module: ow_ai
+#: model:ow.ai.skill,description:ow_ai.skill_search_database
+msgid ""
+"Look up, count and summarise records stored in this Odoo database: contacts,"
+" orders, invoices, tasks, and anything else the user has access to."
+msgstr ""
+"Potraži, prebroji i sažmi zapise pohranjene u ovoj Odoo bazi podataka: "
+"kontakte, narudžbe, račune, zadatke i bilo što drugo čemu korisnik ima "
+"pristup."
+
+#. module: ow_ai
+#: model:ow.ai.tool,thinking_text:ow_ai.tool_get_models
+msgid "Looking up available models"
+msgstr "Traženje dostupnih modela"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_session__loop_state
+msgid "Loop State"
+msgstr "Stanje petlje"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_res_config_settings__ow_ai_max_history_chars
+#: model_terms:ir.ui.view,arch_db:ow_ai.res_config_settings_view_form
+msgid "Max History Characters"
+msgstr "Maks. znakova povijesti"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_res_config_settings__ow_ai_max_rounds
+#: model_terms:ir.ui.view,arch_db:ow_ai.res_config_settings_view_form
+msgid "Max Rounds"
+msgstr "Maks. rundi"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_res_config_settings__ow_ai_max_tool_calls_per_round
+#: model_terms:ir.ui.view,arch_db:ow_ai.res_config_settings_view_form
+msgid "Max Tool Calls per Round"
+msgstr "Maks. poziva alata po rundi"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_res_config_settings__ow_ai_max_tool_result_chars
+#: model_terms:ir.ui.view,arch_db:ow_ai.res_config_settings_view_form
+msgid "Max Tool Result Characters"
+msgstr "Maks. znakova rezultata alata"
+
+#. module: ow_ai
+#: model:ir.model,name:ow_ai.model_mail_message
+msgid "Message"
+msgstr "Poruka"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_session_event__metadata
+msgid "Metadata"
+msgstr "Metapodaci"
+
+#. module: ow_ai
+#: model_terms:ir.ui.view,arch_db:ow_ai.ow_ai_session_view_search
+msgid "Mine"
+msgstr "Moje"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_agent__model
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_composer__model_id
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_usage__model
+#: model_terms:ir.ui.view,arch_db:ow_ai.ow_ai_usage_view_search
+msgid "Model"
+msgstr "Model"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_composer__model_name
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_tool__model_name
+msgid "Model Name"
+msgstr "Naziv modela"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_agent__model_options
+#: model_terms:ir.ui.view,arch_db:ow_ai.ow_ai_agent_view_form
+msgid "Model Options"
+msgstr "Opcije modela"
+
+#. module: ow_ai
+#: model:ir.model.fields,help:ow_ai.field_res_config_settings__ow_ai_default_model
+#: model_terms:ir.ui.view,arch_db:ow_ai.res_config_settings_view_form
+msgid ""
+"Model id at that endpoint, e.g. openai/gpt-6-luna (OpenRouter), hyai/loes-"
+"large (HostYourAI), qwen2.5:3b (Ollama)"
+msgstr ""
+"Id modela na tom endpointu, npr. openai/gpt-6-luna (OpenRouter), hyai/loes-"
+"large (HostYourAI), qwen2.5:3b (Ollama)"
+
+#. module: ow_ai
+#: model:ir.model.fields,help:ow_ai.field_ow_ai_agent__model
+msgid ""
+"Model id at the configured endpoint, e.g. openai/gpt-6-luna. Empty = Default"
+" Model from Settings."
+msgstr ""
+"Id modela na konfiguriranom endpointu, npr. openai/gpt-6-luna. Prazno = "
+"zadani model iz postavki."
+
+#. module: ow_ai
+#. odoo-python
+#: code:addons/ow_ai/models/ow_ai_agent.py:0
+msgid "Model option '%(key)s' has the wrong type."
+msgstr "Opcija modela '%(key)s' ima pogrešnu vrstu."
+
+#. module: ow_ai
+#. odoo-python
+#: code:addons/ow_ai/models/ow_ai_agent.py:0
+msgid "Model options must be a JSON object."
+msgstr "Opcije modela moraju biti JSON objekt."
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_agent__name
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_composer__name
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_prompt_button__name
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_skill__name
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_tool__name
+msgid "Name"
+msgstr "Naziv"
+
+#. module: ow_ai
+#: model_terms:ir.ui.view,arch_db:ow_ai.ow_ai_skill_view_form
+#: model_terms:ir.ui.view,arch_db:ow_ai.ow_ai_tool_view_form
+msgid "Native"
+msgstr "Izvorno"
+
+#. module: ow_ai
+#. odoo-python
+#: code:addons/ow_ai/models/ow_ai_skill.py:0
+msgid "Native skills cannot be deleted."
+msgstr "Izvorne vještine ne mogu se obrisati."
+
+#. module: ow_ai
+#. odoo-python
+#: code:addons/ow_ai/models/ow_ai_skill.py:0
+msgid "Native skills cannot have this field changed."
+msgstr "Izvorne vještine ne mogu imati ovo polje promijenjeno."
+
+#. module: ow_ai
+#. odoo-python
+#: code:addons/ow_ai/models/ow_ai_tool.py:0
+msgid "Native tools cannot be deleted."
+msgstr "Izvorni alati ne mogu se obrisati."
+
+#. module: ow_ai
+#. odoo-python
+#: code:addons/ow_ai/models/ow_ai_tool.py:0
+msgid "Native tools cannot have this field changed."
+msgstr "Izvorni alati ne mogu imati ovo polje promijenjeno."
+
+#. module: ow_ai
+#. odoo-javascript
+#: code:addons/ow_ai/static/src/web/discuss_sidebar_category_patch.js:0
+msgid "New AI chat"
+msgstr "Novi AI chat"
+
+#. module: ow_ai
+#. odoo-javascript
+#: code:addons/ow_ai/static/src/web/messaging_menu_patch.xml:0
+msgid "New chat"
+msgstr "Novi chat"
+
+#. module: ow_ai
+#: model_terms:ir.ui.view,arch_db:ow_ai.preview_update
+msgid "New value"
+msgstr "Nova vrijednost"
+
+#. module: ow_ai
+#. odoo-javascript
+#: code:addons/ow_ai/static/src/discuss/ow_ai_user_input_request.js:0
+msgid "No"
+msgstr "Ne"
+
+#. module: ow_ai
+#. odoo-javascript
+#: code:addons/ow_ai/static/src/web/messaging_menu_patch.xml:0
+msgid "No AI chat yet"
+msgstr "Još nema AI chata"
+
+#. module: ow_ai
+#: model:ir.model.fields.selection,name:ow_ai.selection__res_config_settings__ow_ai_api_key_state__missing
+msgid "Not set"
+msgstr "Nije postavljeno"
+
+#. module: ow_ai
+#: model:ir.model.fields,help:ow_ai.field_res_config_settings__ow_ai_web_search_results
+#: model_terms:ir.ui.view,arch_db:ow_ai.res_config_settings_view_form
+msgid "Number of search results returned to the model (max 10)."
+msgstr "Broj rezultata pretraživanja vraćenih modelu (najviše 10)."
+
+#. module: ow_ai
+#: model:ir.model.fields.selection,name:ow_ai.selection__ow_ai_usage__status__ok
+msgid "OK"
+msgstr "U redu"
+
+#. module: ow_ai
+#. odoo-javascript
+#: code:addons/ow_ai/static/src/core/public_web/discuss_app_model_patch.js:0
+#: code:addons/ow_ai/static/src/core/public_web/messaging_menu_patch.js:0
+#: code:addons/ow_ai/static/src/web/command_palette.js:0
+#: code:addons/ow_ai/static/src/web/messaging_menu_patch.xml:0
+#: model:ir.ui.menu,name:ow_ai.menu_ai_root
+#: model_terms:ir.ui.view,arch_db:ow_ai.res_config_settings_view_form
+msgid "OW AI"
+msgstr "OW AI"
+
+#. module: ow_ai
+#: model_terms:ir.ui.view,arch_db:ow_ai.preview_update
+msgid "Old value"
+msgstr "Stara vrijednost"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_res_config_settings__ow_ai_web_search_default
+#: model_terms:ir.ui.view,arch_db:ow_ai.res_config_settings_view_form
+msgid "On by Default"
+msgstr "Uključeno prema zadanim postavkama"
+
+#. module: ow_ai
+#. odoo-python
+#: code:addons/ow_ai/models/discuss_channel.py:0
+msgid "Only AI chats can be deleted this way."
+msgstr "Samo AI chatovi mogu se obrisati na ovaj način."
+
+#. module: ow_ai
+#. odoo-python
+#: code:addons/ow_ai/models/ow_ai_job.py:0
+#: code:addons/ow_ai/models/ow_ai_session.py:0
+msgid "Only AI managers can do this."
+msgstr "Samo AI upravitelji mogu to učiniti."
+
+#. module: ow_ai
+#. odoo-python
+#: code:addons/ow_ai/models/res_config_settings.py:0
+msgid "Only administrators can manage the AI settings."
+msgstr "Samo administratori mogu upravljati AI postavkama."
+
+#. module: ow_ai
+#. odoo-python
+#: code:addons/ow_ai/engine/tool_batch.py:0
+msgid "Only the person who made this request can answer it."
+msgstr "Samo osoba koja je postavila ovaj zahtjev može na njega odgovoriti."
+
+#. module: ow_ai
+#. odoo-javascript
+#: code:addons/ow_ai/static/src/web/command_palette.js:0
+msgid "Open AI chat"
+msgstr "Otvori AI chat"
+
+#. module: ow_ai
+#: model_terms:ir.ui.view,arch_db:ow_ai.ow_ai_session_view_form
+msgid "Open chat"
+msgstr "Otvori chat"
+
+#. module: ow_ai
+#: model:ir.model.fields,help:ow_ai.field_res_config_settings__ow_ai_base_url
+#: model_terms:ir.ui.view,arch_db:ow_ai.res_config_settings_view_form
+msgid ""
+"OpenAI-compatible endpoint, e.g. https://openrouter.ai/api/v1, "
+"https://hostyourai.com/api/v1, https://api.openai.com/v1, "
+"http://ollama:11434/v1"
+msgstr ""
+"Endpoint kompatibilan s OpenAI, npr. https://openrouter.ai/api/v1, "
+"https://hostyourai.com/api/v1, https://api.openai.com/v1, "
+"http://ollama:11434/v1"
+
+#. module: ow_ai
+#: model:ir.model.fields,help:ow_ai.field_res_config_settings__ow_ai_api_key
+#: model_terms:ir.ui.view,arch_db:ow_ai.res_config_settings_view_form
+msgid ""
+"Optional for endpoints without authentication. Stored server-side only; "
+"never sent back to the browser."
+msgstr ""
+"Neobavezno za endpointove bez autentikacije. Pohranjeno samo na strani "
+"poslužitelja; nikada se ne šalje natrag pregledniku."
+
+#. module: ow_ai
+#: model:ir.model.fields,help:ow_ai.field_ow_ai_agent__model_options
+msgid ""
+"Optional request options: temperature, max_tokens, reasoning; passed through"
+" as-is, the endpoint must support them"
+msgstr ""
+"Neobavezne opcije zahtjeva: temperature, max_tokens, reasoning; proslijeđuju"
+" se netaknute, endpoint ih mora podržavati"
+
+#. module: ow_ai
+#. odoo-javascript
+#: code:addons/ow_ai/static/src/discuss/ow_ai_user_input_request.xml:0
+msgid "Or type your own answer…"
+msgstr "Ili upišite vlastiti odgovor…"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_discuss_channel__ow_ai_agent_id
+msgid "Ow Ai Agent"
+msgstr "Ow Ai agent"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_discuss_channel__ow_ai_session_ids
+msgid "Ow Ai Session"
+msgstr "Ow Ai sesija"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_agent__partner_id
+msgid "Partner"
+msgstr "Partner"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_job__payload
+#: model_terms:ir.ui.view,arch_db:ow_ai.ow_ai_job_view_form
+msgid "Payload"
+msgstr "Sadržaj"
+
+#. module: ow_ai
+#: model:ir.model.fields.selection,name:ow_ai.selection__ow_ai_job__state__pending
+#: model_terms:ir.ui.view,arch_db:ow_ai.ow_ai_job_view_search
+msgid "Pending"
+msgstr "Čeka slanje"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_session__pending_tool_call
+msgid "Pending Tool Call"
+msgstr "Radnja alata na čekanju"
+
+#. module: ow_ai
+#. odoo-python
+#: code:addons/ow_ai/engine/user_input.py:0
+msgid "Please choose an option or type an answer."
+msgstr "Odaberite opciju ili upišite odgovor."
+
+#. module: ow_ai
+#: model:ow.ai.tool,thinking_text:ow_ai.tool_create_records
+msgid "Preparing to create records"
+msgstr "Priprema za kreiranje zapisa"
+
+#. module: ow_ai
+#: model:ow.ai.tool,thinking_text:ow_ai.tool_update_records
+msgid "Preparing to update records"
+msgstr "Priprema za ažuriranje zapisa"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_prompt_button__prompt
+#: model_terms:ir.ui.view,arch_db:ow_ai.ow_ai_usage_view_list
+msgid "Prompt"
+msgstr "Prompt"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_composer__prompt_button_ids
+msgid "Prompt Button"
+msgstr "Gumb upita"
+
+#. module: ow_ai
+#: model_terms:ir.ui.view,arch_db:ow_ai.ow_ai_composer_view_form
+msgid "Prompt Buttons"
+msgstr "Gumbi upita"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_usage__prompt_tokens
+msgid "Prompt Tokens"
+msgstr "Tokeni upita"
+
+#. module: ow_ai
+#: model:ow.ai.tool,name:ow_ai.tool_read_group
+msgid "Read Group"
+msgstr "Grupno čitanje"
+
+#. module: ow_ai
+#: model:ow.ai.tool,name:ow_ai.tool_read_records
+msgid "Read Records"
+msgstr "Čitanje zapisa"
+
+#. module: ow_ai
+#: model:ow.ai.tool,description:ow_ai.tool_read_records
+msgid ""
+"Read a specific, already-known list of record ids on a model (up to 50 at a "
+"time). Never guess ids: get them from a previous search or from the record "
+"the user is currently looking at. Ids that no longer exist, or that you are "
+"not allowed to read, are reported in missing_ids instead of causing an "
+"error. Set include_files to true (for 5 or fewer records) to also receive "
+"their linked images/PDF attachments as inline content."
+msgstr ""
+"Pročitaj određeni, već poznati popis id-eva zapisa na modelu (najviše 50 "
+"odjednom). Nikada ne pogađaj id-eve: uzmi ih iz prethodnog pretraživanja ili"
+" iz zapisa koji korisnik trenutno gleda. Id-evi koji više ne postoje, ili "
+"koje ne smijete čitati, prijavljuju se u missing_ids umjesto da izazovu "
+"pogrešku. Postavite include_files na true (za 5 ili manje zapisa) kako biste"
+" primili i njihove povezane slike/PDF privitke kao inline sadržaj."
+
+#. module: ow_ai
+#: model:ow.ai.tool,description:ow_ai.tool_fetch_web_page
+msgid ""
+"Read the text of one public web page from the search results or from a URL "
+"the user gave. Returns the page text in slices: use offset to continue when "
+"truncated is true. Never use it for URLs you made up."
+msgstr ""
+"Pročitaj tekst jedne javne web stranice iz rezultata pretraživanja ili s "
+"URL-a koji je korisnik dao. Vraća tekst stranice u dijelovima: koristite "
+"offset za nastavak kada je truncated true. Nikada ga ne koristite za URL-ove"
+" koje ste sami izmislili."
+
+#. module: ow_ai
+#: model:ow.ai.tool,thinking_text:ow_ai.tool_fetch_web_page
+msgid "Reading a page"
+msgstr "Čitanje stranice"
+
+#. module: ow_ai
+#: model:ow.ai.tool,thinking_text:ow_ai.tool_read_records
+msgid "Reading records"
+msgstr "Čitanje zapisa"
+
+#. module: ow_ai
+#: model:ir.model.fields.selection,name:ow_ai.selection__ow_ai_session__loop_state__ready
+#: model_terms:ir.ui.view,arch_db:ow_ai.ow_ai_session_view_search
+msgid "Ready"
+msgstr "Spremno"
+
+#. module: ow_ai
+#: model:ir.ui.menu,name:ow_ai.menu_ai_reports
+msgid "Reports"
+msgstr "Izvještaji"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_usage__request_id
+msgid "Request"
+msgstr "Zahtjev"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_session__request_context
+msgid "Request Context"
+msgstr "Kontekst zahtjeva"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_session__request_round
+msgid "Request Round"
+msgstr "Runda zahtjeva"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_session__request_round_limit
+msgid "Request Round Limit"
+msgstr "Granica rundi zahtjeva"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_session__request_turn
+msgid "Request Turn"
+msgstr "Red zahtjeva"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_session__request_user_id
+msgid "Request User"
+msgstr "Korisnik zahtjeva"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_tool__requires_confirmation
+msgid "Requires Confirmation"
+msgstr "Zahtijeva potvrdu"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_session__res_id
+msgid "Res"
+msgstr "Res"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_session__res_model
+msgid "Res Model"
+msgstr "Res model"
+
+#. module: ow_ai
+#: model:ir.model.fields,help:ow_ai.field_ow_ai_tool__model_name
+msgid "Restrict this tool to sessions about this model"
+msgstr "Ograniči ovaj alat na sesije o ovom modelu"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_res_config_settings__ow_ai_web_search_results
+#: model_terms:ir.ui.view,arch_db:ow_ai.res_config_settings_view_form
+msgid "Results"
+msgstr "Rezultati"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_session__resume_token
+msgid "Resume Token"
+msgstr "Token nastavka"
+
+#. module: ow_ai
+#. odoo-javascript
+#: code:addons/ow_ai/static/src/discuss/ow_ai_thread_status.xml:0
+#: model_terms:ir.ui.view,arch_db:ow_ai.ow_ai_job_view_form
+#: model_terms:ir.ui.view,arch_db:ow_ai.ow_ai_job_view_list
+msgid "Retry"
+msgstr "Pokušaj ponovo"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_session_event__role
+msgid "Role"
+msgstr "Uloga"
+
+#. module: ow_ai
+#: model:ir.model.fields.selection,name:ow_ai.selection__ow_ai_job__state__running
+#: model_terms:ir.ui.view,arch_db:ow_ai.ow_ai_job_view_search
+msgid "Running"
+msgstr "U tijeku"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_job__scheduled_at
+msgid "Scheduled At"
+msgstr "Planirano u"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_tool__schema
+#: model_terms:ir.ui.view,arch_db:ow_ai.ow_ai_tool_view_form
+msgid "Schema"
+msgstr "Shema"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_tool__schema_summary
+msgid "Schema Summary"
+msgstr "Sažetak sheme"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_res_config_settings__ow_ai_web_search_url
+#: model_terms:ir.ui.view,arch_db:ow_ai.res_config_settings_view_form
+msgid "SearXNG URL"
+msgstr "SearXNG URL"
+
+#. module: ow_ai
+#: model:ir.model.fields,help:ow_ai.field_res_config_settings__ow_ai_web_search_url
+#: model_terms:ir.ui.view,arch_db:ow_ai.res_config_settings_view_form
+msgid "SearXNG base URL, e.g. http://searxng:8080. Empty disables web search."
+msgstr ""
+"SearXNG osnovni URL, npr. http://searxng:8080. Prazno onemogućuje web "
+"pretraživanje."
+
+#. module: ow_ai
+#: model:ow.ai.tool,name:ow_ai.tool_search
+msgid "Search"
+msgstr "Pretraži"
+
+#. module: ow_ai
+#: model:ow.ai.skill,name:ow_ai.skill_search_database
+msgid "Search Database"
+msgstr "Pretraži bazu podataka"
+
+#. module: ow_ai
+#: model:ow.ai.tool,description:ow_ai.tool_search
+msgid ""
+"Search a model and return a page of matching records. The domain is a "
+"standard Odoo domain, given as a Python/JSON list of [\"field\", "
+"\"operator\", value] triples, e.g. [[\"state\", \"=\", \"done\"], "
+"[\"amount_total\", \">\", 100]]; combine conditions with the prefix "
+"operators \"&\" (and, the default between consecutive conditions), \"|\" "
+"(or) and \"!\" (not), e.g. [\"|\", [\"city\", \"=\", \"Rotterdam\"], "
+"[\"city\", \"=\", \"Amsterdam\"]]. Supported operators include =, !=, >, >=,"
+" <, <=, in, not in, like, ilike and child_of. For relative dates (e.g. "
+"\"created last week\"), call compute_date first and use its value in the "
+"domain rather than guessing a date. Results are paginated (limit is clamped "
+"between 1 and 200, default 50); check has_more and increase offset to get "
+"the next page. Omit fields to get a sensible default set, or pass an "
+"explicit list from get_fields."
+msgstr ""
+"Pretraži model i vrati stranicu odgovarajućih zapisa. Domena je standardna "
+"Odoo domena, dana kao Python/JSON lista trojki [\"polje\", \"operator\", "
+"vrijednost], npr. [[\"state\", \"=\", \"done\"], [\"amount_total\", \">\", "
+"100]]; kombinirajte uvjete prefix operatorima \"&\" (i, zadano između "
+"uzastopnih uvjeta), \"|\" (ili) i \"!\" (ne), npr. [\"|\", [\"city\", \"=\","
+" \"Rotterdam\"], [\"city\", \"=\", \"Amsterdam\"]]. Podržani operatori "
+"uključuju =, !=, >, >=, <, <=, in, not in, like, ilike i child_of. Za "
+"relativne datume (npr. \"stvoreno prošli tjedan\"), najprije pozovite "
+"compute_date i koristite njegovu vrijednost u domeni umjesto pogađanja "
+"datuma. Rezultati su paginirani (limit je ograničen između 1 i 200, zadano "
+"50); provjerite has_more i povećajte offset za sljedeću stranicu. Izostavite"
+" polja za razumni zadani skup ili proslijedite eksplicitnu listu iz "
+"get_fields."
+
+#. module: ow_ai
+#: model:ow.ai.tool,description:ow_ai.tool_web_search
+msgid ""
+"Search the public web through the configured search service. Returns "
+"numbered results (title, url, snippet, date). Use a short specific query; "
+"use time_range for recent things and site to restrict to one domain. Cite "
+"results in your answer as [WEB_SOURCE:n]."
+msgstr ""
+"Pretraži javni web kroz konfiguriranu uslugu pretraživanja. Vraća numerirane"
+" rezultate (naslov, url, isječak, datum). Koristite kratak, specifičan upit;"
+" koristite time_range za nedavne stvari i site za ograničenje na jednu "
+"domenu. Navecite rezultate u svom odgovoru kao [WEB_SOURCE:n]."
+
+#. module: ow_ai
+#: model:ow.ai.tool,thinking_text:ow_ai.tool_search
+msgid "Searching"
+msgstr "Pretraživanje"
+
+#. module: ow_ai
+#: model:ow.ai.tool,thinking_text:ow_ai.tool_web_search
+msgid "Searching the web"
+msgstr "Pretraživanje weba"
+
+#. module: ow_ai
+#. odoo-javascript
+#: code:addons/ow_ai/static/src/discuss/ow_ai_user_input_request.xml:0
+msgid "Send"
+msgstr "Pošalji"
+
+#. module: ow_ai
+#. odoo-javascript
+#: code:addons/ow_ai/static/src/discuss/message_actions_patch.js:0
+msgid "Send as message"
+msgstr "Pošalji kao poruku"
+
+#. module: ow_ai
+#. odoo-javascript
+#: code:addons/ow_ai/static/src/discuss/message_actions_patch.js:0
+msgid "Send message"
+msgstr "Pošalji poruku"
+
+#. module: ow_ai
+#. odoo-javascript
+#: code:addons/ow_ai/static/src/discuss/ow_ai_user_input_request.xml:0
+msgid "Sending"
+msgstr "Šaljem"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_agent__sequence
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_prompt_button__sequence
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_session_event__sequence
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_skill__sequence
+msgid "Sequence"
+msgstr "Sekvenca"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_tool__server_action_id
+#: model:ir.model.fields.selection,name:ow_ai.selection__ow_ai_tool__kind__server_action
+msgid "Server Action"
+msgstr "Serverske radnje"
+
+#. module: ow_ai
+#. odoo-python
+#: code:addons/ow_ai/models/ow_ai_tool.py:0
+msgid "Server-action tools are not available in this version."
+msgstr "Alati serverske radnje nisu dostupni u ovoj verziji."
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_job__session_id
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_session_event__session_id
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_usage__session_id
+msgid "Session"
+msgstr "Sesija"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_agent__session_count
+msgid "Session Count"
+msgstr "Broj sesija"
+
+#. module: ow_ai
+#: model_terms:ir.ui.view,arch_db:ow_ai.ow_ai_session_view_form
+msgid "Session Event"
+msgstr "Događaj sesije"
+
+#. module: ow_ai
+#: model:ir.actions.act_window,name:ow_ai.ow_ai_session_action
+#: model:ir.actions.act_window,name:ow_ai.ow_ai_session_action_from_agent
+#: model:ir.ui.menu,name:ow_ai.menu_ai_sessions
+#: model_terms:ir.ui.view,arch_db:ow_ai.ow_ai_agent_view_form
+msgid "Sessions"
+msgstr "Smjene"
+
+#. module: ow_ai
+#: model:ir.model.fields.selection,name:ow_ai.selection__res_config_settings__ow_ai_api_key_state__param
+msgid "Set in settings"
+msgstr "Postavljeno u postavkama"
+
+#. module: ow_ai
+#: model:ir.model.fields.selection,name:ow_ai.selection__res_config_settings__ow_ai_api_key_state__env
+msgid "Set via environment variable"
+msgstr "Postavljeno putem varijable okoline"
+
+#. module: ow_ai
+#: model:ir.model.fields.selection,name:ow_ai.selection__res_config_settings__ow_ai_api_key_state__conf
+msgid "Set via odoo.conf"
+msgstr "Postavljeno putem odoo.conf"
+
+#. module: ow_ai
+#: model:ir.actions.act_window,name:ow_ai.action_ow_ai_config_settings
+#: model:ir.ui.menu,name:ow_ai.menu_ai_settings
+msgid "Settings"
+msgstr "Postavke"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_session__show_agent_steps
+msgid "Show Agent Steps"
+msgstr "Prikaži korake agenta"
+
+#. module: ow_ai
+#. odoo-javascript
+#: code:addons/ow_ai/static/src/discuss/composer_actions_patch.js:0
+msgid "Show steps"
+msgstr "Prikaži korake"
+
+#. module: ow_ai
+#: model:ow.ai.prompt.button,name:ow_ai.composer_systray_button_3
+msgid "Show the top customers this year"
+msgstr "Prikaži najbolje kupce ove godine"
+
+#. module: ow_ai
+#: model:ow.ai.prompt.button,prompt:ow_ai.composer_systray_button_3
+msgid "Show the top customers this year."
+msgstr "Prikaži najbolje kupce ove godine."
+
+#. module: ow_ai
+#: model:ir.model.fields,help:ow_ai.field_ow_ai_skill__description
+msgid "Shown to the model so it can decide when to load this skill"
+msgstr "Prikazano modelu kako bi mogao odlučiti kada učitati ovu vještinu"
+
+#. module: ow_ai
+#: model:ir.model.fields,help:ow_ai.field_ow_ai_tool__thinking_text
+msgid "Shown while the tool runs, e.g. 'Searching the database'"
+msgstr "Prikazano dok alat radi, npr. 'Pretraživanje baze podataka'"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_agent__skill_ids
+msgid "Skill"
+msgstr "Vještina"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_skill__skill_type
+msgid "Skill Type"
+msgstr "Tip vještine"
+
+#. module: ow_ai
+#: model_terms:ir.ui.view,arch_db:ow_ai.ow_ai_skill_view_form
+msgid "Skill name"
+msgstr "Naziv vještine"
+
+#. module: ow_ai
+#: model:ir.actions.act_window,name:ow_ai.ow_ai_skill_action
+#: model:ir.ui.menu,name:ow_ai.menu_ai_skills
+msgid "Skills"
+msgstr "Vještine"
+
+#. module: ow_ai
+#. odoo-javascript
+#: code:addons/ow_ai/static/src/discuss/ow_ai_user_input_request.xml:0
+msgid "Skip"
+msgstr "Preskoči"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_job__state
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_session__state
+#: model_terms:ir.ui.view,arch_db:ow_ai.ow_ai_job_view_search
+#: model_terms:ir.ui.view,arch_db:ow_ai.ow_ai_session_view_search
+msgid "State"
+msgstr "Stanje"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_usage__status
+msgid "Status"
+msgstr "Status"
+
+#. module: ow_ai
+#. odoo-javascript
+#: code:addons/ow_ai/static/src/discuss/ow_ai_steps_group.xml:0
+msgid "Steps taken"
+msgstr "Poduzeti koraci"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_agent__subtitle
+#: model_terms:ir.ui.view,arch_db:ow_ai.ow_ai_agent_view_form
+msgid "Subtitle"
+msgstr "Podnaslov"
+
+#. module: ow_ai
+#: model:ow.ai.prompt.button,name:ow_ai.composer_systray_button_2
+msgid "Summarize my open tasks for today"
+msgstr "Sažmi moje otvorene zadatke za danas"
+
+#. module: ow_ai
+#: model:ow.ai.prompt.button,prompt:ow_ai.composer_systray_button_2
+msgid "Summarize my open tasks for today."
+msgstr "Sažmi moje otvorene zadatke za danas."
+
+#. module: ow_ai
+#: model:ow.ai.prompt.button,name:ow_ai.composer_record_chat_button_1
+msgid "Summarize this record"
+msgstr "Sažmi ovaj zapis"
+
+#. module: ow_ai
+#: model:ow.ai.prompt.button,prompt:ow_ai.composer_record_chat_button_1
+msgid "Summarize this record."
+msgstr "Sažmi ovaj zapis."
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_session_event__summary
+msgid "Summary"
+msgstr "Sažetak"
+
+#. module: ow_ai
+#: model_terms:ir.ui.view,arch_db:ow_ai.ow_ai_agent_view_form
+msgid "System Agent"
+msgstr "Sistemski agent"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_agent__system_prompt
+msgid "System Prompt"
+msgstr "Sistemski prompt"
+
+#. module: ow_ai
+#. odoo-python
+#: code:addons/ow_ai/models/ow_ai_agent.py:0
+msgid "System agents cannot be deleted."
+msgstr "Sistemski agenti se ne mogu izbrisati."
+
+#. module: ow_ai
+#: model:ir.model.fields.selection,name:ow_ai.selection__ow_ai_composer__interface_key__systray
+msgid "Systray \"Ask AI\""
+msgstr "Sustavna traka \"Pitaj AI\""
+
+#. module: ow_ai
+#: model_terms:ir.ui.view,arch_db:ow_ai.res_config_settings_view_form
+msgid "Test connection"
+msgstr "Provjera veze"
+
+#. module: ow_ai
+#: model_terms:ir.ui.view,arch_db:ow_ai.ow_ai_agent_view_form
+msgid "Test in chat"
+msgstr "Testiraj u chatu"
+
+#. module: ow_ai
+#: model_terms:ir.ui.view,arch_db:ow_ai.res_config_settings_view_form
+msgid "Test search"
+msgstr "Testiraj pretraživanje"
+
+#. module: ow_ai
+#. odoo-javascript
+#: code:addons/ow_ai/static/src/web/ow_ai_chat_launcher_service.js:0
+msgid "The AI chat could not be found."
+msgstr "AI chat nije mogao biti pronađen."
+
+#. module: ow_ai
+#. odoo-javascript
+#: code:addons/ow_ai/static/src/web/ow_ai_chat_launcher_service.js:0
+msgid "The AI chat could not be opened."
+msgstr "AI chat nije mogao biti otvoren."
+
+#. module: ow_ai
+#. odoo-javascript
+#: code:addons/ow_ai/static/src/core/common/thread_model_patch.js:0
+msgid "The assistant could not be reached."
+msgstr "Pomoćnik nije dosegljiv."
+
+#. module: ow_ai
+#. odoo-javascript
+#: code:addons/ow_ai/static/src/discuss/composer_patch.js:0
+msgid "The assistant is answering…"
+msgstr "Pomoćnik odgovara…"
+
+#. module: ow_ai
+#. odoo-javascript
+#. odoo-python
+#: code:addons/ow_ai/engine/loop.py:0
+#: code:addons/ow_ai/static/src/core/common/thread_model_patch.js:0
+msgid "The assistant is still answering. Please wait."
+msgstr "Pomoćnik još uvijek odgovara. Pričekajte."
+
+#. module: ow_ai
+#. odoo-javascript
+#: code:addons/ow_ai/static/src/discuss/thread_actions_patch.js:0
+msgid "The chat could not be deleted."
+msgstr "Chat nije mogao biti obrisan."
+
+#. module: ow_ai
+#. odoo-javascript
+#: code:addons/ow_ai/static/src/discuss/composer_actions_patch.js:0
+msgid "The chat settings could not be saved."
+msgstr "Postavke chata nisu mogle biti spremljene."
+
+#. module: ow_ai
+#. odoo-javascript
+#: code:addons/ow_ai/static/src/discuss/ow_ai_tool_summary.js:0
+msgid "The details of this step could not be loaded."
+msgstr "Detalji ovog koraka nisu mogli biti učitani."
+
+#. module: ow_ai
+#. odoo-python
+#: code:addons/ow_ai/models/ow_ai_agent.py:0
+msgid "The partner of an AI agent cannot be changed."
+msgstr "Partner AI agenta ne može se promijeniti."
+
+#. module: ow_ai
+#. odoo-javascript
+#: code:addons/ow_ai/static/src/core/common/ow_ai_session_model.js:0
+msgid "The result of the assistant's action could not be sent."
+msgstr "Rezultat radnje pomoćnika nije mogao biti poslan."
+
+#. module: ow_ai
+#: model:ow.ai.composer,default_prompt:ow_ai.composer_record_chat
+msgid "The user is looking at a specific record; use its data in your answer."
+msgstr ""
+"Korisnik gleda određeni zapis; koristite njegove podatke u svom odgovoru."
+
+#. module: ow_ai
+#: model:ir.model.constraint,message:ow_ai.constraint_ow_ai_composer_unique_interface_model
+msgid "There is already an active composer for this interface and model."
+msgstr "Već postoji aktivan composer za ovo sučelje i model."
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_tool__thinking_text
+msgid "Thinking Text"
+msgstr "Tekst razmišljanja"
+
+#. module: ow_ai
+#. odoo-javascript
+#: code:addons/ow_ai/static/src/discuss/ow_ai_thread_status.xml:0
+msgid "Thinking…"
+msgstr "Razmišljanje…"
+
+#. module: ow_ai
+#: model_terms:ir.ui.view,arch_db:ow_ai.ow_ai_usage_view_search
+msgid "This Month"
+msgstr "Ovaj mjesec"
+
+#. module: ow_ai
+#. odoo-python
+#: code:addons/ow_ai/engine/user_input.py:0
+msgid "This choice is not available."
+msgstr "Ovaj izbor nije dostupan."
+
+#. module: ow_ai
+#. odoo-python
+#: code:addons/ow_ai/models/ow_ai_job.py:0
+msgid "This job can no longer be retried"
+msgstr "Ovaj posao više se ne može ponovno pokušati"
+
+#. module: ow_ai
+#. odoo-python
+#: code:addons/ow_ai/engine/user_input.py:0
+msgid "This question does not accept a free-text answer."
+msgstr "Ovo pitanje ne prihvaća slobodni tekstualni odgovor."
+
+#. module: ow_ai
+#. odoo-javascript
+#: code:addons/ow_ai/static/src/discuss/ow_ai_user_input_request.js:0
+msgid "This request is no longer waiting for an answer."
+msgstr "Ovaj zahtjev više ne čeka odgovor."
+
+#. module: ow_ai
+#. odoo-python
+#: code:addons/ow_ai/models/ow_ai_session.py:0
+msgid "This session has no chat channel."
+msgstr "Ova sesija nema kanal chata."
+
+#. module: ow_ai
+#: model:ir.model.constraint,message:ow_ai.constraint_ow_ai_tool_tool_name_unique
+msgid "This tool name is already used by another active tool."
+msgstr "Ovaj naziv alata već koristi drugi aktivni alat."
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_res_config_settings__ow_ai_timeout
+#: model_terms:ir.ui.view,arch_db:ow_ai.res_config_settings_view_form
+msgid "Timeout (s)"
+msgstr "Timeout (s)"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_skill__tool_ids
+msgid "Tool"
+msgstr "Alat"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_tool__tool_name
+msgid "Tool Name"
+msgstr "Naziv alata"
+
+#. module: ow_ai
+#: model_terms:ir.ui.view,arch_db:ow_ai.ow_ai_tool_view_form
+msgid "Tool name"
+msgstr "Naziv alata"
+
+#. module: ow_ai
+#. odoo-python
+#: code:addons/ow_ai/models/ow_ai_tool.py:0
+msgid ""
+"Tool name '%(name)s' must contain only letters, digits and underscores (max "
+"64 characters)."
+msgstr ""
+"Naziv alata '%(name)s' mora sadržavati samo slova, znamenke i donje crte "
+"(najviše 64 znaka)."
+
+#. module: ow_ai
+#: model:ir.actions.act_window,name:ow_ai.ow_ai_tool_action
+#: model:ir.ui.menu,name:ow_ai.menu_ai_tools
+msgid "Tools"
+msgstr "Alati"
+
+#. module: ow_ai
+#: model_terms:ir.ui.view,arch_db:ow_ai.ow_ai_session_view_form
+#: model_terms:ir.ui.view,arch_db:ow_ai.ow_ai_usage_view_list
+msgid "Total"
+msgstr "Ukupno"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_usage__total_tokens
+msgid "Total Tokens"
+msgstr "Ukupni tokeni"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_session__turn_client_notifications
+msgid "Turn Client Notifications"
+msgstr "Obavijesti klijenta o redu"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_session__turn_notifications
+msgid "Turn Notifications"
+msgstr "Obavijesti o redu"
+
+#. module: ow_ai
+#: model:ow.ai.tool,description:ow_ai.tool_compute_date
+msgid ""
+"Turn a relative date expression (\"yesterday\", \"last month\", \"next "
+"Friday at 5pm\", \"the first Monday of last month\") into the exact string "
+"to use for field_name in a domain, computed in the user's own timezone. "
+"Always use this instead of computing or guessing dates yourself; the model "
+"does not reliably know today's date, the user's timezone, or how many days "
+"are in a given month. operations are applied in order: {\"type\": "
+"\"navigate\", \"period\": \"day|week|month|quarter|year|hour|minute\", "
+"\"offset\": -1, \"boundary\": \"start|end|none\"} shifts by whole periods "
+"and optionally snaps to the start/end of the resulting period (weeks start "
+"on Monday); {\"type\": \"find_previous\"|\"find_next\", \"weekday\": 0-6 "
+"(Monday=0)} jumps to the nearest such weekday, not counting today. An "
+"optional pin then fixes the day of month (an integer, or {\"weekday\": 0-6, "
+"\"occurrence\": 1-5 or -1 for \"last\"}) and/or the time of day (\"HH:MM\" "
+"or \"HH:MM:SS\"). The returned value is 'YYYY-MM-DD' for a Date field or "
+"'YYYY-MM-DD HH:MM:SS' in UTC for a Datetime field."
+msgstr ""
+"Pretvori izraz relativnog datuma (\"jučer\", \"prošli mjesec\", \"sljedeći "
+"petak u 17h\", \"prvi ponedjeljak prošlog mjeseca\") u točan niz za "
+"korištenje za field_name u domeni, izračunat u vremenskoj zoni korisnika. "
+"Uvijek koristite ovo umjesto samostalnog računanja ili pogađanja datuma; "
+"model ne zna pouzdano današnji datum, korisnikovu vremensku zonu niti koliko"
+" dana ima dani mjesec. operacije se primjenjuju redom: {\"type\": "
+"\"navigate\", \"period\": \"day|week|month|quarter|year|hour|minute\", "
+"\"offset\": -1, \"boundary\": \"start|end|none\"} pomiče za cijela razdoblja"
+" i po želji prikači na početak/kraj rezultirajućeg razdoblja (tjedni počinju"
+" ponedjeljkom); {\"type\": \"find_previous\"|\"find_next\", \"weekday\": 0-6"
+" (ponedjeljak=0)} skače na najbliži takav dan u tjednu, ne računajući danas."
+" Izborni pin zatim fiksira dan u mjesecu (cijeli broj ili {\"weekday\": 0-6,"
+" \"occurrence\": 1-5 ili -1 za \"posljednji\"}) i/ili doba dana (\"HH:MM\" "
+"ili \"HH:MM:SS\"). Vraćena vrijednost je 'YYYY-MM-DD' za polje datuma ili "
+"'YYYY-MM-DD HH:MM:SS' u UTC za polje datuma i vremena."
+
+#. module: ow_ai
+#: model:ir.model.fields,help:ow_ai.field_ow_ai_usage__cost
+msgid "USD as reported by the provider (0 when it reports no cost)"
+msgstr "USD kako ga prijavljuje pružatelj (0 kada ne prijavljuje trošak)"
+
+#. module: ow_ai
+#. odoo-python
+#: code:addons/ow_ai/models/ow_ai_tool.py:0
+msgid "Unknown built-in tool key '%(key)s'."
+msgstr "Nepoznat ključ ugrađenog alata '%(key)s'."
+
+#. module: ow_ai
+#. odoo-python
+#: code:addons/ow_ai/models/ow_ai_agent.py:0
+msgid "Unknown model option '%(key)s'."
+msgstr "Nepoznata opcija modela '%(key)s'."
+
+#. module: ow_ai
+#: model:ow.ai.skill,name:ow_ai.skill_update_records
+#: model:ow.ai.tool,name:ow_ai.tool_update_records
+msgid "Update Records"
+msgstr "Ažuriraj zapise"
+
+#. module: ow_ai
+#: model:ir.actions.act_window,name:ow_ai.ow_ai_usage_action
+#: model:ir.actions.act_window,name:ow_ai.ow_ai_usage_action_from_agent
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_session__usage_ids
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_session_event__usage_id
+#: model:ir.ui.menu,name:ow_ai.menu_ai_usage
+#: model_terms:ir.ui.view,arch_db:ow_ai.ow_ai_agent_view_form
+#: model_terms:ir.ui.view,arch_db:ow_ai.ow_ai_session_view_form
+msgid "Usage"
+msgstr "Upotreba"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_agent__usage_count
+msgid "Usage Count"
+msgstr "Broj upotreba"
+
+#. module: ow_ai
+#. odoo-javascript
+#: code:addons/ow_ai/static/src/discuss/message_actions_patch.js:0
+msgid "Use this"
+msgstr "Koristi ovo"
+
+#. module: ow_ai
+#: model:ow.ai.skill,instructions:ow_ai.skill_web_search
+msgid ""
+"Use this when the answer needs current or public information that is not in this database (news, prices, documentation, companies, addresses, regulations).\n"
+"1. Call web_search with a short, specific query; refine once if the results are off.\n"
+"2. Read the snippets; open a page with fetch_web_page only when you need details, at most three pages, using offset to continue a long page.\n"
+"3. Answer in your own words and put [WEB_SOURCE:n] right after each claim that comes from result n; list nothing else as a source.\n"
+"4. Never fetch a URL that was not in the results or in the user's message.\n"
+"5. Say when the results are inconclusive instead of guessing.\n"
+"\n"
+"You can do at most 5 searches and 5 page reads per turn. Sources are numbered per turn: in a later turn, search again before citing or reading a result."
+msgstr ""
+"Koristite ovo kada odgovor treba trenutne ili javne informacije koje nisu u ovoj bazi (vijesti, cijene, dokumentacija, tvrtke, adrese, propisi).\n"
+"1. Pozovite web_search s kratkim, specifičnim upitom; precizirajte jednom ako su rezultati promašeni.\n"
+"2. Pročitajte isječke; otvorite stranicu s fetch_web_page samo kada trebate detalje, najviše tri stranice, koristeći offset za nastavak duge stranice.\n"
+"3. Odgovorite vlastitim riječima i stavite [WEB_SOURCE:n] odmah iza svake tvrdnje koja dolazi iz rezultata n; ništa drugo ne navodite kao izvor.\n"
+"4. Nikada ne dohvaćajte URL koji nije bio u rezultatima ili u korisnikovoj poruci.\n"
+"5. Recite kada su rezultati neuvjerljivi umjesto nagađanja.\n"
+"\n"
+"Možete napraviti najviše 5 pretraživanja i 5 čitanja stranica po redu. Izvori su numerirani po redu: u kasnijem redu, ponovno pretražite prije navođenja ili čitanja rezultata."
+
+#. module: ow_ai
+#: model:ow.ai.skill,instructions:ow_ai.skill_search_database
+msgid ""
+"Use this workflow to answer questions about data in this database:\n"
+"1. If you do not already know the exact model, call get_models to find it.\n"
+"2. Call get_fields on that model before searching it, so you use its real field and selection values instead of guessing.\n"
+"3. For anything relative to \"now\" (today, this week, last month, next Friday, …), call compute_date and put its returned value, unchanged, as the third element of your condition, e.g. [[\"invoice_date\", \">=\", \"2026-07-01\"]]; never compute or guess a date yourself.\n"
+"4. Use search for a list of individual records, or read_group when the user wants a count, total, breakdown or ranking rather than a list. Use read_records once you already have specific ids, e.g. from a previous search or from the record the user is looking at.\n"
+"5. For a ranking such as \"top 5 customers by revenue\", aggregate the underlying transactions (e.g. posted customer invoices, or confirmed sales orders) with read_group: group them by the related record (e.g. the customer), sum their amount, and pass order \"<field>:sum desc\" with the limit you need. Do not try to rank by sorting a list of contacts or products on a computed total.\n"
+"\n"
+"Domain rules: a domain is a list of [\"field\", \"operator\", value] triples, e.g. [[\"state\", \"=\", \"done\"]]. Consecutive conditions are implicitly AND-ed; use the prefix operators \"&\", \"|\" and \"!\" for explicit and/or/not, e.g. [\"|\", [\"city\", \"=\", \"Utrecht\"], [\"city\", \"=\", \"Almere\"]]. Supported operators: =, !=, >, >=, <, <=, in, not in, like, ilike, child_of. Only fields that get_fields flags \"sort\" can be used in order or in groupby.\n"
+"\n"
+"When answering:\n"
+"- Never invent a record id, amount or date; only report what a tool returned.\n"
+"- Refer to records by name, not by technical id, and mention the count you found (e.g. \"3 of 12 matching contacts\").\n"
+"- Format monetary amounts with their currency symbol, not the bare field value.\n"
+"- Use plain language, not technical field or model names, unless the user is clearly asking about the technical structure.\n"
+"- Present lists of more than a couple of records as a short table or bullet list, not one long sentence.\n"
+"- Every company-scoped model is already filtered to the companies the user can see; do not try to add your own company filter unless the user asks for a specific one.\n"
+"- When you mention a specific record, you may link to it as /odoo/<model>/<id> so the user can open it directly."
+msgstr ""
+"Koristite ovaj tijek za odgovor na pitanja o podacima u ovoj bazi:\n"
+"1. Ako već ne znate točan model, pozovite get_models da ga pronađete.\n"
+"2. Pozovite get_fields na tom modelu prije pretraživanja, kako biste koristili njegove stvarne vrijednosti polja i selekcije umjesto pogađanja.\n"
+"3. Za sve relativno prema \"sada\" (danas, ovaj tjedan, prošli mjesec, sljedeći petak, …), pozovite compute_date i stavite njegovu vraćenu vrijednost, nepromijenjenu, kao treći element vašeg uvjeta, npr. [[\"invoice_date\", \">=\", \"2026-07-01\"]]; nikada sami ne računajte niti pogađajte datum.\n"
+"4. Koristite search za popis pojedinačnih zapisa ili read_group kada korisnik želi broj, ukupno, raščlambu ili rangiranje umjesto popisa. Koristite read_records kada već imate konkretne id-eve, npr. iz prethodnog pretraživanja ili iz zapisa koji korisnik gleda.\n"
+"5. Za rangiranje poput \"top 5 kupaca po prihodu\", agregirajte temeljne transakcije (npr. proknjižene račune kupaca ili potvrđene prodajne naloge) s read_group: grupirajte ih po povezanom zapisu (npr. kupcu), zbrojite njihov iznos i proslijedite order \"<polje>:sum desc\" s potrebnim limitom. Ne pokušavajte rangirati sortiranjem popisa kontakata ili proizvoda po izračunatom ukupnom iznosu.\n"
+"\n"
+"Pravila domene: domena je lista trojki [\"polje\", \"operator\", vrijednost], npr. [[\"state\", \"=\", \"done\"]]. Uzastopni uvjeti implicitno su povezani operatorom I; koristite prefiksne operatore \"&\", \"|\" i \"!\" za eksplicitno i/ili/ne, npr. [\"|\", [\"city\", \"=\", \"Utrecht\"], [\"city\", \"=\", \"Almere\"]]. Podržani operatori: =, !=, >, >=, <, <=, in, not in, like, ilike, child_of. Samo polja koja get_fields označuje zastavicom \"sort\" mogu se koristiti u order ili groupby.\n"
+"\n"
+"Kada odgovarate:\n"
+"- Nikada ne izmišljajte id zapisa, iznos ili datum; izvijestite samo ono što je alat vratio.\n"
+"- Zapisima se obraćajte nazivom, ne tehničkim id-em, i navedite broj koji ste pronašli (npr. \"3 od 12 odgovarajućih kontakata\").\n"
+"- Monetarne iznose oblikujte sa simbolom valute, ne golom vrijednošću polja.\n"
+"- Koristite jednostavan jezik, ne tehničke nazive polja ili modela, osim ako je korisnik..."
+
+#. module: ow_ai
+#: model:ow.ai.skill,instructions:ow_ai.skill_create_records
+msgid ""
+"Use this workflow to create new records:\n"
+"1. If you do not already know the exact model, call get_models to find it.\n"
+"2. Call get_fields on that model so you use its real field names, types and required fields; never guess a field name.\n"
+"3. For any field that refers to another record (a many2one, or a many2many/one2many to link), search first to find the right id; never invent one. For a relative date (e.g. \"due next Friday\"), call compute_date rather than computing it yourself.\n"
+"4. Call create_records with a short, plain-language explanation of what you are about to create and why. The user is shown a preview and must confirm before anything is written.\n"
+"5. If the user declines, ask what should be different instead of retrying the same values. If they confirm, summarise what was created in plain language and, when helpful, link to the new record(s) as /odoo/<model>/<id>.\n"
+"\n"
+"Never claim a record was created before you have the confirmed result. If create_records reports a missing required field or an invalid value, fix it and try again rather than giving up."
+msgstr ""
+"Koristite ovaj tijek za kreiranje novih zapisa:\n"
+"1. Ako već ne znate točan model, pozovite get_models da ga pronađete.\n"
+"2. Pozovite get_fields na tom modelu kako biste koristili njegove stvarne nazive polja, vrste i obavezna polja; nikada ne pogađajte naziv polja.\n"
+"3. Za svako polje koje se odnosi na drugi zapis (many2one, ili many2many/one2many za povezivanje), najprije pretražite da pronađete pravi id; nikada ga ne izmišljajte. Za relativni datum (npr. \"dospijeva sljedeći petak\"), pozovite compute_date umjesto da ga sami računate.\n"
+"4. Pozovite create_records s kratkim objašnjenjem jednostavnim jezikom o tome što ćete kreirati i zašto. Korisniku se prikazuje pregled i mora potvrditi prije nego što se bilo što zapiše.\n"
+"5. Ako korisnik odbije, pitajte što bi trebalo biti drugačije umjesto ponavljanja istih vrijednosti. Ako potvrdi, sažmite što je kreirano jednostavnim jezikom i, kada je korisno, povežite se na novi/e zapis(e) kao /odoo/<model>/<id>.\n"
+"\n"
+"Nikada ne tvrdite da je zapis kreiran prije nego što imate potvrđeni rezultat. Ako create_records prijavi obavezno polje koje nedostaje ili nevažeću vrijednost, ispravite i pokušajte ponovno umjesto odustajanja."
+
+#. module: ow_ai
+#: model:ow.ai.skill,instructions:ow_ai.skill_update_records
+msgid ""
+"Use this workflow to update existing records:\n"
+"1. If you do not already know the exact model, call get_models to find it.\n"
+"2. Call get_fields on that model so you use its real field names, types, and allowed selection values; never guess one.\n"
+"3. Search for the specific records to change and use a domain that targets only those; a domain that would match every record on the model is refused on purpose, so always narrow it down (e.g. by id, or by a specific filter you already checked with search). For a relative date, call compute_date rather than computing it yourself.\n"
+"4. Call update_records with a short, plain-language explanation of the change. When a field you are changing represents a status or stage, also explain what changing it will do (e.g. what happens once an order is confirmed). The user is shown a preview of the old and new value of every affected record and must confirm before anything is written.\n"
+"5. If the user declines, ask what should be different instead of retrying the same change. If they confirm, summarise what was updated in plain language and, when helpful, link to the record(s) as /odoo/<model>/<id>.\n"
+"\n"
+"Never claim a record was updated before you have the confirmed result. If update_records reports too many matching records or an invalid value, narrow the domain or fix the value and try again rather than giving up."
+msgstr ""
+"Koristite ovaj tijek za ažuriranje postojećih zapisa:\n"
+"1. Ako već ne znate točan model, pozovite get_models da ga pronađete.\n"
+"2. Pozovite get_fields na tom modelu kako biste koristili njegove stvarne nazive polja, vrste i dopuštene selekcijske vrijednosti; nikada ih ne pogađajte.\n"
+"3. Pretražite konkretne zapise za promjenu i koristite domenu koja cilja samo njih; domena koja bi odgovarala svakom zapisu na modelu namjerno se odbija, pa je uvijek suzite (npr. po id-u ili po specifičnom filtru koji ste već provjerili pretraživanjem). Za relativni datum pozovite compute_date umjesto da ga sami računate.\n"
+"4. Pozovite update_records s kratkim objašnjenjem promjene jednostavnim jezikom. Kada polje koje mijenjate predstavlja status ili fazu, objasnite i što će promjena učiniti (npr. što se dogodi kada je nalog potvrđen). Korisniku se prikazuje pregled stare i nove vrijednosti svakog pogođenog zapisa i mora potvrditi prije nego što se bilo što zapiše.\n"
+"5. Ako korisnik odbije, pitajte što bi trebalo biti drugačije umjesto ponavljanja iste promjene. Ako potvrdi, sažmite što je ažurirano jednostavnim jezikom i, kada je korisno, povežite se na zapis(e) kao /odoo/<model>/<id>.\n"
+"\n"
+"Nikada ne tvrdite da je zapis ažuriran prije nego što imate potvrđeni rezultat. Ako update_records prijavi previše odgovarajućih zapisa ili nevažeću vrijednost, suzite domenu ili ispravite vrijednost i pokušajte ponovno umjesto odustajanja."
+
+#. module: ow_ai
+#: model:ir.model,name:ow_ai.model_res_users
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_job__user_id
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_usage__user_id
+#: model:ir.model.fields.selection,name:ow_ai.selection__ow_ai_session_event__role__user
+#: model_terms:ir.ui.view,arch_db:ow_ai.ow_ai_job_view_search
+#: model_terms:ir.ui.view,arch_db:ow_ai.ow_ai_session_view_search
+#: model_terms:ir.ui.view,arch_db:ow_ai.ow_ai_usage_view_search
+msgid "User"
+msgstr "Korisnik"
+
+#. module: ow_ai
+#: model:ir.model.fields.selection,name:ow_ai.selection__ow_ai_session__loop_state__waiting_answer
+msgid "Waiting for answer"
+msgstr "Čeka odgovor"
+
+#. module: ow_ai
+#: model:ir.model.fields.selection,name:ow_ai.selection__ow_ai_session__loop_state__waiting_child
+msgid "Waiting for child session"
+msgstr "Čeka podređenu sesiju"
+
+#. module: ow_ai
+#: model:ir.model.fields.selection,name:ow_ai.selection__ow_ai_session__loop_state__waiting_client_result
+msgid "Waiting for client result"
+msgstr "Čeka rezultat klijenta"
+
+#. module: ow_ai
+#: model:ir.model.fields.selection,name:ow_ai.selection__ow_ai_session__loop_state__waiting_confirmation
+msgid "Waiting for confirmation"
+msgstr "Čeka potvrdu"
+
+#. module: ow_ai
+#: model:ir.model.fields.selection,name:ow_ai.selection__ow_ai_session__loop_state__waiting_model
+#: model_terms:ir.ui.view,arch_db:ow_ai.ow_ai_session_view_search
+msgid "Waiting for model"
+msgstr "Čeka model"
+
+#. module: ow_ai
+#. odoo-javascript
+#: code:addons/ow_ai/static/src/discuss/ow_ai_thread_status.xml:0
+msgid "Waiting for this page…"
+msgstr "Čeka ovu stranicu…"
+
+#. module: ow_ai
+#: model_terms:ir.ui.view,arch_db:ow_ai.ow_ai_session_view_search
+msgid "Waiting for user"
+msgstr "Čeka korisnika"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_ow_ai_session__web_search
+#: model:ow.ai.skill,name:ow_ai.skill_web_search
+#: model:ow.ai.tool,name:ow_ai.tool_web_search
+msgid "Web Search"
+msgstr "Web pretraživanje"
+
+#. module: ow_ai
+#: model:ir.model.fields,field_description:ow_ai.field_res_config_settings__ow_ai_web_timeout
+#: model_terms:ir.ui.view,arch_db:ow_ai.res_config_settings_view_form
+msgid "Web Timeout (s)"
+msgstr "Web vremensko ograničenje (s)"
+
+#. module: ow_ai
+#. odoo-javascript
+#: code:addons/ow_ai/static/src/discuss/composer_actions_patch.js:0
+#: model_terms:ir.ui.view,arch_db:ow_ai.res_config_settings_view_form
+msgid "Web search"
+msgstr "Web pretraživanje"
+
+#. module: ow_ai
+#: model:ow.ai.prompt.button,name:ow_ai.composer_systray_button_1
+#: model:ow.ai.prompt.button,prompt:ow_ai.composer_systray_button_1
+msgid "What can you help me with?"
+msgstr "Kako vam mogu pomoći?"
+
+#. module: ow_ai
+#: model:ow.ai.prompt.button,name:ow_ai.composer_record_chat_button_2
+#: model:ow.ai.prompt.button,prompt:ow_ai.composer_record_chat_button_2
+msgid "What should I do next with this record?"
+msgstr "Što sljedeće trebam učiniti s ovim zapisom?"
+
+#. module: ow_ai
+#: model:ir.model.fields,help:ow_ai.field_res_config_settings__ow_ai_web_search_default
+#: model_terms:ir.ui.view,arch_db:ow_ai.res_config_settings_view_form
+msgid "Whether new chats start with web search switched on."
+msgstr "Hoće li novi chatovi početi s uključenim web pretraživanjem."
+
+#. module: ow_ai
+#. odoo-javascript
+#: code:addons/ow_ai/static/src/discuss/ow_ai_user_input_request.js:0
+msgid "Yes, always approve in this chat"
+msgstr "Da, uvijek odobri u ovom chatu"
+
+#. module: ow_ai
+#. odoo-javascript
+#: code:addons/ow_ai/static/src/discuss/ow_ai_user_input_request.js:0
+msgid "Yes, do it"
+msgstr "Da, učini to"
+
+#. module: ow_ai
+#. odoo-python
+#: code:addons/ow_ai/models/discuss_channel.py:0
+msgid "You are not a member of this AI chat."
+msgstr "Niste član ovog AI chata."
+
+#. module: ow_ai
+#. odoo-python
+#: code:addons/ow_ai/controllers/session.py:0
+#: code:addons/ow_ai/models/ow_ai_agent.py:0
+msgid "You do not have access to the AI assistant."
+msgstr "Nemate pristup AI pomoćniku."
+
+#. module: ow_ai
+#. odoo-python
+#: code:addons/ow_ai/models/ow_ai_session.py:0
+msgid "You do not have access to this conversation."
+msgstr "Nemate pristup ovom razgovoru."
+
+#. module: ow_ai
+#. odoo-python
+#: code:addons/ow_ai/controllers/session.py:0
+msgid "You may only advance the chat on your own message."
+msgstr "Možete napredovati chat samo na vlastitoj poruci."
+
+#. module: ow_ai
+#. odoo-javascript
+#: code:addons/ow_ai/static/src/discuss/ow_ai_user_input_request.js:0
+msgid "Your answer could not be sent."
+msgstr "Vaš odgovor nije mogao biti poslan."
+
+#. module: ow_ai
+#: model:ow.ai.agent,subtitle:ow_ai.agent_default
+msgid "Your assistant for Odoo data"
+msgstr "Vaš pomoćnik za Odoo podatke"
+
+#. module: ow_ai
+#: model_terms:ir.ui.view,arch_db:ow_ai.preview_update
+msgid "more record(s) not shown."
+msgstr "više zapisa nije prikazano."
+
+#. module: ow_ai
+#: model_terms:ir.ui.view,arch_db:ow_ai.preview_create
+msgid "record(s) will be created:"
+msgstr "zapis(i) će biti kreirani:"
+
+#. module: ow_ai
+#: model_terms:ir.ui.view,arch_db:ow_ai.preview_update
+msgid "record(s) will be updated:"
+msgstr "zapis(i) će biti ažurirani:"
+
+#. module: ow_ai
+#: model_terms:ir.ui.view,arch_db:ow_ai.res_config_settings_view_form
+msgid "sk-… (optional)"
+msgstr "sk-… (neobavezno)"
+
+#. module: ow_ai
+#: model_terms:ir.ui.view,arch_db:ow_ai.preview_update
+msgid "…and"
+msgstr "…i"
