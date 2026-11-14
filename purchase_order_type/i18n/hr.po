@@ -1,23 +1,19 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
-# * purchase_order_type
+# 	* purchase_order_type
 #
-# Translators:
 msgid ""
 msgstr ""
-"Project-Id-Version: purchase-workflow (8.0)\n"
+"Project-Id-Version: Odoo Server 19.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-16 12:06+0000\n"
-"PO-Revision-Date: 2016-03-08 10:17+0000\n"
-"Last-Translator: <>\n"
-"Language-Team: Croatian (http://www.transifex.com/oca/OCA-purchase-"
-"workflow-8-0/language/hr/)\n"
+"PO-Revision-Date: 2026-11-14 00:00+0000\n"
+"Last-Translator: Ecodica d.o.o.\n"
+"Language-Team: Ecodica d.o.o.\n"
 "Language: hr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #. module: purchase_order_type
 #: model:ir.model.fields,field_description:purchase_order_type.field_purchase_order_type__active
@@ -27,23 +23,28 @@ msgstr "Aktivno"
 #. module: purchase_order_type
 #: model_terms:ir.ui.view,arch_db:purchase_order_type.view_purchase_order_type_form
 msgid "Archived"
-msgstr ""
+msgstr "Arhivirano"
 
 #. module: purchase_order_type
 #: model_terms:ir.actions.act_window,help:purchase_order_type.action_purchase_order_type_view
 msgid "Click to set a new type for purchase order."
-msgstr ""
+msgstr "Kliknite za postavljanje nove vrste narudžbenice."
+
+#. module: purchase_order_type
+#: model:ir.model,name:purchase_order_type.model_res_company
+msgid "Companies"
+msgstr "Tvrtke"
 
 #. module: purchase_order_type
 #: model:ir.model.fields,field_description:purchase_order_type.field_purchase_order_type__company_id
 #: model_terms:ir.ui.view,arch_db:purchase_order_type.view_purchase_order_type_search
 msgid "Company"
-msgstr ""
+msgstr "Tvrtka"
 
 #. module: purchase_order_type
 #: model:ir.model,name:purchase_order_type.model_res_partner
 msgid "Contact"
-msgstr ""
+msgstr "Kontakt"
 
 #. module: purchase_order_type
 #: model:ir.model.fields,field_description:purchase_order_type.field_purchase_order_type__create_uid
@@ -53,55 +54,74 @@ msgstr "Kreirao"
 #. module: purchase_order_type
 #: model:ir.model.fields,field_description:purchase_order_type.field_purchase_order_type__create_date
 msgid "Created on"
-msgstr "Kreirano"
+msgstr "Kreiran"
+
+#. module: purchase_order_type
+#: model:ir.model.fields,field_description:purchase_order_type.field_purchase_order_type__is_default
+msgid "Default"
+msgstr "Zadano"
 
 #. module: purchase_order_type
 #: model:ir.model.fields,field_description:purchase_order_type.field_purchase_order_type__description
 msgid "Description"
-msgstr ""
+msgstr "Opis"
 
 #. module: purchase_order_type
+#: model:ir.model.fields,field_description:purchase_order_type.field_purchase_order__display_name
 #: model:ir.model.fields,field_description:purchase_order_type.field_purchase_order_type__display_name
+#: model:ir.model.fields,field_description:purchase_order_type.field_res_company__display_name
+#: model:ir.model.fields,field_description:purchase_order_type.field_res_config_settings__display_name
+#: model:ir.model.fields,field_description:purchase_order_type.field_res_partner__display_name
 msgid "Display Name"
-msgstr "Naziv "
+msgstr "Naziv za prikaz"
 
 #. module: purchase_order_type
 #. odoo-python
 #: code:addons/purchase_order_type/models/purchase_order.py:0
 msgid "Document's company and type's company mismatch"
-msgstr ""
+msgstr "Tvrtka dokumenta i tvrtka vrste nisu usklađene"
 
 #. module: purchase_order_type
 #: model:ir.model.fields,field_description:purchase_order_type.field_purchase_order_type__sequence_id
 #: model_terms:ir.ui.view,arch_db:purchase_order_type.view_purchase_order_type_search
 msgid "Entry Sequence"
-msgstr ""
+msgstr "Početni brojevni krug"
 
 #. module: purchase_order_type
-#: model_terms:ir.ui.view,arch_db:purchase_order_type.view_purchase_order_type_search
-msgid "Group By"
-msgstr ""
-
-#. module: purchase_order_type
+#: model:ir.model.fields,field_description:purchase_order_type.field_purchase_order__id
 #: model:ir.model.fields,field_description:purchase_order_type.field_purchase_order_type__id
+#: model:ir.model.fields,field_description:purchase_order_type.field_res_company__id
+#: model:ir.model.fields,field_description:purchase_order_type.field_res_config_settings__id
+#: model:ir.model.fields,field_description:purchase_order_type.field_res_partner__id
 msgid "ID"
 msgstr "ID"
+
+#. module: purchase_order_type
+#: model:ir.model.fields,help:purchase_order_type.field_purchase_order__order_type_required
+#: model:ir.model.fields,help:purchase_order_type.field_res_company__purchase_order_type_required
+#: model:ir.model.fields,help:purchase_order_type.field_res_config_settings__purchase_order_type_required
+msgid ""
+"If enabled, a purchase order can only be saved in the form once it has an "
+"order type."
+msgstr ""
+"Ako je omogućeno, narudžbenica se u obrascu može spremiti tek kada ima vrstu"
+" narudžbenice."
 
 #. module: purchase_order_type
 #: model:ir.model.fields,field_description:purchase_order_type.field_purchase_order_type__incoterm_id
 #: model_terms:ir.ui.view,arch_db:purchase_order_type.view_purchase_order_type_search
 msgid "Incoterm"
-msgstr ""
+msgstr "Incoterm"
 
 #. module: purchase_order_type
 #: model:ir.model.fields,field_description:purchase_order_type.field_purchase_order_type__write_uid
 msgid "Last Updated by"
-msgstr "Zadnji ažurirao"
+msgstr "Promijenio"
 
 #. module: purchase_order_type
 #: model:ir.model.fields,field_description:purchase_order_type.field_purchase_order_type__write_date
 msgid "Last Updated on"
-msgstr "Zadnje ažuriranje"
+msgstr "Vrijeme promjene"
 
 #. module: purchase_order_type
 #: model:ir.model.fields,field_description:purchase_order_type.field_purchase_order_type__name
@@ -109,38 +129,61 @@ msgid "Name"
 msgstr "Naziv"
 
 #. module: purchase_order_type
+#. odoo-python
+#: code:addons/purchase_order_type/models/purchase_order_type.py:0
+msgid "Only one default order type is allowed per company."
+msgstr "Dopuštena je samo jedna zadana vrsta narudžbenice po tvrtki."
+
+#. module: purchase_order_type
 #: model_terms:ir.ui.view,arch_db:purchase_order_type.view_purchase_order_type_search
 msgid "Payment Term"
-msgstr ""
+msgstr "Uvjeti plaćanja"
 
 #. module: purchase_order_type
 #: model:ir.model.fields,field_description:purchase_order_type.field_purchase_order_type__payment_term_id
 msgid "Payment Terms"
-msgstr ""
+msgstr "Uvjeti plaćanja"
+
+#. module: purchase_order_type
+#: model:ir.model,name:purchase_order_type.model_res_config_settings
+msgid "Procurement purchase grouping settings"
+msgstr "Postavke grupiranja nabave"
 
 #. module: purchase_order_type
 #: model:ir.model,name:purchase_order_type.model_purchase_order
 msgid "Purchase Order"
-msgstr ""
+msgstr "Nabavni nalog"
 
 #. module: purchase_order_type
 #: model:ir.model.fields,field_description:purchase_order_type.field_res_partner__purchase_type
 #: model:ir.model.fields,field_description:purchase_order_type.field_res_users__purchase_type
 #: model_terms:ir.ui.view,arch_db:purchase_order_type.res_partner_purchase_type_form_view
 msgid "Purchase Order Type"
-msgstr ""
+msgstr "Vrsta narudžbenice"
 
 #. module: purchase_order_type
 #: model:ir.actions.act_window,name:purchase_order_type.action_purchase_order_type_view
 #: model:ir.ui.menu,name:purchase_order_type.menu_purchase_order_type
 #: model_terms:ir.ui.view,arch_db:purchase_order_type.view_purchase_order_type_search
 msgid "Purchase Order Types"
-msgstr ""
+msgstr "Vrste narudžbenica"
+
+#. module: purchase_order_type
+#: model_terms:ir.ui.view,arch_db:purchase_order_type.res_config_settings_view_form_purchase
+msgid "Purchase orders can only be saved once they have an order type"
+msgstr "Narudžbenice se mogu spremiti tek kada imaju vrstu narudžbenice"
+
+#. module: purchase_order_type
+#: model:ir.model.fields,field_description:purchase_order_type.field_purchase_order__order_type_required
+#: model:ir.model.fields,field_description:purchase_order_type.field_res_company__purchase_order_type_required
+#: model:ir.model.fields,field_description:purchase_order_type.field_res_config_settings__purchase_order_type_required
+msgid "Require Purchase Order Type"
+msgstr "Zahtijevaj vrstu narudžbenice"
 
 #. module: purchase_order_type
 #: model:ir.model.fields,field_description:purchase_order_type.field_purchase_order_type__sequence
 msgid "Sequence"
-msgstr ""
+msgstr "Sekvenca"
 
 #. module: purchase_order_type
 #: model:ir.model.fields,field_description:purchase_order_type.field_purchase_order__order_type
@@ -148,15 +191,20 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:purchase_order_type.view_purchase_order_filter
 #: model_terms:ir.ui.view,arch_db:purchase_order_type.view_purchase_order_type_form
 msgid "Type"
-msgstr "Tip"
+msgstr "Vrsta"
 
 #. module: purchase_order_type
 #: model:ir.model,name:purchase_order_type.model_purchase_order_type
 msgid "Type of purchase order"
+msgstr "Vrsta narudžbenice"
+
+#. module: purchase_order_type
+#: model:ir.model.fields,help:purchase_order_type.field_purchase_order_type__is_default
+msgid ""
+"Used as the fallback order type for a purchase order whose vendor does not "
+"provide one, and to correct a purchase order whose type no longer suits its "
+"company after the company changes."
 msgstr ""
-
-#~ msgid "Last Modified on"
-#~ msgstr "Zadnje modificirano"
-
-#~ msgid "Partner"
-#~ msgstr "Partner"
+"Koristi se kao zamjenska vrsta narudžbenice za narudžbenicu koju dobavljač "
+"ne navede i za ispravak narudžbenice čija vrsta više ne odgovara njezinoj "
+"tvrtki nakon promjene tvrtke."

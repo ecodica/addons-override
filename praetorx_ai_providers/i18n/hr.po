@@ -1,0 +1,730 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* praetorx_ai_providers
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-14 19:55+0000\n"
+"PO-Revision-Date: 2026-11-14 00:00+0000\n"
+"Last-Translator: Ecodica d.o.o.\n"
+"Language-Team: Ecodica d.o.o.\n"
+"Language: hr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#. module: praetorx_ai_providers
+#. odoo-python
+#: code:addons/praetorx_ai_providers/models/ai_usage_line.py:0
+msgid ""
+"%(company)s has spent %(spent).2f of its monthly AI budget (soft limit "
+"%(soft).2f)."
+msgstr ""
+"%(company)s je potrošio %(spent).2f svog mjesečnog AI proračuna (meki limit "
+"%(soft).2f)."
+
+#. module: praetorx_ai_providers
+#. odoo-python
+#: code:addons/praetorx_ai_providers/models/ai_provider_endpoint.py:0
+msgid "'%s' is reserved by Odoo."
+msgstr "'%s' je rezerviran od strane Odoo."
+
+#. module: praetorx_ai_providers
+#: model:ir.model.constraint,message:praetorx_ai_providers.constraint_ai_provider_model_name_per_endpoint_unique
+msgid "A model name must be unique per endpoint."
+msgstr "Naziv modela mora biti jedinstven po endpointu."
+
+#. module: praetorx_ai_providers
+#: model:ir.actions.act_window,name:praetorx_ai_providers.action_ai_provider_endpoint
+msgid "AI Endpoints"
+msgstr "AI endpointi"
+
+#. module: praetorx_ai_providers
+#: model:ir.model,name:praetorx_ai_providers.model_ai_provider_endpoint
+msgid "AI Provider Endpoint"
+msgstr "AI pružatelj endpointa"
+
+#. module: praetorx_ai_providers
+#: model:ir.model,name:praetorx_ai_providers.model_ai_provider_model
+msgid "AI Provider Model"
+msgstr "AI pružatelj modela"
+
+#. module: praetorx_ai_providers
+#: model:ir.ui.menu,name:praetorx_ai_providers.menu_ai_providers_root
+msgid "AI Providers"
+msgstr "AI pružatelji"
+
+#. module: praetorx_ai_providers
+#: model:ir.actions.act_window,name:praetorx_ai_providers.action_ai_usage_line
+#: model:ir.model,name:praetorx_ai_providers.model_ai_usage_line
+msgid "AI Usage"
+msgstr "AI upotreba"
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_res_company__ai_budget_hard
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_res_config_settings__ai_budget_hard
+msgid "AI budget, hard limit (monthly)"
+msgstr "AI proračun, tvrdi limit (mjesečno)"
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_res_company__ai_budget_soft
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_res_config_settings__ai_budget_soft
+msgid "AI budget, soft limit (monthly)"
+msgstr "AI proračun, meki limit (mjesečno)"
+
+#. module: praetorx_ai_providers
+#. odoo-python
+#: code:addons/praetorx_ai_providers/models/ai_usage_line.py:0
+msgid "AI budget: soft limit reached"
+msgstr "AI proračun: dosegnut meki limit"
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_res_company__ai_month_cost
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_res_config_settings__ai_month_cost
+msgid "AI cost this month"
+msgstr "AI trošak ovog mjeseca"
+
+#. module: praetorx_ai_providers
+#. odoo-python
+#: code:addons/praetorx_ai_providers/models/ai_provider_endpoint.py:0
+msgid "AI endpoint '%s' has no active model configured."
+msgstr "AI endpoint '%s' nema konfiguriran aktivan model."
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_provider_endpoint__active
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_provider_model__active
+msgid "Active"
+msgstr "Aktivno"
+
+#. module: praetorx_ai_providers
+#: model_terms:ir.actions.act_window,help:praetorx_ai_providers.action_ai_provider_endpoint
+msgid "Add an AI endpoint"
+msgstr "Dodaj AI endpoint"
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_res_company__ai_budget_notified_month
+msgid "Ai Budget Notified Month"
+msgstr "Obaviješteni mjesec AI proračuna"
+
+#. module: praetorx_ai_providers
+#: model_terms:ir.ui.view,arch_db:praetorx_ai_providers.res_config_settings_view_form
+msgid ""
+"Anthropic Claude, Ollama, vLLM, OpenRouter, Azure — with your keys. Mark one"
+" endpoint as default and Odoo's AI features use it."
+msgstr ""
+"Anthropic Claude, Ollama, vLLM, OpenRouter, Azure — s vašim ključevima. "
+"Označite jedan endpoint kao zadani i Odoo-ve AI značajke ga koriste."
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields.selection,name:praetorx_ai_providers.selection__ai_provider_endpoint__dialect__anthropic
+msgid "Anthropic Messages API (Claude)"
+msgstr "Anthropic Messages API (Claude)"
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_provider_endpoint__anthropic_version
+msgid "Anthropic Version"
+msgstr "Anthropic verzija"
+
+#. module: praetorx_ai_providers
+#: model_terms:ir.actions.act_window,help:praetorx_ai_providers.action_ai_provider_endpoint
+msgid ""
+"Anthropic, an OpenAI-compatible server such as Ollama, or any Responses-API URL.\n"
+"               Mark one as default and Odoo's own AI features use it."
+msgstr ""
+"Anthropic, OpenAI-kompatibilni poslužitelj poput Ollame ili bilo koji Responses-API URL.\n"
+"               Označite jedan kao zadani i Odoo-ve vlastite AI značajke ga koriste."
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields.selection,name:praetorx_ai_providers.selection__ai_provider_model__capability__any
+msgid "Any"
+msgstr "Bilokoji"
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_provider_endpoint__api_key
+msgid "Api Key"
+msgstr "API ključ"
+
+#. module: praetorx_ai_providers
+#: model_terms:ir.ui.view,arch_db:praetorx_ai_providers.view_ai_provider_endpoint_form
+msgid "Archived"
+msgstr "Arhivirano"
+
+#. module: praetorx_ai_providers
+#: model:ir.model,name:praetorx_ai_providers.model_ai_embedding
+msgid "Attachment Chunks Embedding"
+msgstr "Ugrađivanje dijelova privitka"
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_provider_endpoint__auth_header
+msgid "Auth Header"
+msgstr "Zaglavlje autentikacije"
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields.selection,name:praetorx_ai_providers.selection__ai_provider_endpoint__auth_header__bearer
+msgid "Authorization: Bearer"
+msgstr "Authorization: Bearer"
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_provider_endpoint__base_url
+msgid "Base Url"
+msgstr "Osnovni URL"
+
+#. module: praetorx_ai_providers
+#: model_terms:ir.ui.view,arch_db:praetorx_ai_providers.view_ai_provider_endpoint_form
+msgid "Behaviour"
+msgstr "Ponašanje"
+
+#. module: praetorx_ai_providers
+#: model_terms:ir.ui.view,arch_db:praetorx_ai_providers.view_ai_usage_line_list
+msgid "Cached"
+msgstr "U kešu (cached)"
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_usage_line__cached_tokens
+msgid "Cached Tokens"
+msgstr "Keširani tokeni"
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_usage_line__caller
+#: model_terms:ir.ui.view,arch_db:praetorx_ai_providers.view_ai_usage_line_search
+msgid "Caller"
+msgstr "Pozivatelj"
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_provider_model__capability
+msgid "Capability"
+msgstr "Značajka (capability)"
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,help:praetorx_ai_providers.field_ai_provider_endpoint__max_text_chars
+msgid ""
+"Chat-Completions endpoints get PDFs as extracted text; longer text is cut "
+"here."
+msgstr ""
+"Chat-Completions endpointi dobivaju PDF-ove kao izdvojeni tekst; duži tekst "
+"se ovdje reže."
+
+#. module: praetorx_ai_providers
+#: model_terms:ir.ui.view,arch_db:praetorx_ai_providers.res_config_settings_view_form
+msgid ""
+"Cheap models for cheap tasks: which model chooses from a list, which reads "
+"files, which embeds."
+msgstr ""
+"Jeftini modeli za jeftine zadatke: koji model bira s popisa, koji čita "
+"datoteke, koji ugrađuje (embed)."
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields.selection,name:praetorx_ai_providers.selection__ai_provider_model__capability__choose
+msgid "Choose — pick a value from a list"
+msgstr "Odaberi — odaberi vrijednost s popisa"
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_provider_endpoint__code
+msgid "Code"
+msgstr "Šifra"
+
+#. module: praetorx_ai_providers
+#: model:ir.model,name:praetorx_ai_providers.model_res_company
+msgid "Companies"
+msgstr "Tvrtke"
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_usage_line__company_id
+msgid "Company"
+msgstr "Tvrtka"
+
+#. module: praetorx_ai_providers
+#: model:ir.model,name:praetorx_ai_providers.model_res_config_settings
+msgid "Config Settings"
+msgstr "Postavke"
+
+#. module: praetorx_ai_providers
+#: model_terms:ir.ui.view,arch_db:praetorx_ai_providers.view_ai_provider_endpoint_form
+msgid "Connection"
+msgstr "Veza"
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_usage_line__cost
+#: model_terms:ir.ui.view,arch_db:praetorx_ai_providers.view_ai_usage_line_list
+msgid "Cost"
+msgstr "Trošak"
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_provider_endpoint__create_uid
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_provider_model__create_uid
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_usage_line__create_uid
+msgid "Created by"
+msgstr "Kreirao"
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_provider_endpoint__create_date
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_provider_model__create_date
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_usage_line__create_date
+msgid "Created on"
+msgstr "Kreiran"
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_provider_model__currency_id
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_usage_line__currency_id
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_res_config_settings__ai_currency_id
+msgid "Currency"
+msgstr "Valuta"
+
+#. module: praetorx_ai_providers
+#: model_terms:ir.ui.view,arch_db:praetorx_ai_providers.view_ai_provider_endpoint_form
+msgid "Data protection"
+msgstr "Zaštita podataka"
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_provider_endpoint__default_model_id
+msgid "Default Model"
+msgstr "Zadani model"
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_provider_endpoint__is_odoo_default
+msgid "Default for Odoo AI"
+msgstr "Zadano za Odoo AI"
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_provider_endpoint__dialect
+msgid "Dialect"
+msgstr "Dijalekt"
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_embedding__display_name
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_provider_endpoint__display_name
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_provider_model__display_name
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_usage_line__display_name
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_res_company__display_name
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_res_config_settings__display_name
+msgid "Display Name"
+msgstr "Naziv za prikaz"
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields.selection,name:praetorx_ai_providers.selection__ai_provider_model__capability__embed
+msgid "Embed"
+msgstr "Ugradi (embed)"
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_embedding__embedding_model
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_provider_endpoint__embedding_model
+msgid "Embedding Model"
+msgstr "Model ugrađivanja"
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,help:praetorx_ai_providers.field_ai_provider_endpoint__embedding_model
+msgid ""
+"Embedding model served under /embeddings (1536 dimensions). Not available on"
+" Anthropic."
+msgstr ""
+"Model za ugradnju serviran pod /embeddings (1536 dimenzija). Nije dostupan "
+"na Anthropicu."
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_provider_model__endpoint_id
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_usage_line__endpoint_id
+msgid "Endpoint"
+msgstr "Elektronička adresa"
+
+#. module: praetorx_ai_providers
+#. odoo-python
+#: code:addons/praetorx_ai_providers/utils/patch.py:0
+msgid ""
+"Endpoint '%s' (Anthropic) offers no embeddings. Configure an OpenAI-"
+"compatible endpoint for embeddings."
+msgstr ""
+"Endpoint '%s' (Anthropic) ne nudi ugradnje. Konfigurirajte OpenAI-"
+"kompatibilni endpoint za ugradnje."
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_usage_line__endpoint_code
+msgid "Endpoint Code"
+msgstr "Šifra endpointa"
+
+#. module: praetorx_ai_providers
+#. odoo-python
+#: code:addons/praetorx_ai_providers/models/ai_provider_endpoint.py:0
+msgid "Endpoint answered: %s"
+msgstr "Endpoint je odgovorio: %s"
+
+#. module: praetorx_ai_providers
+#: model:ir.ui.menu,name:praetorx_ai_providers.menu_ai_provider_endpoint
+msgid "Endpoints"
+msgstr "Krajnje točke"
+
+#. module: praetorx_ai_providers
+#: model_terms:ir.actions.act_window,help:praetorx_ai_providers.action_ai_usage_line
+msgid ""
+"Every request through a configured endpoint writes a line with tokens and "
+"cost."
+msgstr ""
+"Svaki zahtjev kroz konfigurirani endpoint zapisuje redak s tokenima i "
+"troškom."
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_embedding__id
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_provider_endpoint__id
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_provider_model__id
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_usage_line__id
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_res_company__id
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_res_config_settings__id
+msgid "ID"
+msgstr "ID"
+
+#. module: praetorx_ai_providers
+#: model_terms:ir.ui.view,arch_db:praetorx_ai_providers.view_ai_usage_line_list
+msgid "Input"
+msgstr "Ulaz"
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_usage_line__input_tokens
+msgid "Input Tokens"
+msgstr "Ulazni tokeni"
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,help:praetorx_ai_providers.field_ai_provider_model__name
+msgid "Label shown in model pickers."
+msgstr "Oznaka prikazana u biračima modela."
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_provider_endpoint__write_uid
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_provider_model__write_uid
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_usage_line__write_uid
+msgid "Last Updated by"
+msgstr "Promijenio"
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_provider_endpoint__write_date
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_provider_model__write_date
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_usage_line__write_date
+msgid "Last Updated on"
+msgstr "Vrijeme promjene"
+
+#. module: praetorx_ai_providers
+#: model_terms:ir.ui.view,arch_db:praetorx_ai_providers.res_config_settings_view_form
+msgid "Manage endpoints"
+msgstr "Upravljaj endpointima"
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_provider_model__max_output_tokens
+msgid "Max Output Tokens"
+msgstr "Maks. izlaznih tokena"
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_provider_endpoint__max_text_chars
+msgid "Max Text Chars"
+msgstr "Maks. znakova teksta"
+
+#. module: praetorx_ai_providers
+#: model_terms:ir.ui.view,arch_db:praetorx_ai_providers.view_ai_usage_line_search
+msgid "Model"
+msgstr "Model"
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_usage_line__model_name
+msgid "Model Name"
+msgstr "Naziv modela"
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_res_config_settings__ai_model_choose_id
+msgid "Model for choosing"
+msgstr "Model za odabir"
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_res_config_settings__ai_model_embed_id
+msgid "Model for embeddings"
+msgstr "Model za ugradnje"
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_res_config_settings__ai_model_read_id
+msgid "Model for reading"
+msgstr "Model za čitanje"
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,help:praetorx_ai_providers.field_ai_provider_model__technical_name
+msgid "Model name as the API expects it."
+msgstr "Naziv modela kako ga API očekuje."
+
+#. module: praetorx_ai_providers
+#: model_terms:ir.ui.view,arch_db:praetorx_ai_providers.res_config_settings_view_form
+msgid "Model per task"
+msgstr "Model po zadatku"
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_provider_endpoint__model_ids
+#: model_terms:ir.ui.view,arch_db:praetorx_ai_providers.view_ai_provider_endpoint_form
+msgid "Models"
+msgstr "Modeli"
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,help:praetorx_ai_providers.field_ai_usage_line__caller
+msgid "Module or feature that issued the request."
+msgstr "Modul ili značajka koja je izdala zahtjev."
+
+#. module: praetorx_ai_providers
+#: model_terms:ir.ui.view,arch_db:praetorx_ai_providers.view_ai_usage_line_search
+msgid "Month"
+msgstr "Mjesec"
+
+#. module: praetorx_ai_providers
+#: model_terms:ir.ui.view,arch_db:praetorx_ai_providers.res_config_settings_view_form
+msgid "Monthly AI budget"
+msgstr "Mjesečni AI proračun"
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_provider_endpoint__name
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_provider_model__name
+msgid "Name"
+msgstr "Naziv"
+
+#. module: praetorx_ai_providers
+#: model_terms:ir.actions.act_window,help:praetorx_ai_providers.action_ai_usage_line
+msgid "No AI usage recorded yet"
+msgstr "Još nema zabilježene AI upotrebe"
+
+#. module: praetorx_ai_providers
+#. odoo-python
+#: code:addons/praetorx_ai_providers/utils/patch.py:0
+msgid "No API key set for AI endpoint '%s'."
+msgstr "Nije postavljen API ključ za AI endpoint '%s'."
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,help:praetorx_ai_providers.field_ai_provider_endpoint__supports_web_search
+msgid ""
+"Only for Responses-API endpoints that offer OpenAI's web_search_preview "
+"tool."
+msgstr ""
+"Samo za Responses-API endpointove koji nude OpenAI-jev web_search_preview "
+"alat."
+
+#. module: praetorx_ai_providers
+#. odoo-python
+#: code:addons/praetorx_ai_providers/models/ai_provider_endpoint.py:0
+msgid "Only one active endpoint can be the default for Odoo AI."
+msgstr "Samo jedan aktivni endpoint može biti zadani za Odoo AI."
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields.selection,name:praetorx_ai_providers.selection__ai_provider_endpoint__dialect__openai_chat
+msgid "OpenAI Chat Completions (Ollama, vLLM, Mistral, OpenRouter, Groq)"
+msgstr "OpenAI Chat Completions (Ollama, vLLM, Mistral, OpenRouter, Groq)"
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields.selection,name:praetorx_ai_providers.selection__ai_provider_endpoint__dialect__openai_responses
+msgid "OpenAI Responses API (OpenAI, Azure OpenAI, proxies)"
+msgstr "OpenAI Responses API (OpenAI, Azure OpenAI, proxyji)"
+
+#. module: praetorx_ai_providers
+#: model_terms:ir.ui.view,arch_db:praetorx_ai_providers.view_ai_usage_line_list
+msgid "Output"
+msgstr "Izlaz"
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_usage_line__output_tokens
+msgid "Output Tokens"
+msgstr "Izlazni tokeni"
+
+#. module: praetorx_ai_providers
+#: model_terms:ir.ui.view,arch_db:praetorx_ai_providers.res_config_settings_view_form
+msgid "Own AI providers"
+msgstr "Vlastiti AI pružatelji"
+
+#. module: praetorx_ai_providers
+#: model_terms:ir.ui.view,arch_db:praetorx_ai_providers.res_config_settings_view_form
+msgid ""
+"Per company. Soft limit notifies the administrator, hard limit refuses "
+"further requests until next month."
+msgstr ""
+"Po tvrtki. Meki limit obavještava administratora, tvrdi limit odbija daljnje"
+" zahtjeve do sljedećeg mjeseca."
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_provider_model__price_cached
+msgid "Price per 1M cached input tokens"
+msgstr "Cijena po 1M keširanih ulaznih tokena"
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_provider_model__price_in
+msgid "Price per 1M input tokens"
+msgstr "Cijena po 1M ulaznih tokena"
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_provider_model__price_out
+msgid "Price per 1M output tokens"
+msgstr "Cijena po 1M izlaznih tokena"
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields.selection,name:praetorx_ai_providers.selection__ai_provider_model__capability__read
+msgid "Read — read files and fill a schema"
+msgstr "Čitanje — čitaj datoteke i ispuni shemu"
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,help:praetorx_ai_providers.field_res_config_settings__ai_model_read_id
+msgid "Reads files and fills a schema."
+msgstr "Čita datoteke i ispunjava shemu."
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_provider_endpoint__region
+msgid "Region"
+msgstr "Regija"
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,help:praetorx_ai_providers.field_ai_provider_model__max_output_tokens
+msgid "Required by the Anthropic Messages API."
+msgstr "Obavezno za Anthropic Messages API."
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,help:praetorx_ai_providers.field_ai_provider_endpoint__base_url
+msgid ""
+"Root of the API, e.g. https://api.anthropic.com/v1 or http://ollama:11434/v1"
+msgstr ""
+"Korijen API-ja, npr. https://api.anthropic.com/v1 ili http://ollama:11434/v1"
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_provider_endpoint__sequence
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_provider_model__sequence
+msgid "Sequence"
+msgstr "Sekvenca"
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,help:praetorx_ai_providers.field_ai_provider_endpoint__is_odoo_default
+msgid ""
+"Serve every request Odoo issues to its built-in OpenAI provider — AI fields,"
+" agents, document auto-sort — through this endpoint instead."
+msgstr ""
+"Posluži svaki zahtjev koji Odoo izdaje svom ugrađenom OpenAI pružatelju — AI"
+" polja, agente, automatsko sortiranje dokumenata — umjesto toga kroz ovaj "
+"endpoint."
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,help:praetorx_ai_providers.field_res_config_settings__ai_model_choose_id
+msgid "Small, cheap: pick one value from a list."
+msgstr "Malo, jeftino: odaberi jednu vrijednost s popisa."
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_provider_endpoint__supports_web_search
+msgid "Supports Web Search"
+msgstr "Podržava web pretraživanje"
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_provider_model__technical_name
+msgid "Technical Name"
+msgstr "Tehnički naziv"
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,help:praetorx_ai_providers.field_ai_provider_endpoint__code
+msgid ""
+"Technical provider name Odoo's AI layer uses to address this endpoint. "
+"Lowercase letters, digits and underscores."
+msgstr ""
+"Tehnički naziv pružatelja kojim ga Odoo-jev AI sloj adresira. Mala slova, "
+"znamenke i donje crte."
+
+#. module: praetorx_ai_providers
+#: model_terms:ir.ui.view,arch_db:praetorx_ai_providers.view_ai_provider_endpoint_form
+msgid "Test connection"
+msgstr "Provjera veze"
+
+#. module: praetorx_ai_providers
+#. odoo-python
+#: code:addons/praetorx_ai_providers/models/ai_provider_endpoint.py:0
+msgid "The code must be lowercase letters, digits and underscores."
+msgstr "Šifra mora biti mala slova, znamenke i donje crte."
+
+#. module: praetorx_ai_providers
+#: model:ir.model.constraint,message:praetorx_ai_providers.constraint_ai_provider_endpoint_code_unique
+msgid "The endpoint code must be unique."
+msgstr "Šifra endpointa mora biti jedinstvena."
+
+#. module: praetorx_ai_providers
+#. odoo-python
+#: code:addons/praetorx_ai_providers/models/ai_usage_line.py:0
+msgid ""
+"The monthly AI budget of %(company)s (%(amount)s) is exhausted. Raise it in "
+"Settings > AI or wait for next month."
+msgstr ""
+"Mjesečni AI proračun tvrtke %(company)s (%(amount)s) je iscrpljen. Povećajte"
+" ga u Postavke > AI ili pričekajte sljedeći mjesec."
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,help:praetorx_ai_providers.field_ai_provider_endpoint__zero_retention
+msgid ""
+"The provider has attested that prompts and files are not stored after "
+"processing."
+msgstr ""
+"Pružatelj je potvrdio da se upiti i datoteke ne pohranjuju nakon obrade."
+
+#. module: praetorx_ai_providers
+#: model_terms:ir.ui.view,arch_db:praetorx_ai_providers.view_ai_usage_line_search
+msgid "This month"
+msgstr "Ovaj mjesec"
+
+#. module: praetorx_ai_providers
+#. odoo-python
+#: code:addons/praetorx_ai_providers/utils/patch.py:0
+msgid "Unknown AI endpoint dialect '%s'."
+msgstr "Nepoznat dijalekt AI endpointa '%s'."
+
+#. module: praetorx_ai_providers
+#: model:ir.ui.menu,name:praetorx_ai_providers.menu_ai_usage_line
+msgid "Usage"
+msgstr "Upotreba"
+
+#. module: praetorx_ai_providers
+#: model_terms:ir.ui.view,arch_db:praetorx_ai_providers.res_config_settings_view_form
+msgid "Usage report"
+msgstr "Izvještaj upotrebe"
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,help:praetorx_ai_providers.field_ai_provider_endpoint__default_model_id
+msgid "Used when a caller asks for a model this endpoint does not serve."
+msgstr ""
+"Koristi se kada pozivatelj traži model koji ovaj endpoint ne poslužuje."
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,help:praetorx_ai_providers.field_res_company__ai_budget_hard
+#: model:ir.model.fields,help:praetorx_ai_providers.field_res_config_settings__ai_budget_hard
+msgid "When reached, AI requests are refused until next month. 0 = no limit."
+msgstr ""
+"Kada se dosegne, AI zahtjevi se odbijaju do sljedećeg mjeseca. 0 = bez "
+"limita."
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,help:praetorx_ai_providers.field_res_company__ai_budget_soft
+#: model:ir.model.fields,help:praetorx_ai_providers.field_res_config_settings__ai_budget_soft
+msgid "When reached, the administrator gets an activity. Requests continue."
+msgstr ""
+"Kada se dosegne, administrator dobiva aktivnost. Zahtjevi se nastavljaju."
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,help:praetorx_ai_providers.field_ai_provider_endpoint__region
+msgid "Where the data is processed, e.g. EU, US, on-premise."
+msgstr ""
+"Gdje se podaci obrađuju, npr. EU, SAD, u vlastitom prostoru (on-premise)."
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,help:praetorx_ai_providers.field_ai_provider_model__capability
+msgid "Which kind of task this model is the right size for."
+msgstr "Za koju vrstu zadatka je ovaj model odgovarajuće veličine."
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_provider_endpoint__zero_retention
+msgid "Zero data retention"
+msgstr "Nula zadržavanja podataka"
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields.selection,name:praetorx_ai_providers.selection__ai_provider_endpoint__auth_header__api-key
+msgid "api-key (Azure)"
+msgstr "api-key (Azure)"
+
+#. module: praetorx_ai_providers
+#: model_terms:ir.ui.view,arch_db:praetorx_ai_providers.view_ai_provider_endpoint_form
+msgid "e.g. Anthropic EU"
+msgstr "npr. Anthropic EU"
+
+#. module: praetorx_ai_providers
+#: model_terms:ir.ui.view,arch_db:praetorx_ai_providers.view_ai_provider_endpoint_form
+msgid "https://api.anthropic.com/v1"
+msgstr "https://api.anthropic.com/v1"

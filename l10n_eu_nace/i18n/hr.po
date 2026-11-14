@@ -3,7 +3,18 @@
 # 	* l10n_eu_nace
 #
 msgid ""
-msgstr "Project-Id-Version: Odoo Server 16.0\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2023-05-21 08:13+0000\nPO-Revision-Date: 2023-05-21 08:13+0000\nLast-Translator: Automatically generated\nLanguage-Team: none\nLanguage: hr\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: \nPlural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-05-21 08:33+0000\n"
+"PO-Revision-Date: 2026-11-14 00:00+0000\n"
+"Last-Translator: Ecodica d.o.o.\n"
+"Language-Team: Ecodica d.o.o.\n"
+"Language: hr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_I
@@ -17,8 +28,12 @@ msgstr "DJELATNOSTI IZVANTERITORIJALNIH ORGANIZACIJA I TIJELA"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_T
-msgid "ACTIVITIES OF HOUSEHOLDS AS EMPLOYERS; U0NDIFFERENTIATED GOODS- AND SERVICES-PRODUCING ACTIVITIES OF HOUSEHOLDS FOR OWN USE"
-msgstr "DJELATNOSTI KUĆANSTAVA KAO POSLODAVACA; DJELATNOSTI KUĆANSTAVA KOJA PROIZVODE RAZLIČITU ROBU I OBAVLJAJU RAZLIČITE USLUGE ZA VLASTITE POTREBE"
+msgid ""
+"ACTIVITIES OF HOUSEHOLDS AS EMPLOYERS; U0NDIFFERENTIATED GOODS- AND "
+"SERVICES-PRODUCING ACTIVITIES OF HOUSEHOLDS FOR OWN USE"
+msgstr ""
+"DJELATNOSTI KUĆANSTAVA KAO POSLODAVACA; DJELATNOSTI KUĆANSTAVA KOJA "
+"PROIZVODE RAZLIČITU ROBU I OBAVLJAJU RAZLIČITE USLUGE ZA VLASTITE POTREBE"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_N
@@ -44,12 +59,14 @@ msgstr "Smještaj"
 #: model:res.partner.nace,name:l10n_eu_nace.nace_69_2
 #: model:res.partner.nace,name:l10n_eu_nace.nace_69_20
 msgid "Accounting, bookkeeping and auditing activities; tax consultancy"
-msgstr "Računovodstvene, knjigovodstvene i revizijske djelatnosti; porezno savjetovanje"
+msgstr ""
+"Računovodstvene, knjigovodstvene i revizijske djelatnosti; porezno "
+"savjetovanje"
 
 #. module: l10n_eu_nace
 #: model:ir.model.fields,field_description:l10n_eu_nace.field_res_partner_nace__active
 msgid "Active"
-msgstr "Aktivan"
+msgstr "Aktivno"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_66
@@ -58,8 +75,12 @@ msgstr "Pomoćne djelatnosti kod financijskih usluga i djelatnosti osiguranja"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_66_1
-msgid "Activities auxiliary to financial services, except insurance and pension funding"
-msgstr "Pomoćne djelatnosti kod financijskih usluga, osim osiguranja i mirovinskih fondova"
+msgid ""
+"Activities auxiliary to financial services, except insurance and pension "
+"funding"
+msgstr ""
+"Pomoćne djelatnosti kod financijskih usluga, osim osiguranja i mirovinskih "
+"fondova"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_66_2
@@ -78,8 +99,11 @@ msgstr "Djelatnosti poslovnih organizacija i organizacija poslodavaca"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_94_1
-msgid "Activities of business, employers and professional membership organisations"
-msgstr "Djelatnosti poslovnih organizacija, organizacija poslodavaca i strukovnih članskih organizacija"
+msgid ""
+"Activities of business, employers and professional membership organisations"
+msgstr ""
+"Djelatnosti poslovnih organizacija, organizacija poslodavaca i strukovnih "
+"članskih organizacija"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_82_2
@@ -90,7 +114,8 @@ msgstr "Djelatnosti pozivnih centara"
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_82_91
 msgid "Activities of collection agencies and credit bureaus"
-msgstr "Djelatnosti agencija za prikupljanje i naplatu računa te kreditnih ureda"
+msgstr ""
+"Djelatnosti agencija za prikupljanje i naplatu računa te kreditnih ureda"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_78_1
@@ -182,7 +207,9 @@ msgstr "Poslovanje financijskih tržišta"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_84_1
-msgid "Administration of the State and the economic and social policy of the community"
+msgid ""
+"Administration of the State and the economic and social policy of the "
+"community"
 msgstr "Državna uprava te ekonomska i socijalna politika zajednice"
 
 #. module: l10n_eu_nace
@@ -207,8 +234,12 @@ msgstr "Posredovanje u trgovini raznovrsnim proizvodima"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_46_11
-msgid "Agents involved in the sale of agricultural raw materials, live animals, textile raw materials and semi-finished goods"
-msgstr "Posredovanje u trgovini poljoprivrednim sirovinama, živom stokom, tekstilnim sirovinama i poluproizvodima"
+msgid ""
+"Agents involved in the sale of agricultural raw materials, live animals, "
+"textile raw materials and semi-finished goods"
+msgstr ""
+"Posredovanje u trgovini poljoprivrednim sirovinama, živom stokom, tekstilnim"
+" sirovinama i poluproizvodima"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_46_17
@@ -217,23 +248,38 @@ msgstr "Posredovanje u trgovini hranom, pićima i duhanom"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_46_12
-msgid "Agents involved in the sale of fuels, ores, metals and industrial chemicals"
-msgstr "Posredovanje u trgovini gorivima, rudama, metalima i industrijskim kemijskim proizvodima"
+msgid ""
+"Agents involved in the sale of fuels, ores, metals and industrial chemicals"
+msgstr ""
+"Posredovanje u trgovini gorivima, rudama, metalima i industrijskim kemijskim"
+" proizvodima"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_46_15
-msgid "Agents involved in the sale of furniture, household goods, hardware and ironmongery"
-msgstr "Posredovanje u trgovini namještajem, proizvodima za kućanstvo i željeznom robom"
+msgid ""
+"Agents involved in the sale of furniture, household goods, hardware and "
+"ironmongery"
+msgstr ""
+"Posredovanje u trgovini namještajem, proizvodima za kućanstvo i željeznom "
+"robom"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_46_14
-msgid "Agents involved in the sale of machinery, industrial equipment, ships and aircraft"
-msgstr "Posredovanje u trgovini strojevima, industrijskom opremom, brodovima i zrakoplovima"
+msgid ""
+"Agents involved in the sale of machinery, industrial equipment, ships and "
+"aircraft"
+msgstr ""
+"Posredovanje u trgovini strojevima, industrijskom opremom, brodovima i "
+"zrakoplovima"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_46_16
-msgid "Agents involved in the sale of textiles, clothing, fur, footwear and leather goods"
-msgstr "Posredovanje u trgovini tekstilom, odjećom, krznom, obućom i kožnim proizvodima"
+msgid ""
+"Agents involved in the sale of textiles, clothing, fur, footwear and leather"
+" goods"
+msgstr ""
+"Posredovanje u trgovini tekstilom, odjećom, krznom, obućom i kožnim "
+"proizvodima"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_46_13
@@ -277,13 +323,18 @@ msgstr "Arhitektonske djelatnosti"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_71_1
-msgid "Architectural and engineering activities and related technical consultancy"
-msgstr "Arhitektonske djelatnosti i inženjerstvo te s njima povezano tehničko savjetovanje"
+msgid ""
+"Architectural and engineering activities and related technical consultancy"
+msgstr ""
+"Arhitektonske djelatnosti i inženjerstvo te s njima povezano tehničko "
+"savjetovanje"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_71
-msgid "Architectural and engineering activities; technical testing and analysis"
-msgstr "Arhitektonske djelatnosti i inženjerstvo; tehničko ispitivanje i analiza"
+msgid ""
+"Architectural and engineering activities; technical testing and analysis"
+msgstr ""
+"Arhitektonske djelatnosti i inženjerstvo; tehničko ispitivanje i analiza"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_90_03
@@ -534,7 +585,8 @@ msgstr "Gradnja cjevovoda, vodova za električnu struju i telekomunikacije"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_42_22
-msgid "Construction of utility projects for electricity and telecommunications"
+msgid ""
+"Construction of utility projects for electricity and telecommunications"
 msgstr "Gradnja vodova za električnu struju i telekomunikacije"
 
 #. module: l10n_eu_nace
@@ -565,7 +617,7 @@ msgstr "Kreirao"
 #. module: l10n_eu_nace
 #: model:ir.model.fields,field_description:l10n_eu_nace.field_res_partner_nace__create_date
 msgid "Created on"
-msgstr "Kreirano"
+msgstr "Kreiran"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_90
@@ -576,7 +628,9 @@ msgstr "Kreativne, umjetničke i zabavne djelatnosti"
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_01
 msgid "Crop and animal production, hunting and related service activities"
-msgstr "Biljna i stočarska proizvodnja, lovstvo i uslužne djelatnosti povezane s njima"
+msgstr ""
+"Biljna i stočarska proizvodnja, lovstvo i uslužne djelatnosti povezane s "
+"njima"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_85_52
@@ -597,7 +651,9 @@ msgstr "Obrada podataka, usluge poslužitelja i djelatnosti povezane s njima"
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_63_1
 msgid "Data processing, hosting and related activities; web portals"
-msgstr "Obrada podataka, usluge poslužitelja i djelatnosti povezane s njima; internetski portali"
+msgstr ""
+"Obrada podataka, usluge poslužitelja i djelatnosti povezane s njima; "
+"internetski portali"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_84_22
@@ -694,7 +750,9 @@ msgstr "Elektroinstalacijski radovi"
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_43_2
 msgid "Electrical, plumbing and other construction installation activities"
-msgstr "Elektroinstalacijski radovi, uvođenje instalacija vodovoda, kanalizacije i plina i ostali građevinski instalacijski radovi "
+msgstr ""
+"Elektroinstalacijski radovi, uvođenje instalacija vodovoda, kanalizacije i "
+"plina i ostali građevinski instalacijski radovi "
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_35
@@ -724,7 +782,8 @@ msgstr "Djelatnosti keteringa"
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_56_2
 msgid "Event catering and other food service activities"
-msgstr "Djelatnosti keteringa i ostale djelatnosti pripreme i usluživanja hrane"
+msgstr ""
+"Djelatnosti keteringa i ostale djelatnosti pripreme i usluživanja hrane"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_06_1
@@ -766,7 +825,8 @@ msgstr "Financijski leasing"
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_64
 msgid "Financial service activities, except insurance and pension funding"
-msgstr "Financijske uslužne djelatnosti, osim osiguranja i mirovinskih fondova"
+msgstr ""
+"Financijske uslužne djelatnosti, osim osiguranja i mirovinskih fondova"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_13_3
@@ -817,7 +877,8 @@ msgstr "Šumarstvo i sječa drva"
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_25_5
 #: model:res.partner.nace,name:l10n_eu_nace.nace_25_50
-msgid "Forging, pressing, stamping and roll-forming of metal; powder metallurgy"
+msgid ""
+"Forging, pressing, stamping and roll-forming of metal; powder metallurgy"
 msgstr "Kovanje, prešanje, štancanje i valjanje metala; metalurgija praha"
 
 #. module: l10n_eu_nace
@@ -968,7 +1029,9 @@ msgstr "Uzgoj riže"
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_01_28
 msgid "Growing of spices, aromatic, drug and pharmaceutical crops"
-msgstr "Uzgoj bilja za uporabu u farmaciji, aromatskog, začinskog i ljekovitog bilja  "
+msgstr ""
+"Uzgoj bilja za uporabu u farmaciji, aromatskog, začinskog i ljekovitog bilja"
+"  "
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_01_14
@@ -1074,8 +1137,12 @@ msgstr "Osiguranje"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_65
-msgid "Insurance, reinsurance and pension funding, except compulsory social security"
-msgstr "Osiguranje, reosiguranje i mirovinski fondovi, osim obveznoga socijalnog osiguranja"
+msgid ""
+"Insurance, reinsurance and pension funding, except compulsory social "
+"security"
+msgstr ""
+"Osiguranje, reosiguranje i mirovinski fondovi, osim obveznoga socijalnog "
+"osiguranja"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_80_3
@@ -1127,8 +1194,12 @@ msgstr "Proizvodnja olova, cinka i kositra"
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_77_4
 #: model:res.partner.nace,name:l10n_eu_nace.nace_77_40
-msgid "Leasing of intellectual property and similar products, except copyrighted works"
-msgstr "Davanje u zakup (leasing) prava na uporabu intelektualnog vlasnišva i sličnih proizvoda, osim radova koji su zaštićeni autorskim pravima"
+msgid ""
+"Leasing of intellectual property and similar products, except copyrighted "
+"works"
+msgstr ""
+"Davanje u zakup (leasing) prava na uporabu intelektualnog vlasnišva i "
+"sličnih proizvoda, osim radova koji su zaštićeni autorskim pravima"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_69_1
@@ -1161,7 +1232,7 @@ msgstr "Životno osiguranje"
 #: model:res.partner.nace,name:l10n_eu_nace.nace_02_2
 #: model:res.partner.nace,name:l10n_eu_nace.nace_02_20
 msgid "Logging"
-msgstr "Sječa drva"
+msgstr "Logiranje"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_C
@@ -1202,13 +1273,17 @@ msgstr "Upravljanje nekretninama uz naplatu ili na osnovi ugovora"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_23_19
-msgid "Manufacture and processing of other glass, including technical glassware"
-msgstr "Proizvodnja i obrada ostalog stakla uključujući tehničku robu od stakla"
+msgid ""
+"Manufacture and processing of other glass, including technical glassware"
+msgstr ""
+"Proizvodnja i obrada ostalog stakla uključujući tehničku robu od stakla"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_23_9
-msgid "Manufacture of abrasive products and non-metallic mineral products n.e.c."
-msgstr "Proizvodnja brusnih proizvoda i nemetalnih mineralnih proizvoda, d. n."
+msgid ""
+"Manufacture of abrasive products and non-metallic mineral products n.e.c."
+msgstr ""
+"Proizvodnja brusnih proizvoda i nemetalnih mineralnih proizvoda, d. n."
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_28_3
@@ -1220,7 +1295,9 @@ msgstr "Proizvodnja strojeva za poljoprivredu i šumarstvo"
 #: model:res.partner.nace,name:l10n_eu_nace.nace_30_3
 #: model:res.partner.nace,name:l10n_eu_nace.nace_30_30
 msgid "Manufacture of air and spacecraft and related machinery"
-msgstr "Proizvodnja zrakoplova i svemirskih letjelica te srodnih prijevoznih sredstava i opreme"
+msgstr ""
+"Proizvodnja zrakoplova i svemirskih letjelica te srodnih prijevoznih "
+"sredstava i opreme"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_23_6
@@ -1250,8 +1327,12 @@ msgstr "Proizvodnja pekarskih i brašneno-konditorskih proizvoda"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_20_1
-msgid "Manufacture of basic chemicals, fertilisers and nitrogen compounds, plastics and synthetic rubber in primary forms"
-msgstr "Proizvodnja osnovnih kemikalija, gnojiva i dušičnih spojeva, plastike i sintetičkoga kaučuka u primarnim oblicima"
+msgid ""
+"Manufacture of basic chemicals, fertilisers and nitrogen compounds, plastics"
+" and synthetic rubber in primary forms"
+msgstr ""
+"Proizvodnja osnovnih kemikalija, gnojiva i dušičnih spojeva, plastike i "
+"sintetičkoga kaučuka u primarnim oblicima"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_24_1
@@ -1276,8 +1357,10 @@ msgstr "Proizvodnja osnovnih farmaceutskih proizvoda"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_21
-msgid "Manufacture of basic pharmaceutical products and pharmaceutical preparations"
-msgstr "Proizvodnja osnovnih farmaceutskih proizvoda i farmaceutskih pripravaka"
+msgid ""
+"Manufacture of basic pharmaceutical products and pharmaceutical preparations"
+msgstr ""
+"Proizvodnja osnovnih farmaceutskih proizvoda i farmaceutskih pripravaka"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_24_4
@@ -1293,7 +1376,8 @@ msgstr "Proizvodnja baterija i akumulatora"
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_28_15
 msgid "Manufacture of bearings, gears, gearing and driving elements"
-msgstr "Proizvodnja ležajeva, prijenosnika te prijenosnih i pogonskih elemenata"
+msgstr ""
+"Proizvodnja ležajeva, prijenosnika te prijenosnih i pogonskih elemenata"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_11_05
@@ -1314,18 +1398,24 @@ msgstr "Proizvodnja bicikala i invalidskih kolica"
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_29_2
 #: model:res.partner.nace,name:l10n_eu_nace.nace_29_20
-msgid "Manufacture of bodies (coachwork) for motor vehicles; manufacture of trailers and semi-trailers"
+msgid ""
+"Manufacture of bodies (coachwork) for motor vehicles; manufacture of "
+"trailers and semi-trailers"
 msgstr "Proizvodnja karoserija za motorna vozila, prikolica i poluprikolica"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_10_71
 msgid "Manufacture of bread; manufacture of fresh pastry goods and cakes"
-msgstr "Proizvodnja kruha; proizvodnja svježih peciva, slastičarskih proizvoda i kolača"
+msgstr ""
+"Proizvodnja kruha; proizvodnja svježih peciva, slastičarskih proizvoda i "
+"kolača"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_23_32
 msgid "Manufacture of bricks, tiles and construction products, in baked clay"
-msgstr "Proizvodnja opeke, crijepa i ostalih proizvoda od pečene gline za građevinarstvo"
+msgstr ""
+"Proizvodnja opeke, crijepa i ostalih proizvoda od pečene gline za "
+"građevinarstvo"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_32_91
@@ -1448,8 +1538,11 @@ msgstr "Proizvodnja užadi, konopaca, upletenoga konca i mreža"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_17_21
-msgid "Manufacture of corrugated paper and paperboard and of containers of paper and paperboard"
-msgstr "Proizvodnja valovitog papira i kartona te ambalaže od papira i kartona"
+msgid ""
+"Manufacture of corrugated paper and paperboard and of containers of paper "
+"and paperboard"
+msgstr ""
+"Proizvodnja valovitog papira i kartona te ambalaže od papira i kartona"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_25_71
@@ -1499,8 +1592,12 @@ msgstr "Proizvodnja elektromotora, generatora i transformatora"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_27_1
-msgid "Manufacture of electric motors, generators, transformers and electricity distribution and control apparatus"
-msgstr "Proizvodnja elektromotora, generatora, transformatora te uređaja za distribuciju i kontrolu električne energije"
+msgid ""
+"Manufacture of electric motors, generators, transformers and electricity "
+"distribution and control apparatus"
+msgstr ""
+"Proizvodnja elektromotora, generatora, transformatora te uređaja za "
+"distribuciju i kontrolu električne energije"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_29_31
@@ -1529,8 +1626,11 @@ msgstr "Proizvodnja elektroničkih komponenata i ploča"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_28_11
-msgid "Manufacture of engines and turbines, except aircraft, vehicle and cycle engines"
-msgstr "Proizvodnja motora i turbina, osim motora za zrakoplove i motorna vozila"
+msgid ""
+"Manufacture of engines and turbines, except aircraft, vehicle and cycle "
+"engines"
+msgstr ""
+"Proizvodnja motora i turbina, osim motora za zrakoplove i motorna vozila"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_20_53
@@ -1544,7 +1644,8 @@ msgstr "Proizvodnja eksploziva"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_25
-msgid "Manufacture of fabricated metal products, except machinery and equipment"
+msgid ""
+"Manufacture of fabricated metal products, except machinery and equipment"
 msgstr "Proizvodnja gotovih metalnih proizvoda, osim strojeva i opreme"
 
 #. module: l10n_eu_nace
@@ -1613,7 +1714,8 @@ msgstr "Proizvodnja plina"
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_35_2
 msgid "Manufacture of gas; distribution of gaseous fuels through mains"
-msgstr "Proizvodnja plina; distribucija plinovitih goriva distribucijskom mrežom"
+msgstr ""
+"Proizvodnja plina; distribucija plinovitih goriva distribucijskom mrežom"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_28_1
@@ -1653,12 +1755,14 @@ msgstr "Proizvodnja šupljeg stakla"
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_10_86
 msgid "Manufacture of homogenised food preparations and dietetic food"
-msgstr "Proizvodnja homogeniziranih prehrambenih pripravaka i dijetetske hrane"
+msgstr ""
+"Proizvodnja homogeniziranih prehrambenih pripravaka i dijetetske hrane"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_17_22
 msgid "Manufacture of household and sanitary goods and of toilet requisites"
-msgstr "Proizvodnja robe za kućanstvo i higijenu te toaletnih potrepština od papira"
+msgstr ""
+"Proizvodnja robe za kućanstvo i higijenu te toaletnih potrepština od papira"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_10_52
@@ -1677,19 +1781,29 @@ msgstr "Proizvodnja industrijskih plinova"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_26_51
-msgid "Manufacture of instruments and appliances for measuring, testing and navigation"
-msgstr "Proizvodnja instrumenata i aparata za mjerenje, ispitivanje i navigaciju"
+msgid ""
+"Manufacture of instruments and appliances for measuring, testing and "
+"navigation"
+msgstr ""
+"Proizvodnja instrumenata i aparata za mjerenje, ispitivanje i navigaciju"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_26_5
-msgid "Manufacture of instruments and appliances for measuring, testing and navigation; watches and clocks"
-msgstr "Proizvodnja instrumenata i aparata za mjerenje, ispitivanje i navigaciju; proizvodnja satova "
+msgid ""
+"Manufacture of instruments and appliances for measuring, testing and "
+"navigation; watches and clocks"
+msgstr ""
+"Proizvodnja instrumenata i aparata za mjerenje, ispitivanje i navigaciju; "
+"proizvodnja satova "
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_26_6
 #: model:res.partner.nace,name:l10n_eu_nace.nace_26_60
-msgid "Manufacture of irradiation, electromedical and electrotherapeutic equipment"
-msgstr "Proizvodnja opreme za zračenje, elektromedicinske i elektroterapeutske opreme"
+msgid ""
+"Manufacture of irradiation, electromedical and electrotherapeutic equipment"
+msgstr ""
+"Proizvodnja opreme za zračenje, elektromedicinske i elektroterapeutske "
+"opreme"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_32_12
@@ -1759,11 +1873,14 @@ msgstr "Proizvodnja brava i okova"
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_15_12
 msgid "Manufacture of luggage, handbags and the like, saddlery and harness"
-msgstr "Proizvodnja putnih i ručnih torba i slično, sedlarskih i remenarskih proizvoda"
+msgstr ""
+"Proizvodnja putnih i ručnih torba i slično, sedlarskih i remenarskih "
+"proizvoda"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_10_73
-msgid "Manufacture of macaroni, noodles, couscous and similar farinaceous products"
+msgid ""
+"Manufacture of macaroni, noodles, couscous and similar farinaceous products"
 msgstr "Proizvodnja makarona, njoka, kuskusa i slične tjestenine"
 
 #. module: l10n_eu_nace
@@ -1894,8 +2011,10 @@ msgstr "Proizvodnja neelektričnih aparata za kućanstvo"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_13_95
-msgid "Manufacture of non-wovens and articles made from non-wovens, except apparel"
-msgstr "Proizvodnja netkanog tekstila i proizvoda od netkanog tekstila, osim odjeće"
+msgid ""
+"Manufacture of non-wovens and articles made from non-wovens, except apparel"
+msgstr ""
+"Proizvodnja netkanog tekstila i proizvoda od netkanog tekstila, osim odjeće"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_31_01
@@ -1904,8 +2023,12 @@ msgstr "Proizvodnja namještaja za poslovne i prodajne prostore"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_28_23
-msgid "Manufacture of office machinery and equipment (except computers and peripheral equipment)"
-msgstr "Proizvodnja uredskih strojeva i opreme (osim proizvodnje računala i periferne opreme)"
+msgid ""
+"Manufacture of office machinery and equipment (except computers and "
+"peripheral equipment)"
+msgstr ""
+"Proizvodnja uredskih strojeva i opreme (osim proizvodnje računala i "
+"periferne opreme)"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_10_41
@@ -2056,8 +2179,12 @@ msgstr "Proizvodnja ostalih proizvoda primarne prerade čelika"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_16_29
-msgid "Manufacture of other products of wood; manufacture of articles of cork, straw and plaiting materials"
-msgstr "Proizvodnja ostalih proizvoda od drva, proizvoda od pluta, slame i pletarskih materijala"
+msgid ""
+"Manufacture of other products of wood; manufacture of articles of cork, "
+"straw and plaiting materials"
+msgstr ""
+"Proizvodnja ostalih proizvoda od drva, proizvoda od pluta, slame i "
+"pletarskih materijala"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_28_13
@@ -2132,7 +2259,9 @@ msgstr "Proizvodnja peći i plamenika"
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_20_3
 #: model:res.partner.nace,name:l10n_eu_nace.nace_20_30
-msgid "Manufacture of paints, varnishes and similar coatings, printing ink and mastics"
+msgid ""
+"Manufacture of paints, varnishes and similar coatings, printing ink and "
+"mastics"
 msgstr "Proizvodnja boja, lakova i sličnih premaza, grafičkih boja i kitova"
 
 #. module: l10n_eu_nace
@@ -2277,28 +2406,45 @@ msgstr "Proizvodnja proizvoda od gume"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_22_11
-msgid "Manufacture of rubber tyres and tubes; retreading and rebuilding of rubber tyres"
-msgstr "Proizvodnja vanjskih i unutrašnjih guma za vozila; protektiranje vanjskih guma"
+msgid ""
+"Manufacture of rubber tyres and tubes; retreading and rebuilding of rubber "
+"tyres"
+msgstr ""
+"Proizvodnja vanjskih i unutrašnjih guma za vozila; protektiranje vanjskih "
+"guma"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_10_72
-msgid "Manufacture of rusks and biscuits; manufacture of preserved pastry goods and cakes"
-msgstr "Proizvodnja dvopeka, keksa i srodnih proizvoda; proizvodnja trajnih peciva, slastičarskih proizvoda i kolača"
+msgid ""
+"Manufacture of rusks and biscuits; manufacture of preserved pastry goods and"
+" cakes"
+msgstr ""
+"Proizvodnja dvopeka, keksa i srodnih proizvoda; proizvodnja trajnih peciva, "
+"slastičarskih proizvoda i kolača"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_20_41
-msgid "Manufacture of soap and detergents, cleaning and polishing preparations"
+msgid ""
+"Manufacture of soap and detergents, cleaning and polishing preparations"
 msgstr "Proizvodnja sapuna i deterdženata, sredstava za čišćenje i poliranje"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_20_4
-msgid "Manufacture of soap and detergents, cleaning and polishing preparations, perfumes and toilet preparations"
-msgstr "Proizvodnja sapuna i deterdženata, sredstava za čišćenje i poliranje, parfema i toaletno-kozmetičkih preparata"
+msgid ""
+"Manufacture of soap and detergents, cleaning and polishing preparations, "
+"perfumes and toilet preparations"
+msgstr ""
+"Proizvodnja sapuna i deterdženata, sredstava za čišćenje i poliranje, "
+"parfema i toaletno-kozmetičkih preparata"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_11_07
-msgid "Manufacture of soft drinks; production of mineral waters and other bottled waters"
-msgstr "Proizvodnja osvježavajućih napitaka; proizvodnja mineralne i drugih flaširanih voda"
+msgid ""
+"Manufacture of soft drinks; production of mineral waters and other bottled "
+"waters"
+msgstr ""
+"Proizvodnja osvježavajućih napitaka; proizvodnja mineralne i drugih "
+"flaširanih voda"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_32_3
@@ -2314,8 +2460,10 @@ msgstr "Proizvodnja škroba i škrobnih proizvoda"
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_25_3
 #: model:res.partner.nace,name:l10n_eu_nace.nace_25_30
-msgid "Manufacture of steam generators, except central heating hot water boilers"
-msgstr "Proizvodnja parnih kotlova, osim kotlova za centralno grijanje toplom vodom"
+msgid ""
+"Manufacture of steam generators, except central heating hot water boilers"
+msgstr ""
+"Proizvodnja parnih kotlova, osim kotlova za centralno grijanje toplom vodom"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_25_91
@@ -2367,7 +2515,8 @@ msgstr "Proizvodnja prijevoznih sredstava, d. n."
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_24_2
 #: model:res.partner.nace,name:l10n_eu_nace.nace_24_20
-msgid "Manufacture of tubes, pipes, hollow profiles and related fittings, of steel"
+msgid ""
+"Manufacture of tubes, pipes, hollow profiles and related fittings, of steel"
 msgstr "Proizvodnja čeličnih cijevi i pribora"
 
 #. module: l10n_eu_nace
@@ -2433,8 +2582,12 @@ msgstr "Proizvodnja elektroinstalacijskog materijala"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_16
-msgid "Manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials"
-msgstr "Prerada drva i proizvoda od drva i pluta, osim namještaja; proizvodnja proizvoda od slame i pletarskih materijala"
+msgid ""
+"Manufacture of wood and of products of wood and cork, except furniture; "
+"manufacture of articles of straw and plaiting materials"
+msgstr ""
+"Prerada drva i proizvoda od drva i pluta, osim namještaja; proizvodnja "
+"proizvoda od slame i pletarskih materijala"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_16_24
@@ -2559,7 +2712,8 @@ msgstr "Djelatnosti prikazivanja filmova"
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_59_1
 msgid "Motion picture, video and television programme activities"
-msgstr "Proizvodnja i distribucija filmova, videofilmova i televizijskog programa"
+msgstr ""
+"Proizvodnja i distribucija filmova, videofilmova i televizijskog programa"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_59_13
@@ -2568,8 +2722,11 @@ msgstr "Distribucija filmova, videofilmova i televizijskog programa"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_59_12
-msgid "Motion picture, video and television programme post-production activities"
-msgstr "Djelatnosti koje slijede nakon proizvodnje filmova, videofilmova i televizijskog programa"
+msgid ""
+"Motion picture, video and television programme post-production activities"
+msgstr ""
+"Djelatnosti koje slijede nakon proizvodnje filmova, videofilmova i "
+"televizijskog programa"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_59_11
@@ -2578,8 +2735,12 @@ msgstr "Proizvodnja filmova, videofilmova i televizijskog programa"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_59
-msgid "Motion picture, video and television programme production, sound recording and music publishing activities"
-msgstr "Proizvodnja filmova, videofilmova i televizijskog programa, djelatnosti snimanja zvučnih zapisa i izdavanja glazbenih zapisa"
+msgid ""
+"Motion picture, video and television programme production, sound recording "
+"and music publishing activities"
+msgstr ""
+"Proizvodnja filmova, videofilmova i televizijskog programa, djelatnosti "
+"snimanja zvučnih zapisa i izdavanja glazbenih zapisa"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_91_02
@@ -2621,7 +2782,8 @@ msgstr "Ostalo osiguranje"
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_46_39
 msgid "Non-specialised wholesale of food, beverages and tobacco"
-msgstr "Nespecijalizirana trgovina na veliko hranom, pićima i duhanskim proizvodima"
+msgstr ""
+"Nespecijalizirana trgovina na veliko hranom, pićima i duhanskim proizvodima"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_46_9
@@ -2641,8 +2803,11 @@ msgstr "Uredske administrativne i pomoćne djelatnosti"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_82
-msgid "Office administrative, office support and other business support activities"
-msgstr "Uredske administrativne i pomoćne djelatnosti te ostale poslovne pomoćne djelatnosti"
+msgid ""
+"Office administrative, office support and other business support activities"
+msgstr ""
+"Uredske administrativne i pomoćne djelatnosti te ostale poslovne pomoćne "
+"djelatnosti"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_90_04
@@ -2661,8 +2826,10 @@ msgstr "Djelatnosti šljunčara i pješčara; vađenje gline i kaolina"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_91_03
-msgid "Operation of historical sites and buildings and similar visitor attractions"
-msgstr "Rad povijesnih mjesta i građevina te sličnih zanimljivosti za posjetitelje"
+msgid ""
+"Operation of historical sites and buildings and similar visitor attractions"
+msgstr ""
+"Rad povijesnih mjesta i građevina te sličnih zanimljivosti za posjetitelje"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_93_11
@@ -2683,8 +2850,12 @@ msgstr "Ostali smještaj"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_66_19
-msgid "Other activities auxiliary to financial services, except insurance and pension funding"
-msgstr "Ostale pomoćne djelatnosti kod financijskih usluga, osim osiguranja i mirovinskih fondova"
+msgid ""
+"Other activities auxiliary to financial services, except insurance and "
+"pension funding"
+msgstr ""
+"Ostale pomoćne djelatnosti kod financijskih usluga, osim osiguranja i "
+"mirovinskih fondova"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_66_29
@@ -2738,13 +2909,20 @@ msgstr "Ostalo obrazovanje i poučavanje, d. n."
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_64_9
-msgid "Other financial service activities, except insurance and pension funding"
-msgstr "Ostale financijske uslužne djelatnosti, osim osiguranja i mirovinskih fondova"
+msgid ""
+"Other financial service activities, except insurance and pension funding"
+msgstr ""
+"Ostale financijske uslužne djelatnosti, osim osiguranja i mirovinskih "
+"fondova"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_64_99
-msgid "Other financial service activities, except insurance and pension funding n.e.c."
-msgstr "Ostale financijske uslužne djelatnosti, osim osiguranja i mirovinskih fondova, d. n."
+msgid ""
+"Other financial service activities, except insurance and pension funding "
+"n.e.c."
+msgstr ""
+"Ostale financijske uslužne djelatnosti, osim osiguranja i mirovinskih "
+"fondova, d. n."
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_56_29
@@ -2776,7 +2954,8 @@ msgstr "Ostale informacijske uslužne djelatnosti, d. n."
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_62_09
 msgid "Other information technology and computer service activities"
-msgstr "Ostale uslužne djelatnosti u vezi s informacijskom tehnologijom i računalima"
+msgstr ""
+"Ostale uslužne djelatnosti u vezi s informacijskom tehnologijom i računalima"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_32
@@ -2863,8 +3042,12 @@ msgstr "Ostala izdavačka djelatnost"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_72_19
-msgid "Other research and experimental development on natural sciences and engineering"
-msgstr "Ostalo istraživanje i eksperimentalni razvoj u prirodnim, tehničkim i tehnološkim znanostima"
+msgid ""
+"Other research and experimental development on natural sciences and "
+"engineering"
+msgstr ""
+"Ostalo istraživanje i eksperimentalni razvoj u prirodnim, tehničkim i "
+"tehnološkim znanostima"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_79_9
@@ -2891,7 +3074,9 @@ msgstr "Ostala trgovina na malo izvan prodavaonica, štandova i tržnica"
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_47_29
 msgid "Other retail sale of food in specialised stores"
-msgstr "Ostala trgovina na malo prehrambenim proizvodima u specijaliziranim prodavaonicama"
+msgstr ""
+"Ostala trgovina na malo prehrambenim proizvodima u specijaliziranim "
+"prodavaonicama"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_47_78
@@ -3004,8 +3189,12 @@ msgstr "Izvođačka umjetnost"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_82_19
-msgid "Photocopying, document preparation and other specialised office support activities"
-msgstr "Fotokopiranje, priprema dokumenata i ostale specijalizirane uredske pomoćne djelatnosti"
+msgid ""
+"Photocopying, document preparation and other specialised office support "
+"activities"
+msgstr ""
+"Fotokopiranje, priprema dokumenata i ostale specijalizirane uredske pomoćne "
+"djelatnosti"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_74_2
@@ -3032,12 +3221,16 @@ msgstr "Fasadni i štukaturski radovi"
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_43_22
 msgid "Plumbing, heat and air-conditioning installation"
-msgstr "Uvođenje instalacija vodovoda, kanalizacije i plina i instalacija za grijanje i klimatizaciju"
+msgstr ""
+"Uvođenje instalacija vodovoda, kanalizacije i plina i instalacija za "
+"grijanje i klimatizaciju"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_01_63
 msgid "Post-harvest crop activities"
-msgstr "Djelatnosti koje se obavljaju nakon žetve usjeva (priprema usjeva za primarna tržišta)"
+msgstr ""
+"Djelatnosti koje se obavljaju nakon žetve usjeva (priprema usjeva za "
+"primarna tržišta)"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_85_41
@@ -3201,7 +3394,8 @@ msgstr "Izdavačke djelatnosti"
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_58_1
 msgid "Publishing of books, periodicals and other publishing activities"
-msgstr "Izdavanje knjiga, periodičnih publikacija i ostale izdavačke djelatnosti"
+msgstr ""
+"Izdavanje knjiga, periodičnih publikacija i ostale izdavačke djelatnosti"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_58_21
@@ -3225,8 +3419,12 @@ msgstr "Izdavanje novina"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_08_11
-msgid "Quarrying of ornamental and building stone, limestone, gypsum, chalk and slate"
-msgstr "Vađenje ukrasnoga kamena i kamena za gradnju, vapnenca, gipsa, krede i škriljevca "
+msgid ""
+"Quarrying of ornamental and building stone, limestone, gypsum, chalk and "
+"slate"
+msgstr ""
+"Vađenje ukrasnoga kamena i kamena za gradnju, vapnenca, gipsa, krede i "
+"škriljevca "
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_08_1
@@ -3306,13 +3504,19 @@ msgstr "Oporaba posebno izdvojenih materijala"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_84_13
-msgid "Regulation of and contribution to more efficient operation of businesses"
+msgid ""
+"Regulation of and contribution to more efficient operation of businesses"
 msgstr "Reguliranje i poboljšavanje poslovanja u gospodarstvu"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_84_12
-msgid "Regulation of the activities of providing health care, education, cultural services and other social services, excluding social security"
-msgstr "Reguliranje djelatnosti subjekata koji pružaju zdravstvenu zaštitu, usluge u obrazovanju i kulturi i druge društvene usluge, osim obveznoga socijalnog osiguranja"
+msgid ""
+"Regulation of the activities of providing health care, education, cultural "
+"services and other social services, excluding social security"
+msgstr ""
+"Reguliranje djelatnosti subjekata koji pružaju zdravstvenu zaštitu, usluge u"
+" obrazovanju i kulturi i druge društvene usluge, osim obveznoga socijalnog "
+"osiguranja"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_65_2
@@ -3325,7 +3529,8 @@ msgstr "Reosiguranje"
 #: model:res.partner.nace,name:l10n_eu_nace.nace_39_0
 #: model:res.partner.nace,name:l10n_eu_nace.nace_39_00
 msgid "Remediation activities and other waste management services"
-msgstr "Djelatnosti sanacije okoliša te ostale djelatnosti gospodarenja otpadom"
+msgstr ""
+"Djelatnosti sanacije okoliša te ostale djelatnosti gospodarenja otpadom"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_49_42
@@ -3340,22 +3545,30 @@ msgstr "Djelatnosti iznajmljivanja i davanja u zakup (leasing)"
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_77_31
 msgid "Rental and leasing of agricultural machinery and equipment"
-msgstr "Iznajmljivanje i davanje u zakup (leasing) poljoprivrednih strojeva i opreme"
+msgstr ""
+"Iznajmljivanje i davanje u zakup (leasing) poljoprivrednih strojeva i opreme"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_77_35
 msgid "Rental and leasing of air transport equipment"
-msgstr "Iznajmljivanje i davanje u zakup (leasing) zračnih prijevoznih sredstava"
+msgstr ""
+"Iznajmljivanje i davanje u zakup (leasing) zračnih prijevoznih sredstava"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_77_11
 msgid "Rental and leasing of cars and light motor vehicles"
-msgstr "Iznajmljivanje i davanje u zakup (leasing) automobila i motornih vozila lake kategorije"
+msgstr ""
+"Iznajmljivanje i davanje u zakup (leasing) automobila i motornih vozila lake"
+" kategorije"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_77_32
-msgid "Rental and leasing of construction and civil engineering machinery and equipment"
-msgstr "Iznajmljivanje i davanje u zakup (leasing) strojeva i opreme za građevinarstvo i inženjerstvo"
+msgid ""
+"Rental and leasing of construction and civil engineering machinery and "
+"equipment"
+msgstr ""
+"Iznajmljivanje i davanje u zakup (leasing) strojeva i opreme za "
+"građevinarstvo i inženjerstvo"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_77_1
@@ -3364,33 +3577,46 @@ msgstr "Iznajmljivanje i davanje u zakup (leasing) motornih vozila"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_77_33
-msgid "Rental and leasing of office machinery and equipment (including computers)"
-msgstr "Iznajmljivanje i davanje u zakup (leasing) uredskih strojeva i opreme (uključujući računala)"
+msgid ""
+"Rental and leasing of office machinery and equipment (including computers)"
+msgstr ""
+"Iznajmljivanje i davanje u zakup (leasing) uredskih strojeva i opreme "
+"(uključujući računala)"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_77_3
 msgid "Rental and leasing of other machinery, equipment and tangible goods"
-msgstr "Iznajmljivanje i davanje u zakup (leasing) ostalih strojeva, opreme te materijalnih dobara"
+msgstr ""
+"Iznajmljivanje i davanje u zakup (leasing) ostalih strojeva, opreme te "
+"materijalnih dobara"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_77_39
-msgid "Rental and leasing of other machinery, equipment and tangible goods n.e.c."
-msgstr "Iznajmljivanje i davanje u zakup (leasing) ostalih strojeva, opreme i materijalnih dobara, d. n."
+msgid ""
+"Rental and leasing of other machinery, equipment and tangible goods n.e.c."
+msgstr ""
+"Iznajmljivanje i davanje u zakup (leasing) ostalih strojeva, opreme i "
+"materijalnih dobara, d. n."
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_77_29
 msgid "Rental and leasing of other personal and household goods"
-msgstr "Iznajmljivanje i davanje u zakup (leasing) ostalih predmeta za osobnu uporabu i kućanstvo"
+msgstr ""
+"Iznajmljivanje i davanje u zakup (leasing) ostalih predmeta za osobnu "
+"uporabu i kućanstvo"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_77_2
 msgid "Rental and leasing of personal and household goods"
-msgstr "Iznajmljivanje i davanje u zakup (leasing) predmeta za osobnu uporabu i kućanstvo"
+msgstr ""
+"Iznajmljivanje i davanje u zakup (leasing) predmeta za osobnu uporabu i "
+"kućanstvo"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_77_21
 msgid "Rental and leasing of recreational and sports goods"
-msgstr "Iznajmljivanje i davanje u zakup (leasing) opreme za rekraciju i sport"
+msgstr ""
+"Iznajmljivanje i davanje u zakup (leasing) opreme za rekraciju i sport"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_77_12
@@ -3400,13 +3626,16 @@ msgstr "Iznajmljivanje i davanje u zakup (leasing) kamiona "
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_77_34
 msgid "Rental and leasing of water transport equipment"
-msgstr "Iznajmljivanje i davanje u zakup (leasing) plovnih prijevoznih sredstava"
+msgstr ""
+"Iznajmljivanje i davanje u zakup (leasing) plovnih prijevoznih sredstava"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_68_2
 #: model:res.partner.nace,name:l10n_eu_nace.nace_68_20
 msgid "Rental and operating of own or leased real estate"
-msgstr "Iznajmljivanje i upravljanje vlastitim nekretninama ili nekretninama uzetim u zakup (leasing)"
+msgstr ""
+"Iznajmljivanje i upravljanje vlastitim nekretninama ili nekretninama uzetim "
+"u zakup (leasing)"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_77_22
@@ -3531,14 +3760,20 @@ msgstr "Istraživanje i eksperimentalni razvoj u biotehnologiji"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_72_1
-msgid "Research and experimental development on natural sciences and engineering"
-msgstr "Istraživanje i eksperimentalni razvoj u prirodnim, tehničkim i tehnološkim znanostima"
+msgid ""
+"Research and experimental development on natural sciences and engineering"
+msgstr ""
+"Istraživanje i eksperimentalni razvoj u prirodnim, tehničkim i tehnološkim "
+"znanostima"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_72_2
 #: model:res.partner.nace,name:l10n_eu_nace.nace_72_20
-msgid "Research and experimental development on social sciences and humanities"
-msgstr "Istraživanje i eksperimentalni razvoj u društvenim i humanističkim znanostima"
+msgid ""
+"Research and experimental development on social sciences and humanities"
+msgstr ""
+"Istraživanje i eksperimentalni razvoj u društvenim i humanističkim "
+"znanostima"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_87
@@ -3548,14 +3783,21 @@ msgstr "Djelatnosti socijalne skrbi sa smještajem"
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_87_2
 #: model:res.partner.nace,name:l10n_eu_nace.nace_87_20
-msgid "Residential care activities for mental retardation, mental health and substance abuse"
-msgstr "Djelatnosti socijalne skrbi sa smještajem za osobe s teškoćama u razvoju, duševno bolesne i osobe ovisne o alkoholu, drogama ili drugim opojnim sredstvima"
+msgid ""
+"Residential care activities for mental retardation, mental health and "
+"substance abuse"
+msgstr ""
+"Djelatnosti socijalne skrbi sa smještajem za osobe s teškoćama u razvoju, "
+"duševno bolesne i osobe ovisne o alkoholu, drogama ili drugim opojnim "
+"sredstvima"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_87_3
 #: model:res.partner.nace,name:l10n_eu_nace.nace_87_30
 msgid "Residential care activities for the elderly and disabled"
-msgstr "Djelatnosti socijalne skrbi sa smještajem za starije osobe i osobe s invaliditetom"
+msgstr ""
+"Djelatnosti socijalne skrbi sa smještajem za starije osobe i osobe s "
+"invaliditetom"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_87_1
@@ -3567,7 +3809,8 @@ msgstr "Djelatnosti ustanova za njegu"
 #: model:res.partner.nace,name:l10n_eu_nace.nace_56_1
 #: model:res.partner.nace,name:l10n_eu_nace.nace_56_10
 msgid "Restaurants and mobile food service activities"
-msgstr "Djelatnosti restorana i ostalih objekata za pripremu i usluživanje hrane"
+msgstr ""
+"Djelatnosti restorana i ostalih objekata za pripremu i usluživanje hrane"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_47_1
@@ -3576,19 +3819,26 @@ msgstr "Trgovina na malo u nespecijaliziranim prodavaonicama "
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_47_11
-msgid "Retail sale in non-specialised stores with food, beverages or tobacco predominating"
-msgstr "Trgovina na malo u nespecijaliziranim prodavaonicama pretežno hranom, pićima i duhanskim proizvodima "
+msgid ""
+"Retail sale in non-specialised stores with food, beverages or tobacco "
+"predominating"
+msgstr ""
+"Trgovina na malo u nespecijaliziranim prodavaonicama pretežno hranom, pićima"
+" i duhanskim proizvodima "
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_47_43
 msgid "Retail sale of audio and video equipment in specialised stores"
-msgstr "Trgovina na malo audio i videoopremom u specijaliziranim prodavaonicama"
+msgstr ""
+"Trgovina na malo audio i videoopremom u specijaliziranim prodavaonicama"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_47_3
 #: model:res.partner.nace,name:l10n_eu_nace.nace_47_30
 msgid "Retail sale of automotive fuel in specialised stores"
-msgstr "Trgovina na malo motornim gorivima i mazivima u specijaliziranim prodavaonicama"
+msgstr ""
+"Trgovina na malo motornim gorivima i mazivima u specijaliziranim "
+"prodavaonicama"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_47_25
@@ -3602,13 +3852,20 @@ msgstr "Trgovina na malo knjigama u specijaliziranim prodavaonicama"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_47_24
-msgid "Retail sale of bread, cakes, flour confectionery and sugar confectionery in specialised stores"
-msgstr "Trgovina na malo kruhom, pecivom, kolačima, tjesteninama, bombonima i slatkišima u specijaliziranim prodavaonicama"
+msgid ""
+"Retail sale of bread, cakes, flour confectionery and sugar confectionery in "
+"specialised stores"
+msgstr ""
+"Trgovina na malo kruhom, pecivom, kolačima, tjesteninama, bombonima i "
+"slatkišima u specijaliziranim prodavaonicama"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_47_53
-msgid "Retail sale of carpets, rugs, wall and floor coverings in specialised stores"
-msgstr "Trgovina na malo sagovima i prostiračima za pod, zidnim i podnim oblogama u specijaliziranim prodavaonicama"
+msgid ""
+"Retail sale of carpets, rugs, wall and floor coverings in specialised stores"
+msgstr ""
+"Trgovina na malo sagovima i prostiračima za pod, zidnim i podnim oblogama u "
+"specijaliziranim prodavaonicama"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_47_71
@@ -3617,43 +3874,63 @@ msgstr "Trgovina na malo odjećom u specijaliziranim prodavaonicama"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_47_41
-msgid "Retail sale of computers, peripheral units and software in specialised stores"
-msgstr "Trgovina na malo računalima, perifernim jedinicama i softverom u specijaliziranim prodavaonicama"
+msgid ""
+"Retail sale of computers, peripheral units and software in specialised "
+"stores"
+msgstr ""
+"Trgovina na malo računalima, perifernim jedinicama i softverom u "
+"specijaliziranim prodavaonicama"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_47_75
 msgid "Retail sale of cosmetic and toilet articles in specialised stores"
-msgstr "Trgovina na malo kozmetičkim i toaletnim proizvodima\nu specijaliziranim prodavaonicama"
+msgstr ""
+"Trgovina na malo kozmetičkim i toaletnim proizvodima\n"
+"u specijaliziranim prodavaonicama"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_47_6
 msgid "Retail sale of cultural and recreation goods in specialised stores"
-msgstr "Trgovina na malo proizvodima za kulturu i rekreaciju u specijaliziranim prodavaonicama"
+msgstr ""
+"Trgovina na malo proizvodima za kulturu i rekreaciju u specijaliziranim "
+"prodavaonicama"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_47_54
 msgid "Retail sale of electrical household appliances in specialised stores"
-msgstr "Trgovina na malo električnim aparatima za kućanstvo u specijaliziranim prodavaonicama"
+msgstr ""
+"Trgovina na malo električnim aparatima za kućanstvo u specijaliziranim "
+"prodavaonicama"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_47_23
 msgid "Retail sale of fish, crustaceans and molluscs in specialised stores"
-msgstr "Trgovina na malo ribama, rakovima i školjkama u\nspecijaliziranim prodavaonicama"
+msgstr ""
+"Trgovina na malo ribama, rakovima i školjkama u\n"
+"specijaliziranim prodavaonicama"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_47_76
-msgid "Retail sale of flowers, plants, seeds, fertilisers, pet animals and pet food in specialised stores"
-msgstr "Trgovina na malo cvijećem, sadnicama, sjemenjem, gnojivom, kućnim ljubimcima i hranom za kućne ljubimce u specijaliziranim prodavaonicama"
+msgid ""
+"Retail sale of flowers, plants, seeds, fertilisers, pet animals and pet food"
+" in specialised stores"
+msgstr ""
+"Trgovina na malo cvijećem, sadnicama, sjemenjem, gnojivom, kućnim ljubimcima"
+" i hranom za kućne ljubimce u specijaliziranim prodavaonicama"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_47_2
 msgid "Retail sale of food, beverages and tobacco in specialised stores"
-msgstr "Trgovina na malo hranom, pićima i duhanskim proizvodima u specijaliziranim prodavaonicama"
+msgstr ""
+"Trgovina na malo hranom, pićima i duhanskim proizvodima u specijaliziranim "
+"prodavaonicama"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_47_72
 msgid "Retail sale of footwear and leather goods in specialised stores"
-msgstr "Trgovina na malo obućom i proizvodima od kože\nu specijaliziranim prodavaonicama"
+msgstr ""
+"Trgovina na malo obućom i proizvodima od kože\n"
+"u specijaliziranim prodavaonicama"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_47_21
@@ -3662,8 +3939,12 @@ msgstr "Trgovina na malo voćem i povrćem u specijaliziranim prodavaonicama"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_47_59
-msgid "Retail sale of furniture, lighting equipment and other household articles in specialised stores"
-msgstr "Trgovina na malo namještajem, opremom za rasvjetu i ostalim proizvodima za kućanstvo u specijaliziranim prodavaonicama"
+msgid ""
+"Retail sale of furniture, lighting equipment and other household articles in"
+" specialised stores"
+msgstr ""
+"Trgovina na malo namještajem, opremom za rasvjetu i ostalim proizvodima za "
+"kućanstvo u specijaliziranim prodavaonicama"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_47_65
@@ -3673,32 +3954,45 @@ msgstr "Trgovina na malo igrama i igračkama u specijaliziranim prodavaonicama"
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_47_52
 msgid "Retail sale of hardware, paints and glass in specialised stores"
-msgstr "Trgovina na malo željeznom robom, bojama i staklom u specijaliziranim prodavaonicama"
+msgstr ""
+"Trgovina na malo željeznom robom, bojama i staklom u specijaliziranim "
+"prodavaonicama"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_47_4
-msgid "Retail sale of information and communication equipment in specialised stores"
-msgstr "Trgovina na malo informacijsko-komunikacijskom opremom u specijaliziranim prodavaonicama"
+msgid ""
+"Retail sale of information and communication equipment in specialised stores"
+msgstr ""
+"Trgovina na malo informacijsko-komunikacijskom opremom u specijaliziranim "
+"prodavaonicama"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_47_22
 msgid "Retail sale of meat and meat products in specialised stores"
-msgstr "Trgovina na malo mesom i mesnim proizvodima u specijaliziranim prodavaonicama"
+msgstr ""
+"Trgovina na malo mesom i mesnim proizvodima u specijaliziranim "
+"prodavaonicama"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_47_74
 msgid "Retail sale of medical and orthopaedic goods in specialised stores"
-msgstr "Trgovina na malo medicinskim pripravcima i ortopedskim pomagalima u specijaliziranim prodavaonicama"
+msgstr ""
+"Trgovina na malo medicinskim pripravcima i ortopedskim pomagalima u "
+"specijaliziranim prodavaonicama"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_47_63
 msgid "Retail sale of music and video recordings in specialised stores"
-msgstr "Trgovina na malo glazbenim i videozapisima\nu specijaliziranim prodavaonicama"
+msgstr ""
+"Trgovina na malo glazbenim i videozapisima\n"
+"u specijaliziranim prodavaonicama"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_47_62
 msgid "Retail sale of newspapers and stationery in specialised stores"
-msgstr "Trgovina na malo novinama, papirnatom robom i pisaćim priborom u specijaliziranim prodavaonicama"
+msgstr ""
+"Trgovina na malo novinama, papirnatom robom i pisaćim priborom u "
+"specijaliziranim prodavaonicama"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_47_7
@@ -3708,7 +4002,9 @@ msgstr "Trgovina na malo ostalom robom u specijaliziranim prodavaonicama"
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_47_5
 msgid "Retail sale of other household equipment in specialised stores"
-msgstr "Trgovina na malo ostalom opremom za kućanstvo u specijaliziranim prodavaonicama"
+msgstr ""
+"Trgovina na malo ostalom opremom za kućanstvo u specijaliziranim "
+"prodavaonicama"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_47_79
@@ -3718,12 +4014,16 @@ msgstr "Trgovina na malo rabljenom robom u specijaliziranim prodavaonicama"
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_47_64
 msgid "Retail sale of sporting equipment in specialised stores"
-msgstr "Trgovina na malo sportskom opremom u\nspecijaliziranim prodavaonicama"
+msgstr ""
+"Trgovina na malo sportskom opremom u\n"
+"specijaliziranim prodavaonicama"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_47_42
 msgid "Retail sale of telecommunications equipment in specialised stores"
-msgstr "Trgovina na malo telekomunikacijskom opremom u specijaliziranim prodavaonicama"
+msgstr ""
+"Trgovina na malo telekomunikacijskom opremom u specijaliziranim "
+"prodavaonicama"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_47_51
@@ -3733,7 +4033,8 @@ msgstr "Trgovina na malo tekstilom u specijaliziranim prodavaonicama"
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_47_26
 msgid "Retail sale of tobacco products in specialised stores"
-msgstr "Trgovina na malo duhanskim proizvodima u specijaliziranim prodavaonicama"
+msgstr ""
+"Trgovina na malo duhanskim proizvodima u specijaliziranim prodavaonicama"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_47_77
@@ -3752,8 +4053,11 @@ msgstr "Trgovina na malo na štandovima i tržnicama"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_47_81
-msgid "Retail sale via stalls and markets of food, beverages and tobacco products"
-msgstr "Trgovina na malo hranom, pićima i duhanskim proizvodima na štandovima i tržnicama"
+msgid ""
+"Retail sale via stalls and markets of food, beverages and tobacco products"
+msgstr ""
+"Trgovina na malo hranom, pićima i duhanskim proizvodima na štandovima i "
+"tržnicama"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_47_89
@@ -3763,7 +4067,8 @@ msgstr "Trgovina na malo ostalom robom na štandovima i tržnicama"
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_47_82
 msgid "Retail sale via stalls and markets of textiles, clothing and footwear"
-msgstr "Trgovina na malo tekstilom, odjećom i obućom na štandovima i tržnicama"
+msgstr ""
+"Trgovina na malo tekstilom, odjećom i obućom na štandovima i tržnicama"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_47_9
@@ -3813,8 +4118,12 @@ msgstr "Trgovina ostalim motornim vozilima"
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_45_4
 #: model:res.partner.nace,name:l10n_eu_nace.nace_45_40
-msgid "Sale, maintenance and repair of motorcycles and related parts and accessories"
-msgstr "Trgovina motociklima, dijelovima i priborom za motocikle te održavanje i popravak motocikala"
+msgid ""
+"Sale, maintenance and repair of motorcycles and related parts and "
+"accessories"
+msgstr ""
+"Trgovina motociklima, dijelovima i priborom za motocikle te održavanje i "
+"popravak motocikala"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_61_3
@@ -3859,7 +4168,9 @@ msgstr "Srednje obrazovanje"
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_66_12
 msgid "Security and commodity contracts brokerage"
-msgstr "Djelatnosti posredovanja u poslovanju vrijednosnim papirima i robnim ugovorima"
+msgstr ""
+"Djelatnosti posredovanja u poslovanju vrijednosnim papirima i robnim "
+"ugovorima"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_80
@@ -3895,7 +4206,9 @@ msgstr "Uslužne djelatnosti u vezi s vodenim prijevozom"
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_81
 msgid "Services to buildings and landscape activities"
-msgstr "Usluge u vezi s upravljanjem i održavanjem zgrada te djelatnosti uređenja i održavanja krajolika"
+msgstr ""
+"Usluge u vezi s upravljanjem i održavanjem zgrada te djelatnosti uređenja i "
+"održavanja krajolika"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_37
@@ -3928,8 +4241,11 @@ msgstr "Djelatnosti socijalne skrbi bez smještaja"
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_88_1
 #: model:res.partner.nace,name:l10n_eu_nace.nace_88_10
-msgid "Social work activities without accommodation for the elderly and disabled"
-msgstr "Djelatnosti socijalne skrbi bez smještaja za starije osobe i osobe s invaliditetom"
+msgid ""
+"Social work activities without accommodation for the elderly and disabled"
+msgstr ""
+"Djelatnosti socijalne skrbi bez smještaja za starije osobe i osobe s "
+"invaliditetom"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_58_2
@@ -4019,7 +4335,9 @@ msgstr "Prateće djelatnosti u prijevozu"
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_01_6
 msgid "Support activities to agriculture and post-harvest crop activities"
-msgstr "Pomoćne djelatnosti u poljoprivredi i djelatnosti koje se obavljaju nakon žetve usjeva"
+msgstr ""
+"Pomoćne djelatnosti u poljoprivredi i djelatnosti koje se obavljaju nakon "
+"žetve usjeva"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_90_02
@@ -4044,8 +4362,12 @@ msgstr "Štavljenje i obrada kože; dorada i bojenje krzna"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_15_1
-msgid "Tanning and dressing of leather; manufacture of luggage, handbags, saddlery and harness; dressing and dyeing of fur"
-msgstr "Štavljenje i obrada kože; proizvodnja putnih i ručnih torba, sedlarskih i remenarskih proizvoda; dorada i bojenje krzna"
+msgid ""
+"Tanning and dressing of leather; manufacture of luggage, handbags, saddlery "
+"and harness; dressing and dyeing of fur"
+msgstr ""
+"Štavljenje i obrada kože; proizvodnja putnih i ručnih torba, sedlarskih i "
+"remenarskih proizvoda; dorada i bojenje krzna"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_49_32
@@ -4130,12 +4452,17 @@ msgstr "Djelatnosti putničkih agencija"
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_79_1
 msgid "Travel agency and tour operator activities"
-msgstr "Djelatnosti putničkih agencija i organizatora putovanja (turoperatora)"
+msgstr ""
+"Djelatnosti putničkih agencija i organizatora putovanja (turoperatora)"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_79
-msgid "Travel agency, tour operator and other reservation service and related activities"
-msgstr "Putničke agencije, organizatori putovanja (turoperatori) i ostale rezervacijske usluge te djelatnosti povezane s njima"
+msgid ""
+"Travel agency, tour operator and other reservation service and related "
+"activities"
+msgstr ""
+"Putničke agencije, organizatori putovanja (turoperatori) i ostale "
+"rezervacijske usluge te djelatnosti povezane s njima"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_25_61
@@ -4161,24 +4488,37 @@ msgstr "Obrada i zbrinjavanje neopasnog otpada"
 #: model:res.partner.nace,name:l10n_eu_nace.nace_64_3
 #: model:res.partner.nace,name:l10n_eu_nace.nace_64_30
 msgid "Trusts, funds and similar financial entities"
-msgstr "Uzajamni fondovi (trustovi), ostali fondovi i slični financijski subjekti"
+msgstr ""
+"Uzajamni fondovi (trustovi), ostali fondovi i slični financijski subjekti"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_98
-msgid "Undifferentiated goods- and services-producing activities of private households for own use"
-msgstr "Djelatnosti privatnih kućanstava koja proizvode različitu robu i obavljaju različite usluge za vlastite potrebe"
+msgid ""
+"Undifferentiated goods- and services-producing activities of private "
+"households for own use"
+msgstr ""
+"Djelatnosti privatnih kućanstava koja proizvode različitu robu i obavljaju "
+"različite usluge za vlastite potrebe"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_98_1
 #: model:res.partner.nace,name:l10n_eu_nace.nace_98_10
-msgid "Undifferentiated goods-producing activities of private households for own use"
-msgstr "Djelatnosti privatnih kućanstava koja proizvode različitu robu za vlastite potrebe"
+msgid ""
+"Undifferentiated goods-producing activities of private households for own "
+"use"
+msgstr ""
+"Djelatnosti privatnih kućanstava koja proizvode različitu robu za vlastite "
+"potrebe"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_98_2
 #: model:res.partner.nace,name:l10n_eu_nace.nace_98_20
-msgid "Undifferentiated service-producing activities of private households for own use"
-msgstr "Djelatnosti privatnih kućanstava koja obavljaju različite usluge za vlastite potrebe"
+msgid ""
+"Undifferentiated service-producing activities of private households for own "
+"use"
+msgstr ""
+"Djelatnosti privatnih kućanstava koja obavljaju različite usluge za vlastite"
+" potrebe"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_49_31
@@ -4195,7 +4535,9 @@ msgstr "Veterinarske djelatnosti"
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_E
 msgid "WATER SUPPLY; SEWERAGE, WASTE MANAGEMENT AND REMEDIATION ACTIVITIES"
-msgstr "OPSKRBA VODOM; UKLANJANJE OTPADNIH VODA, GOSPODARENJE OTPADOM TE DJELATNOSTI SANACIJE OKOLIŠA"
+msgstr ""
+"OPSKRBA VODOM; UKLANJANJE OTPADNIH VODA, GOSPODARENJE OTPADOM TE DJELATNOSTI"
+" SANACIJE OKOLIŠA"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_G
@@ -4225,8 +4567,11 @@ msgstr "Skupljanje otpada"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_38
-msgid "Waste collection, treatment and disposal activities; materials recovery"
-msgstr "Skupljanje otpada, djelatnosti obrade i zbrinjavanja otpada; oporaba materijala"
+msgid ""
+"Waste collection, treatment and disposal activities; materials recovery"
+msgstr ""
+"Skupljanje otpada, djelatnosti obrade i zbrinjavanja otpada; oporaba "
+"materijala"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_38_2
@@ -4258,8 +4603,11 @@ msgstr "Internetski portali"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_45
-msgid "Wholesale and retail trade and repair of motor vehicles and motorcycles"
-msgstr "Trgovina na veliko i na malo motornim vozilima i motociklima; popravak motornih vozila i motocikala"
+msgid ""
+"Wholesale and retail trade and repair of motor vehicles and motorcycles"
+msgstr ""
+"Trgovina na veliko i na malo motornim vozilima i motociklima; popravak "
+"motornih vozila i motocikala"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_46_61
@@ -4304,7 +4652,9 @@ msgstr "Trgovina na veliko računalima, perifernom opremom i softverom"
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_46_33
 msgid "Wholesale of dairy products, eggs and edible oils and fats"
-msgstr "Trgovina na veliko mlijekom, mliječnim proizvodima, jajima, jestivim uljima i mastima"
+msgstr ""
+"Trgovina na veliko mlijekom, mliječnim proizvodima, jajima, jestivim uljima "
+"i mastima"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_46_43
@@ -4314,7 +4664,8 @@ msgstr "Trgovina na veliko električnim aparatima za kućanstvo"
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_46_52
 msgid "Wholesale of electronic and telecommunications equipment and parts"
-msgstr "Trgovina na veliko elektroničkim i telekomunikacijskim dijelovima i opremom"
+msgstr ""
+"Trgovina na veliko elektroničkim i telekomunikacijskim dijelovima i opremom"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_46_22
@@ -4339,12 +4690,15 @@ msgstr "Trgovina na veliko namještajem, sagovima i opremom za rasvjetu"
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_46_21
 msgid "Wholesale of grain, unmanufactured tobacco, seeds and animal feeds"
-msgstr "Trgovina na veliko žitaricama, sirovim duhanom, sjemenjem i stočnom hranom"
+msgstr ""
+"Trgovina na veliko žitaricama, sirovim duhanom, sjemenjem i stočnom hranom"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_46_74
 msgid "Wholesale of hardware, plumbing and heating equipment and supplies"
-msgstr "Trgovina na veliko željeznom robom, instalacijskim materijalom i opremom za vodovod i grijanje"
+msgstr ""
+"Trgovina na veliko željeznom robom, instalacijskim materijalom i opremom za "
+"vodovod i grijanje"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_46_24
@@ -4359,7 +4713,7 @@ msgstr "Trgovina na veliko proizvodima za kućanstvo"
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_46_5
 msgid "Wholesale of information and communication equipment"
-msgstr "Trgovina na veliko informacijsko-komunikacijskom opremom\n"
+msgstr "Trgovina na veliko informacijsko-komunikacijskom opremom"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_46_23
@@ -4373,8 +4727,12 @@ msgstr "Trgovina na veliko alatnim strojevima"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_46_64
-msgid "Wholesale of machinery for the textile industry and of sewing and knitting machines"
-msgstr "Trgovina na veliko strojevima za tekstilnu industriju te strojevima za šivanje i pletenje"
+msgid ""
+"Wholesale of machinery for the textile industry and of sewing and knitting "
+"machines"
+msgstr ""
+"Trgovina na veliko strojevima za tekstilnu industriju te strojevima za "
+"šivanje i pletenje"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_46_32
@@ -4439,7 +4797,9 @@ msgstr "Trgovina na veliko farmaceutskim proizvodima"
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_46_71
 msgid "Wholesale of solid, liquid and gaseous fuels and related products"
-msgstr "Trgovina na veliko krutim, tekućim i plinovitim gorivima i srodnim proizvodima"
+msgstr ""
+"Trgovina na veliko krutim, tekućim i plinovitim gorivima i srodnim "
+"proizvodima"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_46_36
@@ -4469,7 +4829,8 @@ msgstr "Trgovina na veliko satovima i nakitom"
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_46_73
 msgid "Wholesale of wood, construction materials and sanitary equipment"
-msgstr "Trgovina na veliko drvom, građevinskim materijalom i sanitarnom opremom"
+msgstr ""
+"Trgovina na veliko drvom, građevinskim materijalom i sanitarnom opremom"
 
 #. module: l10n_eu_nace
 #: model:res.partner.nace,name:l10n_eu_nace.nace_46_1
