@@ -1,0 +1,695 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* praetorx_ai_providers
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-14 19:55+0000\n"
+"PO-Revision-Date: 2026-11-14 19:55+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: praetorx_ai_providers
+#. odoo-python
+#: code:addons/praetorx_ai_providers/models/ai_usage_line.py:0
+msgid ""
+"%(company)s has spent %(spent).2f of its monthly AI budget (soft limit "
+"%(soft).2f)."
+msgstr ""
+
+#. module: praetorx_ai_providers
+#. odoo-python
+#: code:addons/praetorx_ai_providers/models/ai_provider_endpoint.py:0
+msgid "'%s' is reserved by Odoo."
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model:ir.model.constraint,message:praetorx_ai_providers.constraint_ai_provider_model_name_per_endpoint_unique
+msgid "A model name must be unique per endpoint."
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model:ir.actions.act_window,name:praetorx_ai_providers.action_ai_provider_endpoint
+msgid "AI Endpoints"
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model:ir.model,name:praetorx_ai_providers.model_ai_provider_endpoint
+msgid "AI Provider Endpoint"
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model:ir.model,name:praetorx_ai_providers.model_ai_provider_model
+msgid "AI Provider Model"
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model:ir.ui.menu,name:praetorx_ai_providers.menu_ai_providers_root
+msgid "AI Providers"
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model:ir.actions.act_window,name:praetorx_ai_providers.action_ai_usage_line
+#: model:ir.model,name:praetorx_ai_providers.model_ai_usage_line
+msgid "AI Usage"
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_res_company__ai_budget_hard
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_res_config_settings__ai_budget_hard
+msgid "AI budget, hard limit (monthly)"
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_res_company__ai_budget_soft
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_res_config_settings__ai_budget_soft
+msgid "AI budget, soft limit (monthly)"
+msgstr ""
+
+#. module: praetorx_ai_providers
+#. odoo-python
+#: code:addons/praetorx_ai_providers/models/ai_usage_line.py:0
+msgid "AI budget: soft limit reached"
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_res_company__ai_month_cost
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_res_config_settings__ai_month_cost
+msgid "AI cost this month"
+msgstr ""
+
+#. module: praetorx_ai_providers
+#. odoo-python
+#: code:addons/praetorx_ai_providers/models/ai_provider_endpoint.py:0
+msgid "AI endpoint '%s' has no active model configured."
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_provider_endpoint__active
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_provider_model__active
+msgid "Active"
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model_terms:ir.actions.act_window,help:praetorx_ai_providers.action_ai_provider_endpoint
+msgid "Add an AI endpoint"
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_res_company__ai_budget_notified_month
+msgid "Ai Budget Notified Month"
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model_terms:ir.ui.view,arch_db:praetorx_ai_providers.res_config_settings_view_form
+msgid ""
+"Anthropic Claude, Ollama, vLLM, OpenRouter, Azure — with your keys. Mark one"
+" endpoint as default and Odoo's AI features use it."
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields.selection,name:praetorx_ai_providers.selection__ai_provider_endpoint__dialect__anthropic
+msgid "Anthropic Messages API (Claude)"
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_provider_endpoint__anthropic_version
+msgid "Anthropic Version"
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model_terms:ir.actions.act_window,help:praetorx_ai_providers.action_ai_provider_endpoint
+msgid ""
+"Anthropic, an OpenAI-compatible server such as Ollama, or any Responses-API URL.\n"
+"               Mark one as default and Odoo's own AI features use it."
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields.selection,name:praetorx_ai_providers.selection__ai_provider_model__capability__any
+msgid "Any"
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_provider_endpoint__api_key
+msgid "Api Key"
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model_terms:ir.ui.view,arch_db:praetorx_ai_providers.view_ai_provider_endpoint_form
+msgid "Archived"
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model:ir.model,name:praetorx_ai_providers.model_ai_embedding
+msgid "Attachment Chunks Embedding"
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_provider_endpoint__auth_header
+msgid "Auth Header"
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields.selection,name:praetorx_ai_providers.selection__ai_provider_endpoint__auth_header__bearer
+msgid "Authorization: Bearer"
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_provider_endpoint__base_url
+msgid "Base Url"
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model_terms:ir.ui.view,arch_db:praetorx_ai_providers.view_ai_provider_endpoint_form
+msgid "Behaviour"
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model_terms:ir.ui.view,arch_db:praetorx_ai_providers.view_ai_usage_line_list
+msgid "Cached"
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_usage_line__cached_tokens
+msgid "Cached Tokens"
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_usage_line__caller
+#: model_terms:ir.ui.view,arch_db:praetorx_ai_providers.view_ai_usage_line_search
+msgid "Caller"
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_provider_model__capability
+msgid "Capability"
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,help:praetorx_ai_providers.field_ai_provider_endpoint__max_text_chars
+msgid ""
+"Chat-Completions endpoints get PDFs as extracted text; longer text is cut "
+"here."
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model_terms:ir.ui.view,arch_db:praetorx_ai_providers.res_config_settings_view_form
+msgid ""
+"Cheap models for cheap tasks: which model chooses from a list, which reads "
+"files, which embeds."
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields.selection,name:praetorx_ai_providers.selection__ai_provider_model__capability__choose
+msgid "Choose — pick a value from a list"
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_provider_endpoint__code
+msgid "Code"
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model:ir.model,name:praetorx_ai_providers.model_res_company
+msgid "Companies"
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_usage_line__company_id
+msgid "Company"
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model:ir.model,name:praetorx_ai_providers.model_res_config_settings
+msgid "Config Settings"
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model_terms:ir.ui.view,arch_db:praetorx_ai_providers.view_ai_provider_endpoint_form
+msgid "Connection"
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_usage_line__cost
+#: model_terms:ir.ui.view,arch_db:praetorx_ai_providers.view_ai_usage_line_list
+msgid "Cost"
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_provider_endpoint__create_uid
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_provider_model__create_uid
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_usage_line__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_provider_endpoint__create_date
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_provider_model__create_date
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_usage_line__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_provider_model__currency_id
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_usage_line__currency_id
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_res_config_settings__ai_currency_id
+msgid "Currency"
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model_terms:ir.ui.view,arch_db:praetorx_ai_providers.view_ai_provider_endpoint_form
+msgid "Data protection"
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_provider_endpoint__default_model_id
+msgid "Default Model"
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_provider_endpoint__is_odoo_default
+msgid "Default for Odoo AI"
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_provider_endpoint__dialect
+msgid "Dialect"
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_embedding__display_name
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_provider_endpoint__display_name
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_provider_model__display_name
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_usage_line__display_name
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_res_company__display_name
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_res_config_settings__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields.selection,name:praetorx_ai_providers.selection__ai_provider_model__capability__embed
+msgid "Embed"
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_embedding__embedding_model
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_provider_endpoint__embedding_model
+msgid "Embedding Model"
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,help:praetorx_ai_providers.field_ai_provider_endpoint__embedding_model
+msgid ""
+"Embedding model served under /embeddings (1536 dimensions). Not available on"
+" Anthropic."
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_provider_model__endpoint_id
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_usage_line__endpoint_id
+msgid "Endpoint"
+msgstr ""
+
+#. module: praetorx_ai_providers
+#. odoo-python
+#: code:addons/praetorx_ai_providers/utils/patch.py:0
+msgid ""
+"Endpoint '%s' (Anthropic) offers no embeddings. Configure an OpenAI-"
+"compatible endpoint for embeddings."
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_usage_line__endpoint_code
+msgid "Endpoint Code"
+msgstr ""
+
+#. module: praetorx_ai_providers
+#. odoo-python
+#: code:addons/praetorx_ai_providers/models/ai_provider_endpoint.py:0
+msgid "Endpoint answered: %s"
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model:ir.ui.menu,name:praetorx_ai_providers.menu_ai_provider_endpoint
+msgid "Endpoints"
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model_terms:ir.actions.act_window,help:praetorx_ai_providers.action_ai_usage_line
+msgid ""
+"Every request through a configured endpoint writes a line with tokens and "
+"cost."
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_embedding__id
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_provider_endpoint__id
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_provider_model__id
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_usage_line__id
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_res_company__id
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_res_config_settings__id
+msgid "ID"
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model_terms:ir.ui.view,arch_db:praetorx_ai_providers.view_ai_usage_line_list
+msgid "Input"
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_usage_line__input_tokens
+msgid "Input Tokens"
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,help:praetorx_ai_providers.field_ai_provider_model__name
+msgid "Label shown in model pickers."
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_provider_endpoint__write_uid
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_provider_model__write_uid
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_usage_line__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_provider_endpoint__write_date
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_provider_model__write_date
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_usage_line__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model_terms:ir.ui.view,arch_db:praetorx_ai_providers.res_config_settings_view_form
+msgid "Manage endpoints"
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_provider_model__max_output_tokens
+msgid "Max Output Tokens"
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_provider_endpoint__max_text_chars
+msgid "Max Text Chars"
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model_terms:ir.ui.view,arch_db:praetorx_ai_providers.view_ai_usage_line_search
+msgid "Model"
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_usage_line__model_name
+msgid "Model Name"
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_res_config_settings__ai_model_choose_id
+msgid "Model for choosing"
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_res_config_settings__ai_model_embed_id
+msgid "Model for embeddings"
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_res_config_settings__ai_model_read_id
+msgid "Model for reading"
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,help:praetorx_ai_providers.field_ai_provider_model__technical_name
+msgid "Model name as the API expects it."
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model_terms:ir.ui.view,arch_db:praetorx_ai_providers.res_config_settings_view_form
+msgid "Model per task"
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_provider_endpoint__model_ids
+#: model_terms:ir.ui.view,arch_db:praetorx_ai_providers.view_ai_provider_endpoint_form
+msgid "Models"
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,help:praetorx_ai_providers.field_ai_usage_line__caller
+msgid "Module or feature that issued the request."
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model_terms:ir.ui.view,arch_db:praetorx_ai_providers.view_ai_usage_line_search
+msgid "Month"
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model_terms:ir.ui.view,arch_db:praetorx_ai_providers.res_config_settings_view_form
+msgid "Monthly AI budget"
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_provider_endpoint__name
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_provider_model__name
+msgid "Name"
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model_terms:ir.actions.act_window,help:praetorx_ai_providers.action_ai_usage_line
+msgid "No AI usage recorded yet"
+msgstr ""
+
+#. module: praetorx_ai_providers
+#. odoo-python
+#: code:addons/praetorx_ai_providers/utils/patch.py:0
+msgid "No API key set for AI endpoint '%s'."
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,help:praetorx_ai_providers.field_ai_provider_endpoint__supports_web_search
+msgid ""
+"Only for Responses-API endpoints that offer OpenAI's web_search_preview "
+"tool."
+msgstr ""
+
+#. module: praetorx_ai_providers
+#. odoo-python
+#: code:addons/praetorx_ai_providers/models/ai_provider_endpoint.py:0
+msgid "Only one active endpoint can be the default for Odoo AI."
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields.selection,name:praetorx_ai_providers.selection__ai_provider_endpoint__dialect__openai_chat
+msgid "OpenAI Chat Completions (Ollama, vLLM, Mistral, OpenRouter, Groq)"
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields.selection,name:praetorx_ai_providers.selection__ai_provider_endpoint__dialect__openai_responses
+msgid "OpenAI Responses API (OpenAI, Azure OpenAI, proxies)"
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model_terms:ir.ui.view,arch_db:praetorx_ai_providers.view_ai_usage_line_list
+msgid "Output"
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_usage_line__output_tokens
+msgid "Output Tokens"
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model_terms:ir.ui.view,arch_db:praetorx_ai_providers.res_config_settings_view_form
+msgid "Own AI providers"
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model_terms:ir.ui.view,arch_db:praetorx_ai_providers.res_config_settings_view_form
+msgid ""
+"Per company. Soft limit notifies the administrator, hard limit refuses "
+"further requests until next month."
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_provider_model__price_cached
+msgid "Price per 1M cached input tokens"
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_provider_model__price_in
+msgid "Price per 1M input tokens"
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_provider_model__price_out
+msgid "Price per 1M output tokens"
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields.selection,name:praetorx_ai_providers.selection__ai_provider_model__capability__read
+msgid "Read — read files and fill a schema"
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,help:praetorx_ai_providers.field_res_config_settings__ai_model_read_id
+msgid "Reads files and fills a schema."
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_provider_endpoint__region
+msgid "Region"
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,help:praetorx_ai_providers.field_ai_provider_model__max_output_tokens
+msgid "Required by the Anthropic Messages API."
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,help:praetorx_ai_providers.field_ai_provider_endpoint__base_url
+msgid ""
+"Root of the API, e.g. https://api.anthropic.com/v1 or http://ollama:11434/v1"
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_provider_endpoint__sequence
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_provider_model__sequence
+msgid "Sequence"
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,help:praetorx_ai_providers.field_ai_provider_endpoint__is_odoo_default
+msgid ""
+"Serve every request Odoo issues to its built-in OpenAI provider — AI fields,"
+" agents, document auto-sort — through this endpoint instead."
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,help:praetorx_ai_providers.field_res_config_settings__ai_model_choose_id
+msgid "Small, cheap: pick one value from a list."
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_provider_endpoint__supports_web_search
+msgid "Supports Web Search"
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_provider_model__technical_name
+msgid "Technical Name"
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,help:praetorx_ai_providers.field_ai_provider_endpoint__code
+msgid ""
+"Technical provider name Odoo's AI layer uses to address this endpoint. "
+"Lowercase letters, digits and underscores."
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model_terms:ir.ui.view,arch_db:praetorx_ai_providers.view_ai_provider_endpoint_form
+msgid "Test connection"
+msgstr ""
+
+#. module: praetorx_ai_providers
+#. odoo-python
+#: code:addons/praetorx_ai_providers/models/ai_provider_endpoint.py:0
+msgid "The code must be lowercase letters, digits and underscores."
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model:ir.model.constraint,message:praetorx_ai_providers.constraint_ai_provider_endpoint_code_unique
+msgid "The endpoint code must be unique."
+msgstr ""
+
+#. module: praetorx_ai_providers
+#. odoo-python
+#: code:addons/praetorx_ai_providers/models/ai_usage_line.py:0
+msgid ""
+"The monthly AI budget of %(company)s (%(amount)s) is exhausted. Raise it in "
+"Settings > AI or wait for next month."
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,help:praetorx_ai_providers.field_ai_provider_endpoint__zero_retention
+msgid ""
+"The provider has attested that prompts and files are not stored after "
+"processing."
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model_terms:ir.ui.view,arch_db:praetorx_ai_providers.view_ai_usage_line_search
+msgid "This month"
+msgstr ""
+
+#. module: praetorx_ai_providers
+#. odoo-python
+#: code:addons/praetorx_ai_providers/utils/patch.py:0
+msgid "Unknown AI endpoint dialect '%s'."
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model:ir.ui.menu,name:praetorx_ai_providers.menu_ai_usage_line
+msgid "Usage"
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model_terms:ir.ui.view,arch_db:praetorx_ai_providers.res_config_settings_view_form
+msgid "Usage report"
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,help:praetorx_ai_providers.field_ai_provider_endpoint__default_model_id
+msgid "Used when a caller asks for a model this endpoint does not serve."
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,help:praetorx_ai_providers.field_res_company__ai_budget_hard
+#: model:ir.model.fields,help:praetorx_ai_providers.field_res_config_settings__ai_budget_hard
+msgid "When reached, AI requests are refused until next month. 0 = no limit."
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,help:praetorx_ai_providers.field_res_company__ai_budget_soft
+#: model:ir.model.fields,help:praetorx_ai_providers.field_res_config_settings__ai_budget_soft
+msgid "When reached, the administrator gets an activity. Requests continue."
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,help:praetorx_ai_providers.field_ai_provider_endpoint__region
+msgid "Where the data is processed, e.g. EU, US, on-premise."
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,help:praetorx_ai_providers.field_ai_provider_model__capability
+msgid "Which kind of task this model is the right size for."
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields,field_description:praetorx_ai_providers.field_ai_provider_endpoint__zero_retention
+msgid "Zero data retention"
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model:ir.model.fields.selection,name:praetorx_ai_providers.selection__ai_provider_endpoint__auth_header__api-key
+msgid "api-key (Azure)"
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model_terms:ir.ui.view,arch_db:praetorx_ai_providers.view_ai_provider_endpoint_form
+msgid "e.g. Anthropic EU"
+msgstr ""
+
+#. module: praetorx_ai_providers
+#: model_terms:ir.ui.view,arch_db:praetorx_ai_providers.view_ai_provider_endpoint_form
+msgid "https://api.anthropic.com/v1"
+msgstr ""

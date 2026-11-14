@@ -1,0 +1,1107 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* route_planning
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: 2026-11-14 00:00+0000\n"
+"Last-Translator: Ecodica d.o.o.\n"
+"Language-Team: Ecodica d.o.o.\n"
+"Language: hr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#. module: route_planning
+#: model_terms:ir.ui.view,arch_db:route_planning.route_route_view_kanban
+msgid "<strong>Area:</strong>"
+msgstr "<strong>Zona:</strong>"
+
+#. module: route_planning
+#: model_terms:ir.ui.view,arch_db:route_planning.route_checkpoint_view_kanban
+msgid "<strong>Route:</strong>"
+msgstr "<strong>Ruta:</strong>"
+
+#. module: route_planning
+#: model_terms:ir.ui.view,arch_db:route_planning.route_checkpoint_view_kanban
+#: model_terms:ir.ui.view,arch_db:route_planning.route_route_view_kanban
+msgid "<strong>User:</strong>"
+msgstr "<strong>Korisnik:</strong>"
+
+#. module: route_planning
+#: model:ir.model.constraint,message:route_planning.constraint_route_partner_visitwindow_partner_day_unique
+msgid ""
+"A visit window for the same day of the week already exists for this partner."
+msgstr "Prozor posjeta za isti dan u tjednu već postoji za ovog partnera."
+
+#. module: route_planning
+#: model:ir.model.constraint,message:route_planning.constraint_route_visitwindow_template_line_template_day_unique
+msgid ""
+"A visit window for the same day of the week already exists in this template."
+msgstr "Prozor posjeta za isti dan u tjednu već postoji u ovom predlošku."
+
+#. module: route_planning
+#: model:ir.model.fields,field_description:route_planning.field_route_checkpoint__message_needaction
+#: model:ir.model.fields,field_description:route_planning.field_route_route__message_needaction
+msgid "Action Needed"
+msgstr "Potrebna radnja"
+
+#. module: route_planning
+#: model:ir.model.fields,field_description:route_planning.field_route_area__active
+#: model:ir.model.fields,field_description:route_planning.field_route_incident_type__active
+#: model:ir.model.fields,field_description:route_planning.field_route_visitwindow_template__active
+msgid "Active"
+msgstr "Aktivno"
+
+#. module: route_planning
+#: model:ir.model.fields,field_description:route_planning.field_route_checkpoint__activity_ids
+#: model:ir.model.fields,field_description:route_planning.field_route_route__activity_ids
+msgid "Activities"
+msgstr "Aktivnosti"
+
+#. module: route_planning
+#: model:ir.model.fields,field_description:route_planning.field_route_checkpoint__activity_exception_decoration
+#: model:ir.model.fields,field_description:route_planning.field_route_route__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "Ukras iznimke aktivnosti"
+
+#. module: route_planning
+#: model:ir.model.fields,field_description:route_planning.field_route_checkpoint__activity_state
+#: model:ir.model.fields,field_description:route_planning.field_route_route__activity_state
+msgid "Activity State"
+msgstr "Status aktivnosti"
+
+#. module: route_planning
+#: model:ir.model.fields,field_description:route_planning.field_route_checkpoint__activity_type_icon
+#: model:ir.model.fields,field_description:route_planning.field_route_route__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "Ikona vrste aktivnosti"
+
+#. module: route_planning
+#: model_terms:ir.ui.view,arch_db:route_planning.view_route_area_search
+#: model_terms:ir.ui.view,arch_db:route_planning.view_route_incident_type_search
+#: model_terms:ir.ui.view,arch_db:route_planning.view_route_visitwindow_template_form
+#: model_terms:ir.ui.view,arch_db:route_planning.view_route_visitwindow_template_search
+msgid "Archived"
+msgstr "Arhivirano"
+
+#. module: route_planning
+#: model_terms:ir.ui.view,arch_db:route_planning.view_route_route_search
+msgid "Area"
+msgstr "Područje"
+
+#. module: route_planning
+#: model:ir.ui.menu,name:route_planning.menu_route_area
+msgid "Areas"
+msgstr "Zone"
+
+#. module: route_planning
+#: model:ir.model.fields,field_description:route_planning.field_route_checkpoint__message_attachment_count
+#: model:ir.model.fields,field_description:route_planning.field_route_route__message_attachment_count
+msgid "Attachment Count"
+msgstr "Broj privitaka"
+
+#. module: route_planning
+#: model:ir.model.fields,field_description:route_planning.field_route_area__auto_assign
+msgid "Auto Assign"
+msgstr "Automatski dodijeli"
+
+#. module: route_planning
+#: model:ir.model.fields,help:route_planning.field_route_area__auto_assign
+msgid ""
+"Automatically assign this area to partners matching its criteria, based on "
+"country, state, and zip code range."
+msgstr ""
+"Automatski dodijeli ovu zonu partnerima koji odgovaraju njezinim "
+"kriterijima, na temelju države, pokrajine i raspona poštanskog broja."
+
+#. module: route_planning
+#: model_terms:ir.ui.view,arch_db:route_planning.view_route_area_form
+msgid "Availability"
+msgstr "Raspoloživost"
+
+#. module: route_planning
+#: model:ir.model.fields,help:route_planning.field_route_area__waiting_time
+#: model:ir.model.fields,help:route_planning.field_route_route__waiting_time
+msgid "Average waiting time at each stop, expressed in minutes."
+msgstr "Prosječno vrijeme čekanja na svakoj postaji, izraženo u minutama."
+
+#. module: route_planning
+#: model_terms:ir.ui.view,arch_db:route_planning.view_route_route_form
+msgid "Back to Draft"
+msgstr "Natrag u nacrt"
+
+#. module: route_planning
+#: model_terms:ir.ui.view,arch_db:route_planning.view_route_checkpoint_form
+#: model_terms:ir.ui.view,arch_db:route_planning.view_route_route_form
+msgid "Back to Planned"
+msgstr "Natrag na planirano"
+
+#. module: route_planning
+#: model_terms:ir.ui.view,arch_db:route_planning.view_route_create_incident_form
+msgid "Cancel"
+msgstr "Odustani"
+
+#. module: route_planning
+#: model:ir.model.fields,field_description:route_planning.field_route_create_incident__checkpoint_id
+#: model:ir.model.fields,field_description:route_planning.field_route_route__checkpoint_ids
+msgid "Checkpoint"
+msgstr "Kontrolna točka"
+
+#. module: route_planning
+#. odoo-python
+#: code:addons/route_planning/models/route_checkpoint.py:0
+msgid "Checkpoint %s does not have valid coordinates."
+msgstr "Kontrolna točka %s nema valjane koordinate."
+
+#. module: route_planning
+#: model:mail.message.subtype,description:route_planning.mt_checkpoint_new
+#: model:mail.message.subtype,name:route_planning.mt_checkpoint_new
+#: model:mail.message.subtype,name:route_planning.mt_route_checkpoint_new
+msgid "Checkpoint Created"
+msgstr "Kontrolna točka kreirana"
+
+#. module: route_planning
+#: model:ir.actions.act_window,name:route_planning.action_route_checkpoint
+#: model:ir.model.fields,field_description:route_planning.field_route_checkpoint__checkpoint_ids
+#: model:ir.ui.menu,name:route_planning.menu_route_checkpoint
+#: model_terms:ir.ui.view,arch_db:route_planning.view_route_route_form
+msgid "Checkpoints"
+msgstr "Kontrolne točke"
+
+#. module: route_planning
+#: model_terms:ir.actions.act_window,help:route_planning.action_route_checkpoint
+msgid "Checkpoints are created when you plan routes."
+msgstr "Kontrolne točke se kreiraju kada planirate rute."
+
+#. module: route_planning
+#: model:ir.model.fields,field_description:route_planning.field_route_area__code
+msgid "Code"
+msgstr "Šifra"
+
+#. module: route_planning
+#: model:ir.model.fields,field_description:route_planning.field_route_area__company_id
+#: model:ir.model.fields,field_description:route_planning.field_route_checkpoint__company_id
+#: model:ir.model.fields,field_description:route_planning.field_route_incident_type__company_id
+#: model:ir.model.fields,field_description:route_planning.field_route_route__company_id
+#: model_terms:ir.ui.view,arch_db:route_planning.view_route_checkpoint_search
+#: model_terms:ir.ui.view,arch_db:route_planning.view_route_route_search
+msgid "Company"
+msgstr "Tvrtka"
+
+#. module: route_planning
+#: model_terms:ir.ui.view,arch_db:route_planning.view_partner_form_route
+msgid "Compute Localization"
+msgstr "Izračunaj lokalizaciju"
+
+#. module: route_planning
+#: model_terms:ir.ui.view,arch_db:route_planning.view_partner_form_route
+msgid "Compute based on address"
+msgstr "Izračunaj na temelju adrese"
+
+#. module: route_planning
+#: model:ir.ui.menu,name:route_planning.menu_route_planning_config
+msgid "Configuration"
+msgstr "Konfiguracija"
+
+#. module: route_planning
+#: model:ir.model,name:route_planning.model_res_partner
+msgid "Contact"
+msgstr "Kontakt"
+
+#. module: route_planning
+#: model:ir.model.fields,field_description:route_planning.field_route_area__country_ids
+msgid "Country"
+msgstr "Država"
+
+#. module: route_planning
+#: model:ir.actions.act_window,name:route_planning.action_route_create_incident
+#: model_terms:ir.ui.view,arch_db:route_planning.view_route_checkpoint_form
+#: model_terms:ir.ui.view,arch_db:route_planning.view_route_create_incident_form
+#: model_terms:ir.ui.view,arch_db:route_planning.view_route_route_form
+msgid "Create Incident"
+msgstr "Kreiraj incident"
+
+#. module: route_planning
+#: model:ir.model,name:route_planning.model_route_create_incident
+msgid "Create Route Incident"
+msgstr "Kreiraj incident rute"
+
+#. module: route_planning
+#: model_terms:ir.actions.act_window,help:route_planning.action_route_incident_type
+msgid "Create your first incident type"
+msgstr "Kreirajte svoju prvu vrstu incidenta"
+
+#. module: route_planning
+#: model_terms:ir.actions.act_window,help:route_planning.action_route_route
+msgid "Create your first route"
+msgstr "Kreirajte svoju prvu rutu"
+
+#. module: route_planning
+#: model_terms:ir.actions.act_window,help:route_planning.action_route_area
+msgid "Create your first route area"
+msgstr "Kreirajte svoju prvu zonu rute"
+
+#. module: route_planning
+#: model_terms:ir.actions.act_window,help:route_planning.action_route_visitwindow_template
+msgid "Create your first visit window template"
+msgstr "Kreirajte svoj prvi predložak prozora posjeta"
+
+#. module: route_planning
+#: model:ir.model.fields,field_description:route_planning.field_route_area__create_uid
+#: model:ir.model.fields,field_description:route_planning.field_route_area_zip__create_uid
+#: model:ir.model.fields,field_description:route_planning.field_route_checkpoint__create_uid
+#: model:ir.model.fields,field_description:route_planning.field_route_create_incident__create_uid
+#: model:ir.model.fields,field_description:route_planning.field_route_incident_type__create_uid
+#: model:ir.model.fields,field_description:route_planning.field_route_partner_visitwindow__create_uid
+#: model:ir.model.fields,field_description:route_planning.field_route_route__create_uid
+#: model:ir.model.fields,field_description:route_planning.field_route_visitwindow_template__create_uid
+#: model:ir.model.fields,field_description:route_planning.field_route_visitwindow_template_line__create_uid
+msgid "Created by"
+msgstr "Kreirao"
+
+#. module: route_planning
+#: model:ir.model.fields,field_description:route_planning.field_route_area__create_date
+#: model:ir.model.fields,field_description:route_planning.field_route_area_zip__create_date
+#: model:ir.model.fields,field_description:route_planning.field_route_checkpoint__create_date
+#: model:ir.model.fields,field_description:route_planning.field_route_create_incident__create_date
+#: model:ir.model.fields,field_description:route_planning.field_route_incident_type__create_date
+#: model:ir.model.fields,field_description:route_planning.field_route_partner_visitwindow__create_date
+#: model:ir.model.fields,field_description:route_planning.field_route_route__create_date
+#: model:ir.model.fields,field_description:route_planning.field_route_visitwindow_template__create_date
+#: model:ir.model.fields,field_description:route_planning.field_route_visitwindow_template_line__create_date
+msgid "Created on"
+msgstr "Kreiran"
+
+#. module: route_planning
+#: model:route.incident.type,name:route_planning.incident_type_customer_not_available_demo
+msgid "Customer Not Available"
+msgstr "Kupac nedostupan"
+
+#. module: route_planning
+#: model:ir.model.fields,field_description:route_planning.field_route_checkpoint__date_done
+msgid "Date Done"
+msgstr "Datum izvršenja"
+
+#. module: route_planning
+#: model:ir.model.fields,field_description:route_planning.field_route_partner_visitwindow__day_of_week
+#: model:ir.model.fields,field_description:route_planning.field_route_visitwindow_mixin__day_of_week
+#: model:ir.model.fields,field_description:route_planning.field_route_visitwindow_template_line__day_of_week
+msgid "Day Of Week"
+msgstr "Dan u tjednu"
+
+#. module: route_planning
+#: model:ir.model.fields,field_description:route_planning.field_route_checkpoint__display_address
+msgid "Display Address"
+msgstr "Adresa za prikaz"
+
+#. module: route_planning
+#: model:ir.model.fields,field_description:route_planning.field_route_area__display_name
+#: model:ir.model.fields,field_description:route_planning.field_route_area_zip__display_name
+#: model:ir.model.fields,field_description:route_planning.field_route_checkpoint__display_name
+#: model:ir.model.fields,field_description:route_planning.field_route_create_incident__display_name
+#: model:ir.model.fields,field_description:route_planning.field_route_incident_type__display_name
+#: model:ir.model.fields,field_description:route_planning.field_route_partner_visitwindow__display_name
+#: model:ir.model.fields,field_description:route_planning.field_route_route__display_name
+#: model:ir.model.fields,field_description:route_planning.field_route_visitwindow_template__display_name
+#: model:ir.model.fields,field_description:route_planning.field_route_visitwindow_template_line__display_name
+msgid "Display Name"
+msgstr "Naziv za prikaz"
+
+#. module: route_planning
+#: model_terms:ir.ui.view,arch_db:route_planning.view_route_checkpoint_form
+#: model_terms:ir.ui.view,arch_db:route_planning.view_route_route_form
+msgid "Do you want to mark this checkpoint as done?"
+msgstr "Želite li označiti ovu kontrolnu točku kao izvršenu?"
+
+#. module: route_planning
+#: model_terms:ir.ui.view,arch_db:route_planning.view_route_checkpoint_form
+#: model_terms:ir.ui.view,arch_db:route_planning.view_route_route_form
+msgid "Do you want to set this checkpoint back to planned?"
+msgstr "Želite li ovu kontrolnu točku vratiti na planirano?"
+
+#. module: route_planning
+#: model:ir.model.fields.selection,name:route_planning.selection__route_checkpoint__state__done
+#: model:ir.model.fields.selection,name:route_planning.selection__route_route__state__done
+#: model_terms:ir.ui.view,arch_db:route_planning.view_route_checkpoint_search
+#: model_terms:ir.ui.view,arch_db:route_planning.view_route_route_search
+msgid "Done"
+msgstr "GOTOVO"
+
+#. module: route_planning
+#: model:ir.model.fields.selection,name:route_planning.selection__route_checkpoint__state__draft
+#: model:ir.model.fields.selection,name:route_planning.selection__route_route__state__draft
+#: model_terms:ir.ui.view,arch_db:route_planning.view_route_checkpoint_search
+#: model_terms:ir.ui.view,arch_db:route_planning.view_route_route_search
+msgid "Draft"
+msgstr "Nacrt"
+
+#. module: route_planning
+#: model:ir.model.fields,help:route_planning.field_route_partner_visitwindow__time_to
+#: model:ir.model.fields,help:route_planning.field_route_visitwindow_mixin__time_to
+#: model:ir.model.fields,help:route_planning.field_route_visitwindow_template_line__time_to
+msgid "End time of the visit window"
+msgstr "Krajnje vrijeme prozora posjeta"
+
+#. module: route_planning
+#: model:ir.model.fields,field_description:route_planning.field_route_checkpoint__message_follower_ids
+#: model:ir.model.fields,field_description:route_planning.field_route_route__message_follower_ids
+msgid "Followers"
+msgstr "Pratitelji"
+
+#. module: route_planning
+#: model:ir.model.fields,field_description:route_planning.field_route_checkpoint__message_partner_ids
+#: model:ir.model.fields,field_description:route_planning.field_route_route__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Pratitelji (partneri)"
+
+#. module: route_planning
+#: model:ir.model.fields,help:route_planning.field_route_checkpoint__activity_type_icon
+#: model:ir.model.fields,help:route_planning.field_route_route__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr "Font awesome ikona npr. fa-tasks"
+
+#. module: route_planning
+#: model:ir.model.fields.selection,name:route_planning.selection__route_partner_visitwindow__day_of_week__4
+#: model:ir.model.fields.selection,name:route_planning.selection__route_visitwindow_mixin__day_of_week__4
+#: model:ir.model.fields.selection,name:route_planning.selection__route_visitwindow_template_line__day_of_week__4
+msgid "Friday"
+msgstr "Petak"
+
+#. module: route_planning
+#: model_terms:ir.ui.view,arch_db:route_planning.view_partner_form_route
+msgid "Geolocation"
+msgstr "Geolokacija"
+
+#. module: route_planning
+#: model:ir.model.fields,field_description:route_planning.field_route_checkpoint__date_localization
+msgid "Geolocation Date"
+msgstr "Datum geolociranja"
+
+#. module: route_planning
+#: model_terms:ir.ui.view,arch_db:route_planning.view_route_checkpoint_search
+#: model_terms:ir.ui.view,arch_db:route_planning.view_route_route_search
+msgid "Group By"
+msgstr "Grupiraj po"
+
+#. module: route_planning
+#: model:ir.model.fields,field_description:route_planning.field_route_checkpoint__has_message
+#: model:ir.model.fields,field_description:route_planning.field_route_route__has_message
+msgid "Has Message"
+msgstr "Ima poruku"
+
+#. module: route_planning
+#: model:ir.model.fields,field_description:route_planning.field_route_area__id
+#: model:ir.model.fields,field_description:route_planning.field_route_area_zip__id
+#: model:ir.model.fields,field_description:route_planning.field_route_checkpoint__id
+#: model:ir.model.fields,field_description:route_planning.field_route_create_incident__id
+#: model:ir.model.fields,field_description:route_planning.field_route_incident_type__id
+#: model:ir.model.fields,field_description:route_planning.field_route_partner_visitwindow__id
+#: model:ir.model.fields,field_description:route_planning.field_route_route__id
+#: model:ir.model.fields,field_description:route_planning.field_route_visitwindow_template__id
+#: model:ir.model.fields,field_description:route_planning.field_route_visitwindow_template_line__id
+msgid "ID"
+msgstr "ID"
+
+#. module: route_planning
+#: model:ir.model.fields,field_description:route_planning.field_route_checkpoint__activity_exception_icon
+#: model:ir.model.fields,field_description:route_planning.field_route_route__activity_exception_icon
+msgid "Icon"
+msgstr "Ikona"
+
+#. module: route_planning
+#: model:ir.model.fields,help:route_planning.field_route_checkpoint__activity_exception_icon
+#: model:ir.model.fields,help:route_planning.field_route_route__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "Ikona koja označava iznimnu aktivnost."
+
+#. module: route_planning
+#: model:ir.model.fields,help:route_planning.field_route_incident_type__rescheduled
+msgid "If checked, checkpoints with this incident type will be rescheduled"
+msgstr ""
+"Ako je označeno, kontrolne točke s ovom vrstom incidenta bit će "
+"reprogramirane"
+
+#. module: route_planning
+#: model:ir.model.fields,help:route_planning.field_route_checkpoint__message_needaction
+#: model:ir.model.fields,help:route_planning.field_route_route__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "Ako je označeno, nove poruke zahtijevaju vašu pažnju."
+
+#. module: route_planning
+#: model:ir.model.fields,help:route_planning.field_route_checkpoint__message_has_error
+#: model:ir.model.fields,help:route_planning.field_route_route__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Ako je označeno, neke poruke imaju grešku u dostavi."
+
+#. module: route_planning
+#: model:ir.model.fields.selection,name:route_planning.selection__route_route__state__in_progress
+msgid "In Progress"
+msgstr "U tijeku"
+
+#. module: route_planning
+#: model:ir.model.fields.selection,name:route_planning.selection__route_checkpoint__state__incident
+#: model_terms:ir.ui.view,arch_db:route_planning.view_route_checkpoint_search
+msgid "Incident"
+msgstr "Incident"
+
+#. module: route_planning
+#: model:ir.model.fields,field_description:route_planning.field_route_checkpoint__incident_type_id
+#: model:ir.model.fields,field_description:route_planning.field_route_create_incident__incident_type_id
+msgid "Incident Type"
+msgstr "Vrsta incidenta"
+
+#. module: route_planning
+#: model:ir.actions.act_window,name:route_planning.action_route_incident_type
+#: model:ir.ui.menu,name:route_planning.menu_route_incident_type
+msgid "Incident Types"
+msgstr "Vrste incidenta"
+
+#. module: route_planning
+#: model_terms:ir.actions.act_window,help:route_planning.action_route_incident_type
+msgid "Incident types help categorize route problems and define actions."
+msgstr ""
+"Vrste incidenta pomažu kategorizirati probleme rute i definirati radnje."
+
+#. module: route_planning
+#: model:ir.model.fields,field_description:route_planning.field_route_checkpoint__message_is_follower
+#: model:ir.model.fields,field_description:route_planning.field_route_route__message_is_follower
+msgid "Is Follower"
+msgstr "Je pratitelj"
+
+#. module: route_planning
+#: model:ir.model.fields,field_description:route_planning.field_route_area__write_uid
+#: model:ir.model.fields,field_description:route_planning.field_route_area_zip__write_uid
+#: model:ir.model.fields,field_description:route_planning.field_route_checkpoint__write_uid
+#: model:ir.model.fields,field_description:route_planning.field_route_create_incident__write_uid
+#: model:ir.model.fields,field_description:route_planning.field_route_incident_type__write_uid
+#: model:ir.model.fields,field_description:route_planning.field_route_partner_visitwindow__write_uid
+#: model:ir.model.fields,field_description:route_planning.field_route_route__write_uid
+#: model:ir.model.fields,field_description:route_planning.field_route_visitwindow_template__write_uid
+#: model:ir.model.fields,field_description:route_planning.field_route_visitwindow_template_line__write_uid
+msgid "Last Updated by"
+msgstr "Promijenio"
+
+#. module: route_planning
+#: model:ir.model.fields,field_description:route_planning.field_route_area__write_date
+#: model:ir.model.fields,field_description:route_planning.field_route_area_zip__write_date
+#: model:ir.model.fields,field_description:route_planning.field_route_checkpoint__write_date
+#: model:ir.model.fields,field_description:route_planning.field_route_create_incident__write_date
+#: model:ir.model.fields,field_description:route_planning.field_route_incident_type__write_date
+#: model:ir.model.fields,field_description:route_planning.field_route_partner_visitwindow__write_date
+#: model:ir.model.fields,field_description:route_planning.field_route_route__write_date
+#: model:ir.model.fields,field_description:route_planning.field_route_visitwindow_template__write_date
+#: model:ir.model.fields,field_description:route_planning.field_route_visitwindow_template_line__write_date
+msgid "Last Updated on"
+msgstr "Vrijeme promjene"
+
+#. module: route_planning
+#: model:ir.model.fields,field_description:route_planning.field_route_checkpoint__latitude
+#: model_terms:ir.ui.view,arch_db:route_planning.view_partner_form_route
+msgid "Latitude"
+msgstr "ŠIrina"
+
+#. module: route_planning
+#: model:ir.model.fields,field_description:route_planning.field_route_visitwindow_template__line_ids
+msgid "Line"
+msgstr "Stavka"
+
+#. module: route_planning
+#: model:ir.model.fields,field_description:route_planning.field_route_checkpoint__longitude
+#: model_terms:ir.ui.view,arch_db:route_planning.view_partner_form_route
+msgid "Longitude"
+msgstr "Dužina"
+
+#. module: route_planning
+#: model:res.groups,name:route_planning.group_route_planning_manager
+msgid "Manager"
+msgstr "Menadžer"
+
+#. module: route_planning
+#: model_terms:ir.ui.view,arch_db:route_planning.view_route_checkpoint_form
+msgid "Mark Done"
+msgstr "Označi kao Urađeno"
+
+#. module: route_planning
+#: model_terms:ir.ui.view,arch_db:route_planning.view_route_route_form
+msgid "Mark as done"
+msgstr "Označi kao izvršeno"
+
+#. module: route_planning
+#: model:ir.model.fields,field_description:route_planning.field_route_checkpoint__message_has_error
+#: model:ir.model.fields,field_description:route_planning.field_route_route__message_has_error
+msgid "Message Delivery error"
+msgstr "Greška u dostavi poruke"
+
+#. module: route_planning
+#: model:ir.model.fields,field_description:route_planning.field_route_checkpoint__message_ids
+#: model:ir.model.fields,field_description:route_planning.field_route_route__message_ids
+msgid "Messages"
+msgstr "Poruke"
+
+#. module: route_planning
+#: model:ir.model.fields.selection,name:route_planning.selection__route_partner_visitwindow__day_of_week__0
+#: model:ir.model.fields.selection,name:route_planning.selection__route_visitwindow_mixin__day_of_week__0
+#: model:ir.model.fields.selection,name:route_planning.selection__route_visitwindow_template_line__day_of_week__0
+msgid "Monday"
+msgstr "Ponedjeljak"
+
+#. module: route_planning
+#: model:ir.model.fields,field_description:route_planning.field_route_checkpoint__my_activity_date_deadline
+#: model:ir.model.fields,field_description:route_planning.field_route_route__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "Rok moje aktivnosti"
+
+#. module: route_planning
+#: model_terms:ir.ui.view,arch_db:route_planning.view_route_checkpoint_search
+#: model_terms:ir.ui.view,arch_db:route_planning.view_route_route_search
+msgid "My Routes"
+msgstr "Moje rute"
+
+#. module: route_planning
+#: model:ir.model.fields,field_description:route_planning.field_route_area__name
+#: model:ir.model.fields,field_description:route_planning.field_route_incident_type__name
+#: model:ir.model.fields,field_description:route_planning.field_route_route__name
+#: model:ir.model.fields,field_description:route_planning.field_route_visitwindow_template__name
+msgid "Name"
+msgstr "Naziv"
+
+#. module: route_planning
+#. odoo-python
+#: code:addons/route_planning/models/route_route.py:0
+msgid "New"
+msgstr "Novi"
+
+#. module: route_planning
+#: model:ir.model.fields,field_description:route_planning.field_route_checkpoint__activity_date_deadline
+#: model:ir.model.fields,field_description:route_planning.field_route_route__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "Rok sljedeće aktivnosti"
+
+#. module: route_planning
+#: model:ir.model.fields,field_description:route_planning.field_route_checkpoint__activity_summary
+#: model:ir.model.fields,field_description:route_planning.field_route_route__activity_summary
+msgid "Next Activity Summary"
+msgstr "Sažetak sljedeće aktivnosti"
+
+#. module: route_planning
+#: model:ir.model.fields,field_description:route_planning.field_route_checkpoint__activity_type_id
+#: model:ir.model.fields,field_description:route_planning.field_route_route__activity_type_id
+msgid "Next Activity Type"
+msgstr "Vrsta sljedeće aktivnosti"
+
+#. module: route_planning
+#: model_terms:ir.actions.act_window,help:route_planning.action_route_checkpoint
+msgid "No checkpoints found"
+msgstr "Nisu pronađene kontrolne točke"
+
+#. module: route_planning
+#. odoo-python
+#: code:addons/route_planning/models/route_route.py:0
+msgid ""
+"Not enough addresses with coordinates for optimisation. Please check that "
+"partners have latitude and longitude."
+msgstr ""
+"Nedovoljno adresa s koordinatama za optimizaciju. Provjerite da partneri "
+"imaju geografsku širinu i dužinu."
+
+#. module: route_planning
+#: model:ir.model.fields,field_description:route_planning.field_route_checkpoint__note
+#: model:ir.model.fields,field_description:route_planning.field_route_create_incident__note
+msgid "Note"
+msgstr "Bilješka"
+
+#. module: route_planning
+#: model_terms:ir.ui.view,arch_db:route_planning.view_route_checkpoint_form
+msgid "Notes"
+msgstr "Bilješke"
+
+#. module: route_planning
+#: model:ir.model.fields,field_description:route_planning.field_route_checkpoint__message_needaction_counter
+#: model:ir.model.fields,field_description:route_planning.field_route_route__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Broj radnji"
+
+#. module: route_planning
+#: model:ir.model.fields,field_description:route_planning.field_route_checkpoint__message_has_error_counter
+#: model:ir.model.fields,field_description:route_planning.field_route_route__message_has_error_counter
+msgid "Number of errors"
+msgstr "Broj grešaka"
+
+#. module: route_planning
+#: model:ir.model.fields,help:route_planning.field_route_checkpoint__message_needaction_counter
+#: model:ir.model.fields,help:route_planning.field_route_route__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "Broj poruka koje zahtijevaju radnju"
+
+#. module: route_planning
+#: model:ir.model.fields,help:route_planning.field_route_checkpoint__message_has_error_counter
+#: model:ir.model.fields,help:route_planning.field_route_route__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Broj poruka s greškom u dostavi"
+
+#. module: route_planning
+#. odoo-python
+#: code:addons/route_planning/models/route_route.py:0
+msgid "Only draft routes can be planned."
+msgstr "Samo rute u nacrtu mogu se planirati."
+
+#. module: route_planning
+#: model_terms:ir.ui.view,arch_db:route_planning.view_route_route_form
+msgid "Open in Google Maps"
+msgstr "Otvori u Google kartama"
+
+#. module: route_planning
+#: model:ir.ui.menu,name:route_planning.menu_route_planning_operations
+msgid "Operations"
+msgstr "Operacije"
+
+#. module: route_planning
+#: model:ir.model.fields,field_description:route_planning.field_route_checkpoint__origin_checkpoint_id
+msgid "Origin Checkpoint"
+msgstr "Izvorna kontrolna točka"
+
+#. module: route_planning
+#: model:ir.model.fields,help:route_planning.field_route_checkpoint__origin_checkpoint_id
+msgid "Original checkpoint when this is created from an incident"
+msgstr "Izvorna kontrolna točka kada je ovo kreirano iz incidenta"
+
+#. module: route_planning
+#: model:ir.model.fields,field_description:route_planning.field_route_checkpoint__partner_id
+#: model:ir.model.fields,field_description:route_planning.field_route_partner_visitwindow__partner_id
+#: model_terms:ir.ui.view,arch_db:route_planning.view_route_checkpoint_search
+msgid "Partner"
+msgstr "Partner"
+
+#. module: route_planning
+#: model:ir.model,name:route_planning.model_route_partner_visitwindow
+msgid "Partner Visit Window"
+msgstr "Prozor posjeta partnera"
+
+#. module: route_planning
+#: model:ir.model.fields,help:route_planning.field_route_partner_visitwindow__partner_id
+msgid "Partner for this visit window"
+msgstr "Partner za ovaj prozor posjeta"
+
+#. module: route_planning
+#: model_terms:ir.ui.view,arch_db:route_planning.view_route_route_form
+msgid "Plan"
+msgstr "Plan"
+
+#. module: route_planning
+#: model:ir.model.fields.selection,name:route_planning.selection__route_checkpoint__state__planned
+#: model:ir.model.fields.selection,name:route_planning.selection__route_route__state__planned
+#: model_terms:ir.ui.view,arch_db:route_planning.view_route_checkpoint_search
+#: model_terms:ir.ui.view,arch_db:route_planning.view_route_route_search
+msgid "Planned"
+msgstr "Planirano"
+
+#. module: route_planning
+#: model_terms:ir.ui.view,arch_db:route_planning.view_partner_form_route
+msgid "Refresh"
+msgstr "Osvježi"
+
+#. module: route_planning
+#: model_terms:ir.ui.view,arch_db:route_planning.view_partner_form_route
+msgid "Refresh Localization"
+msgstr "Osvježi lokalizaciju"
+
+#. module: route_planning
+#: model:ir.model.fields,field_description:route_planning.field_route_incident_type__rescheduled
+msgid "Rescheduled"
+msgstr "Reprogramirano"
+
+#. module: route_planning
+#: model:ir.model.fields,field_description:route_planning.field_route_checkpoint__activity_user_id
+#: model:ir.model.fields,field_description:route_planning.field_route_route__activity_user_id
+msgid "Responsible User"
+msgstr "Odgovorni korisnik"
+
+#. module: route_planning
+#: model:ir.model,name:route_planning.model_route_route
+#: model:ir.model.fields,field_description:route_planning.field_route_checkpoint__route_id
+#: model_terms:ir.ui.view,arch_db:route_planning.view_route_checkpoint_search
+msgid "Route"
+msgstr "Ruta"
+
+#. module: route_planning
+#: model:ir.model,name:route_planning.model_route_area
+#: model:ir.model.fields,field_description:route_planning.field_res_partner__route_area_id
+#: model:ir.model.fields,field_description:route_planning.field_res_users__route_area_id
+#: model:ir.model.fields,field_description:route_planning.field_route_area_zip__route_area_id
+#: model:ir.model.fields,field_description:route_planning.field_route_route__route_area_id
+msgid "Route Area"
+msgstr "Zona rute"
+
+#. module: route_planning
+#: model:ir.model,name:route_planning.model_route_area_zip
+msgid "Route Area Zip range"
+msgstr "Raspon poštanskog broja zone rute"
+
+#. module: route_planning
+#: model:ir.actions.act_window,name:route_planning.action_route_area
+msgid "Route Areas"
+msgstr "Zone rute"
+
+#. module: route_planning
+#: model:ir.model,name:route_planning.model_route_checkpoint
+msgid "Route Checkpoint"
+msgstr "Kontrolna točka rute"
+
+#. module: route_planning
+#: model:ir.model,name:route_planning.model_route_incident_type
+msgid "Route Incident Type"
+msgstr "Vrsta incidenta rute"
+
+#. module: route_planning
+#. odoo-python
+#: code:addons/route_planning/models/route_route.py:0
+msgid "Route Map"
+msgstr "Karta rute"
+
+#. module: route_planning
+#: model:ir.module.category,name:route_planning.module_category_route_planning
+#: model:ir.ui.menu,name:route_planning.menu_route_planning_main
+#: model_terms:ir.ui.view,arch_db:route_planning.view_partner_form_route
+msgid "Route Planning"
+msgstr "Planiranje rute"
+
+#. module: route_planning
+#: model_terms:ir.ui.view,arch_db:route_planning.view_partner_form_route
+msgid "Route Planning Info"
+msgstr "Informacije o planiranju rute"
+
+#. module: route_planning
+#: model:ir.model.fields,field_description:route_planning.field_route_checkpoint__route_state
+msgid "Route State"
+msgstr "Stanje rute"
+
+#. module: route_planning
+#: model:ir.model.fields,field_description:route_planning.field_res_partner__route_visitwindow_ids
+#: model:ir.model.fields,field_description:route_planning.field_res_users__route_visitwindow_ids
+msgid "Route Visitwindow"
+msgstr "Prozor posjeta rute"
+
+#. module: route_planning
+#: model_terms:ir.actions.act_window,help:route_planning.action_route_area
+msgid "Route areas help organize delivery zones and assign responsible users."
+msgstr ""
+"Zone rute pomažu organizirati dostavne zone i dodijeliti odgovorne "
+"korisnike."
+
+#. module: route_planning
+#: model_terms:ir.ui.view,arch_db:route_planning.view_route_route_form
+msgid "Route name..."
+msgstr "Naziv rute..."
+
+#. module: route_planning
+#: model:ir.actions.act_window,name:route_planning.action_route_route
+#: model:ir.ui.menu,name:route_planning.menu_route_route
+msgid "Routes"
+msgstr "Rute"
+
+#. module: route_planning
+#: model_terms:ir.actions.act_window,help:route_planning.action_route_route
+msgid "Routes help organize delivery schedules and track progress."
+msgstr "Rute pomažu organizirati rasporede dostave i pratiti napredak."
+
+#. module: route_planning
+#: model:ir.model.fields.selection,name:route_planning.selection__route_partner_visitwindow__day_of_week__5
+#: model:ir.model.fields.selection,name:route_planning.selection__route_visitwindow_mixin__day_of_week__5
+#: model:ir.model.fields.selection,name:route_planning.selection__route_visitwindow_template_line__day_of_week__5
+msgid "Saturday"
+msgstr "Subota"
+
+#. module: route_planning
+#: model:ir.model.fields,field_description:route_planning.field_route_checkpoint__schedule_date
+#: model:ir.model.fields,field_description:route_planning.field_route_route__schedule_date
+msgid "Schedule Date"
+msgstr "Zakazani datum"
+
+#. module: route_planning
+#: model:ir.model.fields,field_description:route_planning.field_route_checkpoint__schedule_time
+msgid "Schedule Time"
+msgstr "Vrijeme rasporeda"
+
+#. module: route_planning
+#: model_terms:ir.ui.view,arch_db:route_planning.view_route_checkpoint_search
+#: model_terms:ir.ui.view,arch_db:route_planning.view_route_route_search
+msgid "Schedule date"
+msgstr "Datum rasporeda"
+
+#. module: route_planning
+#: model:ir.model.fields,field_description:route_planning.field_route_checkpoint__sequence
+msgid "Sequence"
+msgstr "Sekvenca"
+
+#. module: route_planning
+#: model:ir.model.fields,field_description:route_planning.field_route_route__start_location_id
+msgid "Start Location"
+msgstr "Početna lokacija"
+
+#. module: route_planning
+#: model:ir.model.fields,help:route_planning.field_route_partner_visitwindow__time_from
+#: model:ir.model.fields,help:route_planning.field_route_visitwindow_mixin__time_from
+#: model:ir.model.fields,help:route_planning.field_route_visitwindow_template_line__time_from
+msgid "Start time of the visit window"
+msgstr "Početno vrijeme prozora posjeta"
+
+#. module: route_planning
+#: model:ir.model.fields,field_description:route_planning.field_route_area__state_ids
+#: model:ir.model.fields,field_description:route_planning.field_route_checkpoint__state
+#: model:ir.model.fields,field_description:route_planning.field_route_route__state
+#: model_terms:ir.ui.view,arch_db:route_planning.view_route_checkpoint_search
+#: model_terms:ir.ui.view,arch_db:route_planning.view_route_route_search
+msgid "State"
+msgstr "Stanje"
+
+#. module: route_planning
+#: model:ir.model.fields,help:route_planning.field_route_checkpoint__activity_state
+#: model:ir.model.fields,help:route_planning.field_route_route__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+"Status na temelju aktivnosti\n"
+"Kašnjenje: rok je već prošao\n"
+"Danas: datum aktivnosti je danas\n"
+"Planirano: buduće aktivnosti."
+
+#. module: route_planning
+#: model:ir.model.fields.selection,name:route_planning.selection__route_partner_visitwindow__day_of_week__6
+#: model:ir.model.fields.selection,name:route_planning.selection__route_visitwindow_mixin__day_of_week__6
+#: model:ir.model.fields.selection,name:route_planning.selection__route_visitwindow_template_line__day_of_week__6
+msgid "Sunday"
+msgstr "Nedjelja"
+
+#. module: route_planning
+#: model:ir.model.fields,field_description:route_planning.field_route_visitwindow_template_line__template_id
+msgid "Template"
+msgstr "Predložak"
+
+#. module: route_planning
+#: model:ir.model.fields,help:route_planning.field_res_partner__route_visitwindow_template_id
+#: model:ir.model.fields,help:route_planning.field_res_users__route_visitwindow_template_id
+msgid ""
+"Template to pre-fill visit windows for this partner, this field will be "
+"cleared after applying the template."
+msgstr ""
+"Predložak za unaprijed popuniti prozore posjeta za ovog partnera; ovo polje "
+"bit će očišćeno nakon primjene predloška."
+
+#. module: route_planning
+#: model_terms:ir.actions.act_window,help:route_planning.action_route_visitwindow_template
+msgid "Templates help standardize visit windows for partners."
+msgstr "Predlošci pomažu standardizirati prozore posjeta za partnere."
+
+#. module: route_planning
+#: model:ir.model.constraint,message:route_planning.constraint_route_area_code_uniq
+msgid "The code must be unique per company."
+msgstr "Šifra mora biti jedinstvena po tvrtki."
+
+#. module: route_planning
+#. odoo-python
+#: code:addons/route_planning/models/route_route.py:0
+msgid ""
+"The partner: %(partner)s must have latitude and longitude to optimize the "
+"route."
+msgstr ""
+"Partner: %(partner)s mora imati geografsku širinu i dužinu za optimizaciju "
+"rute."
+
+#. module: route_planning
+#. odoo-python
+#: code:addons/route_planning/models/route_visitwindow_mixin.py:0
+msgid "The time from must be earlier than the time to."
+msgstr "Vrijeme od mora biti ranije od vremena do."
+
+#. module: route_planning
+#. odoo-python
+#: code:addons/route_planning/models/route_route.py:0
+msgid "The time start must be between 0 and 24 hours."
+msgstr "Vrijeme početka mora biti između 0 i 24 sata."
+
+#. module: route_planning
+#: model:ir.model.fields.selection,name:route_planning.selection__route_partner_visitwindow__day_of_week__3
+#: model:ir.model.fields.selection,name:route_planning.selection__route_visitwindow_mixin__day_of_week__3
+#: model:ir.model.fields.selection,name:route_planning.selection__route_visitwindow_template_line__day_of_week__3
+msgid "Thursday"
+msgstr "Četvrtak"
+
+#. module: route_planning
+#: model:ir.model.fields,field_description:route_planning.field_route_partner_visitwindow__time_from
+#: model:ir.model.fields,field_description:route_planning.field_route_visitwindow_mixin__time_from
+#: model:ir.model.fields,field_description:route_planning.field_route_visitwindow_template_line__time_from
+msgid "Time From"
+msgstr "Vrijeme od"
+
+#. module: route_planning
+#: model:ir.model.fields,field_description:route_planning.field_route_area__time_start
+#: model:ir.model.fields,field_description:route_planning.field_route_route__time_start
+msgid "Time Start"
+msgstr "Vrijeme početka"
+
+#. module: route_planning
+#: model:ir.model.fields,field_description:route_planning.field_route_partner_visitwindow__time_to
+#: model:ir.model.fields,field_description:route_planning.field_route_visitwindow_mixin__time_to
+#: model:ir.model.fields,field_description:route_planning.field_route_visitwindow_template_line__time_to
+msgid "Time To"
+msgstr "Vrijeme do"
+
+#. module: route_planning
+#: model:route.incident.type,name:route_planning.incident_type_traffic_delay_demo
+msgid "Traffic Delay"
+msgstr "Zastoj u prometu"
+
+#. module: route_planning
+#: model:ir.model.fields.selection,name:route_planning.selection__route_partner_visitwindow__day_of_week__1
+#: model:ir.model.fields.selection,name:route_planning.selection__route_visitwindow_mixin__day_of_week__1
+#: model:ir.model.fields.selection,name:route_planning.selection__route_visitwindow_template_line__day_of_week__1
+msgid "Tuesday"
+msgstr "Utorak"
+
+#. module: route_planning
+#: model:ir.model.fields,help:route_planning.field_route_checkpoint__activity_exception_decoration
+#: model:ir.model.fields,help:route_planning.field_route_route__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "Vrsta iznimne aktivnosti na zapisu."
+
+#. module: route_planning
+#: model_terms:ir.ui.view,arch_db:route_planning.view_partner_form_route
+msgid "Updated on"
+msgstr "Ažurirano dana"
+
+#. module: route_planning
+#: model:ir.model.fields,field_description:route_planning.field_route_area__user_id
+#: model:ir.model.fields,field_description:route_planning.field_route_checkpoint__user_id
+#: model:ir.model.fields,field_description:route_planning.field_route_route__user_id
+#: model:res.groups,name:route_planning.group_route_planning_user
+#: model_terms:ir.ui.view,arch_db:route_planning.view_route_area_search
+#: model_terms:ir.ui.view,arch_db:route_planning.view_route_route_search
+msgid "User"
+msgstr "Korisnik"
+
+#. module: route_planning
+#: model_terms:ir.ui.view,arch_db:route_planning.view_route_route_form
+msgid "View"
+msgstr "Prikaz"
+
+#. module: route_planning
+#: model_terms:ir.ui.view,arch_db:route_planning.view_route_route_form
+msgid "View Map"
+msgstr "Prikaži kartu"
+
+#. module: route_planning
+#: model_terms:ir.ui.view,arch_db:route_planning.view_route_route_form
+msgid "View Origin"
+msgstr "Prikaži izvor"
+
+#. module: route_planning
+#: model:ir.model,name:route_planning.model_route_visitwindow_mixin
+msgid "Visit Window Mixin"
+msgstr "Mixin prozora posjeta"
+
+#. module: route_planning
+#: model:ir.model,name:route_planning.model_route_visitwindow_template
+#: model:ir.model.fields,field_description:route_planning.field_res_partner__route_visitwindow_template_id
+#: model:ir.model.fields,field_description:route_planning.field_res_users__route_visitwindow_template_id
+msgid "Visit Window Template"
+msgstr "Predložak prozora posjeta"
+
+#. module: route_planning
+#: model:ir.model,name:route_planning.model_route_visitwindow_template_line
+msgid "Visit Window Template Line"
+msgstr "Redak predloška prozora posjeta"
+
+#. module: route_planning
+#: model:ir.actions.act_window,name:route_planning.action_route_visitwindow_template
+#: model:ir.ui.menu,name:route_planning.menu_route_visitwindow_template
+msgid "Visit Window Templates"
+msgstr "Predlošci prozora posjeta"
+
+#. module: route_planning
+#: model_terms:ir.ui.view,arch_db:route_planning.view_partner_form_route
+#: model_terms:ir.ui.view,arch_db:route_planning.view_route_visitwindow_template_form
+msgid "Visit Windows"
+msgstr "Prozori posjeta"
+
+#. module: route_planning
+#: model:ir.model.fields,field_description:route_planning.field_route_area__waiting_time
+#: model:ir.model.fields,field_description:route_planning.field_route_route__waiting_time
+msgid "Waiting Time"
+msgstr "Vrijeme čekanja"
+
+#. module: route_planning
+#: model:ir.model.fields,field_description:route_planning.field_route_checkpoint__website_message_ids
+#: model:ir.model.fields,field_description:route_planning.field_route_route__website_message_ids
+msgid "Website Messages"
+msgstr "Poruke web stranice"
+
+#. module: route_planning
+#: model:ir.model.fields,help:route_planning.field_route_checkpoint__website_message_ids
+#: model:ir.model.fields,help:route_planning.field_route_route__website_message_ids
+msgid "Website communication history"
+msgstr "Povijest komunikacije web stranice"
+
+#. module: route_planning
+#: model:ir.model.fields.selection,name:route_planning.selection__route_partner_visitwindow__day_of_week__2
+#: model:ir.model.fields.selection,name:route_planning.selection__route_visitwindow_mixin__day_of_week__2
+#: model:ir.model.fields.selection,name:route_planning.selection__route_visitwindow_template_line__day_of_week__2
+msgid "Wednesday"
+msgstr "Srijeda"
+
+#. module: route_planning
+#. odoo-python
+#: code:addons/route_planning/models/route_checkpoint.py:0
+msgid "You cannot delete checkpoints that are not in draft state."
+msgstr "Ne možete obrisati kontrolne točke koje nisu u statusu nacrt."
+
+#. module: route_planning
+#. odoo-python
+#: code:addons/route_planning/models/route_route.py:0
+msgid "You cannot delete routes that are not in draft state."
+msgstr "Ne možete obrisati rute koje nisu u statusu nacrt."
+
+#. module: route_planning
+#. odoo-python
+#: code:addons/route_planning/models/route_checkpoint.py:0
+msgid ""
+"You cannot set the sequence of checkpoint: %s to %s because there are "
+"previous checkpoints marked as done or incident."
+msgstr ""
+"Ne možete postaviti sekvencu kontrolne točke: %s na %s jer postoje prethodne"
+" kontrolne točke označene kao izvršene ili incident."
+
+#. module: route_planning
+#. odoo-python
+#: code:addons/route_planning/models/route_checkpoint.py:0
+msgid ""
+"You must mark previous checkpoints as done before marking this one as done."
+msgstr ""
+"Morate označiti prethodne kontrolne točke kao izvršene prije označavanja ove"
+" kao izvršene."
+
+#. module: route_planning
+#: model_terms:ir.ui.view,arch_db:route_planning.view_route_area_form
+msgid "ZIP ranges"
+msgstr "Rasponi poštanskih brojeva"
+
+#. module: route_planning
+#: model:ir.model.fields,field_description:route_planning.field_route_area_zip__zip_from
+msgid "Zip From"
+msgstr "Poštanski broj od"
+
+#. module: route_planning
+#: model:ir.model.fields,field_description:route_planning.field_route_area_zip__zip_to
+msgid "Zip To"
+msgstr "Poštanski broj do"
+
+#. module: route_planning
+#: model:ir.model.fields,field_description:route_planning.field_route_area__zip_ids
+msgid "Zip ranges"
+msgstr "Rasponi poštanskih brojeva"
