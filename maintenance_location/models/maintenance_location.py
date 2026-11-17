@@ -35,7 +35,7 @@ class MaintenanceLocation(models.Model):
     sequence = fields.Integer(default=10)
     active = fields.Boolean(default=True)
     equipment_ids = fields.One2many(
-        "maintenance.equipment", "location_id", string="Equipments"
+        "maintenance.equipment", "maintenance_location_id", string="Equipments"
     )
     child_equipment_ids = fields.Many2many(
         comodel_name="maintenance.equipment",
@@ -49,7 +49,7 @@ class MaintenanceLocation(models.Model):
             [("id", "child_of", self.ids)]
         )
         all_equipments = self.env["maintenance.equipment"].search(
-            [("location_id", "in", all_locations.ids)]
+            [("maintenance_location_id", "in", all_locations.ids)]
         )
         for location in self:
             descendant_locs = all_locations.filtered(
@@ -58,7 +58,7 @@ class MaintenanceLocation(models.Model):
                 and sub_loc.id != loc.id
             )
             location.child_equipment_ids = all_equipments.filtered(
-                lambda eq, d_locs=descendant_locs: eq.location_id in d_locs
+                lambda eq, d_locs=descendant_locs: eq.maintenance_location_id in d_locs
             )
 
     def _compute_equipment_count(self):
@@ -66,8 +66,8 @@ class MaintenanceLocation(models.Model):
             [("id", "child_of", self.ids)]
         )
         equip_data = self.env["maintenance.equipment"]._read_group(
-            domain=[("location_id", "in", all_locations.ids)],
-            groupby=["location_id"],
+            domain=[("maintenance_location_id", "in", all_locations.ids)],
+            groupby=["maintenance_location_id"],
             aggregates=["__count"],
         )
         count_dict = {location.id: count for location, count in equip_data}
