@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <!-- the delivery preference is per company: a company without a value
+         for a partner reads "Any time", as a new partner gets -->
+    <record id="default_delivery_time_preference" model="ir.default">
+        <field name="field_id" ref="field_res_partner__delivery_time_preference" />
+        <field name="json_value">"anytime"</field>
+    </record>
+</odoo>
