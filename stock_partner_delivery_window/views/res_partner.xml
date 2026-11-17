@@ -20,6 +20,12 @@
                                 name="time_window_weekday_ids"
                                 widget="many2many_tags"
                             />
+                            <field
+                                name="company_id"
+                                groups="base.group_multi_company"
+                                optional="show"
+                                options="{'no_create': True}"
+                            />
                         </list>
                     </field>
                 </div>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <!-- each company plans with its own delivery time windows (the partners
+         are shared) -->
+    <record id="partner_delivery_time_window_company_rule" model="ir.rule">
+        <field name="name">Delivery Time Window: company</field>
+        <field name="model_id" ref="model_partner_delivery_time_window" />
+        <field name="global" eval="True" />
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+    </record>
+</odoo>

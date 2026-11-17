@@ -16,6 +16,9 @@ WORKDAYS = list(range(5))
 class ResPartner(models.Model):
     _inherit = "res.partner"
 
+    # the partners are shared: each company keeps its own preference; a
+    # company-dependent field cannot be required, a company without a value
+    # reads "Any time" (ir.default of the module)
     delivery_time_preference = fields.Selection(
         [
             ("anytime", "Any time"),
@@ -23,8 +26,8 @@ class ResPartner(models.Model):
             ("workdays", "Weekdays (Monday to Friday)"),
         ],
         string="Delivery time schedule preference",
+        company_dependent=True,
         default="anytime",
-        required=True,
         help="Define the scheduling preference for delivery orders:\n\n"
         "* Any time: Do not postpone deliveries\n"
         "* Fixed time windows: Postpone deliveries to the next preferred "
@@ -41,7 +44,7 @@ class ResPartner(models.Model):
         for partner in self:
             if (
                 partner.delivery_time_preference == "time_windows"
-                and not partner.delivery_time_window_ids
+                and not partner._get_company_delivery_windows()
             ):
                 raise ValidationError(
                     self.env._(
@@ -50,6 +53,13 @@ class ResPartner(models.Model):
                     )
                 )
 
+    def _get_company_delivery_windows(self):
+        """Delivery time windows of the partner in the current company."""
+        self.ensure_one()
+        return self.delivery_time_window_ids.filtered(
+            lambda window: window.company_id == self.env.company
+        )
+
     def _get_delivery_windows(self, day_name=None):
         """
         Return the list of delivery windows by partner id for the given day
@@ -57,7 +67,9 @@ class ResPartner(models.Model):
         :param day: The day name (see time.weekday, ex: 0,1,2,...)
         :return: dict partner: delivery_window recordset
         """
-        domain = Domain("partner_id", "in", self.ids)
+        domain = Domain("partner_id", "in", self.ids) & Domain(
+            "company_id", "=", self.env.company.id
+        )
         if day_name is not None:
             week_day_id = self.env["time.weekday"]._get_id_by_name(day_name)
             domain &= Domain("time_window_weekday_ids", "in", [week_day_id])
@@ -74,12 +86,11 @@ class ResPartner(models.Model):
         elif self.delivery_time_preference == "workdays":
             weekdays = set(range(5))
         else:
+            windows = self._get_company_delivery_windows()
             weekdays = set(
                 map(
                     int,
-                    self.delivery_time_window_ids.time_window_weekday_ids.mapped(
-                        "name"
-                    ),
+                    windows.time_window_weekday_ids.mapped("name"),
                 )
             )
         return weekdays
@@ -130,6 +141,7 @@ class ResPartner(models.Model):
                     Command.link(wd_id.id)
                     for wd_id in window_id.time_window_weekday_ids
                 ],
+                "company_id": window_id.company_id.id,
             }
             for window_id in self.delivery_time_window_ids
         ]

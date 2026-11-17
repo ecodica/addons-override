@@ -16,9 +16,32 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #. module: stock_partner_delivery_window
+#. odoo-python
+#: code:addons/stock_partner_delivery_window/models/delivery_time_window.py:0
+msgid "%(end_time)s must be > %(start_time)s"
+msgstr "%(end_time)s mora biti > %(start_time)s"
+
+#. module: stock_partner_delivery_window
+#. odoo-python
+#: code:addons/stock_partner_delivery_window/models/delivery_time_window.py:0
+msgid "%(record_name)s overlaps %(other_name)s"
+msgstr "%(record_name)s se preklapa s %(other_name)s"
+
+#. module: stock_partner_delivery_window
 #: model:ir.model.fields.selection,name:stock_partner_delivery_window.selection__res_partner__delivery_time_preference__anytime
 msgid "Any time"
 msgstr "Bilo kada"
+
+#. module: stock_partner_delivery_window
+#. odoo-python
+#: code:addons/stock_partner_delivery_window/models/delivery_time_window.py:0
+msgid "At least one time.weekday is required"
+msgstr "Potreban je barem jedan dan u tjednu"
+
+#. module: stock_partner_delivery_window
+#: model:ir.model.fields,field_description:stock_partner_delivery_window.field_partner_delivery_time_window__company_id
+msgid "Company"
+msgstr "Tvrtka"
 
 #. module: stock_partner_delivery_window
 #: model:ir.model,name:stock_partner_delivery_window.model_res_partner
