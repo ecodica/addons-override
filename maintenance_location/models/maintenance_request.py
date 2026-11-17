@@ -15,15 +15,18 @@ class MaintenanceRequest(models.Model):
     )
 
     @api.depends(
-        "equipment_id", "equipment_id.location_id", "stage_id", "stage_id.done"
+        "equipment_id",
+        "equipment_id.maintenance_location_id",
+        "stage_id",
+        "stage_id.done",
     )
     def _compute_location_id(self):
         for record in self:
-            if record.equipment_id and record.equipment_id.location_id:
+            if record.equipment_id and record.equipment_id.maintenance_location_id:
                 if record.stage_id and record.stage_id.done:
                     # if the request is done, we want keep existing location
                     pass
                 else:
-                    record.location_id = record.equipment_id.location_id
+                    record.location_id = record.equipment_id.maintenance_location_id
             else:
                 record.location_id = False

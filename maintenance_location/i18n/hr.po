@@ -129,7 +129,6 @@ msgid "Latitude:"
 msgstr ""
 
 #. module: maintenance_location
-#: model:ir.model.fields,field_description:maintenance_location.field_maintenance_equipment__location_id
 #: model:ir.model.fields,field_description:maintenance_location.field_maintenance_plan__location_id
 #: model:ir.model.fields,field_description:maintenance_location.field_maintenance_request__location_id
 #: model_terms:ir.ui.view,arch_db:maintenance_location.maintenance_location_form_view
@@ -164,8 +163,9 @@ msgstr "Oprema za održavanje"
 #. module: maintenance_location
 #: model:ir.actions.act_window,name:maintenance_location.maintenance_location_act_window
 #: model:ir.model,name:maintenance_location.model_maintenance_location
+#: model:ir.model.fields,field_description:maintenance_location.field_maintenance_equipment__maintenance_location_id
 msgid "Maintenance Location"
-msgstr ""
+msgstr "Lokacija održavanja"
 
 #. module: maintenance_location
 #: model:ir.ui.menu,name:maintenance_location.maintenance_location_menu
