@@ -8,11 +8,13 @@ from odoo import api, fields, models
 class ResPartner(models.Model):
     _inherit = "res.partner"
 
+    # the partners are shared: each company keeps its own delivery zone
     delivery_zone_id = fields.Many2one(
         comodel_name="partner.delivery.zone",
         string="Delivery Zone",
         ondelete="restrict",
         index=True,
+        company_dependent=True,
     )
 
     @api.model
