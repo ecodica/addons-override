@@ -15,20 +15,20 @@ class TestMaintenanceLocation(TransactionCase):
             {"name": "L2", "parent_id": self.location_1.id}
         )
         self.equipment = self.env["maintenance.equipment"].create(
-            {"name": "L2", "location_id": self.location_1.id}
+            {"name": "L2", "maintenance_location_id": self.location_1.id}
         )
         self.team = self.env["maintenance.team"].create({"name": "Team"})
         self.request = self.env["maintenance.request"].create(
             {"name": "Request", "maintenance_team_id": self.team.id}
         )
         self.env["maintenance.equipment"].create(
-            {"name": "Laptop", "location_id": self.location_1.id}
+            {"name": "Laptop", "maintenance_location_id": self.location_1.id}
         )
         self.env["maintenance.equipment"].create(
-            {"name": "Printer", "location_id": self.location_1.id}
+            {"name": "Printer", "maintenance_location_id": self.location_1.id}
         )
         self.env["maintenance.equipment"].create(
-            {"name": "Scanner", "location_id": self.location_2.id}
+            {"name": "Scanner", "maintenance_location_id": self.location_2.id}
         )
         self.plan = self.env["maintenance.plan"].create(
             {
@@ -51,7 +51,7 @@ class TestMaintenanceLocation(TransactionCase):
         self.request.write({"equipment_id": self.equipment.id})
         self.assertEqual(self.request.location_id.id, self.location_1.id)
         # change equipment location and check that request location is updated
-        self.equipment.location_id = self.location_2
+        self.equipment.maintenance_location_id = self.location_2
         self.request.invalidate_recordset()
         self.assertEqual(self.request.location_id.id, self.location_2.id)
 
@@ -63,7 +63,7 @@ class TestMaintenanceLocation(TransactionCase):
         )
         self.request.stage_id = done_stage
         # change equipment location and check that request location is NOT updated
-        self.equipment.location_id = self.location_2
+        self.equipment.maintenance_location_id = self.location_2
         self.request.invalidate_recordset()
         self.assertEqual(self.request.location_id.id, self.location_1.id)
 
