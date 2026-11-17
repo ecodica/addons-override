@@ -20,8 +20,9 @@ class TestPartnerDeliveryZone(BaseCommon):
         cls.delivery_zone_a = cls.env["partner.delivery.zone"].create(
             {"name": "Delivery Zone A", "code": "10"}
         )
+        # its own code: stock_transport_planning keeps a code once per company
         cls.delivery_zone_b = cls.env["partner.delivery.zone"].create(
-            {"name": "Delivery Zone A", "code": "10"}
+            {"name": "Delivery Zone A", "code": "20"}
         )
         cls.partner = cls.env["res.partner"].create(
             {"name": "test", "delivery_zone_id": cls.delivery_zone_a.id}
