@@ -129,3 +129,38 @@ class TestProductCostSecurity(BaseCommon):
             product.sudo().read(["standard_price"]),
             [{"id": product.id, "standard_price": 30.0}],
         )
+
+    def test_view_patch_strips_standard_price_references_for_non_cost_users(self):
+        """Non-cost users get clean seller_ids context and scoped expense span."""
+        from lxml import etree
+
+        View = self.env["ir.ui.view"]
+        xml = etree.fromstring(
+            """<form model_access_rights="product.template">
+                <span class="d-flex w-50 ms-2" invisible="standard_price == 0"/>
+                <field name="seller_ids" context="{'default_product_tmpl_id': id, 'default_price': standard_price, 'product_template_invisible_variant': True}"/>
+                <field name="variant_seller_ids" context="{'model': 'product.product', 'active_id': id, 'default_price': standard_price}"/>
+            </form>"""
+        )
+        View._pcs_patch_product_cost_nodes(xml, "product.template", strip_default_price=True)
+        span = xml.find("span")
+        self.assertEqual(span.get("groups"), "product_cost_security.group_product_cost")
+        for fname in ("seller_ids", "variant_seller_ids"):
+            ctx = xml.find(f"field[@name='{fname}']").get("context")
+            self.assertNotIn("standard_price", ctx)
+            # Must stay valid Python dict syntax
+            eval(ctx, {"id": 1})
+
+        purch_group = self.env.ref("purchase.group_purchase_user", raise_if_not_found=False)
+        if purch_group:
+            user = new_test_user(
+                self.env,
+                "purch_no_cost_user",
+                groups=f"base.group_user,{purch_group.get_external_id()[purch_group.id]},product.group_product_manager",
+            )
+            partner = self.env["res.partner"].create({"name": "PCS Vendor"})
+            form = Form(self.product_template_model.with_user(user))
+            form.name = "Vendor Without Cost"
+            with form.seller_ids.new() as s:
+                s.partner_id = partner
+                self.assertEqual(s.price, 0.0)
