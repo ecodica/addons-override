@@ -5,7 +5,7 @@
 {
     "name": "Stock Package SSCC",
     "summary": "Stores the SSCC of a package",
-    "version": "19.0.1.0.0",
+    "version": "19.0.1.0.1",
     "author": "Camptocamp, Odoo Community Association (OCA)",
     "license": "AGPL-3",
     "website": "https://github.com/OCA/stock-logistics-tracking",
