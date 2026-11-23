@@ -13,6 +13,7 @@ class PurchaseOrder(models.Model):
         string="Type",
         ondelete="restrict",
         domain="[('company_id', 'in', [False, company_id])]",
+        default=lambda self: self._default_order_type(self.env.company),
         compute="_compute_partner_order_type",
         store=True,
         readonly=False,
@@ -35,6 +36,8 @@ class PurchaseOrder(models.Model):
         purchase_type = self._get_partner_purchase_type()
         if purchase_type:
             self.order_type = purchase_type
+        elif not self.order_type:
+            self.order_type = self._default_order_type(self.company_id)
         return res
 
     @api.onchange("order_type")
@@ -48,6 +51,15 @@ class PurchaseOrder(models.Model):
     @api.model_create_multi
     def create(self, vals_list):
         for values in vals_list:
+            if not values.get("order_type"):
+                company = (
+                    self.env["res.company"].browse(values["company_id"])
+                    if values.get("company_id")
+                    else self.env.company
+                )
+                default_type = self._default_order_type(company)
+                if default_type:
+                    values["order_type"] = default_type.id
             if values.get("name", "/") == "/" and values.get("order_type"):
                 purchase_type = self.env["purchase.order.type"].browse(
                     values["order_type"]
@@ -69,9 +81,15 @@ class PurchaseOrder(models.Model):
                 self.env._("Document's company and type's company mismatch")
             )
 
-    def _default_order_type(self):
+    def _default_order_type(self, company=None):
+        company = company or self.company_id or self.env.company
+        regular = self.env.ref("purchase_order_type.po_type_regular", raise_if_not_found=False)
+        if regular and regular.active and (
+            not regular.company_id or not company or regular.company_id == company
+        ):
+            return regular
         return self.env["purchase.order.type"].search(
-            [("company_id", "in", [False, self.company_id.id])],
+            [("company_id", "in", [False, company.id] if company else [False])],
             limit=1,
         )
 
@@ -81,14 +99,15 @@ class PurchaseOrder(models.Model):
             self.order_type
             and self.order_type.company_id not in [self.company_id, False]
         ):
-            self.order_type = self._default_order_type()
+            self.order_type = self._default_order_type(self.company_id)
 
-    @api.depends("partner_id")
+    @api.depends("partner_id", "company_id")
     def _compute_partner_order_type(self):
         for record in self:
-            if record.partner_id and not record.order_type:
-                record.order_type = record._get_partner_purchase_type()
-            elif record.partner_id and record.order_type:
+            partner_type = record._get_partner_purchase_type() if record.partner_id else False
+            if partner_type:
+                record.order_type = partner_type
+            elif record.order_type and record.order_type.company_id in [record.company_id, False]:
                 record.order_type = record.order_type
             else:
-                record.order_type = False
+                record.order_type = record._default_order_type(record.company_id)
