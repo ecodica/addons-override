@@ -22,6 +22,23 @@ class IrUiView(models.Model):
             if ctx and "default_price" in ctx and "standard_price" in ctx:
                 field_node.set("context", _DEFAULT_PRICE_RE.sub("", ctx))
 
+    def _pcs_strip_standard_price_nodes(self, root):
+        for el in list(root.iter()):
+            if el.tag == "field" and el.get("name") == "standard_price":
+                parent = el.getparent()
+                if parent is not None:
+                    parent.remove(el)
+            elif el.tag == "label" and (
+                el.get("for") == "standard_price" or el.get("id") == "standard_price_label"
+            ):
+                parent = el.getparent()
+                if parent is not None:
+                    parent.remove(el)
+            elif el.tag == "div" and el.get("name") == "standard_price_uom":
+                parent = el.getparent()
+                if parent is not None:
+                    parent.remove(el)
+
     def _pcs_patch_product_cost_nodes(self, root, model_name, strip_default_price=False):
         if model_name not in ("product.template", "product.product"):
             return
@@ -55,14 +72,16 @@ class IrUiView(models.Model):
             node, model_name, editable=editable, node_info=node_info, **options
         )
 
-    # Remove 'default_price': standard_price from seller_ids/variant_seller_ids context
-    # for users without cost access so adding vendors does not raise NameError.
+    # Remove 'default_price': standard_price and any remaining standard_price nodes
+    # (when another module like restrict_stock_warehouse overwrote node @groups)
+    # for users without cost access so loading product views never raises AccessError.
     def _postprocess_access_rights(self, tree):
         if (
             tree.get("model_access_rights") in ("product.template", "product.product")
             and not self.env.user.has_group(_COST_GROUP)
         ):
             self._pcs_strip_default_price(tree)
+            self._pcs_strip_standard_price_nodes(tree)
         return super()._postprocess_access_rights(tree)
 
     # Tag injected missing <field> nodes for standard_price with its field groups
