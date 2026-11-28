@@ -93,7 +93,7 @@ def run_direct(env, session, instructions, message_parts, *, tools=None, record=
         try:
             raw = client.chat_completion(
                 model=model,
-                messages=to_openai_messages(instructions, messages),
+                messages=to_openai_messages(instructions, messages, base_url=client.base_url),
                 tools=to_openai_tools(neutral_tools) if neutral_tools else None,
                 response_format=response_format,
                 **options,

@@ -541,3 +541,30 @@ class TestTestConnectionAction(TestProviderClientBase):
         self.assertEqual(result['params']['type'], 'danger')
         self.assertIn('refused the API key', result['params']['message'])
         self.assertNotIn('Authorization', self.transport.requests[0]['headers'])
+
+
+class TestGoogleOpenAICompat(TestProviderClientBase):
+
+    def test_google_models_prefix_stripped_in_chat_completion(self):
+        params.set_str(self.env, 'ow_ai.base_url', 'https://generativelanguage.googleapis.com/v1beta/openai/')
+        self.transport.queue.append(FakeTransport.text('ok'))
+        ProviderClient.from_env(self.env).chat_completion(
+            model='models/gemini-2.5-flash',
+            messages=[{'role': 'user', 'content': 'hi'}],
+        )
+        self.assertEqual(self.transport.requests[0]['json']['model'], 'gemini-2.5-flash')
+
+    def test_google_list_error_response_raises_payment_required_with_message(self):
+        params.set_str(self.env, 'ow_ai.base_url', 'https://generativelanguage.googleapis.com/v1beta/openai')
+        self.transport.queue.append((
+            'response',
+            402,
+            [{'error': {'code': 402, 'message': 'Prepayment credits depleted.', 'status': 'RESOURCE_EXHAUSTED'}}],
+            {},
+        ))
+        with self.assertRaises(PaymentRequired) as ctx:
+            ProviderClient.from_env(self.env).chat_completion(
+                model='gemini-2.5-flash',
+                messages=[{'role': 'user', 'content': 'hi'}],
+            )
+        self.assertIn('Prepayment credits depleted.', str(ctx.exception))

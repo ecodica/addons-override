@@ -1,7 +1,7 @@
 {
     'name': "OW AI Assistant",
     'summary': "Agentic AI assistant for Odoo Community on any OpenAI-compatible provider",
-    'version': '19.0.2.1.2',
+    'version': '19.0.2.1.3',
     'category': 'Productivity/AI',
     'author': 'Openworx',
     'website': 'https://www.openworx.nl',

@@ -60,14 +60,14 @@ class ResConfigSettings(models.TransientModel):
     ow_ai_base_url = fields.Char(
         string="Base URL",
         default='https://openrouter.ai/api/v1',
-        help="OpenAI-compatible endpoint, e.g. https://openrouter.ai/api/v1, "
-             "https://hostyourai.com/api/v1, https://api.openai.com/v1, http://ollama:11434/v1",
+        help="OpenAI-compatible endpoint, e.g. https://generativelanguage.googleapis.com/v1beta/openai, "
+             "https://openrouter.ai/api/v1, https://api.openai.com/v1, http://ollama:11434/v1",
     )
     ow_ai_default_model = fields.Char(
         string="Default Model",
         default='openai/gpt-6-luna',
-        help="Model id at that endpoint, e.g. openai/gpt-6-luna (OpenRouter), "
-             "hyai/loes-large (HostYourAI), qwen2.5:3b (Ollama)",
+        help="Model id at that endpoint, e.g. gemini-2.5-flash (Google AI Studio), "
+             "openai/gpt-6-luna (OpenRouter), qwen2.5:3b (Ollama)",
     )
     ow_ai_max_rounds = fields.Integer(
         string="Max Rounds", default=30,

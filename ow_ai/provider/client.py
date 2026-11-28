@@ -20,6 +20,13 @@ from .transport import get_transport, request_error
 _logger = logging.getLogger('odoo.addons.ow_ai.provider')
 
 DEFAULT_BASE_URL = 'https://openrouter.ai/api/v1'
+_GOOGLE_OPENAI_HOSTS = ('generativelanguage.googleapis.com', 'aiplatform.googleapis.com')
+
+
+def is_google_openai_endpoint(base_url: str | None) -> bool:
+    """Return True when ``base_url`` points to Google AI Studio / Vertex OpenAI compat."""
+    lower = (base_url or '').lower()
+    return any(host in lower for host in _GOOGLE_OPENAI_HOSTS)
 
 
 class ProviderClient:
@@ -88,6 +95,10 @@ class ProviderClient:
     def _check_response(status: int, body, headers, *, is_chat: bool):
         if status != 200:
             raise classify(status, body, headers)
+        if isinstance(body, list):
+            if body and isinstance(body[0], dict) and body[0].get('error'):
+                raise classify(200, body, headers)
+            raise BadRequest("The endpoint did not return JSON.", status=status)
         if not isinstance(body, dict):
             # e.g. a wrong Base URL answering with an HTML page: a
             # misconfiguration, not worth a retry
@@ -100,6 +111,8 @@ class ProviderClient:
     def chat_completion(self, *, model, messages, tools=None, response_format=None,
                          temperature=None, max_tokens=None, reasoning=None, parallel_tool_calls=None,
                          user=None, extra=None) -> dict:
+        if is_google_openai_endpoint(self.base_url) and isinstance(model, str) and model.startswith('models/'):
+            model = model[len('models/'):]
         payload = {'model': model, 'messages': messages}
         if tools:
             payload['tools'] = tools

@@ -173,7 +173,7 @@ def run_round(env, session, job):
     try:
         raw = client.chat_completion(
             model=model,
-            messages=to_openai_messages(instructions, messages),
+            messages=to_openai_messages(instructions, messages, base_url=client.base_url),
             tools=to_openai_tools(tools) if tools else None,
             **agent._get_model_options(),
         )

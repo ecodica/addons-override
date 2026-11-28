@@ -68,6 +68,17 @@ class TestToOpenaiMessages(BaseCase):
         result = to_openai_messages(None, [user_message(part)])
         self.assertEqual(result[0]['content'][0]['file']['filename'], 'document.pdf')
 
+    def test_pdf_inline_data_google_endpoint_uses_image_url(self):
+        part = inline_data_part('application/pdf', 'UERG', filename='invoice.pdf')
+        result = to_openai_messages(
+            None,
+            [user_message(part)],
+            base_url='https://generativelanguage.googleapis.com/v1beta/openai',
+        )
+        self.assertEqual(result, [{'role': 'user', 'content': [
+            {'type': 'image_url', 'image_url': {'url': 'data:application/pdf;base64,UERG'}},
+        ]}])
+
     def test_unknown_mimetype_becomes_omitted_text(self):
         part = inline_data_part('application/zip', 'WklQ', filename='archive.zip')
         result = to_openai_messages(None, [user_message(part)])

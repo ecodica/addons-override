@@ -23,13 +23,16 @@ from ..engine.types import (
     text_part,
     tool_call_part,
 )
+from .client import is_google_openai_endpoint
 from .errors import ProviderError
 
 _IMAGE_MIMETYPES = {'image/png', 'image/jpeg', 'image/webp', 'image/gif'}
 _PARSE_ERROR_TRUNCATE = 500
 
 
-def to_openai_messages(instructions: str | None, messages: list[Message]) -> list[dict]:
+def to_openai_messages(
+    instructions: str | None, messages: list[Message], *, base_url: str | None = None
+) -> list[dict]:
     """Build the OpenAI ``messages`` array for a chat-completions request.
 
     ``instructions`` (the system prompt), when non-empty, becomes a leading
@@ -44,13 +47,13 @@ def to_openai_messages(instructions: str | None, messages: list[Message]) -> lis
         result.append({'role': 'system', 'content': instructions})
     for message in messages:
         if message['role'] == 'user':
-            result.extend(_map_user_message(message))
+            result.extend(_map_user_message(message, base_url=base_url))
         else:
             result.append(_map_assistant_message(message))
     return result
 
 
-def _map_user_message(message: dict) -> list[dict]:
+def _map_user_message(message: dict, *, base_url: str | None = None) -> list[dict]:
     content_parts: list[dict] = []
     tool_messages: list[dict] = []
     trailing_images: list[dict] = []
@@ -60,7 +63,7 @@ def _map_user_message(message: dict) -> list[dict]:
         if part_type == 'text':
             content_parts.append(text_part(part['text']))
         elif part_type == 'inline_data':
-            content_parts.append(_map_inline_data(part))
+            content_parts.append(_map_inline_data(part, base_url=base_url))
         elif part_type == 'tool_result':
             tool_messages.append({
                 'role': 'tool',
@@ -70,7 +73,7 @@ def _map_user_message(message: dict) -> list[dict]:
             images = [p for p in part.get('result', []) if p.get('type') == 'inline_data']
             if images:
                 trailing_images.append(text_part(f"Images returned by tool {part['tool_name']}:"))
-                trailing_images.extend(_map_inline_data(image) for image in images)
+                trailing_images.extend(_map_inline_data(image, base_url=base_url) for image in images)
 
     out = list(tool_messages)
     if content_parts:
@@ -83,12 +86,14 @@ def _map_user_message(message: dict) -> list[dict]:
     return out
 
 
-def _map_inline_data(part: dict) -> dict:
+def _map_inline_data(part: dict, *, base_url: str | None = None) -> dict:
     mimetype = part['mimetype']
     data = part['data']
     if mimetype in _IMAGE_MIMETYPES:
         return {'type': 'image_url', 'image_url': {'url': f'data:{mimetype};base64,{data}'}}
     if mimetype == 'application/pdf':
+        if is_google_openai_endpoint(base_url):
+            return {'type': 'image_url', 'image_url': {'url': f'data:application/pdf;base64,{data}'}}
         filename = part.get('metadata', {}).get('filename', 'document.pdf')
         return {'type': 'file', 'file': {'filename': filename, 'file_data': f'data:application/pdf;base64,{data}'}}
     filename = part.get('metadata', {}).get('filename', 'file')

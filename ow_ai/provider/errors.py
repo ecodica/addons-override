@@ -70,10 +70,21 @@ class TransportTimeout(AIProviderError):
     user_message = "The AI provider did not answer in time."
 
 
-def _extract_message(body: dict | None) -> str:
+def _unwrap_body(body: dict | list | None) -> dict | None:
+    """Unwrap Google OpenAI-compat list error responses ``[{"error": ...}]``."""
+    if isinstance(body, list):
+        for item in body:
+            if isinstance(item, dict):
+                return item
+        return None
+    return body
+
+
+def _extract_message(body: dict | list | None) -> str:
     """The error text of a response body: ``error.message`` (OpenAI), a string
     ``error`` (e.g. LM Studio), a string ``detail`` (FastAPI servers, e.g.
     vLLM) or a top-level ``message``; '' when there is none."""
+    body = _unwrap_body(body)
     if not isinstance(body, dict):
         return ''
     error = body.get('error')
@@ -85,12 +96,14 @@ def _extract_message(body: dict | None) -> str:
     return ''
 
 
-def _error_code(body: dict | None):
+def _error_code(body: dict | list | None):
+    body = _unwrap_body(body)
     error = body.get('error') if isinstance(body, dict) else None
     return error.get('code') if isinstance(error, dict) else None
 
 
-def _is_moderation(body: dict | None) -> bool:
+def _is_moderation(body: dict | list | None) -> bool:
+    body = _unwrap_body(body)
     if not isinstance(body, dict):
         return False
     error = body.get('error')
@@ -102,33 +115,34 @@ def _is_moderation(body: dict | None) -> bool:
     return isinstance(metadata, dict) and 'reasons' in metadata
 
 
-def classify(status: int | None, body: dict | None, headers: dict | None = None) -> AIProviderError:
+def classify(status: int | None, body: dict | list | None, headers: dict | None = None) -> AIProviderError:
     """Map an HTTP status / response body / headers to an AIProviderError instance.
 
     The message is the body's error text (see ``_extract_message``), else
     "HTTP <status>": a plain-text 404 (a Base URL without ``/v1``) still says
     what happened.
     """
-    message = _extract_message(body)
+    unwrapped = _unwrap_body(body)
+    message = _extract_message(unwrapped)
     if not message and status == 200:
-        has_error = isinstance(body, dict) and bool(body.get('error'))
+        has_error = isinstance(unwrapped, dict) and bool(unwrapped.get('error'))
         message = "HTTP 200 with an error body" if has_error else "HTTP 200 without choices"
     elif not message and status is not None:
         message = f"HTTP {status}"
     headers = headers or {}
 
     if status in (401, 403):
-        if status == 403 and _is_moderation(body):
-            return ContentModerated(message, status=status, body=body)
-        return AuthError(message, status=status, body=body)
+        if status == 403 and _is_moderation(unwrapped):
+            return ContentModerated(message, status=status, body=unwrapped)
+        return AuthError(message, status=status, body=unwrapped)
 
     if status == 402:
-        return PaymentRequired(message, status=status, body=body)
+        return PaymentRequired(message, status=status, body=unwrapped)
 
     if status == 429:
-        if _error_code(body) == 'insufficient_quota':
+        if _error_code(unwrapped) == 'insufficient_quota':
             # OpenAI's exhausted quota: waiting does not help
-            return PaymentRequired(message, status=status, body=body)
+            return PaymentRequired(message, status=status, body=unwrapped)
         retry_after = None
         raw_retry_after = headers.get('Retry-After') or headers.get('retry-after')
         if raw_retry_after is not None:
@@ -136,23 +150,23 @@ def classify(status: int | None, body: dict | None, headers: dict | None = None)
                 retry_after = float(raw_retry_after)
             except (TypeError, ValueError):
                 retry_after = None
-        return RateLimited(message, status=status, body=body, retry_after=retry_after)
+        return RateLimited(message, status=status, body=unwrapped, retry_after=retry_after)
 
     # 405: a POST to a web page (a wrong Base URL)
     if status in (400, 404, 405, 413, 422):
-        return BadRequest(message, status=status, body=body)
+        return BadRequest(message, status=status, body=unwrapped)
 
     if status == 200:
         # 200 with an error object, or empty choices, is treated as a
         # (usually transient) provider error unless it is a moderation refusal;
         # a string error (e.g. LM Studio's unknown model or route) is not
         # worth a retry.
-        if _is_moderation(body):
-            return ContentModerated(message, status=status, body=body)
-        if isinstance(body, dict) and isinstance(body.get('error'), str):
-            return BadRequest(message, status=status, body=body)
-        return ProviderError(message, status=status, body=body)
+        if _is_moderation(unwrapped):
+            return ContentModerated(message, status=status, body=unwrapped)
+        if isinstance(unwrapped, dict) and isinstance(unwrapped.get('error'), str):
+            return BadRequest(message, status=status, body=unwrapped)
+        return ProviderError(message, status=status, body=unwrapped)
 
     # 5xx, 408 (request timeout), 524 (Cloudflare timeout), and anything else
     # unrecognised are treated as transient provider errors.
-    return ProviderError(message, status=status, body=body)
+    return ProviderError(message, status=status, body=unwrapped)
